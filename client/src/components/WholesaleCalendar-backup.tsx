@@ -1,0 +1,1 @@
+// Backup of current calendar component before fixing JSX structure

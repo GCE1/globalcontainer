@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Leasing Calendar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+  <script src="/js/websocket-client.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      display: none; /* Hide the old header */
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    h1 {
+      margin: 0;
+    }
+    #calendar {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .fc-event {
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .fc-event.available {
+      background-color: #4caf50;
+      border-color: #4caf50;
+    }
+    .fc-event.leased {
+      background-color: #f44336;
+      border-color: #f44336;
+    }
+    .fc-event.free-days {
+      background-color: #2196f3;
+      border-color: #2196f3;
+    }
+    .fc-event.per-diem {
+      background-color: #ff9800;
+      border-color: #ff9800;
+    }
+    .calendar-filters {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .calendar-filters select, .calendar-filters input {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .calendar-filters button {
+      padding: 8px 15px;
+      background-color: #3a7bd5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .calendar-legend {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .event-details {
+      margin-top: 15px;
+    }
+    .event-details p {
+      margin: 10px 0;
+    }
+    .btn {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background-color: #3a7bd5;
+      color: white;
+    }
+    .btn-danger {
+      background-color: #f44336;
+      color: white;
+    }
+    #loading-spinner {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+    .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3a7bd5;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Leasing Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Leasing</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html" class="active"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Leasing Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Leasing Calendar</h1>
+    </header>
+    <div class="calendar-filters">
+      <select id="origin-filter">
+        <option value="">All Origins</option>
+      </select>
+      <select id="destination-filter">
+        <option value="">All Destinations</option>
+      </select>
+      <select id="container-size-filter">
+        <option value="">All Container Sizes</option>
+        <option value="20GP">20GP</option>
+        <option value="40GP">40GP</option>
+        <option value="40HC">40HC</option>
+      </select>
+      <select id="status-filter">
+        <option value="">All Statuses</option>
+        <option value="available">Available</option>
+        <option value="leased">Leased</option>
+        <option value="free-days">In Free Days Period</option>
+        <option value="per-diem">In Per Diem Period</option>
+      </select>
+      <button id="filter-button">Apply Filters</button>
+    </div>
+
+    <div class="calendar-legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #4caf50;"></div>
+        <span>Available</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #f44336;"></div>
+        <span>Leased</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #2196f3;"></div>
+        <span>Free Days Period</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ff9800;"></div>
+        <span>Per Diem Period (Charging)</span>
+      </div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="container-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Container Details</h2>
+      <div class="event-details">
+        <p><strong>Container ID:</strong> <span id="container-id"></span></p>
+        <p><strong>Origin:</strong> <span id="container-origin"></span></p>
+        <p><strong>Destination:</strong> <span id="container-destination"></span></p>
+        <p><strong>Size:</strong> <span id="container-size"></span></p>
+        <p><strong>Lease Start:</strong> <span id="lease-start"></span></p>
+        <p><strong>Free Days End:</strong> <span id="free-days-end"></span></p>
+        <p><strong>Status:</strong> <span id="container-status"></span></p>
+        <p><strong>Per Diem Rate:</strong> <span id="per-diem-rate"></span></p>
+        <div id="billing-details">
+          <p><strong>Current Per Diem Days:</strong> <span id="per-diem-days"></span></p>
+          <p><strong>Total Per Diem Charges:</strong> <span id="per-diem-total"></span></p>
+          <p><strong>Next Billing Date:</strong> <span id="next-billing"></span></p>
+        </div>
+        <div style="margin-top: 20px;">
+          <button id="view-invoice-btn" class="btn btn-primary">View Invoices</button>
+          <button id="manage-lease-btn" class="btn btn-primary">Manage Lease</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the calendar
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,listMonth'
+        },
+        events: fetchCalendarEvents,
+        eventClick: function(info) {
+          showContainerDetails(info.event);
+        },
+        loading: function(isLoading) {
+          document.getElementById('loading-spinner').style.display = 
+            isLoading ? 'flex' : 'none';
+        }
+      });
+      
+      calendar.render();
+
+      // Populate filter dropdowns
+      populateFilterDropdowns();
+
+      // Event listeners
+      document.getElementById('filter-button').addEventListener('click', function() {
+        calendar.refetchEvents();
+      });
+
+      // Modal close button
+      const closeModalBtn = document.querySelector('.close');
+      closeModalBtn.addEventListener('click', function() {
+        document.getElementById('container-modal').style.display = 'none';
+      });
+
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        const modal = document.getElementById('container-modal');
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+
+      // View invoice button
+      document.getElementById('view-invoice-btn').addEventListener('click', function() {
+        const containerId = document.getElementById('container-id').textContent;
+        window.location.href = `invoices.html?container=${containerId}`;
+      });
+
+      // Manage lease button
+      document.getElementById('manage-lease-btn').addEventListener('click', function() {
+        const containerId = document.getElementById('container-id').textContent;
+        // Redirect to a lease management page
+        window.location.href = `manage-lease.html?container=${containerId}`;
+      });
+    });
+
+    // Function to fetch calendar events from the server
+    function fetchCalendarEvents(info, successCallback, failureCallback) {
+      // Show loading spinner
+      document.getElementById('loading-spinner').style.display = 'flex';
+
+      // Get filter values
+      const origin = document.getElementById('origin-filter').value;
+      const destination = document.getElementById('destination-filter').value;
+      const containerSize = document.getElementById('container-size-filter').value;
+      const status = document.getElementById('status-filter').value;
+
+      // Build query params
+      const params = new URLSearchParams();
+      if (origin) params.append('origin', origin);
+      if (destination) params.append('destination', destination);
+      if (containerSize) params.append('containerSize', containerSize);
+      if (status) params.append('status', status);
+      params.append('start', info.startStr);
+      params.append('end', info.endStr);
+
+      // Fetch data from API
+      fetch(`/api/calendar-events?${params.toString()}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          successCallback(data);
+          document.getElementById('loading-spinner').style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Error fetching calendar events:', error);
+          failureCallback(error);
+          document.getElementById('loading-spinner').style.display = 'none';
+          
+          // For testing/demo, return sample events if API fails
+          if (error) {
+            generateSampleEvents(successCallback);
+          }
+        });
+    }
+
+    // Function to populate filter dropdowns
+    function populateFilterDropdowns() {
+      // Fetch origins and destinations for filter dropdowns
+      fetch('/api/leasing-locations')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const originSelect = document.getElementById('origin-filter');
+          const destinationSelect = document.getElementById('destination-filter');
+          
+          // Clear existing options except the first one
+          originSelect.innerHTML = '<option value="">All Origins</option>';
+          destinationSelect.innerHTML = '<option value="">All Destinations</option>';
+          
+          // Add origins
+          data.origins.forEach(origin => {
+            const option = document.createElement('option');
+            option.value = origin;
+            option.textContent = origin;
+            originSelect.appendChild(option);
+          });
+          
+          // Add destinations
+          data.destinations.forEach(destination => {
+            const option = document.createElement('option');
+            option.value = destination;
+            option.textContent = destination;
+            destinationSelect.appendChild(option);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching locations:', error);
+        });
+    }
+
+    // Function to show container details in modal
+    function showContainerDetails(event) {
+      // Get data from the event
+      const { extendedProps } = event;
+      
+      // Populate the modal with container details
+      document.getElementById('container-id').textContent = extendedProps.containerId || '';
+      document.getElementById('container-origin').textContent = extendedProps.origin || '';
+      document.getElementById('container-destination').textContent = extendedProps.destination || '';
+      document.getElementById('container-size').textContent = extendedProps.containerSize || '';
+      document.getElementById('lease-start').textContent = formatDate(extendedProps.leaseStart) || '';
+      document.getElementById('free-days-end').textContent = formatDate(extendedProps.freeDaysEnd) || '';
+      document.getElementById('container-status').textContent = extendedProps.status || '';
+      document.getElementById('per-diem-rate').textContent = extendedProps.perDiemRate || '';
+      
+      // Show or hide billing details based on status
+      const billingDetails = document.getElementById('billing-details');
+      if (extendedProps.status === 'per-diem') {
+        billingDetails.style.display = 'block';
+        document.getElementById('per-diem-days').textContent = extendedProps.perDiemDays || '0';
+        document.getElementById('per-diem-total').textContent = extendedProps.perDiemTotal || '$0.00';
+        document.getElementById('next-billing').textContent = formatDate(extendedProps.nextBillingDate) || 'N/A';
+      } else {
+        billingDetails.style.display = 'none';
+      }
+      
+      // Show the modal
+      document.getElementById('container-modal').style.display = 'block';
+    }
+
+    // Helper function to format dates
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      });
+    }
+    
+    // Function to generate sample events for testing/demo purposes
+    function generateSampleEvents(callback) {
+      const today = new Date();
+      const events = [];
+      
+      // Sample container data (for demonstration purposes)
+      const containers = [
+        {
+          containerId: 'CONT-001',
+          origin: 'Bangkok',
+          destination: 'Los Angeles, CA',
+          containerSize: '20GP',
+          status: 'leased',
+          leaseStart: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 15),
+          freeDays: 30,
+          perDiemRate: '$5.00'
+        },
+        {
+          containerId: 'CONT-002',
+          origin: 'Shanghai',
+          destination: 'New York, NY',
+          containerSize: '40HC',
+          status: 'per-diem',
+          leaseStart: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 45),
+          freeDays: 30,
+          perDiemRate: '$10.00',
+          perDiemDays: 15,
+          perDiemTotal: '$150.00',
+          nextBillingDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 1)
+        },
+        {
+          containerId: 'CONT-003',
+          origin: 'Rotterdam',
+          destination: 'Miami, FL',
+          containerSize: '40GP',
+          status: 'free-days',
+          leaseStart: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 10),
+          freeDays: 60,
+          perDiemRate: '$8.00'
+        },
+        {
+          containerId: 'CONT-004',
+          origin: 'Hong Kong',
+          destination: 'Seattle, WA',
+          containerSize: '20GP',
+          status: 'available',
+          leaseStart: null,
+          freeDays: 45,
+          perDiemRate: '$5.00'
+        }
+      ];
+      
+      // Generate events for each container
+      containers.forEach(container => {
+        if (container.status === 'available') {
+          // Available containers
+          events.push({
+            title: `${container.containerId} - Available`,
+            start: today,
+            end: new Date(today.getFullYear(), today.getMonth() + 3, today.getDate()),
+            classNames: ['available'],
+            color: '#4caf50',
+            extendedProps: container
+          });
+        } else if (container.status === 'leased' || container.status === 'free-days') {
+          // Leased containers in free days period
+          const leaseStart = container.leaseStart;
+          const freeDaysEnd = new Date(leaseStart);
+          freeDaysEnd.setDate(leaseStart.getDate() + container.freeDays);
+          
+          // Event for the free days period
+          events.push({
+            title: `${container.containerId} - Free Days`,
+            start: leaseStart,
+            end: freeDaysEnd,
+            classNames: ['free-days'],
+            color: '#2196f3',
+            extendedProps: {
+              ...container,
+              freeDaysEnd: freeDaysEnd
+            }
+          });
+        } else if (container.status === 'per-diem') {
+          // Containers in per diem period
+          const leaseStart = container.leaseStart;
+          const freeDaysEnd = new Date(leaseStart);
+          freeDaysEnd.setDate(leaseStart.getDate() + container.freeDays);
+          
+          // Event for the free days period (past)
+          events.push({
+            title: `${container.containerId} - Free Days`,
+            start: leaseStart,
+            end: freeDaysEnd,
+            classNames: ['free-days'],
+            color: '#2196f3',
+            extendedProps: {
+              ...container,
+              freeDaysEnd: freeDaysEnd
+            }
+          });
+          
+          // Event for the per diem period (current and future)
+          events.push({
+            title: `${container.containerId} - Per Diem ($${container.perDiemDays * parseFloat(container.perDiemRate.replace('$', ''))}})`,
+            start: freeDaysEnd,
+            end: new Date(today.getFullYear(), today.getMonth() + 3, today.getDate()),
+            classNames: ['per-diem'],
+            color: '#ff9800',
+            extendedProps: {
+              ...container,
+              freeDaysEnd: freeDaysEnd
+            }
+          });
+        }
+      });
+      
+      callback(events);
+    }
+    
+    // Containers dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+    });
+  </script>
+</body>
+</html>

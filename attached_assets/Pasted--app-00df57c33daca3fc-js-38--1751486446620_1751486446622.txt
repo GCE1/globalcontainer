@@ -1,0 +1,104 @@
+_app-00df57c33daca3fc.js:38 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-00df57c33daca3fc.js:38 [LaunchDarkly] LaunchDarkly client initialized
+/repls:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+13Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.Understand this error
+framework-862a1af8891026db.js:1 Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'battery'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'layout-animations'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'navigation-override'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'oversized-images'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'publickey-credentials'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'speaker-selection'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'unoptimized-images'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'unsized-media'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Unrecognized feature: 'pointer-lock'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+framework-862a1af8891026db.js:1 Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-862a1af8891026db.js:1Understand this warning
+7_app-00df57c33daca3fc.js:38 An aria-label or aria-labelledby prop is required for accessibility.
+(anonymous) @ _app-00df57c33daca3fc.js:38Understand this warning
+3_app-00df57c33daca3fc.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-00df57c33daca3fc.js:38Understand this warning
+7_app-00df57c33daca3fc.js:38 If you do not provide children, you must specify an aria-label for accessibility
+(anonymous) @ _app-00df57c33daca3fc.js:38Understand this warning
+/my-deployments:1 Banner not shown: beforeinstallpromptevent.preventDefault() called. The page must call beforeinstallpromptevent.prompt() to show the banner.
+2stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+3stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+3_app-00df57c33daca3fc.js:38 WARN: A component changed from uncontrolled to controlled.
+(anonymous) @ _app-00df57c33daca3fc.js:38Understand this warning
+stallwart.build.js:1 stallwart: failed ping 1
+workspace_iframe.html:32 Unrecognized feature: 'ambient-light-sensor'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'battery'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-not-rendered'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'execution-while-out-of-viewport'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'layout-animations'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'legacy-image-formats'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'navigation-override'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'oversized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'publickey-credentials'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'speaker-selection'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unoptimized-images'.Understand this warning
+workspace_iframe.html:32 Unrecognized feature: 'unsized-media'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowfullscreen'.Understand this warning
+workspace_iframe.html:32 Allow attribute will take precedence over 'allowpaymentrequest'.Understand this warning
+Console.js:61 i18next: languageChanged en-US
+Console.js:61 i18next: initialized Object
+Console.js:61 i18next: languageChanged en-US
+Console.js:61 i18next: init: i18next is already initialized. You should call init just once!
+Mt.forEach.n.<computed> @ Console.js:61Understand this warning
+Console.js:61 i18next: initialized Object
+Console.js:61 Loading PayPal SDK...
+Console.js:61 PayPal SDK not loaded, loading script...
+Console.js:61 Image Performance: /attached_assets/container-depot_1749154371445.png loaded in 86.89999997615814ms (network) on paypal-test
+Console.js:61 Image Performance: https://images.unsplash.com/photo-1586953208448-b95a79798f07?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 loaded in 559.3999999761581ms (network) on paypal-test
+Console.js:61 Image Performance: https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 loaded in 559.4000000357628ms (network) on paypal-test
+Console.js:61 Image Performance: https://images.unsplash.com/photo-1605745341112-85968b19335b?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 loaded in 559.6000000238419ms (network) on paypal-test
+Console.js:61 Image Performance: https://images.unsplash.com/photo-1494412651409-8963ce7935a7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 loaded in 559.6000000238419ms (network) on paypal-test
+Console.js:61 Image Performance: https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80 loaded in 559.6000000238419ms (network) on paypal-test
+Console.js:61 PayPal SDK script loaded successfully
+Console.js:61 Initializing PayPal...
+Console.js:61 Fetching client token from /paypal/setup...
+Console.js:61 Image Performance: /attached_assets/hero%20image.png loaded in 750.3000000119209ms (network) on paypal-test
+Console.js:61 Setup response status: 200
+Console.js:61 Client token received: No
+Console.js:61 Creating PayPal SDK instance...
+Console.js:61 Error initializing PayPal: SdkInitError: clientToken is missing in createInstance
+    at h (core:3:12244)
+    at uc (core:26:14203)
+    at Object.Ii [as createInstance] (core:26:12872)
+    at initPayPal (PayPalButton.tsx:144:56)
+Mt.forEach.n.<computed> @ Console.js:61Understand this error
+stallwart.build.js:1 stallwart: failed ping 1

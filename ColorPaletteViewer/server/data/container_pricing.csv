@@ -1,0 +1,38 @@
+item_code,description,base_price,option_price,category
+BASE-CONTAINER,Standard Container Base Price,2500,0,base
+FULL-OPEN-SIDE,Full Open Side Door (Optional),0,800,feature
+MULTI-SIDE-DOOR,Multi-Side Door (Optional),0,1200,feature
+DOUBLE-DOOR,Double Door (Optional),0,500,feature
+OPEN-TOP,Open Top (Optional),0,1000,feature
+LOCKING-BOX,Locking Box Option,0,250,accessory
+FORKLIFT-POCKET,Fork Lift Pocket Option,0,350,accessory
+EASY-OPEN-DOOR,Easy Open Door Option,0,300,accessory
+VENTS-4,Vents (4),0,150,ventilation
+VENTS-6,Vents (6),0,220,ventilation
+VENTS-8,Vents (8),0,280,ventilation
+VENTS-10,Vents (10),0,350,ventilation
+LOGO-CUSTOM,Custom Logo,0,200,branding
+SIZE-20GP,20ft General Purpose,0,0,size
+SIZE-40GP,40ft General Purpose,0,800,size
+SIZE-40HC,40ft High Cube,0,1200,size
+SIZE-45HC,45ft High Cube,0,1500,size
+SIZE-53HC,53ft High Cube,0,2000,size
+COLOR-STANDARD,Standard Color (RAL 7015),0,0,color
+COLOR-CUSTOM,Custom RAL Color,0,150,color
+FUNCTION-REFRIGERATION,Refrigeration System,0,3500,function
+FUNCTION-HAZMAT,Hazardous Materials Certification,0,1200,function
+FUNCTION-SECURITY,Enhanced Security System,0,750,function
+FUNCTION-INSULATION,Thermal Insulation,0,850,function
+FUNCTION-OFFICE,Office Conversion Ready,0,1500,function
+FUNCTION-SOLAR,Solar Panel Compatible Roof,0,2000,function
+FUNCTION-RAMPS,Loading Ramps,0,400,function
+FUNCTION-SHELVING,Internal Shelving System,0,650,function
+MAINTENANCE-BASIC,Basic Maintenance Package (1 Year),0,300,maintenance
+MAINTENANCE-PREMIUM,Premium Maintenance Package (1 Year),0,750,maintenance
+SHIPPING-LOCAL,Local Delivery (Within 50 miles),0,350,shipping
+SHIPPING-REGIONAL,Regional Delivery (50-200 miles),0,650,shipping
+SHIPPING-NATIONAL,National Delivery,0,1200,shipping
+SHIPPING-INTERNATIONAL,International Shipping,0,3500,shipping
+WARRANTY-BASIC,Standard 1-Year Warranty,0,0,warranty
+WARRANTY-EXTENDED,Extended 3-Year Warranty,0,500,warranty
+WARRANTY-PREMIUM,Premium 5-Year Warranty,0,1200,warranty

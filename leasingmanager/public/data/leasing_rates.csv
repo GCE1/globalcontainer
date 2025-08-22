@@ -1,0 +1,147 @@
+ORIGIN,DESTINATION,Container Size,Price,Free Days,Per Diem
+Xiamen,Vienna,40GP,$10,45,$10.00
+Xiamen,"Tampa, FL",40GP,"$1,200",45,$10.00
+Xiamen,"Tacoma, WA",40GP,"$1,200",45,$10.00
+Xiamen,"Seattle, WA",40GP,"$1,200",45,$10.00
+Xiamen,"Savannah, GA",40GP,"$1,200",45,$10.00
+Xiamen,"Salt Lake City, UT",40GP,"$1,200",45,$10.00
+Xiamen,"Saint Louis, MO",40GP,"$1,200",45,$10.00
+Xiamen,"Oakland, CA",40GP,"$1,200",45,$10.00
+Xiamen,"Norfolk, VA",40GP,"$1,200",45,$10.00
+Xiamen,"New York, NY",40GP,"$1,200",45,$10.00
+Xiamen,"New Orleans, LA",40GP,"$1,200",45,$10.00
+Xiamen,Munich,40GP,$10,45,$10.00
+Xiamen,"Minneapolis, MN",40GP,"$1,200",45,$10.00
+Xiamen,"Miami, FL",40GP,"$1,200",45,$10.00
+Xiamen,"Memphis, TN",40GP,"$1,200",45,$10.00
+Xiamen,"Los Angeles, CA",40GP,"$1,200",45,$10.00
+Tianjin,"Miami, FL",40GP,"$1,200",45,$10.00
+Shanghai,Algeciras,20GP,$90,45,$5.00
+Qingdao,Vienna,40GP,$10,45,$10.00
+Qingdao,St Petersburg,20GP,$830,45,$5.00
+Qingdao,Munich,40GP,$10,45,$10.00
+Qingdao,Liverpool,40GP,$10,45,$10.00
+Qingdao,Le Havre,40GP,$10,45,$10.00
+Qingdao,Karachi,20GP,$160,45,$5.00
+Qingdao,Gothenburg,40GP,$10,45,$10.00
+Qingdao,Gebze,40GP,$10,45,$10.00
+Qingdao,Copenhagen,40GP,$10,45,$10.00
+Nhava Sheva,Nhava Sheva,20GP,$75,45,$5.00
+Nhava Sheva,Jebel Ali,20GP,$40,45,$5.00
+Nansha,Mundra,20GP,$80,45,$5.00
+Nansha,Jebel Ali,20GP,$30,45,$5.00
+Mundra,Mundra,20GP,$50,45,$5.00
+Laem Chabang,Nansha,20GP,$30,45,$5.00
+Karachi,Jebel Ali,20GP,$50,45,$5.00
+Jeddah,Nhava Sheva,20GP,$70,45,$5.00
+Jeddah,Jebel Ali,20GP,$10,45,$5.00
+Jebel Ali,Cochin,20GP,$80,45,$5.00
+Jebel Ali,Chennai,20GP,$50,45,$5.00
+Istanbul,Jebel Ali,20GP,$100,45,$5.00
+Ho Chi Minh City,Port Kelang,20GP,$30,45,$5.00
+Guangzhou,Jebel Ali,20GP,$90,45,$5.00
+Gebze,Nhava Sheva,20GP,$490,45,$5.00
+Gebze,Jebel Ali,20GP,$150,45,$5.00
+Chittagong,Nhava Sheva,20GP,$50,45,$5.00
+Chittagong,Mundra,20GP,$40,45,$5.00
+Chittagong,Karachi,20GP,$50,45,$5.00
+Chittagong,Cochin,20GP,$50,45,$5.00
+Chennai,Jebel Ali,20GP,$60,45,$5.00
+Chengdu,Budapest,20GP,$200,45,$5.00
+Chengdu,Bangkok,20GP,$30,45,$5.00
+Bangkok,Tianjin,20GP,$30,45,$5.00
+Shanghai,Algeciras,20GP,$95,45,$5.00
+Qingdao,"Memphis, TN",20GP,$270,45,$5.00
+"Yekaterinburg, Sve",Houston,40HC,$170,45,$10.00
+Xian,Shanghai,40HC,$160,45,$10.00
+Xiamen,Qingdao,40HC,$50,45,$10.00
+Tianjinxingang,Guangzhou,40HC,$170,45,$10.00
+Tianjin,Houston,40HC,$930,45,$10.00
+St Petersburg,Istanbul,40HC,$340,45,$10.00
+Singapore,"Vancouver, BC",40HC,$580,45,$10.00
+Singapore,Southampton,40HC,"$2,390",45,$10.00
+Singapore,Rotterdam,40HC,"$1,670",45,$10.00
+Singapore,Le Havre,40HC,"$2,390",45,$10.00
+Singapore,Hamburg,40HC,$770,45,$10.00
+Singapore,Grangemouth,40HC,$580,45,$10.00
+Singapore,Gothenburg,40HC,$580,45,$10.00
+Singapore,Gdynia,40HC,"$2,390",45,$10.00
+Singapore,Gdansk,40HC,"$2,390",45,$10.00
+Singapore,Duisburg,40HC,"$2,390",45,$10.00
+Singapore,Belfast (United Kingdom),40HC,"$2,390",45,$10.00
+Singapore,Antwerp,40HC,"$1,670",45,$10.00
+Shekou,Tianjin,40HC,$170,45,$10.00
+Rotterdam,Xi An,40HC,$320,45,$10.00
+Qingdao,"Memphis, TN",40HC,"$1,100",45,$10.00
+Port Kelang,Southampton,40HC,"$2,390",45,$10.00
+Port Kelang,Gdynia,40HC,"$2,390",45,$10.00
+Port Kelang,Gdansk,40HC,"$2,390",45,$10.00
+Port Kelang,Duisburg,40HC,"$2,390",45,$10.00
+Port Kelang,Belfast (United Kingdom),40HC,"$2,390",45,$10.00
+Ningbo,Kolkata(Calcutta),40HC,$85,45,$10.00
+Ningbo,Chongqing,40HC,$50,45,$10.00
+Ningbo,Chengdu,40HC,$50,45,$10.00
+Nhava Sheva,Tianjin,40HC,$50,45,$10.00
+Nhava Sheva,Shanghai,40HC,$50,45,$10.00
+Nhava Sheva,Nhava Sheva,40HC,$225,45,$10.00
+Nhava Sheva,Mundra,40HC,$150,45,$10.00
+Nhava Sheva,Karachi,40HC,$150,45,$10.00
+Nhava Sheva,Jebel Ali,40HC,$110,45,$10.00
+Nansha,Qingdao,40HC,$50,45,$10.00
+Mundra,Shenzhen,40HC,$50,45,$10.00
+Mundra,Shanghai,40HC,$50,45,$10.00
+Mundra,Ningbo,40HC,$50,45,$10.00
+Mundra,Nhava Sheva,40HC,$290,45,$10.00
+Mundra,Karachi,40HC,$170,45,$10.00
+Mundra,Jebel Ali,40HC,$130,45,$10.00
+Minsk,Shenyang,40HC,$230,45,$10.00
+Kobe,Xiamen,40HC,$30,45,$10.00
+Kobe,Shanghai,40HC,$30,45,$10.00
+Kobe,Qingdao,40HC,$60,45,$10.00
+Kobe,Ningbo,40HC,$50,45,$10.00
+Karachi,Qingdao,40HC,$40,45,$10.00
+Karachi,Ningbo,40HC,$40,45,$10.00
+Karachi,Nhava Sheva,40HC,$150,45,$10.00
+Karachi,Kolkata(Calcutta),40HC,$200,45,$10.00
+Karachi,Jebel Ali,40HC,$150,45,$10.00
+Karachi,Hamburg,40HC,$430,45,$10.00
+Karachi,Cochin,40HC,$120,45,$10.00
+Karachi,Chennai,40HC,$200,45,$10.00
+Jeddah,Mundra,40HC,$290,45,$10.00
+Jeddah,Moscow,40HC,$720,45,$10.00
+Jeddah,Jebel Ali,40HC,$290,45,$10.00
+Jebel Ali,Nhava Sheva,40HC,$120,45,$10.00
+Huangpu,Shanghai,40HC,$120,45,$10.00
+Ho Chi Minh City,Ningbo,40HC,$90,45,$10.00
+Ho Chi Minh City,"Edmonton, AB",40HC,$820,45,$10.00
+Haiphong,"Edmonton, AB",40HC,"$1,000",45,$10.00
+Haiphong,"Dallas, TX",40HC,$440,45,$10.00
+Guangzhou,"Saint Louis, MO",40HC,$750,45,$10.00
+Gebze,Yantian,40HC,$290,45,$10.00
+Gebze,Qingdao,40HC,$560,45,$10.00
+Gebze,Qingdao,40HC,$560,45,$10.00
+Fuzhou,Keelung,40HC,$60,45,$10.00
+Dalian,Xiamen,40HC,$50,45,$10.00
+Dalian,Ningbo,40HC,$50,45,$10.00
+Dalian,Nansha,40HC,$50,45,$10.00
+Dalian,Huangpu,40HC,$200,45,$10.00
+Chongqing,Shanghai,40HC,$50,45,$10.00
+Chongqing,"Saint Louis, MO",40HC,$750,45,$10.00
+Chongqing,Huangpu,40HC,$230,45,$10.00
+Chennai,Shanghai,40HC,$50,45,$10.00
+Chennai,Nhava Sheva,40HC,$290,45,$10.00
+Chennai,Karachi,40HC,$130,45,$10.00
+Chennai,Jebel Ali,40HC,$130,45,$10.00
+"Busan, Korea",Xiamen,40HC,$50,45,$10.00
+"Busan, Korea",Shanghai,40HC,$150,45,$10.00
+"Busan, Korea",Ningbo,40HC,$200,45,$10.00
+"Busan, Korea",Keelung,40HC,$60,45,$10.00
+Belawan,Moscow,40HC,"$1,120",45,$10.00
+Antwerp,Jebel Ali,40HC,$50,45,$10.00
+Ambarli,Tianjin,40HC,$290,45,$10.00
+Ambarli,Novorossiysk,40HC,$290,45,$10.00
+Tianjin,"Tacoma, WA",40HC,$900,45,$10.00
+Tianjin,Houston,40HC,$930,45,$10.00
+Shenzhen,"Saint Louis, MO",40HC,$470,45,$10.00
+Ningbo,Hamburg,40HC,"$1,080",45,$10.00
+Ambarli,Tashkent,40HC,$300,45,$10.00

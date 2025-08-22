@@ -1,0 +1,48 @@
+Based on your request, here's the complete documentation for the "Find Nearest Container Depot" functionality:
+
+Core Documentation
+1. Frontend Component (client/src/components/container/AdvancedSearch.tsx)
+Purpose: Simplified search interface focused on ZIP/postal code input
+
+Single input field for ZIP codes and postal codes
+Automatic ZIP code detection with regex pattern matching
+Auto-enables location-based search when ZIP code is detected
+Default 100-mile radius search
+Clean, streamlined UI without dropdown complexity
+2. Geocoding Service (server/utils/google-maps.ts)
+Key Functions:
+
+geocodeAddress() - Converts postal codes to coordinates using Google Maps API
+calculateDistance() - Haversine formula for distance calculations in miles
+findNearbyByPostalCode() - Main function for postal code to coordinate conversion
+Supports both US ZIP codes and international postal codes
+5000-mile maximum radius cap for searches
+3. Database Search Logic (server/storage.db.ts)
+Advanced Spatial Search:
+
+Haversine distance calculation in SQL for precise geographic queries
+Two-tier search system: initial radius, then expanded 5000-mile fallback
+Finds closest depot and shows only containers from that location
+Intelligent filtering that prioritizes nearest available inventory
+4. API Endpoint (server/routes.ts)
+Location Processing:
+
+Handles /api/containers with postal code parameters
+Automatic geocoding integration
+Distance-based sorting and filtering
+Comprehensive logging for search operations
+Search Flow Process
+User Input: Enter ZIP/postal code in search field
+Detection: Regex pattern identifies ZIP code format
+Geocoding: Google Maps API converts to latitude/longitude
+Database Query: Spatial search within specified radius
+Fallback Search: If no results, expand to 5000-mile radius
+Depot Selection: Identify closest depot with inventory
+Results Display: Show containers only from nearest depot
+Key Features
+Intelligent Radius Management: Starts with 100 miles, expands to 5000 miles
+Closest Depot Priority: Shows inventory from single nearest location
+International Support: Works with US ZIP codes and global postal codes
+Real-time Distance Calculation: Precise mileage to depot locations
+Comprehensive Coverage: 5000-mile radius ensures inventory availability
+The system maintains all advanced search capabilities while presenting a clean, focused interface specifically for finding the nearest container depot based on location.

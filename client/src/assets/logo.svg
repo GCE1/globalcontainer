@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="108" viewBox="0 0 400 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Cube graphic -->
+  <g transform="translate(10, 10) scale(0.9)">
+    <!-- Left face -->
+    <path d="M29.1 31.5L58.2 18L58.2 63L29.1 49.5L29.1 31.5Z" fill="#3BD4AE" />
+    <!-- Top face -->
+    <path d="M58.2 18L87.3 31.5L58.2 45L29.1 31.5L58.2 18Z" fill="#46E9C0" />
+    <!-- Right face -->
+    <path d="M58.2 45L87.3 31.5L87.3 49.5L58.2 63L58.2 45Z" fill="#1B9BD4" />
+  </g>
+  
+  <!-- Text -->
+  <g transform="translate(110, 45)">
+    <!-- Global -->
+    <text x="0" y="0" font-family="Arial, sans-serif" font-weight="bold" font-size="36" fill="white">Global</text>
+    <!-- Container Exchange -->
+    <text x="0" y="30" font-family="Arial, sans-serif" font-size="24" fill="white">Container Exchange</text>
+  </g>
+</svg>

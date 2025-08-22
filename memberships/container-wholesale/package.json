@@ -1,0 +1,28 @@
+{
+  "name": "container-wholesale-platform",
+  "version": "1.0.0",
+  "description": "A WordPress-based shipping container wholesale platform with PayPal integration, custom insights dashboard, and CSV data management",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "container",
+    "leasing",
+    "wordpress",
+    "paypal",
+    "csv",
+    "dashboard"
+  ],
+  "author": "",
+  "license": "GPL-2.0-or-later",
+  "dependencies": {
+    "@paypal/paypal-server-sdk": "^1.0.3",
+    "body-parser": "^1.20.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}

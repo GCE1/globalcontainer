@@ -1,0 +1,187 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+.container-leasing-admin {
+    max-width: 1200px;
+}
+
+.container-leasing-admin-overview {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    margin-bottom: 20px;
+}
+
+.container-leasing-admin-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 22px);
+    min-width: 300px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.container-leasing-full-width {
+    flex: 1 1 calc(100% - 22px);
+}
+
+.container-leasing-admin-card h2 {
+    margin-top: 0;
+    padding-top: 0;
+    color: #23282d;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.container-leasing-admin-card h2 .dashicons {
+    margin-right: 10px;
+    color: #0073aa;
+}
+
+.container-leasing-stats {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.container-leasing-stat-item {
+    flex: 1 1 0;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    min-width: 100px;
+    text-align: center;
+    background: #f9f9f9;
+    border-radius: 4px;
+    padding: 15px 10px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.container-leasing-stat-number {
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    color: #0073aa;
+    margin-bottom: 8px;
+}
+
+.container-leasing-stat-label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.container-leasing-quick-actions {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px;
+}
+
+.container-leasing-quick-actions .button {
+    margin: 5px;
+    flex: 1 1 calc(50% - 10px);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 38px;
+}
+
+.container-leasing-quick-actions .dashicons {
+    margin-right: 5px;
+}
+
+.container-leasing-error {
+    color: #d63638;
+    font-weight: 500;
+}
+
+/* Contract modal styles */
+#container-leasing-contract-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-leasing-modal-content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 4px;
+    max-width: 500px;
+    width: 100%;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container-leasing-modal-content h2 {
+    margin-top: 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}
+
+.container-leasing-modal-content input[type="text"],
+.container-leasing-modal-content input[type="number"],
+.container-leasing-modal-content input[type="date"],
+.container-leasing-modal-content select {
+    width: 100%;
+}
+
+/* Analytics page styles */
+.container-leasing-analytics-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.container-leasing-analytics-card {
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    border-radius: 4px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1 1 calc(50% - 22px);
+    min-width: 400px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.container-leasing-analytics-card h2 {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Settings page styles */
+.container-leasing-settings-page .form-table th {
+    width: 250px;
+}
+
+.container-leasing-settings-page .form-table .description {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+    color: #666;
+}
+
+/* CSV Import/Export page styles */
+.container-leasing-admin .card {
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.container-leasing-admin .card h2 {
+    margin-top: 0;
+    padding-top: 0;
+}

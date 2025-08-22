@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 225 16% 22%;
+  --muted: 210 11% 96%;
+  --muted-foreground: 215 8% 46%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 225 16% 22%;
+  --card: 0 0% 100%;
+  --card-foreground: 225 16% 22%;
+  --border: 220 8% 89%;
+  --input: 220 8% 89%;
+  --primary: 218 94% 42%;
+  --primary-foreground: 212 100% 99%;
+  --secondary: 210 11% 96%;
+  --secondary-foreground: 226 12% 9%;
+  --accent: 210 11% 96%;
+  --accent-foreground: 226 12% 9%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 60 9% 98%;
+  --ring: 218 94% 42%;
+  --radius: 0.75rem;
+  
+  /* Custom colors for the oceanic theme */
+  --primary-blue: 218 94% 42%;
+  --secondary-blue: 213 94% 68%;
+  --accent-navy: 225 89% 36%;
+  --light-blue: 213 100% 94%;
+  --neutral-gray: 215 8% 46%;
+  --dark-gray: 225 16% 22%;
+  --gce-navy: 210 40% 20%;
+  --gce-teal: 180 100% 40%;
+  --gce-green: 80 60% 50%;
+}
+
+.dark {
+  --background: 225 16% 6%;
+  --foreground: 210 11% 98%;
+  --muted: 225 14% 13%;
+  --muted-foreground: 215 8% 65%;
+  --popover: 225 16% 6%;
+  --popover-foreground: 210 11% 98%;
+  --card: 225 16% 6%;
+  --card-foreground: 210 11% 98%;
+  --border: 225 14% 13%;
+  --input: 225 14% 13%;
+  --primary: 213 94% 68%;
+  --primary-foreground: 225 16% 6%;
+  --secondary: 225 14% 13%;
+  --secondary-foreground: 210 11% 98%;
+  --accent: 225 14% 13%;
+  --accent-foreground: 210 11% 98%;
+  --destructive: 0 63% 31%;
+  --destructive-foreground: 210 11% 98%;
+  --ring: 213 94% 68%;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .hero-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary-blue)) 0%, hsl(var(--accent-navy)) 100%);
+  }
+  
+  .hero-overlay {
+    background: linear-gradient(rgba(30, 64, 175, 0.7), rgba(30, 58, 138, 0.8));
+  }
+  
+  .stats-gradient {
+    background: linear-gradient(135deg, hsl(var(--primary-blue)), hsl(var(--secondary-blue)));
+  }
+  
+  .fade-in-up {
+    animation: fadeInUp 0.6s ease forwards;
+  }
+  
+  .timeline-line {
+    background: hsl(var(--secondary-blue));
+  }
+  
+  .container-bg {
+    background-image: url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&h=1080');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--muted));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--primary-blue));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--accent-navy));
+}
+
+/* Smooth transitions for all interactive elements */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+/* Glass morphism effect for navbar */
+.glass-navbar {
+  background: #001937;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Custom animations for timeline items */
+.timeline-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Value card hover effects */
+.value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Stats card animations */
+.stats-card {
+  transition: transform 0.3s ease;
+}
+
+.stats-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button hover effects */
+.btn-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+}
+
+/* Contact form styling */
+.contact-form {
+  background: rgba(255, 255, 255, 0.98);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+/* Social icons hover effect */
+.social-icon {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-2px);
+  color: hsl(var(--secondary-blue));
+}

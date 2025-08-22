@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Leasing Platform - View Containers</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      display: none; /* Hide the old header */
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .has-submenu > a:after {
+      content: "▼";
+      font-size: 8px;
+      margin-left: 8px;
+      position: relative;
+      top: -2px;
+    }
+    
+    .submenu {
+      background-color: #243342;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .submenu a {
+      padding: 10px 10px 10px 30px;
+    }
+    
+    .submenu a:hover, .submenu a.active {
+      background-color: #192631;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .search-box {
+      padding: 15px 20px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 5px;
+      background-color: #34495e;
+      color: white;
+    }
+    
+    .search-box input::placeholder {
+      color: #bdc3c7;
+    }
+    
+    .leasing-rates {
+      padding: 15px 20px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .leasing-rates h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    
+    .rate-item {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .rate-item:last-child {
+      border-bottom: none;
+    }
+    
+    .rate-route {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .rate-price {
+      color: #2ecc71;
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      color: #2c3e50;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+    }
+    
+    .section h2 {
+      color: #3498db;
+      border-bottom: 1px solid #e1e5ea;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #dee2e6;
+      margin-bottom: 15px;
+    }
+    
+    .tab {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 5px 5px 0 0;
+      margin-right: 5px;
+    }
+    
+    .tab.active {
+      background-color: white;
+      border-color: #dee2e6;
+      border-bottom-color: white;
+      margin-bottom: -1px;
+    }
+    
+    .tab-content {
+      display: none;
+      padding: 15px;
+      background-color: white;
+      border-radius: 0 0 5px 5px;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    
+    button:hover {
+      background-color: #2980b9;
+    }
+    
+    .email-list, .container-list {
+      margin-top: 20px;
+    }
+    
+    .email-item, .container-item {
+      padding: 15px;
+      border: 1px solid #e1e5ea;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: white;
+    }
+    
+    .email-item .subject {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .email-item .meta, .container-item .meta {
+      font-size: 0.85em;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+    
+    .email-body, .container-details {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #e1e5ea;
+    }
+    
+    .lease-button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+    
+    .lease-button:hover {
+      background-color: #218838;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Leasing Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Leasing</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li class="has-submenu">
+        <a href="#" id="containers-link" class="active"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: block;">
+          <li><a href="view-containers.html" id="view-containers-link" class="active" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+    </ul>
+    
+    <div class="search-box">
+      <h3>Search Containers</h3>
+      <input type="text" id="origin-search" placeholder="Origin location...">
+      <input type="text" id="destination-search" placeholder="Destination location...">
+      <button id="search-button" style="width: 100%; margin-top: 10px; background-color: #3498db;">Search</button>
+    </div>
+    
+    <div class="leasing-rates">
+      <h3>Current Leasing Rates</h3>
+      <div class="rate-item">
+        <div class="rate-route">Shanghai → Los Angeles</div>
+        <div class="rate-price">$2,500 / 40ft</div>
+      </div>
+      <div class="rate-item">
+        <div class="rate-route">Rotterdam → New York</div>
+        <div class="rate-price">$2,200 / 40ft</div>
+      </div>
+      <div class="rate-item">
+        <div class="rate-route">Singapore → Sydney</div>
+        <div class="rate-price">$1,900 / 40ft</div>
+      </div>
+      <div class="rate-item">
+        <div class="rate-route">Dubai → Mumbai</div>
+        <div class="rate-price">$1,500 / 40ft</div>
+      </div>
+      <div class="rate-item">
+        <div class="rate-route">Hamburg → Istanbul</div>
+        <div class="rate-price">$1,700 / 40ft</div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <header>
+        <img src="images/container-terminal-banner.jpg" alt="Container Leasing Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+        <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Management</h1>
+        <p>View and manage your shipping containers.</p>
+      </header>
+      
+      <div id="status"></div>
+      
+      <!-- Container Management Section -->
+      <div class="section">
+        <h2>Container Inventory</h2>
+        <div class="tabs">
+          <div class="tab active" data-tab="available">Available</div>
+          <div class="tab" data-tab="leased">Leased</div>
+          <div class="tab" data-tab="maintenance">Maintenance</div>
+        </div>
+        
+        <div class="tab-content active" id="available-content">
+          <div class="container-list" id="available-containers">
+            <!-- Containers will be loaded here -->
+            <div class="container-item">
+              <h3>40ft Dry Container</h3>
+              <div class="meta">ID: CON-001 • Location: Shanghai, China • Destination: Los Angeles, USA</div>
+              <div class="container-details">
+                <p><strong>Price:</strong> $2,500</p>
+                <p><strong>Free Days:</strong> 10</p>
+                <p><strong>Per Diem Rate:</strong> $50/day</p>
+                <button class="lease-container">Lease Container</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="leased-content">
+          <div class="container-list" id="leased-containers">
+            <!-- Containers will be loaded here -->
+            <div class="container-item">
+              <h3>20ft Refrigerated Container</h3>
+              <div class="meta">ID: CON-023 • Location: Rotterdam, Netherlands • Destination: New York, USA</div>
+              <div class="container-details">
+                <p><strong>Price:</strong> $3,200</p>
+                <p><strong>Free Days:</strong> 7</p>
+                <p><strong>Per Diem Rate:</strong> $75/day</p>
+                <p><strong>Leased To:</strong> Acme Global Imports LLC</p>
+                <p><strong>Lease End Date:</strong> October 15, 2025</p>
+                <button class="extend-lease">Extend Lease</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tab-content" id="maintenance-content">
+          <div class="container-list" id="maintenance-containers">
+            <!-- Containers will be loaded here -->
+            <div class="container-item">
+              <h3>45ft Flat Rack Container</h3>
+              <div class="meta">ID: CON-078 • Location: Singapore</div>
+              <div class="container-details">
+                <p><strong>Maintenance Type:</strong> Structural Repair</p>
+                <p><strong>Estimated Completion:</strong> August 25, 2025</p>
+                <p><strong>Notes:</strong> Floor panels being replaced, doors being realigned</p>
+                <button class="check-status">Check Status</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Tab handling for container management
+    document.addEventListener('DOMContentLoaded', function() {
+      const tabs = document.querySelectorAll('.tab');
+      const tabContents = document.querySelectorAll('.tab-content');
+      
+      tabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          // Remove active class from all tabs and tab contents
+          tabs.forEach(t => t.classList.remove('active'));
+          tabContents.forEach(content => content.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          tab.classList.add('active');
+          const tabId = tab.getAttribute('data-tab');
+          document.getElementById(`${tabId}-content`).classList.add('active');
+        });
+      });
+      
+      // Handle "Add Container" link to redirect to index.html with add container section
+      const addContainerLink = document.getElementById('add-container-link');
+      if (addContainerLink) {
+        addContainerLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          window.location.href = 'index.html?section=add-container';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

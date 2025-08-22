@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Wholesale Calendar</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js"></script>
+  <script src="/js/websocket-client.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      display: none; /* Hide the old header */
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    h1 {
+      margin: 0;
+    }
+    #calendar {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .fc-event {
+      cursor: pointer;
+      border-radius: 4px;
+    }
+    .fc-event.available {
+      background-color: #4caf50;
+      border-color: #4caf50;
+    }
+    .fc-event.leased {
+      background-color: #f44336;
+      border-color: #f44336;
+    }
+    .fc-event.free-days {
+      background-color: #2196f3;
+      border-color: #2196f3;
+    }
+    .fc-event.per-diem {
+      background-color: #ff9800;
+      border-color: #ff9800;
+    }
+    .calendar-filters {
+      margin-bottom: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .calendar-filters select, .calendar-filters input {
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .calendar-filters button {
+      padding: 8px 15px;
+      background-color: #3a7bd5;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .calendar-legend {
+      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .legend-item {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+    }
+    .legend-color {
+      width: 15px;
+      height: 15px;
+      border-radius: 3px;
+      margin-right: 5px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: white;
+      margin: 10% auto;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 500px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+    .close {
+      float: right;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .event-details {
+      margin-top: 15px;
+    }
+    .event-details p {
+      margin: 10px 0;
+    }
+    .btn {
+      padding: 8px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      margin-right: 10px;
+    }
+    .btn-primary {
+      background-color: #3a7bd5;
+      color: white;
+    }
+    .btn-danger {
+      background-color: #f44336;
+      color: white;
+    }
+    #loading-spinner {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(255, 255, 255, 0.7);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+    }
+    .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #3a7bd5;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Wholesale Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Wholesale</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html" class="active"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+      <li class="has-submenu">
+        <a href="#" id="platforms-link"><span class="sidebar-menu-icon">🔄</span>Platforms</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🏢</span>Wholesale Platform</a></li>
+          <li><a href="index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🚢</span>Leasing Manager</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Wholesale Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Wholesale Calendar</h1>
+    </header>
+    <div class="calendar-filters">
+      <select id="origin-filter">
+        <option value="">All Countries</option>
+      </select>
+      <select id="destination-filter">
+        <option value="">All Cities</option>
+      </select>
+      <select id="container-size-filter">
+        <option value="">All Container Sizes</option>
+        <option value="20GP">20GP</option>
+        <option value="40GP">40GP</option>
+        <option value="40HC">40HC</option>
+      </select>
+      <select id="status-filter">
+        <option value="">All Statuses</option>
+        <option value="available">Available</option>
+        <option value="purchased">Purchased</option>
+        <option value="in-transit">In Transit</option>
+        <option value="delivered">Delivered</option>
+      </select>
+      <button id="filter-button">Apply Filters</button>
+    </div>
+
+    <div class="calendar-legend">
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #4caf50;"></div>
+        <span>Available</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #f44336;"></div>
+        <span>Purchased</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #2196f3;"></div>
+        <span>In Transit</span>
+      </div>
+      <div class="legend-item">
+        <div class="legend-color" style="background-color: #ff9800;"></div>
+        <span>Delivered</span>
+      </div>
+    </div>
+
+    <div id="calendar"></div>
+  </div>
+
+  <div id="container-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Container Details</h2>
+      <div class="event-details">
+        <p><strong>Container ID:</strong> <span id="container-id"></span></p>
+        <p><strong>Country:</strong> <span id="container-origin"></span></p>
+        <p><strong>City:</strong> <span id="container-destination"></span></p>
+        <p><strong>Size:</strong> <span id="container-size"></span></p>
+        <p><strong>Purchase Date:</strong> <span id="lease-start"></span></p>
+        <p><strong>Status:</strong> <span id="container-status"></span></p>
+        <div id="delivery-details">
+          <p><strong>Expected Delivery:</strong> <span id="expected-delivery"></span></p>
+          <p><strong>Delivery Status:</strong> <span id="delivery-status"></span></p>
+        </div>
+        <div style="margin-top: 20px;">
+          <button id="view-invoice-btn" class="btn btn-primary">View Invoices</button>
+          <button id="manage-lease-btn" class="btn btn-primary">Manage Order</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="loading-spinner">
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Initialize the calendar
+      const calendarEl = document.getElementById('calendar');
+      const calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek,listMonth'
+        },
+        events: fetchCalendarEvents,
+        eventClick: function(info) {
+          showContainerDetails(info.event);
+        },
+        loading: function(isLoading) {
+          document.getElementById('loading-spinner').style.display = 
+            isLoading ? 'flex' : 'none';
+        }
+      });
+      
+      calendar.render();
+
+      // Populate filter dropdowns
+      populateFilterDropdowns();
+
+      // Event listeners
+      document.getElementById('filter-button').addEventListener('click', function() {
+        calendar.refetchEvents();
+      });
+
+      // Modal close button
+      const closeModalBtn = document.querySelector('.close');
+      closeModalBtn.addEventListener('click', function() {
+        document.getElementById('container-modal').style.display = 'none';
+      });
+
+      // Close modal when clicking outside
+      window.addEventListener('click', function(event) {
+        const modal = document.getElementById('container-modal');
+        if (event.target === modal) {
+          modal.style.display = 'none';
+        }
+      });
+
+      // View invoice button
+      document.getElementById('view-invoice-btn').addEventListener('click', function() {
+        const containerId = document.getElementById('container-id').textContent;
+        window.location.href = `invoices.html?container=${containerId}`;
+      });
+
+      // Manage lease button
+      document.getElementById('manage-lease-btn').addEventListener('click', function() {
+        const containerId = document.getElementById('container-id').textContent;
+        // Redirect to a lease management page
+        window.location.href = `manage-lease.html?container=${containerId}`;
+      });
+    });
+
+    // Function to fetch calendar events from the server
+    function fetchCalendarEvents(info, successCallback, failureCallback) {
+      // Show loading spinner
+      document.getElementById('loading-spinner').style.display = 'flex';
+
+      // Get filter values
+      const origin = document.getElementById('origin-filter').value;
+      const destination = document.getElementById('destination-filter').value;
+      const containerSize = document.getElementById('container-size-filter').value;
+      const status = document.getElementById('status-filter').value;
+
+      // Build query params
+      const params = new URLSearchParams();
+      if (origin) params.append('origin', origin);
+      if (destination) params.append('destination', destination);
+      if (containerSize) params.append('containerSize', containerSize);
+      if (status) params.append('status', status);
+      params.append('start', info.startStr);
+      params.append('end', info.endStr);
+
+      // Fetch data from API
+      fetch(`/api/calendar-events?${params.toString()}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          successCallback(data);
+          document.getElementById('loading-spinner').style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Error fetching calendar events:', error);
+          failureCallback(error);
+          document.getElementById('loading-spinner').style.display = 'none';
+          
+          // For testing/demo, return sample events if API fails
+          if (error) {
+            generateSampleEvents(successCallback);
+          }
+        });
+    }
+
+    // Function to populate filter dropdowns
+    function populateFilterDropdowns() {
+      // Fetch countries and cities for filter dropdowns
+      fetch('/api/wholesale-locations')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          const countrySelect = document.getElementById('origin-filter');
+          const citySelect = document.getElementById('destination-filter');
+          
+          // Clear existing options except the first one
+          countrySelect.innerHTML = '<option value="">All Countries</option>';
+          citySelect.innerHTML = '<option value="">All Cities</option>';
+          
+          // Add countries
+          data.countries.forEach(country => {
+            const option = document.createElement('option');
+            option.value = country;
+            option.textContent = country;
+            countrySelect.appendChild(option);
+          });
+          
+          // Add cities
+          data.cities.forEach(city => {
+            const option = document.createElement('option');
+            option.value = city;
+            option.textContent = city;
+            citySelect.appendChild(option);
+          });
+        })
+        .catch(error => {
+          console.error('Error fetching locations:', error);
+        });
+    }
+
+    // Function to show container details in modal
+    function showContainerDetails(event) {
+      // Get data from the event
+      const { extendedProps } = event;
+      
+      // Populate the modal with container details
+      document.getElementById('container-id').textContent = extendedProps.containerId || '';
+      document.getElementById('container-origin').textContent = extendedProps.country || '';
+      document.getElementById('container-destination').textContent = extendedProps.city || '';
+      document.getElementById('container-size').textContent = extendedProps.containerSize || '';
+      document.getElementById('lease-start').textContent = formatDate(extendedProps.purchaseDate) || '';
+      document.getElementById('container-status').textContent = extendedProps.status || '';
+      
+      // Show or hide delivery details based on status
+      const deliveryDetails = document.getElementById('delivery-details');
+      if (extendedProps.status === 'purchased' || extendedProps.status === 'in-transit') {
+        deliveryDetails.style.display = 'block';
+        document.getElementById('expected-delivery').textContent = formatDate(extendedProps.expectedDelivery) || 'To be determined';
+        document.getElementById('delivery-status').textContent = extendedProps.deliveryStatus || 'Pending';
+      } else {
+        deliveryDetails.style.display = 'none';
+      }
+      
+      // Update the manage button text based on status
+      const manageButton = document.getElementById('manage-lease-btn');
+      if (extendedProps.status === 'available') {
+        manageButton.textContent = 'Purchase Container';
+      } else {
+        manageButton.textContent = 'Manage Order';
+      }
+      
+      // Show the modal
+      document.getElementById('container-modal').style.display = 'block';
+    }
+
+    // Helper function to format dates
+    function formatDate(dateStr) {
+      if (!dateStr) return '';
+      const date = new Date(dateStr);
+      return date.toLocaleDateString('en-US', { 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric' 
+      });
+    }
+    
+    // Function to generate sample events for testing/demo purposes
+    function generateSampleEvents(callback) {
+      const today = new Date();
+      const events = [];
+      
+      // Sample container data (for demonstration purposes)
+      const containers = [
+        {
+          containerId: 'CONT-001',
+          country: 'Thailand',
+          city: 'Bangkok',
+          containerSize: '20GP',
+          status: 'purchased',
+          purchaseDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 15),
+          expectedDelivery: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 15),
+          deliveryStatus: 'In Transit',
+          price: '$2,500'
+        },
+        {
+          containerId: 'CONT-002',
+          country: 'China',
+          city: 'Shanghai',
+          containerSize: '40HC',
+          status: 'delivered',
+          purchaseDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 45),
+          expectedDelivery: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 5),
+          deliveryStatus: 'Delivered',
+          price: '$3,700'
+        },
+        {
+          containerId: 'CONT-003',
+          country: 'Netherlands',
+          city: 'Rotterdam',
+          containerSize: '40GP',
+          status: 'in-transit',
+          purchaseDate: new Date(today.getFullYear(), today.getMonth(), today.getDate() - 10),
+          expectedDelivery: new Date(today.getFullYear(), today.getMonth(), today.getDate() + 20),
+          deliveryStatus: 'In Transit',
+          price: '$3,200'
+        },
+        {
+          containerId: 'CONT-004',
+          country: 'China',
+          city: 'Hong Kong',
+          containerSize: '20GP',
+          status: 'available',
+          purchaseDate: null,
+          expectedDelivery: null,
+          price: '$2,100'
+        }
+      ];
+      
+      // Generate events for each container
+      containers.forEach(container => {
+        if (container.status === 'available') {
+          // Available containers
+          events.push({
+            title: `${container.containerId} - Available`,
+            start: today,
+            end: new Date(today.getFullYear(), today.getMonth() + 3, today.getDate()),
+            classNames: ['available'],
+            color: '#4caf50',
+            extendedProps: container
+          });
+        } else if (container.status === 'purchased') {
+          // Purchased containers waiting for delivery
+          const purchaseDate = container.purchaseDate;
+          const expectedDelivery = container.expectedDelivery;
+          
+          // Event for the purchase to delivery period
+          events.push({
+            title: `${container.containerId} - Purchased`,
+            start: purchaseDate,
+            end: expectedDelivery,
+            classNames: ['purchased'],
+            color: '#f44336',
+            extendedProps: container
+          });
+        } else if (container.status === 'in-transit') {
+          // Containers in transit
+          const purchaseDate = container.purchaseDate;
+          const expectedDelivery = container.expectedDelivery;
+          
+          // Event for the in-transit period
+          events.push({
+            title: `${container.containerId} - In Transit`,
+            start: purchaseDate,
+            end: expectedDelivery,
+            classNames: ['in-transit'],
+            color: '#2196f3',
+            extendedProps: container
+          });
+        } else if (container.status === 'delivered') {
+          // Delivered containers
+          const deliveryDate = container.expectedDelivery; // Using expected as actual in this demo
+          
+          // Event for the delivered period
+          events.push({
+            title: `${container.containerId} - Delivered`,
+            start: deliveryDate,
+            end: new Date(deliveryDate.getFullYear(), deliveryDate.getMonth() + 3, deliveryDate.getDate()),
+            classNames: ['delivered'],
+            color: '#ff9800',
+            extendedProps: container
+          });
+        }
+      });
+      
+      callback(events);
+    }
+    
+    // Containers dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+    });
+  </script>
+</body>
+</html>

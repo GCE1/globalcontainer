@@ -1,0 +1,65 @@
+# Additional origins to add
+Dubai
+Foshan
+Fuzhou
+Guangzhou
+Hamburg
+Ho Chi Minh City
+Hong Kong
+Houston, TX
+Huangpu
+Jakarta
+Jebel Ali
+Karachi
+Keelung
+Kobe
+Kolkata
+Los Angeles, CA
+Lyon
+Madrid
+Malaszewicze
+Manchester
+Memphis, TN
+Mersin
+Miami, FL
+Milano
+Minsk
+Montreal, QC
+Moscow
+Mundra
+Munich
+New York, NY
+Nhava Sheva
+Ningbo
+Norfolk, VA
+Novorossiysk
+Novosibirsk
+Oakland, CA
+Oslo
+Praha
+Qingdao
+Rotterdam
+Saint Louis, MO
+Salt Lake City, UT
+Saskatoon, SK
+Savannah, GA
+Seattle, WA
+Shanghai
+Shenzhen
+Southampton
+St Petersburg
+Tacoma, WA
+Taicang
+Tashkent
+Tianjin
+Tianjinxingang
+Toronto, ON
+Vienna
+Vladivostok
+Warsaw
+Winnipeg, MB
+Xiamen
+Xian
+Xingang
+Yantian
+Yekaterinburg, Sve

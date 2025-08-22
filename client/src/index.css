@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Cart modal scrolling improvements */
+[role="dialog"] {
+  max-height: 80vh !important;
+  overflow: hidden !important;
+}
+
+/* Custom scrollbar for cart items */
+.cart-items-scroll {
+  overflow-y: auto !important;
+  max-height: 50vh !important;
+  padding-right: 8px !important;
+}
+
+.cart-items-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-thumb {
+  background: #33d2b9;
+  border-radius: 10px;
+}
+
+.cart-items-scroll::-webkit-scrollbar-thumb:hover {
+  background: #2bc4a8;
+}
+
+@layer utilities {
+  .hover\:swing:hover {
+    animation: swing 0.6s ease-in-out;
+  }
+
+  @keyframes swing {
+    20% {
+      transform: rotate(15deg);
+    }
+    40% {
+      transform: rotate(-10deg);
+    }
+    60% {
+      transform: rotate(5deg);
+    }
+    80% {
+      transform: rotate(-5deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .hover\:wobble:hover {
+    animation: wobble 0.8s ease-in-out;
+  }
+
+  @keyframes wobble {
+    0% {
+      transform: translateX(0%);
+    }
+    15% {
+      transform: translateX(-25%) rotate(-5deg);
+    }
+    30% {
+      transform: translateX(20%) rotate(3deg);
+    }
+    45% {
+      transform: translateX(-15%) rotate(-3deg);
+    }
+    60% {
+      transform: translateX(10%) rotate(2deg);
+    }
+    75% {
+      transform: translateX(-5%) rotate(-1deg);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+
+  .hover\:heartbeat:hover {
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+
+  @keyframes heartbeat {
+    0% {
+      transform: scale(1);
+    }
+    14% {
+      transform: scale(1.2);
+    }
+    28% {
+      transform: scale(1);
+    }
+    42% {
+      transform: scale(1.2);
+    }
+    70% {
+      transform: scale(1);
+    }
+  }
+
+  .fade-slide-in {
+    animation: fadeSlideIn 0.4s ease-out;
+  }
+
+  @keyframes fadeSlideIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px) scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .toolbar-glow {
+    box-shadow: 0 0 20px rgba(51, 210, 185, 0.3);
+  }
+
+  .button-active-glow {
+    box-shadow: 0 0 15px rgba(52, 73, 94, 0.6), inset 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .stagger-animation {
+    animation: staggerFadeIn 0.6s ease-out;
+  }
+
+  @keyframes staggerFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(30px) scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .card-hover-lift {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .card-hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(0, 25, 55, 0.15);
+  }
+
+  .form-field-focus {
+    transition: all 0.3s ease;
+  }
+
+  .form-field-focus:focus {
+    transform: scale(1.02);
+    box-shadow: 0 0 0 3px rgba(51, 210, 185, 0.2);
+  }
+}
+
+/* Critical CSS for hero image optimization */
+@layer utilities {
+  .hero-bg-optimized {
+    background-attachment: scroll; /* Better mobile performance */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    will-change: opacity, transform;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    content-visibility: auto;
+    contain: layout style paint;
+  }
+  
+  .shimmer {
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  
+  .fade-in-fast {
+    animation: fadeInFast 0.3s ease-in-out;
+  }
+  
+  @keyframes fadeInFast {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+    --muted: 60 4.8% 95.9%;
+    --muted-foreground: 25 5.3% 44.7%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14.3% 4.1%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14.3% 4.1%;
+    --border: 20 5.9% 90%;
+    --input: 20 5.9% 90%;
+    --primary: 213 100% 11%; /* Dark blue color from logo - #001937 */
+    --primary-foreground: 211 100% 99%;
+    --secondary: 168 65% 53%; /* Teal green from logo #3bd4ae */
+    --secondary-foreground: 0 0% 100%;
+    --accent: 200 73% 47%; /* Light blue from logo #1b9bd4 */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 60 9.1% 97.8%;
+    --ring: 20 14.3% 4.1%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --primary: 207 70% 13%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 174 76% 44%;
+    --secondary-foreground: 0 0% 98%;
+    --accent: 199 95% 62%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --ring: 240 4.9% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Heading styles */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+
+  /* Ensure all text elements inherit proper font styling */
+  p, span, div, li, td, th, label, input, textarea, select, button {
+    font-family: 'Open Sans', sans-serif;
+  }
+}
+
+/* Custom classes */
+.header-bg {
+  background: #001837;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.hero-bg {
+  background: linear-gradient(135deg, #001937 0%, #002450 100%), url('/optimized_assets/Container-Guide_1752776996742-optimized.webp');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+  position: relative;
+}
+
+.hero-bg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 30% 20%, rgba(96, 165, 250, 0.1) 0%, rgba(96, 165, 250, 0) 25%),
+    radial-gradient(circle at 70% 60%, rgba(147, 197, 253, 0.08) 0%, rgba(147, 197, 253, 0) 30%);
+  pointer-events: none;
+}
+
+.nav-item:hover {
+  color: #3b82f6;
+}
+
+/* Timeline animations */
+.timeline-line {
+  background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+}
+
+/* Stats cards */
+.stats-gradient {
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.stats-gradient::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+  transition: left 0.6s ease;
+}
+
+.stats-gradient:hover::before {
+  left: 100%;
+}
+
+/* Pulse animation for stats cards */
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(59, 130, 246, 0.6), 0 0 40px rgba(59, 130, 246, 0.3);
+  }
+}
+
+.stats-card:hover {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Number count animation enhancement */
+@keyframes number-pop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+.stats-card:hover .text-4xl {
+  animation: number-pop 0.6s ease-in-out;
+}
+
+/* Value cards */
+.value-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+/* Contact form */
+.contact-form {
+  background: white;
+}
+
+/* Button hover effects */
+.btn-hover {
+  transition: all 0.3s ease;
+}
+
+.btn-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-item {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-in-out;
+}
+
+.timeline-item.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.timeline-content {
+  transform: scale(0.95);
+  transition: transform 0.3s ease;
+}
+
+.timeline-item.animate .timeline-content {
+  transform: scale(1);
+}
+
+/* Stagger animation for timeline items */
+.timeline-item:nth-child(1) { transition-delay: 0.1s; }
+.timeline-item:nth-child(2) { transition-delay: 0.2s; }
+.timeline-item:nth-child(3) { transition-delay: 0.3s; }
+.timeline-item:nth-child(4) { transition-delay: 0.4s; }
+.timeline-item:nth-child(5) { transition-delay: 0.5s; }
+
+/* Reliability card background */
+.reliability-card.reliability-card {
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 50%, #e0f2fe 100%) !important;
+}
+
+.reliability-card .bg-blue-100 {
+  background: #bfdbfe !important;
+}
+
+/* Hero background optimization */
+.hero-bg-optimized {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: local;
+  will-change: transform;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+/* Image loading performance optimizations */
+img {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+}
+
+/* Preload critical resources for container services */
+@media (min-width: 768px) {
+  .hero-bg-optimized {
+    content-visibility: auto;
+    contain-intrinsic-size: 100vh;
+  }
+}

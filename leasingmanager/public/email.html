@@ -1,0 +1,1561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email Management - Container Leasing</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      display: none; /* Hide the old header */
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    
+    .email-container {
+      display: flex;
+      height: calc(100vh - 40px);
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    .email-sidebar {
+      width: 200px; /* Reduced by 20% from 250px */
+      border-right: 1px solid #e1e5ea;
+      height: 100%;
+      overflow-y: hidden; /* Changed from auto to hidden to eliminate scrollbar */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .email-sidebar-header {
+      padding: 15px;
+      border-bottom: 1px solid #e1e5ea;
+      font-weight: bold;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .email-folders {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      height: auto; /* Ensure content adjusts to what's visible */
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .email-folders li {
+      padding: 10px 15px;
+      cursor: pointer;
+      transition: background-color 0.2s;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .email-folders li:hover {
+      background-color: #f5f7fa;
+    }
+    
+    .email-folders li.active {
+      background-color: #e1f0ff;
+      color: #007bff;
+      font-weight: bold;
+    }
+    
+    .folder-badge {
+      background-color: #007bff;
+      color: white;
+      border-radius: 50%;
+      min-width: 16px;
+      height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9.6px; /* Reduced by 20% from 12px */
+    }
+    
+    .email-list {
+      width: 280px; /* Reduced by 20% from 350px */
+      border-right: 1px solid #e1e5ea;
+      height: 100%;
+      overflow-y: auto;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .email-list-header {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      border-bottom: 1px solid #e1e5ea;
+      align-items: center;
+    }
+    
+    .email-search {
+      display: flex;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e1e5ea;
+    }
+    
+    .email-search input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .email-item {
+      cursor: pointer;
+      padding: 12px 15px;
+      border-bottom: 1px solid #e1e5ea;
+      transition: background-color 0.2s;
+    }
+    
+    .email-item:hover {
+      background-color: #f5f7fa;
+    }
+    
+    .email-item.unread {
+      background-color: #f0f7ff;
+      font-weight: bold;
+    }
+    
+    .email-item.selected {
+      background-color: #e1f0ff;
+    }
+    
+    .email-sender {
+      font-weight: bold;
+      margin-bottom: 5px;
+      color: #333;
+      display: flex;
+      justify-content: space-between;
+      font-size: 12px; /* Reduced by 25% from standard 16px */
+    }
+    
+    .email-time {
+      font-size: 12px;
+      color: #777;
+      font-weight: normal;
+    }
+    
+    .email-subject {
+      margin-bottom: 3px;
+      color: #444;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 12px; /* Reduced by 25% from standard 16px */
+      font-weight: bold;
+    }
+    
+    .email-preview {
+      color: #666;
+      font-size: 10.4px; /* Reduced by 20% from 13px */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+    .email-content {
+      flex: 1;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .email-content-header {
+      padding: 20px;
+      border-bottom: 1px solid #e1e5ea;
+    }
+    
+    .email-content-subject {
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    
+    .email-content-metadata {
+      display: flex;
+      justify-content: space-between;
+      color: #666;
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+    
+    .email-content-body {
+      padding: 20px;
+      flex: 1;
+      overflow-y: auto;
+      line-height: 1.6;
+    }
+    
+    .email-content-actions {
+      padding: 15px 20px;
+      border-top: 1px solid #e1e5ea;
+      display: flex;
+      gap: 10px;
+    }
+    
+    .btn {
+      padding: 8px 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .btn-secondary {
+      background-color: #95a5a6;
+    }
+    
+    .btn-compose {
+      width: calc(100% - 20px);
+      margin: 10px;
+    }
+    
+    .compose-container {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      right: 30px;
+      width: 600px;
+      background-color: white;
+      box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      z-index: 1000;
+    }
+    
+    .compose-header {
+      padding: 10px 15px;
+      background-color: #f5f7fa;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom: 1px solid #e1e5ea;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .compose-title {
+      font-weight: bold;
+    }
+    
+    .compose-close {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: #666;
+    }
+    
+    .compose-body {
+      padding: 15px;
+    }
+    
+    .compose-field {
+      margin-bottom: 15px;
+    }
+    
+    .compose-field label {
+      display: block;
+      margin-bottom: 5px;
+      color: #666;
+    }
+    
+    .compose-field input, .compose-field textarea, .compose-field select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    
+    .compose-field textarea {
+      min-height: 200px;
+      resize: vertical;
+    }
+    
+    .compose-actions {
+      padding: 10px 15px;
+      border-top: 1px solid #e1e5ea;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .user-email-tag {
+      display: inline-block;
+      padding: 3px 6px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 10px;
+      font-size: 10px;
+      margin-left: 8px;
+      width: 45px;
+      height: 12px;
+      line-height: 12px;
+      text-align: center;
+      box-sizing: content-box;
+      font-weight: normal;
+    }
+    
+    .role-manager {
+      background-color: #2ecc71;
+    }
+    
+    .role-admin {
+      background-color: #e74c3c;
+    }
+    
+    .role-staff {
+      background-color: #f39c12;
+    }
+    
+    .email-toolbar {
+      display: flex;
+      gap: 10px;
+      padding: 10px 15px;
+      border-bottom: 1px solid #e1e5ea;
+      background-color: #f5f7fa;
+    }
+    
+    .toolbar-btn {
+      background: none;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+      color: #666;
+      border-radius: 4px;
+    }
+    
+    .toolbar-btn:hover {
+      background-color: #e1e5ea;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      z-index: 1;
+      border-radius: 4px;
+    }
+    
+    .dropdown-content a {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {
+      background-color: #f5f7fa;
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    .dropdown-label {
+      cursor: pointer;
+      padding: 5px 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .dropdown-label:after {
+      content: "▼";
+      font-size: 10px;
+      margin-left: 5px;
+    }
+    
+    .spinner {
+      border: 3px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+      border-top: 3px solid #3498db;
+      width: 20px;
+      height: 20px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+      display: none;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .empty-state {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      color: #666;
+      text-align: center;
+      padding: 20px;
+    }
+    
+    .empty-state-icon {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #95a5a6;
+    }
+    
+    .role-switcher {
+      margin: 10px;
+    }
+    
+    .role-switcher select {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #34495e;
+      background-color: #2c3e50;
+      color: white;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Leasing Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Leasing</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html" class="active"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Leasing Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Message Center</h1>
+    </header>
+    <div class="email-container">
+      <div class="email-sidebar">
+        <div class="sidebar-header">
+          <span id="current-user">John Smith</span>
+          <span class="user-email-tag role-admin">Admin</span>
+        </div>
+        
+        <div class="role-switcher">
+          <select id="role-select">
+            <option value="admin">Admin Role</option>
+            <option value="manager">Manager Role</option>
+            <option value="staff">Staff Role</option>
+          </select>
+        </div>
+        
+        <button class="btn btn-compose" id="compose-btn">Compose</button>
+        
+        <ul class="email-folders">
+          <li class="active" data-folder="inbox">
+            <span>Inbox</span>
+            <span class="folder-badge">12</span>
+          </li>
+          <li data-folder="sent">
+            <span>Sent</span>
+          </li>
+          <li data-folder="drafts">
+            <span>Drafts</span>
+            <span class="folder-badge">3</span>
+          </li>
+          <li data-folder="internal">
+            <span>Internal</span>
+            <span class="folder-badge">5</span>
+          </li>
+          <li data-folder="external">
+            <span>External</span>
+          </li>
+          <li data-folder="archived">
+            <span>Archived</span>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="email-list">
+        <div class="email-list-header">
+          <div class="dropdown">
+            <span class="dropdown-label">All</span>
+            <div class="dropdown-content">
+              <a href="#">All</a>
+              <a href="#">Unread</a>
+              <a href="#">Flagged</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <span class="dropdown-label">Sort: Date</span>
+            <div class="dropdown-content">
+              <a href="#">Date: Recent First</a>
+              <a href="#">Date: Oldest First</a>
+              <a href="#">Sender: A-Z</a>
+              <a href="#">Sender: Z-A</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="email-search">
+          <input type="text" placeholder="Search emails...">
+        </div>
+        
+        <div class="email-items" id="email-items">
+          <div class="email-item unread" data-id="1">
+            <div class="email-sender">
+              Jane Doe <span class="user-email-tag role-manager">Manager</span>
+              <span class="email-time">10:30 AM</span>
+            </div>
+            <div class="email-subject">New container shipment</div>
+            <div class="email-preview">We have a new container shipment arriving next week from Shanghai. Please make sure all paperwork is ready...</div>
+          </div>
+          
+          <div class="email-item" data-id="2">
+            <div class="email-sender">
+              Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+              <span class="email-time">May 14</span>
+            </div>
+            <div class="email-subject">Invoice approval</div>
+            <div class="email-preview">Can you please review and approve invoice #INV-2023-05-15 for the container rental? The customer is waiting...</div>
+          </div>
+          
+          <div class="email-item unread" data-id="3">
+            <div class="email-sender">
+              Global Shipping Inc.
+              <span class="email-time">May 14</span>
+            </div>
+            <div class="email-subject">Quote request</div>
+            <div class="email-preview">Hello, we are looking for a quote on 10x 40ft containers from Rotterdam to Singapore with delivery date in...</div>
+          </div>
+          
+          <div class="email-item" data-id="4">
+            <div class="email-sender">
+              Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+              <span class="email-time">May 14</span>
+            </div>
+            <div class="email-subject">System update</div>
+            <div class="email-preview">I wanted to let you know that we'll be updating the container tracking system this weekend. There will be...</div>
+          </div>
+          
+          <div class="email-item" data-id="5">
+            <div class="email-sender">
+              Bob Miller <span class="user-email-tag role-staff">Staff</span>
+              <span class="email-time">May 13</span>
+            </div>
+            <div class="email-subject">Container maintenance</div>
+            <div class="email-preview">Just a heads up that containers #CON-2023-05-10 and #CON-2023-05-11 need maintenance. I've scheduled...</div>
+          </div>
+          
+          <div class="email-item unread" data-id="6">
+            <div class="email-sender">
+              Sarah Thompson
+              <span class="email-time">May 12</span>
+            </div>
+            <div class="email-subject">Contract renewal</div>
+            <div class="email-preview">Our contract for container leasing is up for renewal next month. I'd like to discuss some potential changes...</div>
+          </div>
+          
+          <div class="email-item" data-id="7">
+            <div class="email-sender">
+              David Chen
+              <span class="email-time">May 11</span>
+            </div>
+            <div class="email-subject">Shipping delay</div>
+            <div class="email-preview">Unfortunately, there is a delay with the container shipment from Ningbo. The new estimated arrival date is...</div>
+          </div>
+          
+          <div class="email-item" data-id="8">
+            <div class="email-sender">
+              Port Authority
+              <span class="email-time">May 10</span>
+            </div>
+            <div class="email-subject">New regulations</div>
+            <div class="email-preview">Please be advised that new regulations for container handling will come into effect on June 1st. All...</div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="email-content">
+        <div class="email-toolbar">
+          <button class="toolbar-btn" id="reply-btn">Reply</button>
+          <button class="toolbar-btn" id="forward-btn">Forward</button>
+          <button class="toolbar-btn" id="delete-btn">Delete</button>
+          <button class="toolbar-btn" id="archive-btn">Archive</button>
+          <button class="toolbar-btn" id="mark-unread-btn">Mark as Unread</button>
+          <div class="spinner" id="email-spinner"></div>
+        </div>
+        
+        <div class="email-content-header">
+          <div class="email-content-subject" id="email-subject">New container shipment</div>
+          <div class="email-content-metadata">
+            <div>
+              <strong>From:</strong> <span id="email-sender">Jane Doe</span> <span class="user-email-tag role-manager">Manager</span>
+            </div>
+            <div>
+              <strong>Date:</strong> <span id="email-date">May 15, 2023, 10:30 AM</span>
+            </div>
+          </div>
+          <div class="email-content-metadata">
+            <div>
+              <strong>To:</strong> <span id="email-recipient">John Smith</span> <span class="user-email-tag role-admin">Admin</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="email-content-body" id="email-body">
+          <p>Hi John,</p>
+          <p>We have a new container shipment arriving next week from Shanghai. Please make sure all paperwork is ready for customs clearance.</p>
+          <p>The shipment includes:</p>
+          <ul>
+            <li>5x 40ft dry containers</li>
+            <li>3x 20ft refrigerated containers</li>
+            <li>2x 40ft open-top containers</li>
+          </ul>
+          <p>Estimated arrival date is May 22nd. We'll need to coordinate with the port authority for pickup.</p>
+          <p>Let me know if there are any issues.</p>
+          <p>Thanks,<br>Jane</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="compose-container" id="compose-container">
+      <div class="compose-header">
+        <div class="compose-title">New Message</div>
+        <button class="compose-close" id="compose-close">&times;</button>
+      </div>
+      
+      <div class="compose-body">
+        <div class="compose-field">
+          <label for="compose-to">To:</label>
+          <select id="compose-to">
+            <option value="">Select recipient...</option>
+            <option value="jane">Jane Doe (Manager)</option>
+            <option value="michael">Michael Johnson (Staff)</option>
+            <option value="lisa">Lisa Williams (Admin)</option>
+            <option value="bob">Bob Miller (Staff)</option>
+            <option value="external">External Email Address</option>
+          </select>
+          <input type="email" id="external-email" placeholder="Enter email address..." style="display: none; margin-top: 10px;">
+        </div>
+        
+        <div class="compose-field">
+          <label for="compose-subject">Subject:</label>
+          <input type="text" id="compose-subject" placeholder="Enter subject...">
+        </div>
+        
+        <div class="compose-field">
+          <label for="compose-body">Message:</label>
+          <textarea id="compose-body" placeholder="Write your message here..."></textarea>
+        </div>
+      </div>
+      
+      <div class="compose-actions">
+        <div>
+          <button class="btn" id="send-btn">Send</button>
+          <button class="btn btn-secondary" id="save-draft-btn">Save as Draft</button>
+        </div>
+        <button class="btn btn-secondary" id="discard-btn">Discard</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Email functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      // Show compose email form
+      document.getElementById('compose-btn').addEventListener('click', function() {
+        document.getElementById('compose-container').style.display = 'block';
+      });
+      
+      // Close compose email form
+      document.getElementById('compose-close').addEventListener('click', function() {
+        document.getElementById('compose-container').style.display = 'none';
+      });
+      
+      // Handle discard button
+      document.getElementById('discard-btn').addEventListener('click', function() {
+        document.getElementById('compose-container').style.display = 'none';
+        // Clear form fields
+        document.getElementById('compose-to').value = '';
+        document.getElementById('external-email').value = '';
+        document.getElementById('compose-subject').value = '';
+        document.getElementById('compose-body').value = '';
+      });
+      
+      // Handle folder switching
+      document.querySelectorAll('.email-folders li').forEach(folder => {
+        folder.addEventListener('click', function() {
+          // Remove active class from all folders
+          document.querySelectorAll('.email-folders li').forEach(f => {
+            f.classList.remove('active');
+          });
+          
+          // Add active class to clicked folder
+          this.classList.add('active');
+          
+          // Get folder name
+          const folderName = this.getAttribute('data-folder');
+          
+          // Show loading spinner
+          document.getElementById('email-spinner').style.display = 'block';
+          
+          // Simulate loading (in a real app, this would be an API call)
+          setTimeout(() => {
+            document.getElementById('email-spinner').style.display = 'none';
+            
+            // Update email list based on folder
+            // This is just a demo - in a real app, you would fetch the emails from the server
+            if (folderName === 'sent') {
+              // Display sent emails
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item" data-id="101">
+                  <div class="email-sender">
+                    To: Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">11:45 AM</span>
+                  </div>
+                  <div class="email-subject">Re: Invoice approval</div>
+                  <div class="email-preview">I've reviewed the invoice and approved it. Please proceed with processing the payment...</div>
+                </div>
+                
+                <div class="email-item" data-id="102">
+                  <div class="email-sender">
+                    To: Port Authority
+                    <span class="email-time">May 13</span>
+                  </div>
+                  <div class="email-subject">Container delivery schedule</div>
+                  <div class="email-preview">Please find attached our delivery schedule for next week. We will have containers arriving on...</div>
+                </div>
+              `;
+            } else if (folderName === 'drafts') {
+              // Display draft emails
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item" data-id="201">
+                  <div class="email-sender">
+                    To: Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+                    <span class="email-time">Draft</span>
+                  </div>
+                  <div class="email-subject">System feedback</div>
+                  <div class="email-preview">I've been using the new system and have some feedback. First, I think the container tracking...</div>
+                </div>
+                
+                <div class="email-item" data-id="202">
+                  <div class="email-sender">
+                    To: Sarah Thompson
+                    <span class="email-time">Draft</span>
+                  </div>
+                  <div class="email-subject">Re: Contract renewal</div>
+                  <div class="email-preview">Thank you for reaching out about the contract renewal. I'd be happy to discuss the changes...</div>
+                </div>
+                
+                <div class="email-item" data-id="203">
+                  <div class="email-sender">
+                    To: Global Shipping Inc.
+                    <span class="email-time">Draft</span>
+                  </div>
+                  <div class="email-subject">Re: Quote request</div>
+                  <div class="email-preview">Thank you for your quote request. Based on the information provided, we can offer the following...</div>
+                </div>
+              `;
+            } else if (folderName === 'internal') {
+              // Display internal emails
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item unread" data-id="301">
+                  <div class="email-sender">
+                    Jane Doe <span class="user-email-tag role-manager">Manager</span>
+                    <span class="email-time">10:30 AM</span>
+                  </div>
+                  <div class="email-subject">New container shipment</div>
+                  <div class="email-preview">We have a new container shipment arriving next week from Shanghai. Please make sure all paperwork is ready...</div>
+                </div>
+                
+                <div class="email-item" data-id="302">
+                  <div class="email-sender">
+                    Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">Invoice approval</div>
+                  <div class="email-preview">Can you please review and approve invoice #INV-2023-05-15 for the container rental? The customer is waiting...</div>
+                </div>
+                
+                <div class="email-item" data-id="303">
+                  <div class="email-sender">
+                    Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">System update</div>
+                  <div class="email-preview">I wanted to let you know that we'll be updating the container tracking system this weekend. There will be...</div>
+                </div>
+                
+                <div class="email-item" data-id="304">
+                  <div class="email-sender">
+                    Bob Miller <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">May 13</span>
+                  </div>
+                  <div class="email-subject">Container maintenance</div>
+                  <div class="email-preview">Just a heads up that containers #CON-2023-05-10 and #CON-2023-05-11 need maintenance. I've scheduled...</div>
+                </div>
+                
+                <div class="email-item unread" data-id="305">
+                  <div class="email-sender">
+                    Dave Wilson <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">May 12</span>
+                  </div>
+                  <div class="email-subject">Weekly report</div>
+                  <div class="email-preview">Please find attached the weekly container status report. We currently have 85% utilization rate...</div>
+                </div>
+              `;
+            } else if (folderName === 'external') {
+              // Display external emails
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item unread" data-id="401">
+                  <div class="email-sender">
+                    Global Shipping Inc.
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">Quote request</div>
+                  <div class="email-preview">Hello, we are looking for a quote on 10x 40ft containers from Rotterdam to Singapore with delivery date in...</div>
+                </div>
+                
+                <div class="email-item unread" data-id="402">
+                  <div class="email-sender">
+                    Sarah Thompson
+                    <span class="email-time">May 12</span>
+                  </div>
+                  <div class="email-subject">Contract renewal</div>
+                  <div class="email-preview">Our contract for container leasing is up for renewal next month. I'd like to discuss some potential changes...</div>
+                </div>
+                
+                <div class="email-item" data-id="403">
+                  <div class="email-sender">
+                    David Chen
+                    <span class="email-time">May 11</span>
+                  </div>
+                  <div class="email-subject">Shipping delay</div>
+                  <div class="email-preview">Unfortunately, there is a delay with the container shipment from Ningbo. The new estimated arrival date is...</div>
+                </div>
+                
+                <div class="email-item" data-id="404">
+                  <div class="email-sender">
+                    Port Authority
+                    <span class="email-time">May 10</span>
+                  </div>
+                  <div class="email-subject">New regulations</div>
+                  <div class="email-preview">Please be advised that new regulations for container handling will come into effect on June 1st. All...</div>
+                </div>
+              `;
+            } else if (folderName === 'archived') {
+              // Display archived emails
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item" data-id="501">
+                  <div class="email-sender">
+                    Jane Doe <span class="user-email-tag role-manager">Manager</span>
+                    <span class="email-time">April 30</span>
+                  </div>
+                  <div class="email-subject">Monthly meeting</div>
+                  <div class="email-preview">Don't forget about our monthly team meeting tomorrow at 10:00 AM. We'll be discussing the Q2 targets...</div>
+                </div>
+                
+                <div class="email-item" data-id="502">
+                  <div class="email-sender">
+                    Logistics Corp.
+                    <span class="email-time">April 25</span>
+                  </div>
+                  <div class="email-subject">Partnership opportunity</div>
+                  <div class="email-preview">We're reaching out to discuss a potential partnership opportunity. Our company specializes in...</div>
+                </div>
+                
+                <div class="email-item" data-id="503">
+                  <div class="email-sender">
+                    Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">April 20</span>
+                  </div>
+                  <div class="email-subject">Vacation request</div>
+                  <div class="email-preview">I'd like to request vacation days from May 5th to May 12th. I've already completed all pending tasks...</div>
+                </div>
+              `;
+            } else {
+              // Display inbox emails (default)
+              document.getElementById('email-items').innerHTML = `
+                <div class="email-item unread" data-id="1">
+                  <div class="email-sender">
+                    Jane Doe <span class="user-email-tag role-manager">Manager</span>
+                    <span class="email-time">10:30 AM</span>
+                  </div>
+                  <div class="email-subject">New container shipment</div>
+                  <div class="email-preview">We have a new container shipment arriving next week from Shanghai. Please make sure all paperwork is ready...</div>
+                </div>
+                
+                <div class="email-item" data-id="2">
+                  <div class="email-sender">
+                    Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">Invoice approval</div>
+                  <div class="email-preview">Can you please review and approve invoice #INV-2023-05-15 for the container rental? The customer is waiting...</div>
+                </div>
+                
+                <div class="email-item unread" data-id="3">
+                  <div class="email-sender">
+                    Global Shipping Inc.
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">Quote request</div>
+                  <div class="email-preview">Hello, we are looking for a quote on 10x 40ft containers from Rotterdam to Singapore with delivery date in...</div>
+                </div>
+                
+                <div class="email-item" data-id="4">
+                  <div class="email-sender">
+                    Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+                    <span class="email-time">May 14</span>
+                  </div>
+                  <div class="email-subject">System update</div>
+                  <div class="email-preview">I wanted to let you know that we'll be updating the container tracking system this weekend. There will be...</div>
+                </div>
+                
+                <div class="email-item" data-id="5">
+                  <div class="email-sender">
+                    Bob Miller <span class="user-email-tag role-staff">Staff</span>
+                    <span class="email-time">May 13</span>
+                  </div>
+                  <div class="email-subject">Container maintenance</div>
+                  <div class="email-preview">Just a heads up that containers #CON-2023-05-10 and #CON-2023-05-11 need maintenance. I've scheduled...</div>
+                </div>
+                
+                <div class="email-item unread" data-id="6">
+                  <div class="email-sender">
+                    Sarah Thompson
+                    <span class="email-time">May 12</span>
+                  </div>
+                  <div class="email-subject">Contract renewal</div>
+                  <div class="email-preview">Our contract for container leasing is up for renewal next month. I'd like to discuss some potential changes...</div>
+                </div>
+                
+                <div class="email-item" data-id="7">
+                  <div class="email-sender">
+                    David Chen
+                    <span class="email-time">May 11</span>
+                  </div>
+                  <div class="email-subject">Shipping delay</div>
+                  <div class="email-preview">Unfortunately, there is a delay with the container shipment from Ningbo. The new estimated arrival date is...</div>
+                </div>
+                
+                <div class="email-item" data-id="8">
+                  <div class="email-sender">
+                    Port Authority
+                    <span class="email-time">May 10</span>
+                  </div>
+                  <div class="email-subject">New regulations</div>
+                  <div class="email-preview">Please be advised that new regulations for container handling will come into effect on June 1st. All...</div>
+                </div>
+              `;
+            }
+            
+            // Set up email item click handlers
+            setupEmailItemClickHandlers();
+          }, 500);
+        });
+      });
+      
+      // Handle role switching
+      document.getElementById('role-select').addEventListener('change', function() {
+        const role = this.value;
+        const userTag = document.querySelector('.sidebar-header .user-email-tag');
+        const currentUser = document.getElementById('current-user');
+        
+        // Remove all role classes
+        userTag.classList.remove('role-admin', 'role-manager', 'role-staff');
+        
+        // Add the selected role class
+        userTag.classList.add(`role-${role}`);
+        
+        // Update tag text
+        userTag.textContent = role.charAt(0).toUpperCase() + role.slice(1);
+        
+        // Update user name based on role (in a real app, this would be fetched from the server)
+        if (role === 'admin') {
+          currentUser.textContent = 'John Smith';
+        } else if (role === 'manager') {
+          currentUser.textContent = 'Jane Doe';
+        } else if (role === 'staff') {
+          currentUser.textContent = 'Michael Johnson';
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate loading (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Reset folder selection to inbox
+          document.querySelectorAll('.email-folders li').forEach(f => {
+            f.classList.remove('active');
+          });
+          document.querySelector('.email-folders li[data-folder="inbox"]').classList.add('active');
+          
+          // Simulate different emails for different roles
+          if (role === 'manager') {
+            document.getElementById('email-items').innerHTML = `
+              <div class="email-item unread" data-id="1001">
+                <div class="email-sender">
+                  John Smith <span class="user-email-tag role-admin">Admin</span>
+                  <span class="email-time">9:15 AM</span>
+                </div>
+                <div class="email-subject">Monthly performance review</div>
+                <div class="email-preview">Can we schedule a meeting to discuss the department's performance for this month? I'd like to review...</div>
+              </div>
+              
+              <div class="email-item" data-id="1002">
+                <div class="email-sender">
+                  Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">Project status</div>
+                <div class="email-preview">Here's an update on the inventory management project. We've completed the initial phase and are now...</div>
+              </div>
+              
+              <div class="email-item unread" data-id="1003">
+                <div class="email-sender">
+                  Container Solutions Ltd.
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">Partnership proposal</div>
+                <div class="email-preview">Following our conversation at the industry conference, I'd like to propose a partnership between our...</div>
+              </div>
+              
+              <div class="email-item" data-id="1004">
+                <div class="email-sender">
+                  Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+                  <span class="email-time">May 13</span>
+                </div>
+                <div class="email-subject">Budget approval</div>
+                <div class="email-preview">I've reviewed your department's budget proposal for Q3. Overall it looks good, but I have a few questions...</div>
+              </div>
+              
+              <div class="email-item" data-id="1005">
+                <div class="email-sender">
+                  Human Resources
+                  <span class="email-time">May 12</span>
+                </div>
+                <div class="email-subject">New hire orientation</div>
+                <div class="email-preview">Please be advised that we have two new employees joining your department next week. The orientation...</div>
+              </div>
+            `;
+          } else if (role === 'staff') {
+            document.getElementById('email-items').innerHTML = `
+              <div class="email-item unread" data-id="2001">
+                <div class="email-sender">
+                  Jane Doe <span class="user-email-tag role-manager">Manager</span>
+                  <span class="email-time">8:45 AM</span>
+                </div>
+                <div class="email-subject">Today's tasks</div>
+                <div class="email-preview">Good morning, Michael. Please prioritize the following tasks for today: 1. Complete the inventory check...</div>
+              </div>
+              
+              <div class="email-item" data-id="2002">
+                <div class="email-sender">
+                  Bob Miller <span class="user-email-tag role-staff">Staff</span>
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">Container inspection</div>
+                <div class="email-preview">Hey Michael, can you help me with the inspection of the new containers that arrived yesterday? I'm...</div>
+              </div>
+              
+              <div class="email-item unread" data-id="2003">
+                <div class="email-sender">
+                  John Smith <span class="user-email-tag role-admin">Admin</span>
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">System access</div>
+                <div class="email-preview">I've granted you access to the new inventory management system. Please use your regular credentials to...</div>
+              </div>
+              
+              <div class="email-item" data-id="2004">
+                <div class="email-sender">
+                  Shipping Support
+                  <span class="email-time">May 13</span>
+                </div>
+                <div class="email-subject">Tracking system update</div>
+                <div class="email-preview">Please note that the container tracking system will be updated tonight. You might experience some...</div>
+              </div>
+              
+              <div class="email-item" data-id="2005">
+                <div class="email-sender">
+                  IT Department
+                  <span class="email-time">May 12</span>
+                </div>
+                <div class="email-subject">Password reset</div>
+                <div class="email-preview">This is a reminder that your password will expire in 5 days. Please update your password before it expires...</div>
+              </div>
+            `;
+          } else {
+            // Admin role (default)
+            document.getElementById('email-items').innerHTML = `
+              <div class="email-item unread" data-id="1">
+                <div class="email-sender">
+                  Jane Doe <span class="user-email-tag role-manager">Manager</span>
+                  <span class="email-time">10:30 AM</span>
+                </div>
+                <div class="email-subject">New container shipment</div>
+                <div class="email-preview">We have a new container shipment arriving next week from Shanghai. Please make sure all paperwork is ready...</div>
+              </div>
+              
+              <div class="email-item" data-id="2">
+                <div class="email-sender">
+                  Michael Johnson <span class="user-email-tag role-staff">Staff</span>
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">Invoice approval</div>
+                <div class="email-preview">Can you please review and approve invoice #INV-2023-05-15 for the container rental? The customer is waiting...</div>
+              </div>
+              
+              <div class="email-item unread" data-id="3">
+                <div class="email-sender">
+                  Global Shipping Inc.
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">Quote request</div>
+                <div class="email-preview">Hello, we are looking for a quote on 10x 40ft containers from Rotterdam to Singapore with delivery date in...</div>
+              </div>
+              
+              <div class="email-item" data-id="4">
+                <div class="email-sender">
+                  Lisa Williams <span class="user-email-tag role-admin">Admin</span>
+                  <span class="email-time">May 14</span>
+                </div>
+                <div class="email-subject">System update</div>
+                <div class="email-preview">I wanted to let you know that we'll be updating the container tracking system this weekend. There will be...</div>
+              </div>
+              
+              <div class="email-item" data-id="5">
+                <div class="email-sender">
+                  Bob Miller <span class="user-email-tag role-staff">Staff</span>
+                  <span class="email-time">May 13</span>
+                </div>
+                <div class="email-subject">Container maintenance</div>
+                <div class="email-preview">Just a heads up that containers #CON-2023-05-10 and #CON-2023-05-11 need maintenance. I've scheduled...</div>
+              </div>
+            `;
+          }
+          
+          // Set up email item click handlers
+          setupEmailItemClickHandlers();
+        }, 500);
+      });
+      
+      // Handle email selection - needs to be called whenever email items are updated
+      function setupEmailItemClickHandlers() {
+        document.querySelectorAll('.email-item').forEach(item => {
+          item.addEventListener('click', function() {
+            // Remove selected class from all items
+            document.querySelectorAll('.email-item').forEach(i => {
+              i.classList.remove('selected');
+            });
+            
+            // Add selected class to clicked item
+            this.classList.add('selected');
+            
+            // Remove unread class from clicked item
+            this.classList.remove('unread');
+            
+            // Get email details
+            const sender = this.querySelector('.email-sender').childNodes[0].textContent.trim();
+            const senderTag = this.querySelector('.email-sender .user-email-tag')?.outerHTML || '';
+            const subject = this.querySelector('.email-subject').textContent;
+            const time = this.querySelector('.email-time').textContent;
+            const preview = this.querySelector('.email-preview').textContent;
+            
+            // Update email content
+            document.getElementById('email-subject').textContent = subject;
+            document.getElementById('email-sender').textContent = sender;
+            if (senderTag) {
+              document.getElementById('email-sender').insertAdjacentHTML('afterend', senderTag);
+            } else {
+              const existingTag = document.getElementById('email-sender').nextElementSibling;
+              if (existingTag && existingTag.classList.contains('user-email-tag')) {
+                existingTag.remove();
+              }
+            }
+            document.getElementById('email-date').textContent = formatDate(time);
+            
+            // Update email body
+            // In a real app, this would fetch the full email content from the server
+            document.getElementById('email-body').innerHTML = `
+              <p>Hi ${document.getElementById('current-user').textContent.split(' ')[0]},</p>
+              <p>${preview}</p>
+              <p>Let me know if you have any questions.</p>
+              <p>Best regards,<br>${sender.split(' ')[0]}</p>
+            `;
+          });
+        });
+      }
+      
+      // Handle external email selection
+      document.getElementById('compose-to').addEventListener('change', function() {
+        if (this.value === 'external') {
+          document.getElementById('external-email').style.display = 'block';
+        } else {
+          document.getElementById('external-email').style.display = 'none';
+        }
+      });
+      
+      // Handle send button
+      document.getElementById('send-btn').addEventListener('click', function() {
+        const to = document.getElementById('compose-to').value;
+        const externalEmail = document.getElementById('external-email').value;
+        const subject = document.getElementById('compose-subject').value;
+        const body = document.getElementById('compose-body').value;
+        
+        // Basic validation
+        if (!to) {
+          alert('Please select a recipient');
+          return;
+        }
+        
+        if (to === 'external' && !externalEmail) {
+          alert('Please enter an email address');
+          return;
+        }
+        
+        if (!subject) {
+          alert('Please enter a subject');
+          return;
+        }
+        
+        if (!body) {
+          alert('Please enter a message');
+          return;
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate sending (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Show success message
+          alert('Email sent successfully');
+          
+          // Close compose form
+          document.getElementById('compose-container').style.display = 'none';
+          
+          // Clear form fields
+          document.getElementById('compose-to').value = '';
+          document.getElementById('external-email').value = '';
+          document.getElementById('compose-subject').value = '';
+          document.getElementById('compose-body').value = '';
+          
+          // Update sent folder if it's currently displayed
+          if (document.querySelector('.email-folders li.active').getAttribute('data-folder') === 'sent') {
+            // Trigger a click on the sent folder to refresh it
+            document.querySelector('.email-folders li[data-folder="sent"]').click();
+          }
+        }, 1000);
+      });
+      
+      // Handle save draft button
+      document.getElementById('save-draft-btn').addEventListener('click', function() {
+        const to = document.getElementById('compose-to').value;
+        const externalEmail = document.getElementById('external-email').value;
+        const subject = document.getElementById('compose-subject').value;
+        const body = document.getElementById('compose-body').value;
+        
+        // Basic validation - subject or body should not be empty
+        if (!subject && !body) {
+          alert('Please enter a subject or message');
+          return;
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate saving (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Show success message
+          alert('Draft saved successfully');
+          
+          // Close compose form
+          document.getElementById('compose-container').style.display = 'none';
+          
+          // Clear form fields
+          document.getElementById('compose-to').value = '';
+          document.getElementById('external-email').value = '';
+          document.getElementById('compose-subject').value = '';
+          document.getElementById('compose-body').value = '';
+          
+          // Update drafts folder if it's currently displayed
+          if (document.querySelector('.email-folders li.active').getAttribute('data-folder') === 'drafts') {
+            // Trigger a click on the drafts folder to refresh it
+            document.querySelector('.email-folders li[data-folder="drafts"]').click();
+          }
+        }, 800);
+      });
+      
+      // Handle reply button
+      document.getElementById('reply-btn').addEventListener('click', function() {
+        // Get current email details
+        const sender = document.getElementById('email-sender').textContent.trim();
+        const subject = document.getElementById('email-subject').textContent;
+        
+        // Open compose form
+        document.getElementById('compose-container').style.display = 'block';
+        
+        // Populate form fields
+        // In a real app, you would look up the user by name and select them in the dropdown
+        document.getElementById('compose-to').value = sender.includes('Jane') ? 'jane' : 
+                                                    sender.includes('Michael') ? 'michael' : 
+                                                    sender.includes('Lisa') ? 'lisa' : 
+                                                    sender.includes('Bob') ? 'bob' : 'external';
+        
+        if (document.getElementById('compose-to').value === 'external') {
+          document.getElementById('external-email').style.display = 'block';
+          document.getElementById('external-email').value = `${sender.toLowerCase().replace(' ', '.')}@example.com`;
+        }
+        
+        document.getElementById('compose-subject').value = `Re: ${subject}`;
+        document.getElementById('compose-body').value = `\n\nOn ${document.getElementById('email-date').textContent}, ${sender} wrote:\n> ${document.getElementById('email-body').textContent.replace(/\n/g, '\n> ')}`;
+      });
+      
+      // Handle forward button
+      document.getElementById('forward-btn').addEventListener('click', function() {
+        // Get current email details
+        const subject = document.getElementById('email-subject').textContent;
+        const sender = document.getElementById('email-sender').textContent.trim();
+        
+        // Open compose form
+        document.getElementById('compose-container').style.display = 'block';
+        
+        // Populate form fields
+        document.getElementById('compose-subject').value = `Fwd: ${subject}`;
+        document.getElementById('compose-body').value = `\n\n---------- Forwarded message ----------\nFrom: ${sender}\nDate: ${document.getElementById('email-date').textContent}\nSubject: ${subject}\nTo: ${document.getElementById('current-user').textContent}\n\n${document.getElementById('email-body').textContent}`;
+      });
+      
+      // Handle delete button
+      document.getElementById('delete-btn').addEventListener('click', function() {
+        // Get selected email
+        const selectedEmail = document.querySelector('.email-item.selected');
+        if (!selectedEmail) {
+          alert('Please select an email to delete');
+          return;
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate deleting (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Remove email from list
+          selectedEmail.remove();
+          
+          // Clear email content
+          document.getElementById('email-subject').textContent = '';
+          document.getElementById('email-sender').textContent = '';
+          document.getElementById('email-date').textContent = '';
+          document.getElementById('email-body').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📭</div>
+              <h3>No email selected</h3>
+              <p>Select an email from the list to view its contents.</p>
+            </div>
+          `;
+          
+          // Show success message
+          alert('Email deleted successfully');
+        }, 800);
+      });
+      
+      // Handle archive button
+      document.getElementById('archive-btn').addEventListener('click', function() {
+        // Get selected email
+        const selectedEmail = document.querySelector('.email-item.selected');
+        if (!selectedEmail) {
+          alert('Please select an email to archive');
+          return;
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate archiving (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Remove email from list
+          selectedEmail.remove();
+          
+          // Clear email content
+          document.getElementById('email-subject').textContent = '';
+          document.getElementById('email-sender').textContent = '';
+          document.getElementById('email-date').textContent = '';
+          document.getElementById('email-body').innerHTML = `
+            <div class="empty-state">
+              <div class="empty-state-icon">📭</div>
+              <h3>No email selected</h3>
+              <p>Select an email from the list to view its contents.</p>
+            </div>
+          `;
+          
+          // Show success message
+          alert('Email archived successfully');
+        }, 800);
+      });
+      
+      // Handle mark as unread button
+      document.getElementById('mark-unread-btn').addEventListener('click', function() {
+        // Get selected email
+        const selectedEmail = document.querySelector('.email-item.selected');
+        if (!selectedEmail) {
+          alert('Please select an email to mark as unread');
+          return;
+        }
+        
+        // Show loading spinner
+        document.getElementById('email-spinner').style.display = 'block';
+        
+        // Simulate marking as unread (in a real app, this would be an API call)
+        setTimeout(() => {
+          document.getElementById('email-spinner').style.display = 'none';
+          
+          // Add unread class to selected email
+          selectedEmail.classList.add('unread');
+          
+          // Show success message
+          alert('Email marked as unread');
+        }, 500);
+      });
+      
+      // Initialize email item click handlers
+      setupEmailItemClickHandlers();
+      
+      // Helper function to format date
+      function formatDate(dateStr) {
+        if (dateStr === 'Today' || dateStr === 'Yesterday' || dateStr.includes('AM') || dateStr.includes('PM')) {
+          return `May 15, 2023, ${dateStr}`;
+        } else {
+          return `${dateStr}, 2023, 9:00 AM`;
+        }
+      }
+    });
+    // Containers dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+    });
+  </script>
+</body>
+</html>

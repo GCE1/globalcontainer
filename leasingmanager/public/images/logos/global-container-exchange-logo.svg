@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="60" viewBox="0 0 240 60">
+  <defs>
+    <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5BC67F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1FA657;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4288C8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1464A0;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="240" height="60" fill="#002b49" rx="0" ry="0" />
+
+  <!-- Cube -->
+  <g transform="translate(14, 20) scale(0.85)">
+    <!-- Top face -->
+    <polygon points="0,10 15,0 30,10 15,20" fill="url(#gradient1)" />
+    
+    <!-- Left face -->
+    <polygon points="0,10 0,30 15,40 15,20" fill="#28A866" />
+    
+    <!-- Right face -->
+    <polygon points="15,20 15,40 30,30 30,10" fill="url(#gradient2)" />
+  </g>
+  
+  <!-- Text -->
+  <text x="60" y="30" font-family="Arial, sans-serif" font-size="19" font-weight="bold" fill="#ffffff">Global</text>
+  <text x="60" y="48" font-family="Arial, sans-serif" font-size="14" fill="#CCDAE6">Container Exchange</text>
+</svg>

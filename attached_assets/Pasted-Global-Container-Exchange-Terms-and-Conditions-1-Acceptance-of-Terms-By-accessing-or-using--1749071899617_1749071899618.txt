@@ -1,0 +1,179 @@
+Global Container Exchange – Terms and Conditions
+
+
+
+1. Acceptance of Terms
+
+
+
+By accessing or using the Global Container Exchange platform (“Platform”), you agree to comply with and be bound by these Terms and Conditions (“Terms”). If you do not agree to these Terms, you must not use the Platform.
+
+
+
+2. Definitions
+
+Platform: The digital marketplace operated by Global Container Exchange for container leasing, sales, and related services.
+
+User: Any individual or entity registered on the Platform, including Suppliers and Buyers.
+
+Supplier: A User offering containers or related services on the Platform.
+
+Buyer: A User acquiring containers or related services through the Platform.
+
+Transaction: Any agreement between Users for the lease, sale, or exchange of containers facilitated by the Platform.
+
+Container Condition Categories: Includes New (1-trip), Cargo-Worthy (CW), Wind & Watertight (WWT), As-Is.
+
+
+
+3. User Registration and Account Security
+
+
+
+Users must register an account to access Platform services. You agree to provide accurate and up-to-date information. You are responsible for maintaining the confidentiality of your account credentials.
+
+
+
+4. Use of the Platform
+
+
+
+You agree to use the Platform in compliance with applicable international shipping regulations, local customs laws, and all relevant logistics standards. Prohibited activities include unauthorized access, disruption, or misuse of Platform data.
+
+
+
+5. Transactions and Delivery Expectations
+
+
+
+5.1 Standard Delivery Window
+
+
+
+For all confirmed Transactions:
+
+Delivery (Depot Pickup or Drop-Off) must occur within 5–10 business days of payment confirmation unless otherwise stated in the listing or agreed upon by both parties in writing.
+
+Delayed Pickup or Delivery by either party exceeding 10 business days without prior mutual agreement may result in cancellation or penalties as per Section 10.
+
+
+
+5.2 Delivery Responsibility
+
+Supplier is responsible for making the container available at the designated depot in the condition described.
+
+Buyer is responsible for organizing transportation unless the transaction includes delivery service.
+
+
+
+5.3 Delivery Documentation
+
+
+
+All container handoffs must be accompanied by:
+
+Condition inspection report
+
+Container Release Order (CRO) or Equipment Interchange Receipt (EIR)
+
+Photo evidence (upon request)
+
+
+
+6. Inspection and Acceptance of Containers
+
+
+
+6.1 Inspection Rights
+
+
+
+Buyers have the right to:
+
+Inspect containers prior to pickup
+
+Reject containers not matching the advertised condition or specifications (within 48 hours of pickup)
+
+
+
+6.2 Acceptable Condition Discrepancies
+
+
+
+If containers are delivered in worse condition than listed (e.g. WWT listed as CW), the Buyer may:
+
+Accept with compensation
+
+Request replacement
+
+Cancel the transaction (within 2 business days)
+
+
+
+7. Container Return (Lease Agreements)
+
+
+
+For leased containers:
+
+Containers must be returned clean, empty, and in equal or better condition than when received (excluding normal wear and tear).
+
+Return must occur by the lease-end date unless an extension is mutually agreed upon.
+
+Late returns are subject to daily penalties based on the original lease rate.
+
+
+
+8. Fees and Charges
+
+
+
+Platform service fees, transaction fees, or dispute mediation fees may apply. All fees are transparently listed on the Fee Schedule page and are subject to change with prior notice.
+
+
+
+9. Dispute Resolution
+
+
+
+The Platform provides optional dispute resolution and mediation support. Buyers and Suppliers must attempt resolution independently first. The Platform’s decision in mediation is advisory but not legally binding.
+
+
+
+10. Termination and Cancellation
+
+Transactions may be cancelled by either party prior to fulfillment, provided written notice is given and costs incurred are compensated.
+
+Cancellations after pickup or confirmed delivery may incur penalties or forfeiture of deposit.
+
+
+
+11. Limitation of Liability
+
+
+
+The Platform acts solely as a facilitator. We are not responsible for disputes, damages, or non-performance by Users. Our maximum liability is limited to any service fee paid by the complainant to the Platform.
+
+
+
+12. Indemnification
+
+
+
+You agree to indemnify and hold harmless Global Container Exchange and its affiliates from any claims arising from your use of the Platform, breach of Terms, or third-party disputes resulting from your actions.
+
+
+
+13. Changes to Terms
+
+
+
+These Terms may be updated at any time. Continued use of the Platform after changes are posted constitutes acceptance of the revised Terms.
+
+
+
+14. Governing Law
+
+
+
+These Terms are governed by the laws of [Insert jurisdiction, e.g., Singapore or Delaware, USA], with exclusive jurisdiction in its courts for any disputes arising from use of the Platform.

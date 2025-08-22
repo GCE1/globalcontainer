@@ -1,0 +1,38 @@
+    const statsSection = document.getElementById("stats");
+    if (statsSection) {
+      observer.observe(statsSection);
+    }
+
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <section id="about" className="py-20">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">About Global Container Exchange</h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Driving innovation in global container logistics
+          </p>
+        </div>
+
+        {/* Comprehensive About Section */}
+        <div className="mb-20">
+          <div className="max-w-4xl mx-auto">
+            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-6">
+              <p className="text-xl text-gray-800 font-semibold">
+                <strong>Global Container Exchange</strong> Inc. stands at the forefront of the maritime logistics revolution, transforming how the world trades containers through cutting-edge digital innovation and unparalleled industry expertise.
+              </p>
+              
+              <p>
+                Founded in 2017 with a bold vision to digitize the traditional container trading industry, <strong>Global Container Exchange</strong> has emerged as the world's premier digital container exchange platform. Our comprehensive ecosystem connects freight forwarders, customs brokers, shipping lines, and logistics providers across 89 countries, facilitating seamless container transactions through our state-of-the-art online marketplace.
+              </p>
+              
+              <p>
+                At the heart of our operations lies an extensive fleet of 1.6 million containers strategically positioned across our global network of 410 depots spanning Asia, Europe, and North America. Our platform processes over 10,000 container transactions monthly, supported by rigorous IICL inspection standards and comprehensive insurance coverage through our partnerships with Chubb and HUATAI Insurance.
+              </p>
+              
+              <p>
+                What sets <strong>Global Container Exchange</strong> apart is our commitment to transparency, reliability, and customer-centric innovation. Our proprietary technology platform provides real-time container availability, competitive wholesale pricing, and streamlined logistics coordination. With an impressive 80% customer retention rate and over 100,000 satisfied customers worldwide, we've built a reputation for delivering exceptional value and service excellence.
+              </p>
+              

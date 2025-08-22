@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Wholesale Contracts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: #fff;
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding-top: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+      margin-top: -20px;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 10px 15px;
+      text-align: center;
+      display: none; /* Hide the old header */
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 20px;
+    }
+    
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .submenu {
+      display: none;
+      list-style: none;
+      padding-left: 20px;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 12px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 12.8px;
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: rgba(255,255,255,0.1);
+      color: #3498db;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 10px;
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px 40px;
+    }
+    
+    header {
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      color: #213b52;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: #001937;
+      font-size: 1.8em;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    h3 {
+      color: #213b52;
+      font-size: 1.4em;
+      margin-top: 25px;
+    }
+    
+    .contract-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px 30px 30px 30px; /* Reduced top padding */
+      margin-bottom: 30px;
+    }
+    
+    .contract-text {
+      max-height: 500px;
+      overflow-y: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    
+    .agreement-form {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #eef5fa;
+      border-radius: 5px;
+    }
+    
+    .checkbox-container {
+      margin-bottom: 20px;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #2980b9;
+    }
+    
+    .btn:disabled {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+    }
+    
+    .btn-sign {
+      background-color: #27ae60;
+    }
+    
+    .btn-sign:hover {
+      background-color: #219653;
+    }
+    
+    .signature-block {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    
+    .success-message {
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #d4edda;
+      color: #155724;
+      border-radius: 4px;
+      display: none;
+    }
+    
+    .contract-section {
+      margin-bottom: 15px;
+    }
+    
+    .contract-section h4 {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+    
+    /* Tab Styles */
+    .tabs {
+      display: flex;
+      margin-bottom: 10px; /* Reduced bottom margin */
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .tab.active {
+      background-color: #3498db;
+      color: white;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Wholesale Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h3>Container Wholesale</h3>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">🏠</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html" class="active"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+      <li class="has-submenu">
+        <a href="#" id="platforms-link"><span class="sidebar-menu-icon">🔄</span>Platforms</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🏢</span>Wholesale Platform</a></li>
+          <li><a href="index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🚢</span>Leasing Manager</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Wholesale Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Wholesale Contracts</h1>
+    </header>
+    
+    <div class="tabs">
+      <div class="tab active" data-tab="new-contract">New Contract</div>
+      <div class="tab" data-tab="my-contracts">My Contracts</div>
+    </div>
+    
+    <div id="new-contract" class="tab-content active">
+      <div class="contract-container">
+        <h2 style="color: #001937; font-size: 21.25px; text-align: center; margin-top: 10px;">Container Wholesale Agreement</h2>
+        <p>Please review the container wholesale agreement below. You must agree to all terms and conditions before proceeding.</p>
+        
+        <div class="contract-text">
+          <div class="contract-section">
+            <h3 style="text-align: center;">STANDARD CONTAINER WHOLESALE AGREEMENT</h3>
+            <p><strong>This Container Wholesale Agreement</strong> (the "Agreement") is entered into as of the date of acceptance by and between:</p>
+            <p><strong>CONTAINER WHOLESALE PLATFORM INC.</strong>, a corporation organized under the laws of [State/Country], with its principal place of business at [Address] (hereinafter referred to as the "SELLER");</p>
+            <p>AND</p>
+            <p><strong>THE CUSTOMER</strong> (hereinafter referred to as the "BUYER").</p>
+            <p>SELLER and BUYER may be individually referred to as a "Party" and collectively as the "Parties."</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>1. DEFINITIONS</h4>
+            <p>For the purposes of this Agreement, the following terms shall have the meanings set forth below:</p>
+            <p><strong>1.1 "Container(s)"</strong> means the shipping container(s) sold by SELLER to BUYER as described in the Order Confirmation, including all parts and components thereof.</p>
+            <p><strong>1.2 "Purchase Date"</strong> means the date on which payment for the Container(s) is confirmed by SELLER.</p>
+            <p><strong>1.3 "Wholesale Rate"</strong> means the purchase price payable by BUYER to SELLER for the Container(s) as specified in the Order Confirmation.</p>
+            <p><strong>1.4 "Free Days"</strong> means the seven (7) days following payment confirmation during which BUYER may pick up the Container(s) from the depot without incurring any storage fees.</p>
+            <p><strong>1.5 "Overdue Storage Fee"</strong> means the daily rate charged for each container remaining at the depot after the Free Days have expired, as specified in the Order Confirmation.</p>
+            <p><strong>1.6 "Order Confirmation"</strong> means the document issued by SELLER confirming the specific details of the Container(s) purchase, including but not limited to the type, quantity, Wholesale Rate, Free Days, and applicable Overdue Storage Fees.</p>
+            <p><strong>1.7 "Delivery Date"</strong> means the date on which the Container(s) are delivered to BUYER or BUYER's designated agent or location, which may be up to ninety (90) days from the Purchase Date.</p>
+            <p><strong>1.8 "Depot Release Number"</strong> means the unique identifier provided by SELLER to BUYER within seven (7) business days after payment confirmation, which is required for Container(s) pickup from the depot.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>2. SALE OF CONTAINERS</h4>
+            <p><strong>2.1</strong> SELLER hereby sells to BUYER, and BUYER hereby purchases from SELLER, the Container(s) described in the Order Confirmation, subject to the terms and conditions of this Agreement.</p>
+            <p><strong>2.2</strong> Upon full payment and delivery, the Container(s) shall become the property of BUYER, and BUYER shall acquire full right, title, and interest in the Container(s), subject to the terms and conditions of this Agreement.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>3. DELIVERY AND TRANSFER OF OWNERSHIP</h4>
+            <p><strong>3.1</strong> Transfer of ownership shall occur upon full payment and delivery of the Container(s) to BUYER. BUYER acknowledges that delivery may take up to ninety (90) days from the Purchase Date.</p>
+            <p><strong>3.2</strong> BUYER may request expedited delivery by contacting SELLER. Expedited delivery requests shall be subject to SELLER's written approval and may be subject to additional fees as determined by SELLER.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>4. WHOLESALE RATE AND PAYMENT TERMS</h4>
+            <p><strong>4.1</strong> BUYER shall pay to SELLER the Wholesale Rate as specified in the Order Confirmation.</p>
+            <p><strong>4.2</strong> Unless otherwise specified in the Order Confirmation, payment of the Wholesale Rate shall be made in advance.</p>
+            <p><strong>4.3</strong> Upon purchase of containers, BUYER shall be entitled to seven (7) Free Days for container pickup from the depot. After these seven (7) Free Days have expired, BUYER shall pay to SELLER the overdue storage fee for each additional day that the Container(s) remain at the depot.</p>
+            <p><strong>4.4</strong> Overdue storage fees shall be assessed at the rate specified in the Order Confirmation per container per day and shall be invoiced weekly in arrears. These fees shall be payable within fifteen (15) days of the invoice date.</p>
+            <p><strong>4.5</strong> All payments made by BUYER to SELLER under this Agreement shall be made without any deduction, withholding, or set-off whatsoever.</p>
+            <p><strong>4.6</strong> If BUYER fails to make any payment due under this Agreement by the due date for payment, then, without limiting SELLER's remedies, BUYER shall pay interest on the overdue amount at a rate of 1.5% per month. Such interest shall accrue on a daily basis from the due date until actual payment of the overdue amount, whether before or after judgment.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>5. DELIVERY AND PICKUP</h4>
+            <p><strong>5.1</strong> SELLER shall deliver the Container(s) to BUYER on the Delivery Date at the location specified in the Order Confirmation. BUYER acknowledges and agrees that delivery of purchased containers may take up to ninety (90) days from the date of purchase.</p>
+            <p><strong>5.2</strong> Depot release numbers will be provided to BUYER within seven (7) business days after confirmation of payment. BUYER acknowledges that container pickup from depots cannot be completed without a valid release number.</p>
+            <p><strong>5.3</strong> BUYER shall inspect the Container(s) upon delivery or pickup and shall immediately notify SELLER in writing of any defects or damages. If BUYER fails to provide such notice within twenty-four (24) hours of delivery or pickup, the Container(s) shall be deemed to have been delivered in good condition and in accordance with the Order Confirmation.</p>
+            <p><strong>5.4</strong> If BUYER elects to pick up Container(s) from a depot, BUYER must do so within seven (7) days of receiving the depot release number. After this period, BUYER shall be subject to overdue storage fees as outlined in Section 4.</p>
+            <p><strong>5.5</strong> BUYER is responsible for arranging transportation from the depot to their desired location, unless otherwise specified in the Order Confirmation. SELLER may assist in arranging transportation for an additional fee upon BUYER's request.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>6. BUYER'S OBLIGATIONS</h4>
+            <p><strong>6.1</strong> BUYER shall:</p>
+            <p>(a) Promptly arrange for pickup or delivery of the Container(s) according to the terms of this Agreement;</p>
+            <p>(b) Not use the Container(s) for storing or transporting any hazardous, toxic, flammable, explosive, or illegal substances or materials in violation of any applicable laws or regulations;</p>
+            <p>(c) Comply with all applicable laws, regulations, and industry standards relating to the possession, use, and operation of the Container(s);</p>
+            <p>(d) During any storage at SELLER's depot, not access the Container(s) without prior arrangement and supervision by SELLER's authorized personnel;</p>
+            <p>(e) Pay all applicable taxes, duties, and fees related to the purchase and use of the Container(s), including but not limited to sales tax, import duties, and customs fees;</p>
+            <p>(f) Ensure that transportation of the Container(s) from the depot is conducted by qualified and insured carriers;</p>
+            <p>(g) Promptly notify SELLER of any damage or defects discovered during inspection at delivery or pickup; and</p>
+            <p>(h) Allow SELLER or its representatives to inspect the Container(s) at the depot prior to pickup or delivery, upon reasonable prior notice.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>7. WARRANTIES AND CONDITION</h4>
+            <p><strong>7.1</strong> SELLER warrants that the Container(s) shall be delivered to BUYER in cargo-worthy condition suitable for their intended use, free from structural defects that would render them unfit for normal use in shipping or storage.</p>
+            <p><strong>7.2</strong> Any Container(s) found to have pre-existing structural defects upon delivery or pickup must be reported to SELLER within twenty-four (24) hours for replacement or repair at SELLER's expense. After this inspection period, all Container(s) are considered accepted in as-is condition.</p>
+            <p><strong>7.3</strong> After transfer of ownership, BUYER shall be solely responsible for all maintenance, repairs, and upkeep of the Container(s), and SELLER shall have no further obligation with respect to the condition or maintenance of the Container(s).</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>8. INSURANCE</h4>
+            <p><strong>8.1</strong> SELLER shall maintain appropriate insurance coverage for the Container(s) while they remain at SELLER's depot or until ownership is transferred to BUYER, whichever occurs first.</p>
+            <p><strong>8.2</strong> BUYER is responsible for obtaining appropriate insurance coverage for the Container(s) during transportation from the depot and after transfer of ownership. BUYER is strongly advised to maintain:</p>
+            <p>(a) Property insurance covering the Container(s) against loss or damage by fire, theft, vandalism, and other risks, in an amount not less than the replacement value of the Container(s);</p>
+            <p>(b) Commercial general liability insurance with adequate coverage limits per occurrence, covering liability for bodily injury, death, and property damage arising out of the use, possession, or transport of the Container(s).</p>
+            <p><strong>8.3</strong> SELLER shall not be responsible for any loss or damage to the Container(s) after transfer of ownership or during transportation arranged by BUYER.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>9. LIABILITY AND INDEMNIFICATION</h4>
+            <p><strong>9.1</strong> SELLER shall be liable for any loss of or damage to the Container(s) prior to transfer of ownership to BUYER, except to the extent such loss or damage is caused by the negligence or willful misconduct of BUYER or its representatives during inspection or pickup.</p>
+            <p><strong>9.2</strong> After transfer of ownership, BUYER assumes all liability for the Container(s) and SELLER shall have no further liability for any loss, damage, or injury related to the Container(s), regardless of cause.</p>
+            <p><strong>9.3</strong> BUYER shall indemnify, defend, and hold harmless SELLER and its officers, directors, employees, agents, and representatives from and against any and all claims, demands, suits, actions, proceedings, judgments, losses, damages, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with:</p>
+            <p>(a) Any breach of this Agreement by BUYER;</p>
+            <p>(b) Any use, possession, operation, or transportation of the Container(s) after transfer of ownership;</p>
+            <p>(c) Any property damage or bodily injury, including death, caused by or related to the Container(s) after transfer of ownership; and</p>
+            <p>(d) Any violation of applicable laws, regulations, or industry standards by BUYER or its representatives in connection with the use, possession, operation, or transportation of the Container(s).</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>10. LIMITATION OF LIABILITY</h4>
+            <p><strong>10.1</strong> UNDER NO CIRCUMSTANCES SHALL SELLER BE LIABLE TO BUYER OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF BUSINESS, LOSS OF USE, OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF SELLER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p><strong>10.2</strong> SELLER'S TOTAL LIABILITY TO BUYER FOR ANY AND ALL CLAIMS, LOSSES, AND DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE TOTAL PURCHASE PRICE ACTUALLY PAID BY BUYER TO SELLER UNDER THIS AGREEMENT.</p>
+            <p><strong>10.3</strong> The limitations of liability set forth in this Section 10 shall not apply to: (a) damages arising out of SELLER's gross negligence or willful misconduct; or (b) any other liability that cannot be excluded or limited under applicable law.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>11. DEFAULT AND REMEDIES</h4>
+            <p><strong>11.1</strong> Each of the following events shall constitute an "Event of Default" by BUYER under this Agreement:</p>
+            <p>(a) BUYER fails to pay any amount due under this Agreement within fifteen (15) days after the due date;</p>
+            <p>(b) BUYER breaches any other provision of this Agreement and fails to cure such breach within thirty (30) days after receipt of written notice thereof from SELLER;</p>
+            <p>(c) BUYER becomes insolvent, files for bankruptcy, or has a petition in bankruptcy filed against it that is not dismissed within sixty (60) days;</p>
+            <p>(d) BUYER makes an assignment for the benefit of creditors or enters into any arrangement with its creditors;</p>
+            <p>(e) A receiver, trustee, or similar officer is appointed for BUYER or for a substantial part of its assets; or</p>
+            <p>(f) BUYER ceases to carry on business.</p>
+            <p><strong>11.2</strong> Upon the occurrence of an Event of Default prior to the transfer of ownership, SELLER may, at its option and without prejudice to any other rights or remedies available to it:</p>
+            <p>(a) Terminate this Agreement with immediate effect by providing written notice to BUYER;</p>
+            <p>(b) Retain the Container(s) and any partial payments made as liquidated damages;</p>
+            <p>(c) Require BUYER to immediately pay all amounts due under this Agreement; and/or</p>
+            <p>(d) Pursue any other remedy available at law or in equity.</p>
+            <p><strong>11.3</strong> After transfer of ownership, SELLER's remedies shall be limited to recovering any unpaid amounts due under this Agreement, including overdue storage fees, along with any costs of collection including reasonable attorneys' fees.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>12. FORCE MAJEURE</h4>
+            <p><strong>12.1</strong> Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement (other than obligations to make payment) if such failure or delay is caused by circumstances beyond that Party's reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, riots, civil unrest, government action, strikes, lockouts, or other labor disputes ("Force Majeure Event").</p>
+            <p><strong>12.2</strong> A Party affected by a Force Majeure Event shall promptly notify the other Party of the nature and extent of the circumstances causing the failure or delay.</p>
+            <p><strong>12.3</strong> If a Force Majeure Event continues for a period of thirty (30) days or more, either Party may terminate this Agreement by providing written notice to the other Party, without liability for such termination.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>13. NOTICES</h4>
+            <p><strong>13.1</strong> All notices and other communications under this Agreement shall be in writing and shall be deemed given when: (a) delivered by hand; (b) sent by registered or certified mail, return receipt requested; (c) sent by nationally recognized overnight courier service; or (d) sent by email with confirmation of receipt, to the addresses specified in the Order Confirmation or to such other address as a Party may specify by notice to the other Party.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>14. GOVERNING LAW AND DISPUTE RESOLUTION</h4>
+            <p><strong>14.1</strong> This Agreement shall be governed by and construed in accordance with the laws of [State/Country], without giving effect to any choice of law or conflict of law provisions.</p>
+            <p><strong>14.2</strong> Any dispute, controversy, or claim arising out of or in connection with this Agreement, including any question regarding its existence, validity, or termination, shall be resolved as follows:</p>
+            <p>(a) The Parties shall first attempt to resolve the dispute through good faith negotiations, which shall not exceed thirty (30) days from the date on which the dispute is first notified in writing by one Party to the other;</p>
+            <p>(b) If the dispute is not resolved through negotiations, the Parties shall submit the dispute to mediation under the rules of the American Arbitration Association (or another mutually agreeable mediation service). The mediation shall take place in [City, State/Country] and shall not exceed sixty (60) days from the date of submission to mediation;</p>
+            <p>(c) If the dispute is not resolved through mediation, the dispute shall be finally resolved by binding arbitration under the rules of the American Arbitration Association. The arbitration shall take place in [City, State/Country], shall be conducted in the English language, and shall be decided by a panel of three arbitrators appointed in accordance with such rules.</p>
+            <p><strong>14.3</strong> Notwithstanding Section 14.2, either Party may seek injunctive or other equitable relief from a court of competent jurisdiction at any time.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>15. CONFIDENTIALITY</h4>
+            <p><strong>15.1</strong> Each Party agrees to maintain the confidentiality of any proprietary or confidential information of the other Party disclosed in connection with this Agreement ("Confidential Information") and to use such Confidential Information only for the purposes of performing its obligations under this Agreement.</p>
+            <p><strong>15.2</strong> The obligations of confidentiality shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving Party; (b) is rightfully received by the receiving Party from a third party without restriction on disclosure; (c) is independently developed by the receiving Party without use of or reference to the Confidential Information; or (d) is required to be disclosed by law or governmental order, provided that the receiving Party gives the disclosing Party prompt notice of such requirement and cooperates with the disclosing Party's efforts to limit such disclosure.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>16. MISCELLANEOUS</h4>
+            <p><strong>16.1 Assignment.</strong> LESSEE shall not assign, transfer, or delegate any of its rights or obligations under this Agreement without the prior written consent of LESSOR. LESSOR may assign, transfer, or delegate its rights and obligations under this Agreement to any affiliate or successor in interest without LESSEE's consent.</p>
+            <p><strong>16.2 Entire Agreement.</strong> This Agreement, together with the Order Confirmation, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.</p>
+            <p><strong>16.3 Amendment.</strong> No amendment, modification, or waiver of any provision of this Agreement shall be effective unless in writing and signed by both Parties.</p>
+            <p><strong>16.4 Severability.</strong> If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not in any way be affected or impaired.</p>
+            <p><strong>16.5 No Waiver.</strong> No failure or delay by either Party in exercising any right, power, or remedy under this Agreement shall operate as a waiver thereof, nor shall any single or partial exercise of such right, power, or remedy preclude any other or further exercise thereof or the exercise of any other right, power, or remedy.</p>
+            <p><strong>16.6 Relationship of Parties.</strong> Nothing in this Agreement shall be construed to create a partnership, joint venture, employment, or agency relationship between the Parties. Neither Party shall have the authority to bind the other Party or to incur any obligation on behalf of the other Party.</p>
+            <p><strong>16.7 Survival.</strong> The provisions of Sections 9, 10, 13, 14, 15, and 16 shall survive the termination or expiration of this Agreement.</p>
+            <p><strong>16.8 Counterparts.</strong> This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument. Electronic or digital signatures shall be deemed original signatures for all purposes.</p>
+          </div>
+          
+          <div class="contract-section">
+            <p>IN WITNESS WHEREOF, the Parties have executed this Agreement as of the date of acceptance indicated below.</p>
+          </div>
+        </div>
+        
+        <div class="agreement-form">
+          <h3>Agreement to Terms and Conditions</h3>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms-checkbox"> 
+            <label for="terms-checkbox">I have read, understood, and agree to be bound by the terms and conditions of this Container Wholesale Agreement.</label>
+          </div>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="authority-checkbox"> 
+            <label for="authority-checkbox">I confirm that I have the authority to enter into this Agreement on behalf of the BUYER.</label>
+          </div>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="insurance-checkbox"> 
+            <label for="insurance-checkbox">I understand the storage fees and acknowledge that Container(s) must be picked up within seven (7) days to avoid overdue storage fees.</label>
+          </div>
+          
+          <button id="sign-contract-btn" class="btn btn-sign" disabled>Sign Agreement</button>
+          
+          <div id="success-message" class="success-message">
+            <p><strong>Success!</strong> You have successfully signed the Container Wholesale Agreement. You will receive a confirmation email with a copy of the agreement shortly.</p>
+          </div>
+          
+          <div class="signature-block">
+            <p><strong>Name:</strong> <span id="signee-name">Loading...</span></p>
+            <p><strong>Company:</strong> <span id="signee-company">Loading...</span></p>
+            <p><strong>Date:</strong> <span id="signature-date">Loading...</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="my-contracts" class="tab-content">
+      <div class="contract-container">
+        <h2 style="font-size: 21.25px; text-align: center; color: #001937;">My Active Contracts</h2>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Contract #</th>
+              <th>Container Type</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="active-contracts-list">
+            <tr>
+              <td>CL-2023-001</td>
+              <td>40ft Dry Container (3 units)</td>
+              <td>01/15/2023</td>
+              <td>07/15/2023</td>
+              <td><span class="status-active">Active</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>CL-2023-002</td>
+              <td>20ft Refrigerated Container (1 unit)</td>
+              <td>02/10/2023</td>
+              <td>05/10/2023</td>
+              <td><span class="status-active">Active</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h2 style="font-size: 21.25px; text-align: center; color: #001937;">Contract History</h2>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Contract #</th>
+              <th>Container Type</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="contract-history-list">
+            <tr>
+              <td>CL-2022-045</td>
+              <td>40ft Dry Container (2 units)</td>
+              <td>10/05/2022</td>
+              <td>01/05/2023</td>
+              <td><span class="status-completed">Completed</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>CL-2022-032</td>
+              <td>20ft Open Top Container (1 unit)</td>
+              <td>08/15/2022</td>
+              <td>12/15/2022</td>
+              <td><span class="status-completed">Completed</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+
+  </div>
+
+  <script>
+    // Get current date for signature block
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current date
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('signature-date').textContent = formattedDate;
+      
+      // Placeholder user data (would come from authenticated user in production)
+      document.getElementById('signee-name').textContent = 'John Smith';
+      document.getElementById('signee-company').textContent = 'Global Logistics Inc.';
+      
+      // Containers dropdown functionality
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+      
+      // The Contracts menu is now a direct link without a submenu
+      
+      // Tab functionality
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs and content
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          this.classList.add('active');
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+      
+      // Checkbox validation for agreement signing
+      const checkboxes = document.querySelectorAll('.checkbox-container input[type="checkbox"]');
+      const signButton = document.getElementById('sign-contract-btn');
+      
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', validateCheckboxes);
+      });
+      
+      function validateCheckboxes() {
+        const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        signButton.disabled = !allChecked;
+      }
+      
+      // Contract signing functionality
+      signButton.addEventListener('click', function() {
+        document.getElementById('success-message').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // In a real application, you would also:
+        // 1. Send the signed contract to the server
+        // 2. Store it in the database
+        // 3. Send confirmation emails
+        // 4. Create a contract record in the user's account
+      });
+    });
+  </script>
+</body>
+</html>

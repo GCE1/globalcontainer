@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 20 14.3% 4.1%;
+  --muted: 60 4.8% 95.9%;
+  --muted-foreground: 25 5.3% 44.7%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14.3% 4.1%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14.3% 4.1%;
+  --border: 20 5.9% 90%;
+  --input: 20 5.9% 90%;
+  --primary: 208 97% 33%; /* #0054A6 */
+  --primary-foreground: 211 100% 99%;
+  --secondary: 154 100% 33%; /* #00A651 */
+  --secondary-foreground: 24 9.8% 10%;
+  --accent: 32 95% 54%; /* #F7941D */
+  --accent-foreground: 24 9.8% 10%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 60 9.1% 97.8%;
+  --ring: 20 14.3% 4.1%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 240 10% 3.9%;
+  --foreground: 0 0% 98%;
+  --muted: 240 3.7% 15.9%;
+  --muted-foreground: 240 5% 64.9%;
+  --popover: 240 10% 3.9%;
+  --popover-foreground: 0 0% 98%;
+  --card: 240 10% 3.9%;
+  --card-foreground: 0 0% 98%;
+  --border: 240 3.7% 15.9%;
+  --input: 240 3.7% 15.9%;
+  --primary: 208 97% 33%;
+  --primary-foreground: 211 100% 99%;
+  --secondary: 154 100% 33%;
+  --secondary-foreground: 0 0% 98%;
+  --accent: 32 95% 54%;
+  --accent-foreground: 0 0% 98%;
+  --destructive: 0 62.8% 30.6%;
+  --destructive-foreground: 0 0% 98%;
+  --ring: 240 4.9% 83.9%;
+  --radius: 0.5rem;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
+    font-family: 'Montserrat', sans-serif;
+  }
+}
+
+@layer components {
+  .container-type {
+    @apply transition-transform duration-300;
+  }
+  
+  .container-type:hover {
+    @apply -translate-y-1;
+  }
+  
+  /* Tooltip Styles */
+  .tooltip-container {
+    @apply relative inline-block border-b border-dotted border-primary cursor-help;
+  }
+  
+  .tooltip-text {
+    @apply invisible absolute w-48 bg-gray-800 text-white text-center rounded-md py-2 px-3 z-10 bottom-full left-1/2 -ml-24 opacity-0 transition-opacity duration-300;
+  }
+  
+  .tooltip-container:hover .tooltip-text {
+    @apply visible opacity-100;
+  }
+
+  /* FAQ Accordion */
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .faq-item.active .faq-answer {
+    max-height: 500px;
+  }
+  
+  .faq-item .faq-icon {
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-item.active .faq-icon {
+    transform: rotate(180deg);
+  }
+}

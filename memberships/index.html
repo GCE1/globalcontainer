@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Global Container Exchange - Platform Access</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #001937 0%, #004080 100%);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .platform-container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      width: 100%;
+      max-width: 900px;
+      margin: 20px;
+    }
+    
+    .header {
+      background: linear-gradient(135deg, #001937 0%, #3799d6 100%);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    
+    .logo {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 20px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+    }
+    
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+    
+    .header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+    
+    .membership-options {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0;
+    }
+    
+    .membership-card {
+      padding: 60px 40px;
+      text-align: center;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      border: none;
+      background: none;
+      position: relative;
+    }
+    
+    .membership-card:hover {
+      background: #f8f9fa;
+      transform: translateY(-5px);
+    }
+    
+    .membership-card:first-child {
+      border-right: 1px solid #e9ecef;
+    }
+    
+    .membership-icon {
+      font-size: 4rem;
+      margin-bottom: 30px;
+      display: block;
+    }
+    
+    .leasing-card .membership-icon {
+      color: #3799d6;
+    }
+    
+    .wholesale-card .membership-icon {
+      color: #28a745;
+    }
+    
+    .membership-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+    
+    .membership-description {
+      color: #6c757d;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+    
+    .login-button {
+      background: linear-gradient(135deg, #3799d6 0%, #001937 100%);
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      border-radius: 50px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    
+    .wholesale-card .login-button {
+      background: linear-gradient(135deg, #28a745 0%, #155724 100%);
+    }
+    
+    .login-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+    
+    .features-list {
+      list-style: none;
+      text-align: left;
+      margin: 20px 0;
+    }
+    
+    .features-list li {
+      padding: 8px 0;
+      color: #495057;
+      position: relative;
+      padding-left: 25px;
+    }
+    
+    .features-list li:before {
+      content: "✓";
+      position: absolute;
+      left: 0;
+      color: #28a745;
+      font-weight: bold;
+    }
+    
+    @media (max-width: 768px) {
+      .membership-options {
+        grid-template-columns: 1fr;
+      }
+      
+      .membership-card:first-child {
+        border-right: none;
+        border-bottom: 1px solid #e9ecef;
+      }
+      
+      .header h1 {
+        font-size: 2rem;
+      }
+      
+      .membership-card {
+        padding: 40px 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="platform-container">
+    <div class="header">
+      <div class="logo">🌐</div>
+      <h1>Global Container Exchange</h1>
+      <p>Choose Your Platform Access</p>
+    </div>
+    
+    <div class="membership-options">
+      <div class="membership-card leasing-card" onclick="accessLeasingManager()">
+        <span class="membership-icon">🚢</span>
+        <h2 class="membership-title">Leasing Manager</h2>
+        <p class="membership-description">
+          Comprehensive container leasing platform for rental operations, contract management, and per diem billing.
+        </p>
+        <ul class="features-list">
+          <li>Container Leasing Operations</li>
+          <li>Per Diem Rate Management</li>
+          <li>Contract Tracking</li>
+          <li>Calendar Scheduling</li>
+          <li>Invoice Generation</li>
+        </ul>
+        <button class="login-button">Access Leasing Manager</button>
+      </div>
+      
+      <div class="membership-card wholesale-card" onclick="accessWholesaleManager()">
+        <span class="membership-icon">🏢</span>
+        <h2 class="membership-title">Wholesale Manager</h2>
+        <p class="membership-description">
+          Global wholesale container marketplace for buying and selling containers across international markets.
+        </p>
+        <ul class="features-list">
+          <li>Global Container Marketplace</li>
+          <li>Wholesale Price Search</li>
+          <li>International Inventory</li>
+          <li>Purchase Management</li>
+          <li>Logistics Coordination</li>
+        </ul>
+        <button class="login-button">Access Wholesale Manager</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function accessLeasingManager() {
+      // Redirect to Leasing Manager platform
+      window.location.href = '/container-leasing/public/index.html';
+    }
+    
+    function accessWholesaleManager() {
+      // Redirect to Wholesale Manager platform
+      window.location.href = '/container-wholesale/public/index.html';
+    }
+    
+    // Add smooth animations on load
+    document.addEventListener('DOMContentLoaded', function() {
+      const cards = document.querySelectorAll('.membership-card');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(30px)';
+        setTimeout(() => {
+          card.style.transition = 'all 0.6s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, index * 200);
+      });
+    });
+  </script>
+</body>
+</html>

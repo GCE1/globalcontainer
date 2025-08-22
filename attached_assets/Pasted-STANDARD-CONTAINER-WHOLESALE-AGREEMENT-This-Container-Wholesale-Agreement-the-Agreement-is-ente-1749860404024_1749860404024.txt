@@ -1,0 +1,214 @@
+STANDARD CONTAINER WHOLESALE AGREEMENT
+
+This Container Wholesale Agreement (the "Agreement") is entered into as of the date of acceptance by and between:
+
+CONTAINER WHOLESALE PLATFORM INC., a corporation organized under the laws of [State/Country], with its principal place of business at [Address] (hereinafter referred to as the "SELLER");
+
+AND
+
+THE CUSTOMER (hereinafter referred to as the "BUYER").
+
+SELLER and BUYER may be individually referred to as a "Party" and collectively as the "Parties."
+
+1. DEFINITIONS
+
+For the purposes of this Agreement, the following terms shall have the meanings set forth below:
+
+1.1 "Container(s)" means the shipping container(s) sold by SELLER to BUYER as described in the Order Confirmation, including all parts and components thereof.
+
+1.2 "Purchase Date" means the date on which payment for the Container(s) is confirmed by SELLER.
+
+1.3 "Wholesale Rate" means the purchase price payable by BUYER to SELLER for the Container(s) as specified in the Order Confirmation.
+
+1.4 "Free Days" means the seven (7) days following payment confirmation during which BUYER may pick up the Container(s) from the depot without incurring any storage fees.
+
+1.5 "Overdue Storage Fee" means the daily rate charged for each container remaining at the depot after the Free Days have expired, as specified in the Order Confirmation.
+
+1.6 "Order Confirmation" means the document issued by SELLER confirming the specific details of the Container(s) purchase, including but not limited to the type, quantity, Wholesale Rate, Free Days, and applicable Overdue Storage Fees.
+
+1.7 "Delivery Date" means the date on which the Container(s) are delivered to BUYER or BUYER's designated agent or location, which may be up to ninety (90) days from the Purchase Date.
+
+1.8 "Depot Release Number" means the unique identifier provided by SELLER to BUYER within seven (7) business days after payment confirmation, which is required for Container(s) pickup from the depot.
+
+2. SALE OF CONTAINERS
+
+2.1 SELLER hereby sells to BUYER, and BUYER hereby purchases from SELLER, the Container(s) described in the Order Confirmation, subject to the terms and conditions of this Agreement.
+
+2.2 Upon full payment and delivery, the Container(s) shall become the property of BUYER, and BUYER shall acquire full right, title, and interest in the Container(s), subject to the terms and conditions of this Agreement.
+
+3. DELIVERY AND TRANSFER OF OWNERSHIP
+
+3.1 Transfer of ownership shall occur upon full payment and delivery of the Container(s) to BUYER. BUYER acknowledges that delivery may take up to ninety (90) days from the Purchase Date.
+
+3.2 BUYER may request expedited delivery by contacting SELLER. Expedited delivery requests shall be subject to SELLER's written approval and may be subject to additional fees as determined by SELLER.
+
+4. WHOLESALE RATE AND PAYMENT TERMS
+
+4.1 BUYER shall pay to SELLER the Wholesale Rate as specified in the Order Confirmation.
+
+4.2 Unless otherwise specified in the Order Confirmation, payment of the Wholesale Rate shall be made in advance.
+
+4.3 Upon purchase of containers, BUYER shall be entitled to seven (7) Free Days for container pickup from the depot. After these seven (7) Free Days have expired, BUYER shall pay to SELLER the overdue storage fee for each additional day that the Container(s) remain at the depot.
+
+4.4 Overdue storage fees shall be assessed at the rate specified in the Order Confirmation per container per day and shall be invoiced weekly in arrears. These fees shall be payable within fifteen (15) days of the invoice date.
+
+4.5 All payments made by BUYER to SELLER under this Agreement shall be made without any deduction, withholding, or set-off whatsoever.
+
+4.6 If BUYER fails to make any payment due under this Agreement by the due date for payment, then, without limiting SELLER's remedies, BUYER shall pay interest on the overdue amount at a rate of 1.5% per month. Such interest shall accrue on a daily basis from the due date until actual payment of the overdue amount, whether before or after judgment.
+
+5. DELIVERY AND PICKUP
+
+5.1 SELLER shall deliver the Container(s) to BUYER on the Delivery Date at the location specified in the Order Confirmation. BUYER acknowledges and agrees that delivery of purchased containers may take up to ninety (90) days from the date of purchase.
+
+5.2 Depot release numbers will be provided to BUYER within seven (7) business days after confirmation of payment. BUYER acknowledges that container pickup from depots cannot be completed without a valid release number.
+
+5.3 BUYER shall inspect the Container(s) upon delivery or pickup and shall immediately notify SELLER in writing of any defects or damages. If BUYER fails to provide such notice within twenty-four (24) hours of delivery or pickup, the Container(s) shall be deemed to have been delivered in good condition and in accordance with the Order Confirmation.
+
+5.4 If BUYER elects to pick up Container(s) from a depot, BUYER must do so within seven (7) days of receiving the depot release number. After this period, BUYER shall be subject to overdue storage fees as outlined in Section 4.
+
+5.5 BUYER is responsible for arranging transportation from the depot to their desired location, unless otherwise specified in the Order Confirmation. SELLER may assist in arranging transportation for an additional fee upon BUYER's request.
+
+6. BUYER'S OBLIGATIONS
+
+6.1 BUYER shall:
+
+(a) Promptly arrange for pickup or delivery of the Container(s) according to the terms of this Agreement;
+
+(b) Not use the Container(s) for storing or transporting any hazardous, toxic, flammable, explosive, or illegal substances or materials in violation of any applicable laws or regulations;
+
+(c) Comply with all applicable laws, regulations, and industry standards relating to the possession, use, and operation of the Container(s);
+
+(d) During any storage at SELLER's depot, not access the Container(s) without prior arrangement and supervision by SELLER's authorized personnel;
+
+(e) Pay all applicable taxes, duties, and fees related to the purchase and use of the Container(s), including but not limited to sales tax, import duties, and customs fees;
+
+(f) Ensure that transportation of the Container(s) from the depot is conducted by qualified and insured carriers;
+
+(g) Promptly notify SELLER of any damage or defects discovered during inspection at delivery or pickup; and
+
+(h) Allow SELLER or its representatives to inspect the Container(s) at the depot prior to pickup or delivery, upon reasonable prior notice.
+
+7. WARRANTIES AND CONDITION
+
+7.1 SELLER warrants that the Container(s) shall be delivered to BUYER in cargo-worthy condition suitable for their intended use, free from structural defects that would render them unfit for normal use in shipping or storage.
+
+7.2 Any Container(s) found to have pre-existing structural defects upon delivery or pickup must be reported to SELLER within twenty-four (24) hours for replacement or repair at SELLER's expense. After this inspection period, all Container(s) are considered accepted in as-is condition.
+
+7.3 After transfer of ownership, BUYER shall be solely responsible for all maintenance, repairs, and upkeep of the Container(s), and SELLER shall have no further obligation with respect to the condition or maintenance of the Container(s).
+
+8. INSURANCE
+
+8.1 SELLER shall maintain appropriate insurance coverage for the Container(s) while they remain at SELLER's depot or until ownership is transferred to BUYER, whichever occurs first.
+
+8.2 BUYER is responsible for obtaining appropriate insurance coverage for the Container(s) during transportation from the depot and after transfer of ownership. BUYER is strongly advised to maintain:
+
+(a) Property insurance covering the Container(s) against loss or damage by fire, theft, vandalism, and other risks, in an amount not less than the replacement value of the Container(s);
+
+(b) Commercial general liability insurance with adequate coverage limits per occurrence, covering liability for bodily injury, death, and property damage arising out of the use, possession, or transport of the Container(s).
+
+8.3 SELLER shall not be responsible for any loss or damage to the Container(s) after transfer of ownership or during transportation arranged by BUYER.
+
+9. LIABILITY AND INDEMNIFICATION
+
+9.1 SELLER shall be liable for any loss of or damage to the Container(s) prior to transfer of ownership to BUYER, except to the extent such loss or damage is caused by the negligence or willful misconduct of BUYER or its representatives during inspection or pickup.
+
+9.2 After transfer of ownership, BUYER assumes all liability for the Container(s) and SELLER shall have no further liability for any loss, damage, or injury related to the Container(s), regardless of cause.
+
+9.3 BUYER shall indemnify, defend, and hold harmless SELLER and its officers, directors, employees, agents, and representatives from and against any and all claims, demands, suits, actions, proceedings, judgments, losses, damages, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with:
+
+(a) Any breach of this Agreement by BUYER;
+
+(b) Any use, possession, operation, or transportation of the Container(s) after transfer of ownership;
+
+(c) Any property damage or bodily injury, including death, caused by or related to the Container(s) after transfer of ownership; and
+
+(d) Any violation of applicable laws, regulations, or industry standards by BUYER or its representatives in connection with the use, possession, operation, or transportation of the Container(s).
+
+10. LIMITATION OF LIABILITY
+
+10.1 UNDER NO CIRCUMSTANCES SHALL SELLER BE LIABLE TO BUYER OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF BUSINESS, LOSS OF USE, OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF SELLER HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+10.2 SELLER'S TOTAL LIABILITY TO BUYER FOR ANY AND ALL CLAIMS, LOSSES, AND DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE TOTAL PURCHASE PRICE ACTUALLY PAID BY BUYER TO SELLER UNDER THIS AGREEMENT.
+
+10.3 The limitations of liability set forth in this Section 10 shall not apply to: (a) damages arising out of SELLER's gross negligence or willful misconduct; or (b) any other liability that cannot be excluded or limited under applicable law.
+
+11. DEFAULT AND REMEDIES
+
+11.1 Each of the following events shall constitute an "Event of Default" by BUYER under this Agreement:
+
+(a) BUYER fails to pay any amount due under this Agreement within fifteen (15) days after the due date;
+
+(b) BUYER breaches any other provision of this Agreement and fails to cure such breach within thirty (30) days after receipt of written notice thereof from SELLER;
+
+(c) BUYER becomes insolvent, files for bankruptcy, or has a petition in bankruptcy filed against it that is not dismissed within sixty (60) days;
+
+(d) BUYER makes an assignment for the benefit of creditors or enters into any arrangement with its creditors;
+
+(e) A receiver, trustee, or similar officer is appointed for BUYER or for a substantial part of its assets; or
+
+(f) BUYER ceases to carry on business.
+
+11.2 Upon the occurrence of an Event of Default prior to the transfer of ownership, SELLER may, at its option and without prejudice to any other rights or remedies available to it:
+
+(a) Terminate this Agreement with immediate effect by providing written notice to BUYER;
+
+(b) Retain the Container(s) and any partial payments made as liquidated damages;
+
+(c) Require BUYER to immediately pay all amounts due under this Agreement; and/or
+
+(d) Pursue any other remedy available at law or in equity.
+
+11.3 After transfer of ownership, SELLER's remedies shall be limited to recovering any unpaid amounts due under this Agreement, including overdue storage fees, along with any costs of collection including reasonable attorneys' fees.
+
+12. FORCE MAJEURE
+
+12.1 Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement (other than obligations to make payment) if such failure or delay is caused by circumstances beyond that Party's reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, riots, civil unrest, government action, strikes, lockouts, or other labor disputes ("Force Majeure Event").
+
+12.2 A Party affected by a Force Majeure Event shall promptly notify the other Party of the nature and extent of the circumstances causing the failure or delay.
+
+12.3 If a Force Majeure Event continues for a period of thirty (30) days or more, either Party may terminate this Agreement by providing written notice to the other Party, without liability for such termination.
+
+13. NOTICES
+
+13.1 All notices and other communications under this Agreement shall be in writing and shall be deemed given when: (a) delivered by hand; (b) sent by registered or certified mail, return receipt requested; (c) sent by nationally recognized overnight courier service; or (d) sent by email with confirmation of receipt, to the addresses specified in the Order Confirmation or to such other address as a Party may specify by notice to the other Party.
+
+14. GOVERNING LAW AND DISPUTE RESOLUTION
+
+14.1 This Agreement shall be governed by and construed in accordance with the laws of [State/Country], without giving effect to any choice of law or conflict of law provisions.
+
+14.2 Any dispute, controversy, or claim arising out of or in connection with this Agreement, including any question regarding its existence, validity, or termination, shall be resolved as follows:
+
+(a) The Parties shall first attempt to resolve the dispute through good faith negotiations, which shall not exceed thirty (30) days from the date on which the dispute is first notified in writing by one Party to the other;
+
+(b) If the dispute is not resolved through negotiations, the Parties shall submit the dispute to mediation under the rules of the American Arbitration Association (or another mutually agreeable mediation service). The mediation shall take place in [City, State/Country] and shall not exceed sixty (60) days from the date of submission to mediation;
+
+(c) If the dispute is not resolved through mediation, the dispute shall be finally resolved by binding arbitration under the rules of the American Arbitration Association. The arbitration shall take place in [City, State/Country], shall be conducted in the English language, and shall be decided by a panel of three arbitrators appointed in accordance with such rules.
+
+14.3 Notwithstanding Section 14.2, either Party may seek injunctive or other equitable relief from a court of competent jurisdiction at any time.
+
+15. CONFIDENTIALITY
+
+15.1 Each Party agrees to maintain the confidentiality of any proprietary or confidential information of the other Party disclosed in connection with this Agreement ("Confidential Information") and to use such Confidential Information only for the purposes of performing its obligations under this Agreement.
+
+15.2 The obligations of confidentiality shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving Party; (b) is rightfully received by the receiving Party from a third party without restriction on disclosure; (c) is independently developed by the receiving Party without use of or reference to the Confidential Information; or (d) is required to be disclosed by law or governmental order, provided that the receiving Party gives the disclosing Party prompt notice of such requirement and cooperates with the disclosing Party's efforts to limit such disclosure.
+
+16. MISCELLANEOUS
+
+16.1 Assignment. LESSEE shall not assign, transfer, or delegate any of its rights or obligations under this Agreement without the prior written consent of LESSOR. LESSOR may assign, transfer, or delegate its rights and obligations under this Agreement to any affiliate or successor in interest without LESSEE's consent.
+
+16.2 Entire Agreement. This Agreement, together with the Order Confirmation, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.
+
+16.3 Amendment. No amendment, modification, or waiver of any provision of this Agreement shall be effective unless in writing and signed by both Parties.
+
+16.4 Severability. If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not in any way be affected or impaired.
+
+16.5 No Waiver. No failure or delay by either Party in exercising any right, power, or remedy under this Agreement shall operate as a waiver thereof, nor shall any single or partial exercise of such right, power, or remedy preclude any other or further exercise thereof or the exercise of any other right, power, or remedy.
+
+16.6 Relationship of Parties. Nothing in this Agreement shall be construed to create a partnership, joint venture, employment, or agency relationship between the Parties. Neither Party shall have the authority to bind the other Party or to incur any obligation on behalf of the other Party.
+
+16.7 Survival. The provisions of Sections 9, 10, 13, 14, 15, and 16 shall survive the termination or expiration of this Agreement.
+
+16.8 Counterparts. This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument. Electronic or digital signatures shall be deemed original signatures for all purposes.
+
+IN WITNESS WHEREOF, the Parties have executed this Agreement as of the date of acceptance indicated below.
+

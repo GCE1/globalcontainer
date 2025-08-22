@@ -1,0 +1,49 @@
+Prompt:
+### **AI Implementation Prompt for Wholesale Section**  
+**Task:**  
+Design and implement a **paid-member-exclusive Wholesale Section** for our container leasing platform, enabling bulk leasing with tiered pricing, custom quotes, and premium support.  
+
+**Requirements:**  
+1. **Access Control:**  
+   - Lock the section behind a paywall, accessible only to users with active "Wholesale" or "Enterprise" membership tiers.  
+   - Integrate Stripe/PayPal API for subscription verification or use role-based authentication (e.g., user.role = "paid_wholesale").  
+
+2. **Core Features:**  
+   - **Bulk Inventory Dashboard:**  
+     - Display real-time availability of 20ft/40ft containers with filters (location, price, quantity).  
+     - Dynamic pricing table showing volume discounts (e.g., "Lease 50+ containers: 15% discount").  
+   - **Quote Request Tool:**  
+     - Form fields: Container type, quantity, lease duration, delivery address.  
+     - AI-generated price estimates based on market rates and user history.  
+   - **Member Benefits:**  
+     - Priority 24/7 support chat.  
+     - Downloadable contracts and bulk leasing guides.  
+
+3. **UI/UX:**  
+   - Minimalist design with:  
+     - Clear "Upgrade to Access" prompts for non-members.  
+     - Interactive inventory table (sort by price/availability).  
+     - "Request Quote" CTAs with auto-filled user data (e.g., saved company details).  
+
+4. **Backend Logic:**  
+   - Automate discount calculations:  
+     ```python  
+     def calculate_discount(quantity):  
+         if quantity >= 100: return 0.2  # 20% off  
+         elif quantity >= 50: return 0.15  
+         else: return 0  
+     ```  
+   - Log analytics on popular routes/container types for future pricing adjustments.  
+
+5. **Security:**  
+   - Encrypt all transaction data.  
+   - Rate-limit API calls to prevent wholesale price scraping.  
+
+**Output Deliverables:**  
+- Wireframe mockups of the Wholesale Dashboard (desktop/mobile).  
+- Sample API schema for membership verification.  
+- Pseudocode for dynamic pricing logic.  
+
+**Optional Enhancements:**  
+- Tiered membership levels (e.g., Gold: +5% discount on 100+ leases).  
+- Multi-language support for global clients.  

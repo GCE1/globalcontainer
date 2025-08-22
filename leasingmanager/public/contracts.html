@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Container Leasing Contracts</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f6f9;
+      color: #333;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: #fff;
+      position: fixed;
+      height: 100%;
+      left: 0;
+      top: 0;
+      padding-top: 20px;
+      box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+      margin-top: -20px;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 10px 15px;
+      text-align: center;
+      display: none; /* Hide the old header */
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      margin-bottom: 20px;
+    }
+    
+    .sidebar-menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+      margin: 0;
+    }
+    
+    .submenu {
+      display: none;
+      list-style: none;
+      padding-left: 20px;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 12px 20px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s;
+      font-size: 12.8px;
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: rgba(255,255,255,0.1);
+      color: #3498db;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 10px;
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px 40px;
+    }
+    
+    header {
+      margin-bottom: 30px;
+    }
+    
+    h1 {
+      color: #213b52;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    
+    h2 {
+      color: #001937;
+      font-size: 1.8em;
+      margin-top: 10px;
+      text-align: center;
+    }
+    
+    h3 {
+      color: #213b52;
+      font-size: 1.4em;
+      margin-top: 25px;
+    }
+    
+    .contract-container {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 15px 30px 30px 30px; /* Reduced top padding */
+      margin-bottom: 30px;
+    }
+    
+    .contract-text {
+      max-height: 500px;
+      overflow-y: auto;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+    
+    .agreement-form {
+      margin-top: 30px;
+      padding: 20px;
+      background-color: #eef5fa;
+      border-radius: 5px;
+    }
+    
+    .checkbox-container {
+      margin-bottom: 20px;
+    }
+    
+    input[type="checkbox"] {
+      margin-right: 10px;
+    }
+    
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    
+    .btn:hover {
+      background-color: #2980b9;
+    }
+    
+    .btn:disabled {
+      background-color: #95a5a6;
+      cursor: not-allowed;
+    }
+    
+    .btn-sign {
+      background-color: #27ae60;
+    }
+    
+    .btn-sign:hover {
+      background-color: #219653;
+    }
+    
+    .signature-block {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #ddd;
+    }
+    
+    .success-message {
+      padding: 15px;
+      margin: 20px 0;
+      background-color: #d4edda;
+      color: #155724;
+      border-radius: 4px;
+      display: none;
+    }
+    
+    .contract-section {
+      margin-bottom: 15px;
+    }
+    
+    .contract-section h4 {
+      margin-bottom: 8px;
+      color: #2c3e50;
+    }
+    
+    /* Tab Styles */
+    .tabs {
+      display: flex;
+      margin-bottom: 10px; /* Reduced bottom margin */
+      border-bottom: 1px solid #ddd;
+    }
+    
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #f1f1f1;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
+    }
+    
+    .tab.active {
+      background-color: #3498db;
+      color: white;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    /* Table styles */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+    
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+    
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+    
+    th {
+      background-color: #f2f2f2;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Leasing Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h3>Container Leasing</h3>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">🏠</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html" class="active"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Leasing Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Leasing Contracts</h1>
+    </header>
+    
+    <div class="tabs">
+      <div class="tab active" data-tab="new-contract">New Contract</div>
+      <div class="tab" data-tab="my-contracts">My Contracts</div>
+      <div class="tab" data-tab="templates">Contract Templates</div>
+    </div>
+    
+    <div id="new-contract" class="tab-content active">
+      <div class="contract-container">
+        <h2 style="color: #001937; font-size: 21.25px; text-align: center; margin-top: 10px;">Container Leasing Agreement</h2>
+        <p>Please review the container leasing agreement below. You must agree to all terms and conditions before proceeding.</p>
+        
+        <div class="contract-text">
+          <div class="contract-section">
+            <h3 style="text-align: center;">STANDARD CONTAINER LEASING AGREEMENT</h3>
+            <p><strong>This Container Leasing Agreement</strong> (the "Agreement") is entered into as of the date of acceptance by and between:</p>
+            <p><strong>CONTAINER LEASING PLATFORM INC.</strong>, a corporation organized under the laws of [State/Country], with its principal place of business at [Address] (hereinafter referred to as the "LESSOR");</p>
+            <p>AND</p>
+            <p><strong>THE CUSTOMER</strong> (hereinafter referred to as the "LESSEE").</p>
+            <p>LESSOR and LESSEE may be individually referred to as a "Party" and collectively as the "Parties."</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>1. DEFINITIONS</h4>
+            <p>For the purposes of this Agreement, the following terms shall have the meanings set forth below:</p>
+            <p><strong>1.1 "Container(s)"</strong> means the shipping container(s) owned by LESSOR and leased to LESSEE as described in the Order Confirmation, including all parts and components thereof.</p>
+            <p><strong>1.2 "Lease Period"</strong> means the period commencing on the Delivery Date and ending on the Return Date as specified in the Order Confirmation.</p>
+            <p><strong>1.3 "Lease Rate"</strong> means the rate of lease payable by LESSEE to LESSOR for the Container(s) as specified in the Order Confirmation.</p>
+            <p><strong>1.4 "Free Days"</strong> means the number of days following the Delivery Date during which no per diem charges will be incurred, as specified in the Order Confirmation.</p>
+            <p><strong>1.5 "Per Diem Rate"</strong> means the daily rate charged after the Free Days have expired, as specified in the Order Confirmation.</p>
+            <p><strong>1.6 "Order Confirmation"</strong> means the document issued by LESSOR confirming the specific details of the Container(s) lease, including but not limited to the type, quantity, Lease Period, Lease Rate, Free Days, and Per Diem Rate.</p>
+            <p><strong>1.7 "Delivery Date"</strong> means the date on which the Container(s) are delivered to LESSEE or LESSEE's designated agent or location.</p>
+            <p><strong>1.8 "Return Date"</strong> means the date on which the Container(s) are returned to LESSOR or LESSOR's designated agent or location.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>2. LEASE OF CONTAINERS</h4>
+            <p><strong>2.1</strong> LESSOR hereby leases to LESSEE, and LESSEE hereby leases from LESSOR, the Container(s) described in the Order Confirmation, subject to the terms and conditions of this Agreement.</p>
+            <p><strong>2.2</strong> The Container(s) shall remain the property of LESSOR at all times, and LESSEE shall acquire no right, title, or interest in the Container(s) other than the right to use them in accordance with this Agreement.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>3. LEASE PERIOD</h4>
+            <p><strong>3.1</strong> The Lease Period shall commence on the Delivery Date and shall continue until the Return Date, unless earlier terminated in accordance with this Agreement.</p>
+            <p><strong>3.2</strong> LESSEE may request an extension of the Lease Period by providing written notice to LESSOR at least fourteen (14) days prior to the original Return Date. Any extension of the Lease Period shall be subject to LESSOR's written approval and may be subject to revised lease terms, including but not limited to an adjusted Lease Rate.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>4. LEASE RATE AND PAYMENT TERMS</h4>
+            <p><strong>4.1</strong> LESSEE shall pay to LESSOR the Lease Rate as specified in the Order Confirmation.</p>
+            <p><strong>4.2</strong> Unless otherwise specified in the Order Confirmation, payment of the Lease Rate shall be made in advance for the entire Lease Period.</p>
+            <p><strong>4.3</strong> LESSEE shall be entitled to the number of Free Days specified in the Order Confirmation. After the Free Days have expired, LESSEE shall pay to LESSOR the Per Diem Rate for each additional day that the Container(s) remain in LESSEE's possession or control.</p>
+            <p><strong>4.4</strong> Per Diem charges shall be invoiced monthly in arrears and shall be payable within thirty (30) days of the invoice date.</p>
+            <p><strong>4.5</strong> All payments made by LESSEE to LESSOR under this Agreement shall be made without any deduction, withholding, or set-off whatsoever.</p>
+            <p><strong>4.6</strong> If LESSEE fails to make any payment due under this Agreement by the due date for payment, then, without limiting LESSOR's remedies, LESSEE shall pay interest on the overdue amount at a rate of 1.5% per month. Such interest shall accrue on a daily basis from the due date until actual payment of the overdue amount, whether before or after judgment.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>5. DELIVERY AND RETURN</h4>
+            <p><strong>5.1</strong> LESSOR shall deliver the Container(s) to LESSEE on the Delivery Date at the location specified in the Order Confirmation.</p>
+            <p><strong>5.2</strong> LESSEE shall inspect the Container(s) upon delivery and shall immediately notify LESSOR in writing of any defects or damages. If LESSEE fails to provide such notice within twenty-four (24) hours of delivery, the Container(s) shall be deemed to have been delivered in good condition and in accordance with the Order Confirmation.</p>
+            <p><strong>5.3</strong> LESSEE shall return the Container(s) to LESSOR on the Return Date at the location specified in the Order Confirmation, in the same condition as when delivered, ordinary wear and tear excepted.</p>
+            <p><strong>5.4</strong> If LESSEE fails to return the Container(s) on the Return Date, LESSEE shall be liable for the Per Diem Rate for each day that the Container(s) remain in LESSEE's possession or control beyond the Return Date, without prejudice to any other rights or remedies available to LESSOR.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>6. LESSEE'S OBLIGATIONS</h4>
+            <p><strong>6.1</strong> LESSEE shall:</p>
+            <p>(a) Use the Container(s) only for the purpose of storing and transporting goods and for no other purpose;</p>
+            <p>(b) Not use the Container(s) for storing or transporting any hazardous, toxic, flammable, explosive, or illegal substances or materials without LESSOR's prior written consent;</p>
+            <p>(c) Comply with all applicable laws, regulations, and industry standards relating to the possession, use, and operation of the Container(s);</p>
+            <p>(d) Maintain the Container(s) in good condition, reasonable wear and tear excepted;</p>
+            <p>(e) Not make any alterations, additions, or modifications to the Container(s) without LESSOR's prior written consent;</p>
+            <p>(f) Not remove, deface, or obscure any labels, plates, markings, or signs placed on the Container(s) by LESSOR or the manufacturer;</p>
+            <p>(g) Not sell, assign, sublease, pledge, or otherwise encumber the Container(s) or any interest therein;</p>
+            <p>(h) Not do or permit to be done anything which could invalidate or affect any insurance in respect of the Container(s);</p>
+            <p>(i) Promptly notify LESSOR of any damage to, defect in, or malfunction of the Container(s); and</p>
+            <p>(j) Allow LESSOR or its representatives to inspect the Container(s) at any reasonable time upon reasonable prior notice.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>7. MAINTENANCE AND REPAIRS</h4>
+            <p><strong>7.1</strong> LESSEE shall be responsible for the maintenance and repair of the Container(s) during the Lease Period, except for repairs necessitated by structural defects not caused by LESSEE's misuse or negligence.</p>
+            <p><strong>7.2</strong> If any repair to the Container(s) becomes necessary as a result of any damage, misuse, or negligence on the part of LESSEE or any person for whom LESSEE is responsible, LESSEE shall promptly effectuate such repair at its own expense using LESSOR-approved materials and procedures.</p>
+            <p><strong>7.3</strong> If LESSEE fails to properly maintain or repair the Container(s) in accordance with this Agreement, LESSOR may, but shall not be obligated to, perform such maintenance or repairs on LESSEE's behalf, and LESSEE shall promptly reimburse LESSOR for all costs and expenses incurred in connection therewith.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>8. INSURANCE</h4>
+            <p><strong>8.1</strong> LESSEE shall, at its own expense, maintain insurance coverage for the Container(s) during the Lease Period, including but not limited to:</p>
+            <p>(a) Property insurance covering the Container(s) against loss or damage by fire, theft, vandalism, and other risks usually covered by comprehensive insurance, in an amount not less than the replacement value of the Container(s);</p>
+            <p>(b) Commercial general liability insurance with limits of not less than $2,000,000 per occurrence, covering liability for bodily injury, death, and property damage arising out of the use, possession, or transport of the Container(s).</p>
+            <p><strong>8.2</strong> LESSEE shall ensure that LESSOR is named as an additional insured and loss payee on all insurance policies required under this Section 8.</p>
+            <p><strong>8.3</strong> LESSEE shall provide LESSOR with certificates of insurance evidencing the coverage required under this Section 8 prior to the Delivery Date and shall ensure that such insurance remains in full force and effect throughout the Lease Period.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>9. LIABILITY AND INDEMNIFICATION</h4>
+            <p><strong>9.1</strong> LESSEE shall be liable for any loss of or damage to the Container(s) occurring during the Lease Period, regardless of cause, except to the extent such loss or damage is caused by the negligence or willful misconduct of LESSOR or its representatives.</p>
+            <p><strong>9.2</strong> In the event of total loss or constructive total loss of any Container, LESSEE shall pay to LESSOR an amount equal to the replacement value of such Container as specified in the Order Confirmation, less any amounts recovered under insurance policies maintained by LESSEE pursuant to Section 8.</p>
+            <p><strong>9.3</strong> LESSEE shall indemnify, defend, and hold harmless LESSOR and its officers, directors, employees, agents, and representatives from and against any and all claims, demands, suits, actions, proceedings, judgments, losses, damages, costs, and expenses (including reasonable attorneys' fees) arising out of or in connection with:</p>
+            <p>(a) Any breach of this Agreement by LESSEE;</p>
+            <p>(b) Any use, possession, operation, or transportation of the Container(s) during the Lease Period;</p>
+            <p>(c) Any property damage or bodily injury, including death, caused by or related to the Container(s) during the Lease Period, except to the extent caused by the negligence or willful misconduct of LESSOR or its representatives; and</p>
+            <p>(d) Any violation of applicable laws, regulations, or industry standards by LESSEE or its representatives in connection with the use, possession, operation, or transportation of the Container(s).</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>10. LIMITATION OF LIABILITY</h4>
+            <p><strong>10.1</strong> UNDER NO CIRCUMSTANCES SHALL LESSOR BE LIABLE TO LESSEE OR ANY THIRD PARTY FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY, OR PUNITIVE DAMAGES OF ANY KIND, INCLUDING BUT NOT LIMITED TO LOSS OF PROFITS, LOSS OF BUSINESS, LOSS OF USE, OR LOSS OF DATA, REGARDLESS OF THE FORM OF ACTION, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY, OR OTHERWISE, EVEN IF LESSOR HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+            <p><strong>10.2</strong> LESSOR'S TOTAL LIABILITY TO LESSEE FOR ANY AND ALL CLAIMS, LOSSES, AND DAMAGES ARISING OUT OF OR IN CONNECTION WITH THIS AGREEMENT SHALL NOT EXCEED THE TOTAL AMOUNT OF LEASE PAYMENTS ACTUALLY PAID BY LESSEE TO LESSOR UNDER THIS AGREEMENT.</p>
+            <p><strong>10.3</strong> The limitations of liability set forth in this Section 10 shall not apply to: (a) damages arising out of LESSOR's gross negligence or willful misconduct; or (b) any other liability that cannot be excluded or limited under applicable law.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>11. DEFAULT AND TERMINATION</h4>
+            <p><strong>11.1</strong> Each of the following events shall constitute an "Event of Default" by LESSEE under this Agreement:</p>
+            <p>(a) LESSEE fails to pay any amount due under this Agreement within fifteen (15) days after the due date;</p>
+            <p>(b) LESSEE breaches any other provision of this Agreement and fails to cure such breach within thirty (30) days after receipt of written notice thereof from LESSOR;</p>
+            <p>(c) LESSEE becomes insolvent, files for bankruptcy, or has a petition in bankruptcy filed against it that is not dismissed within sixty (60) days;</p>
+            <p>(d) LESSEE makes an assignment for the benefit of creditors or enters into any arrangement with its creditors;</p>
+            <p>(e) A receiver, trustee, or similar officer is appointed for LESSEE or for a substantial part of its assets; or</p>
+            <p>(f) LESSEE ceases to carry on business.</p>
+            <p><strong>11.2</strong> Upon the occurrence of an Event of Default, LESSOR may, at its option and without prejudice to any other rights or remedies available to it:</p>
+            <p>(a) Terminate this Agreement with immediate effect by providing written notice to LESSEE;</p>
+            <p>(b) Enter upon any premises where the Container(s) may be located and repossess the Container(s) without being liable for any damages or claims arising from such entry or repossession;</p>
+            <p>(c) Require LESSEE to immediately pay all amounts due or to become due under this Agreement; and/or</p>
+            <p>(d) Pursue any other remedy available at law or in equity.</p>
+            <p><strong>11.3</strong> Upon termination of this Agreement for any reason, LESSEE shall immediately return the Container(s) to LESSOR in accordance with Section 5.3 and shall pay to LESSOR all amounts due under this Agreement, including any Per Diem charges, repair costs, and other expenses incurred by LESSOR as a result of LESSEE's use or possession of the Container(s).</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>12. FORCE MAJEURE</h4>
+            <p><strong>12.1</strong> Neither Party shall be liable for any failure or delay in performing its obligations under this Agreement (other than obligations to make payment) if such failure or delay is caused by circumstances beyond that Party's reasonable control, including but not limited to acts of God, natural disasters, war, terrorism, riots, civil unrest, government action, strikes, lockouts, or other labor disputes ("Force Majeure Event").</p>
+            <p><strong>12.2</strong> A Party affected by a Force Majeure Event shall promptly notify the other Party of the nature and extent of the circumstances causing the failure or delay.</p>
+            <p><strong>12.3</strong> If a Force Majeure Event continues for a period of thirty (30) days or more, either Party may terminate this Agreement by providing written notice to the other Party, without liability for such termination.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>13. NOTICES</h4>
+            <p><strong>13.1</strong> All notices and other communications under this Agreement shall be in writing and shall be deemed given when: (a) delivered by hand; (b) sent by registered or certified mail, return receipt requested; (c) sent by nationally recognized overnight courier service; or (d) sent by email with confirmation of receipt, to the addresses specified in the Order Confirmation or to such other address as a Party may specify by notice to the other Party.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>14. GOVERNING LAW AND DISPUTE RESOLUTION</h4>
+            <p><strong>14.1</strong> This Agreement shall be governed by and construed in accordance with the laws of [State/Country], without giving effect to any choice of law or conflict of law provisions.</p>
+            <p><strong>14.2</strong> Any dispute, controversy, or claim arising out of or in connection with this Agreement, including any question regarding its existence, validity, or termination, shall be resolved as follows:</p>
+            <p>(a) The Parties shall first attempt to resolve the dispute through good faith negotiations, which shall not exceed thirty (30) days from the date on which the dispute is first notified in writing by one Party to the other;</p>
+            <p>(b) If the dispute is not resolved through negotiations, the Parties shall submit the dispute to mediation under the rules of the American Arbitration Association (or another mutually agreeable mediation service). The mediation shall take place in [City, State/Country] and shall not exceed sixty (60) days from the date of submission to mediation;</p>
+            <p>(c) If the dispute is not resolved through mediation, the dispute shall be finally resolved by binding arbitration under the rules of the American Arbitration Association. The arbitration shall take place in [City, State/Country], shall be conducted in the English language, and shall be decided by a panel of three arbitrators appointed in accordance with such rules.</p>
+            <p><strong>14.3</strong> Notwithstanding Section 14.2, either Party may seek injunctive or other equitable relief from a court of competent jurisdiction at any time.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>15. CONFIDENTIALITY</h4>
+            <p><strong>15.1</strong> Each Party agrees to maintain the confidentiality of any proprietary or confidential information of the other Party disclosed in connection with this Agreement ("Confidential Information") and to use such Confidential Information only for the purposes of performing its obligations under this Agreement.</p>
+            <p><strong>15.2</strong> The obligations of confidentiality shall not apply to information that: (a) is or becomes publicly available through no fault of the receiving Party; (b) is rightfully received by the receiving Party from a third party without restriction on disclosure; (c) is independently developed by the receiving Party without use of or reference to the Confidential Information; or (d) is required to be disclosed by law or governmental order, provided that the receiving Party gives the disclosing Party prompt notice of such requirement and cooperates with the disclosing Party's efforts to limit such disclosure.</p>
+          </div>
+          
+          <div class="contract-section">
+            <h4>16. MISCELLANEOUS</h4>
+            <p><strong>16.1 Assignment.</strong> LESSEE shall not assign, transfer, or delegate any of its rights or obligations under this Agreement without the prior written consent of LESSOR. LESSOR may assign, transfer, or delegate its rights and obligations under this Agreement to any affiliate or successor in interest without LESSEE's consent.</p>
+            <p><strong>16.2 Entire Agreement.</strong> This Agreement, together with the Order Confirmation, constitutes the entire agreement between the Parties with respect to the subject matter hereof and supersedes all prior and contemporaneous agreements, understandings, negotiations, and discussions, whether oral or written.</p>
+            <p><strong>16.3 Amendment.</strong> No amendment, modification, or waiver of any provision of this Agreement shall be effective unless in writing and signed by both Parties.</p>
+            <p><strong>16.4 Severability.</strong> If any provision of this Agreement is held to be invalid, illegal, or unenforceable, the validity, legality, and enforceability of the remaining provisions shall not in any way be affected or impaired.</p>
+            <p><strong>16.5 No Waiver.</strong> No failure or delay by either Party in exercising any right, power, or remedy under this Agreement shall operate as a waiver thereof, nor shall any single or partial exercise of such right, power, or remedy preclude any other or further exercise thereof or the exercise of any other right, power, or remedy.</p>
+            <p><strong>16.6 Relationship of Parties.</strong> Nothing in this Agreement shall be construed to create a partnership, joint venture, employment, or agency relationship between the Parties. Neither Party shall have the authority to bind the other Party or to incur any obligation on behalf of the other Party.</p>
+            <p><strong>16.7 Survival.</strong> The provisions of Sections 9, 10, 13, 14, 15, and 16 shall survive the termination or expiration of this Agreement.</p>
+            <p><strong>16.8 Counterparts.</strong> This Agreement may be executed in counterparts, each of which shall be deemed an original, but all of which together shall constitute one and the same instrument. Electronic or digital signatures shall be deemed original signatures for all purposes.</p>
+          </div>
+          
+          <div class="contract-section">
+            <p>IN WITNESS WHEREOF, the Parties have executed this Agreement as of the date of acceptance indicated below.</p>
+          </div>
+        </div>
+        
+        <div class="agreement-form">
+          <h3>Agreement to Terms and Conditions</h3>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="terms-checkbox"> 
+            <label for="terms-checkbox">I have read, understood, and agree to be bound by the terms and conditions of this Container Leasing Agreement.</label>
+          </div>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="authority-checkbox"> 
+            <label for="authority-checkbox">I confirm that I have the authority to enter into this Agreement on behalf of the LESSEE.</label>
+          </div>
+          
+          <div class="checkbox-container">
+            <input type="checkbox" id="insurance-checkbox"> 
+            <label for="insurance-checkbox">I understand the insurance requirements and agree to maintain the required insurance coverage throughout the Lease Period.</label>
+          </div>
+          
+          <button id="sign-contract-btn" class="btn btn-sign" disabled>Sign Agreement</button>
+          
+          <div id="success-message" class="success-message">
+            <p><strong>Success!</strong> You have successfully signed the Container Leasing Agreement. You will receive a confirmation email with a copy of the agreement shortly.</p>
+          </div>
+          
+          <div class="signature-block">
+            <p><strong>Name:</strong> <span id="signee-name">Loading...</span></p>
+            <p><strong>Company:</strong> <span id="signee-company">Loading...</span></p>
+            <p><strong>Date:</strong> <span id="signature-date">Loading...</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="my-contracts" class="tab-content">
+      <div class="contract-container">
+        <h2 style="font-size: 21.25px; text-align: center; color: #001937;">My Active Contracts</h2>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Contract #</th>
+              <th>Container Type</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="active-contracts-list">
+            <tr>
+              <td>CL-2023-001</td>
+              <td>40ft Dry Container (3 units)</td>
+              <td>01/15/2023</td>
+              <td>07/15/2023</td>
+              <td><span class="status-active">Active</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>CL-2023-002</td>
+              <td>20ft Refrigerated Container (1 unit)</td>
+              <td>02/10/2023</td>
+              <td>05/10/2023</td>
+              <td><span class="status-active">Active</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <h2 style="font-size: 21.25px; text-align: center; color: #001937;">Contract History</h2>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Contract #</th>
+              <th>Container Type</th>
+              <th>Start Date</th>
+              <th>End Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="contract-history-list">
+            <tr>
+              <td>CL-2022-045</td>
+              <td>40ft Dry Container (2 units)</td>
+              <td>10/05/2022</td>
+              <td>01/05/2023</td>
+              <td><span class="status-completed">Completed</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+            <tr>
+              <td>CL-2022-032</td>
+              <td>20ft Open Top Container (1 unit)</td>
+              <td>08/15/2022</td>
+              <td>12/15/2022</td>
+              <td><span class="status-completed">Completed</span></td>
+              <td><button class="btn">View Details</button></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    
+    <div id="templates" class="tab-content">
+      <div class="contract-container">
+        <h2 style="font-size: 21.25px; text-align: center; color: #001937;">Contract Templates</h2>
+        <p>Select a template to start a new contract:</p>
+        
+        <div class="template-list">
+          <div class="template-item">
+            <h3>Standard Container Lease</h3>
+            <p>Basic lease agreement for standard shipping containers.</p>
+            <button class="btn">Use Template</button>
+          </div>
+          
+          <div class="template-item">
+            <h3>Refrigerated Container Lease</h3>
+            <p>Specialized agreement for refrigerated containers with temperature control requirements.</p>
+            <button class="btn">Use Template</button>
+          </div>
+          
+          <div class="template-item">
+            <h3>Long-Term Container Lease</h3>
+            <p>Extended lease terms for containers required for 12+ months.</p>
+            <button class="btn">Use Template</button>
+          </div>
+          
+          <div class="template-item">
+            <h3>One-Way Container Lease</h3>
+            <p>Agreement for containers that will be returned at a different location than pickup.</p>
+            <button class="btn">Use Template</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Get current date for signature block
+    document.addEventListener('DOMContentLoaded', function() {
+      // Set current date
+      const today = new Date();
+      const formattedDate = today.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+      document.getElementById('signature-date').textContent = formattedDate;
+      
+      // Placeholder user data (would come from authenticated user in production)
+      document.getElementById('signee-name').textContent = 'John Smith';
+      document.getElementById('signee-company').textContent = 'Global Logistics Inc.';
+      
+      // Containers dropdown functionality
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+      
+      // The Contracts menu is now a direct link without a submenu
+      
+      // Tab functionality
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+          // Remove active class from all tabs and content
+          document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+          document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+          
+          // Add active class to clicked tab and corresponding content
+          this.classList.add('active');
+          const tabId = this.getAttribute('data-tab');
+          document.getElementById(tabId).classList.add('active');
+        });
+      });
+      
+      // Checkbox validation for agreement signing
+      const checkboxes = document.querySelectorAll('.checkbox-container input[type="checkbox"]');
+      const signButton = document.getElementById('sign-contract-btn');
+      
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', validateCheckboxes);
+      });
+      
+      function validateCheckboxes() {
+        const allChecked = Array.from(checkboxes).every(checkbox => checkbox.checked);
+        signButton.disabled = !allChecked;
+      }
+      
+      // Contract signing functionality
+      signButton.addEventListener('click', function() {
+        document.getElementById('success-message').style.display = 'block';
+        
+        // Scroll to success message
+        document.getElementById('success-message').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        
+        // In a real application, you would also:
+        // 1. Send the signed contract to the server
+        // 2. Store it in the database
+        // 3. Send confirmation emails
+        // 4. Create a contract record in the user's account
+      });
+    });
+  </script>
+</body>
+</html>

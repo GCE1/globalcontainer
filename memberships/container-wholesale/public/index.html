@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Container Wholesale Platform</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      display: none; /* Hide the old header */
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .has-submenu > a:after {
+      content: "▼";
+      font-size: 8px;
+      margin-left: 8px;
+      position: relative;
+      top: -2px;
+    }
+    
+    .submenu {
+      background-color: #243342;
+      margin: 0;
+      transition: all 0.3s ease;
+    }
+    
+    .submenu a {
+      padding: 10px 10px 10px 30px;
+    }
+    
+    .submenu a:hover, .submenu a.active {
+      background-color: #192631;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .search-box {
+      padding: 15px 20px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 8px;
+      border-radius: 4px;
+      border: none;
+      margin-top: 5px;
+      background-color: #34495e;
+      color: white;
+    }
+    
+    .search-box input::placeholder {
+      color: #bdc3c7;
+    }
+    
+    .leasing-rates {
+      padding: 15px 20px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .leasing-rates h3 {
+      margin-top: 0;
+      color: #3498db;
+    }
+    
+    .rate-item {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #34495e;
+    }
+    
+    .rate-item:last-child {
+      border-bottom: none;
+    }
+    
+    .rate-route {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    
+    .rate-price {
+      color: #2ecc71;
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    .section {
+      margin-bottom: 30px;
+      padding: 20px;
+      border-radius: 8px;
+      background-color: #f8f9fa;
+      border: 1px solid #e9ecef;
+    }
+    .section h2 {
+      color: #3498db;
+      border-bottom: 1px solid #e1e5ea;
+      padding-bottom: 10px;
+      margin-top: 0;
+    }
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #dee2e6;
+      margin-bottom: 15px;
+    }
+    .tab {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 5px 5px 0 0;
+      margin-right: 5px;
+    }
+    .tab.active {
+      background-color: white;
+      border-color: #dee2e6;
+      border-bottom-color: white;
+      margin-bottom: -1px;
+    }
+    .tab-content {
+      display: none;
+      padding: 15px;
+      background-color: white;
+      border-radius: 0 0 5px 5px;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #2980b9;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #555;
+    }
+    .email-list, .container-list {
+      margin-top: 20px;
+    }
+    .email-item, .container-item {
+      padding: 15px;
+      border: 1px solid #e1e5ea;
+      margin-bottom: 10px;
+      border-radius: 4px;
+      background-color: white;
+    }
+    .email-item .subject {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .email-item .meta, .container-item .meta {
+      font-size: 0.85em;
+      color: #6c757d;
+      margin-bottom: 10px;
+    }
+    .email-body, .container-details {
+      margin-top: 10px;
+      padding-top: 10px;
+      border-top: 1px solid #e1e5ea;
+    }
+    #status {
+      padding: 15px;
+      margin: 20px 0;
+      border-radius: 4px;
+      display: none;
+    }
+    .success {
+      background-color: #d4edda;
+      color: #155724;
+      border: 1px solid #c3e6cb;
+    }
+    .error {
+      background-color: #f8d7da;
+      color: #721c24;
+      border: 1px solid #f5c6cb;
+    }
+    
+    /* Dashboard and CSV Search Styles */
+    .dashboard-container {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    
+    .leasing-search-container {
+      background-color: #f8f9fa;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #e1e5ea;
+    }
+    
+    .search-results {
+      margin-top: 20px;
+      padding: 15px;
+      background-color: white;
+      border-radius: 8px;
+      border: 1px solid #e1e5ea;
+    }
+    
+    .search-results h4 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #3498db;
+      border-bottom: 1px solid #e1e5ea;
+      padding-bottom: 10px;
+    }
+    
+    .loading-spinner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 10px;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    #leasing-rates-table tbody tr {
+      transition: background-color 0.3s;
+    }
+    
+    #leasing-rates-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    
+    #leasing-rates-table tbody tr:hover {
+      background-color: #f1f7fa;
+    }
+    
+    #leasing-rates-table td {
+      padding: 10px;
+      border: 1px solid #ddd;
+    }
+    
+    .lease-button {
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 13px;
+      transition: background-color 0.3s;
+    }
+    
+    .lease-button:hover {
+      background-color: #218838;
+    }
+    
+    /* Autocomplete styles */
+    .autocomplete-wrapper {
+      position: relative;
+      width: 100%;
+    }
+    
+    datalist {
+      position: absolute;
+      max-height: 200px;
+      overflow-y: auto;
+      width: 100%;
+      background: white;
+      border: 1px solid #ddd;
+      border-top: none;
+      border-radius: 0 0 4px 4px;
+      display: none;
+    }
+    
+    .highlight-match {
+      font-weight: bold;
+      color: #3498db;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Wholesale Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Wholesale</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html" class="active"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li class="has-submenu">
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+      <li class="has-submenu">
+        <a href="#" id="platforms-link"><span class="sidebar-menu-icon">🔄</span>Platforms</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="/container-wholesale/public/index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🏢</span>Wholesale Platform</a></li>
+          <li><a href="/container-leasing/public/index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🚢</span>Leasing Manager</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- Current Leasing Rates section removed as requested -->
+  </div>
+  
+  <!-- Main Content -->
+  <div class="main-content">
+    <div class="container">
+      <header>
+        <img src="images/container-terminal-banner.jpg" alt="Container Wholesale Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+        <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Container Wholesale Platform</h1>
+      </header>
+    
+    <div id="status"></div>
+    
+    <!-- Dashboard with CSV-based Leasing Search -->
+    <div class="section">
+      <h2 style="color: #001937;">Dashboard</h2>
+      <div class="dashboard-container">
+        <div class="leasing-search-container" style="background-color: #001937; padding: 20px; border-radius: 5px;">
+          <div style="margin-bottom: 15px;">
+            <h3 style="color: #3799d6; margin: 0; text-align: left; margin-bottom: 5px;">Container Wholesale Search</h3>
+            <p style="color: white; margin: 0; font-size: 0.85em; font-weight: normal;">Find available wholesale containers by specifying country and city:</p>
+          </div>
+          
+          <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+            <div class="form-group" style="flex: 1; min-width: 200px; max-width: 45%;">
+              <label for="csv-origin-search" style="font-size: 1.035em; font-weight: 500; color: #3799d6;">Country:</label>
+              <div class="autocomplete-wrapper">
+                <input type="text" id="csv-origin-search" placeholder="Enter country" list="origin-list" style="width: 100%; font-size: 1.035em;">
+                <datalist id="origin-list">
+                  <!-- Will be populated with origins from CSV -->
+                </datalist>
+              </div>
+            </div>
+            
+            <div class="form-group" style="flex: 1; min-width: 200px; max-width: 45%;">
+              <label for="csv-destination-search" style="font-size: 1.035em; font-weight: 500; color: #3799d6;">City:</label>
+              <div class="autocomplete-wrapper">
+                <input type="text" id="csv-destination-search" placeholder="Enter city" list="destination-list" style="width: 100%; font-size: 1.035em;">
+                <datalist id="destination-list">
+                  <!-- Will be populated with destinations from CSV -->
+                </datalist>
+              </div>
+            </div>
+          </div>
+          
+          <button id="csv-search-button" style="background-color: #3799d6; color: white; border: none; padding: 10px 15px; border-radius: 4px; cursor: pointer;">Search Wholesale Containers</button>
+          
+          <div id="csv-search-results" class="search-results">
+            <h4 style="color: #001937;">Wholesale Container Results</h4>
+            <div class="loading-spinner" id="csv-loading-spinner" style="display: none;">
+              <div class="spinner"></div>
+              <p>Loading results...</p>
+            </div>
+            <table id="wholesale-rates-table" style="width: 100%; border-collapse: collapse; margin-top: 20px; display: none;">
+              <thead>
+                <tr style="background-color: #f2f2f2;">
+                  <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Country</th>
+                  <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">City</th>
+                  <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Container Size</th>
+                  <th style="padding: 10px; text-align: center; border: 1px solid #ddd;">Thumbnail</th>
+                  <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Price</th>
+                  <th style="padding: 10px; text-align: left; border: 1px solid #ddd;">Actions</th>
+                </tr>
+              </thead>
+              <tbody id="wholesale-rates-body">
+                <!-- Results will be populated here -->
+              </tbody>
+            </table>
+            <p id="no-results-message" style="display: none; margin-top: 20px; text-align: center; color: #666;">No matching wholesale containers found. Please try different search criteria.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Organization Management and User Management have been moved to organization.html -->
+    
+    <!-- Email Management has been moved to email.html -->
+    
+    <!-- Container Management section moved to view-containers.html -->
+    
+    <!-- New dedicated Add Container section -->
+    <div class="section" id="add-container-section" style="display: none;">
+      <h2>Add New Container</h2>
+      <div class="dashboard-container">
+        <div class="form-group">
+          <label for="container-name">Container Name:</label>
+          <input type="text" id="container-name" placeholder="Enter container name">
+        </div>
+        <div class="form-group">
+          <label for="container-type">Container Type:</label>
+          <select id="container-type">
+            <option value="dry">Dry</option>
+            <option value="refrigerated">Refrigerated</option>
+            <option value="open-top">Open Top</option>
+            <option value="flat-rack">Flat Rack</option>
+            <option value="tank">Tank</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="container-size">Container Size:</label>
+          <select id="container-size">
+            <option value="20ft">20ft</option>
+            <option value="40ft" selected>40ft</option>
+            <option value="45ft">45ft</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="container-origin">Country:</label>
+          <input type="text" id="container-origin" placeholder="Enter country">
+        </div>
+        <div class="form-group">
+          <label for="container-destination">City:</label>
+          <input type="text" id="container-destination" placeholder="Enter city">
+        </div>
+        <div class="form-group">
+          <label for="container-price">Price ($):</label>
+          <input type="number" id="container-price" placeholder="Enter price">
+        </div>
+        <button id="add-container-button">Add Container</button>
+        <div id="container-success" class="success" style="display: none; margin-top: 20px;">
+          Container added successfully!
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+
+  <script>
+    // Load origins and destinations from CSV on page load
+    document.addEventListener('DOMContentLoaded', function() {
+      loadOrigins();
+      loadDestinations();
+      
+      // Setup navigation for Containers and Add Container sections
+      setupNavigation();
+      
+      // Setup add container form functionality
+      setupAddContainerForm();
+      
+      // Check for URL parameters to handle direct linking
+      checkUrlParameters();
+    });
+    
+    // Check URL parameters to handle direct navigation
+    function checkUrlParameters() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const section = urlParams.get('section');
+      
+      if (section === 'add-container') {
+        // Show add container section and hide others
+        document.querySelectorAll('.section').forEach(section => {
+          section.style.display = section.id === 'add-container-section' ? 'block' : 'none';
+        });
+        
+        // Update active states in sidebar
+        document.querySelectorAll('.sidebar-menu a').forEach(link => link.classList.remove('active'));
+        document.getElementById('containers-link').classList.add('active');
+        document.getElementById('add-container-link').classList.add('active');
+        
+        // Show the submenu
+        document.querySelector('.submenu').style.display = 'block';
+      }
+    }
+    
+    // Setup the add container form
+    function setupAddContainerForm() {
+      const addContainerButton = document.getElementById('add-container-button');
+      const successMessage = document.getElementById('container-success');
+      
+      if (addContainerButton) {
+        addContainerButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          
+          // Get form values
+          const containerName = document.getElementById('container-name').value;
+          const containerType = document.getElementById('container-type').value;
+          const containerSize = document.getElementById('container-size').value;
+          const containerCountry = document.getElementById('container-origin').value;
+          const containerCity = document.getElementById('container-destination').value;
+          const containerPrice = document.getElementById('container-price').value;
+          
+          // Simple form validation
+          if (!containerName || !containerCountry || !containerCity || !containerPrice) {
+            alert('Please fill in all required fields (Container Name, Country, City, and Price)');
+            return;
+          }
+          
+          // Create container object
+          const newContainer = {
+            name: containerName,
+            type: containerType,
+            size: containerSize,
+            country: containerCountry,
+            city: containerCity,
+            price: parseFloat(containerPrice),
+            status: 'available',
+            createdAt: new Date().toISOString()
+          };
+          
+          // In a real application, you would send this to the server
+          console.log('New container data:', newContainer);
+          
+          // For demonstration, we'll add it to the available containers list
+          // Function to create a container HTML element
+          function createContainerElement(container) {
+            const containerItem = document.createElement('div');
+            containerItem.className = 'container-item';
+            
+            containerItem.innerHTML = `
+              <h3>${container.size} ${container.type} Container</h3>
+              <div class="meta">ID: CON-${Math.floor(Math.random() * 1000)} • Country: ${container.country} • City: ${container.city}</div>
+              <div class="container-details">
+                <p><strong>Price:</strong> $${container.price.toFixed(2)}</p>
+                <p><strong>Status:</strong> ${container.status}</p>
+              </div>
+            `;
+            
+            return containerItem;
+          }
+          
+          // Add to the available containers list
+          const availableContainers = document.getElementById('available-containers');
+          if (availableContainers) {
+            availableContainers.appendChild(createContainerElement(newContainer));
+          }
+          
+          // Reset form
+          document.getElementById('container-name').value = '';
+          document.getElementById('container-origin').value = '';
+          document.getElementById('container-destination').value = '';
+          document.getElementById('container-price').value = '';
+          document.getElementById('container-free-days').value = '';
+          document.getElementById('container-per-diem').value = '';
+          
+          // Show success message
+          successMessage.style.display = 'block';
+          
+          // Hide success message after 3 seconds
+          setTimeout(function() {
+            successMessage.style.display = 'none';
+          }, 3000);
+        });
+      }
+    }
+    
+    // Setup sidebar navigation
+    function setupNavigation() {
+      // References to sections - find sections by their headings
+      const sections = document.querySelectorAll('.section');
+      let dashboardSection = null;
+      let containerSection = null;
+      
+      // Find dashboard section
+      sections.forEach(section => {
+        const heading = section.querySelector('h2');
+        if (heading && heading.textContent.includes('Dashboard')) {
+          dashboardSection = section;
+        }
+      });
+      const addContainerSection = document.getElementById('add-container-section');
+      
+      // Sidebar links
+      const dashboardLink = document.querySelector('.sidebar-menu > li:nth-child(1) > a');
+      const containersLink = document.getElementById('containers-link');
+      const viewContainersLink = document.getElementById('view-containers-link');
+      const addContainerLink = document.getElementById('add-container-link');
+      const platformsLink = document.getElementById('platforms-link');
+      const containerSubmenu = document.querySelector('#containers-link + .submenu');
+      const platformsSubmenu = document.querySelector('#platforms-link + .submenu');
+      
+      // Toggle container submenu when clicking on Containers
+      containersLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isVisible = containerSubmenu.style.display === 'block';
+        containerSubmenu.style.display = isVisible ? 'none' : 'block';
+        
+        // Hide other submenus when opening this one
+        if (!isVisible) {
+          platformsSubmenu.style.display = 'none';
+          
+          // If opening the menu, make Containers link active
+          document.querySelectorAll('.sidebar-menu a').forEach(link => link.classList.remove('active'));
+          containersLink.classList.add('active');
+          
+          // If the user hasn't explicitly chosen a submenu option yet,
+          // default to the view containers page 
+          if (!viewContainersLink.classList.contains('active') && 
+              !addContainerLink.classList.contains('active')) {
+            window.location.href = 'view-containers.html';
+          }
+        }
+      });
+      
+      // Toggle platforms submenu when clicking on Platforms
+      platformsLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        const isVisible = platformsSubmenu.style.display === 'block';
+        platformsSubmenu.style.display = isVisible ? 'none' : 'block';
+        
+        // Hide other submenus when opening this one
+        if (!isVisible) {
+          containerSubmenu.style.display = 'none';
+          
+          // If opening the menu, make Platforms link active
+          document.querySelectorAll('.sidebar-menu a').forEach(link => link.classList.remove('active'));
+          platformsLink.classList.add('active');
+        }
+      });
+      
+      // Dashboard link (already active by default)
+      dashboardLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Show all relevant sections
+        document.querySelectorAll('.section').forEach(section => {
+          if (section !== addContainerSection) {
+            section.style.display = 'block';
+          }
+        });
+        
+        // Hide add container section
+        if (addContainerSection) {
+          addContainerSection.style.display = 'none';
+        }
+        
+        // Close submenu
+        submenu.style.display = 'none';
+        
+        // Update active state in sidebar
+        document.querySelectorAll('.sidebar-menu a').forEach(link => link.classList.remove('active'));
+        dashboardLink.classList.add('active');
+      });
+      
+      // View Containers link - redirect to view-containers.html
+      viewContainersLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        window.location.href = 'view-containers.html';
+      });
+      
+      // Add Container link
+      addContainerLink.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Hide other sections and show add container section
+        document.querySelectorAll('.section').forEach(section => {
+          section.style.display = section === addContainerSection ? 'block' : 'none';
+        });
+        
+        // Hide all content between header and form
+        const headerTextDiv = document.querySelector('header div');
+        const dashboardText = document.querySelector('h2[style="color: #001937;"]');
+        if (headerTextDiv) headerTextDiv.style.display = 'none';
+        if (dashboardText) dashboardText.parentElement.style.display = 'none';
+        
+        // Move the form up by adding margin-top: -50px
+        if (addContainerSection) {
+          addContainerSection.style.marginTop = '-50px';
+        }
+        
+        // Update active state in sidebar
+        document.querySelectorAll('.sidebar-menu a').forEach(link => link.classList.remove('active'));
+        containersLink.classList.add('active');
+        addContainerLink.classList.add('active');
+      });
+    }
+    
+    // Function to load and populate origins from CSV
+    function loadOrigins() {
+      console.log('Loading origins...');
+      fetch('/api/origins')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(origins => {
+          console.log('Received origins:', origins);
+          const datalist = document.getElementById('origin-list');
+          const originInput = document.getElementById('csv-origin-search');
+          
+          if (!datalist) {
+            console.error('Origin datalist element not found!');
+            return;
+          }
+          
+          datalist.innerHTML = ''; // Clear existing options
+          
+          // Add each origin to the datalist
+          origins.forEach(origin => {
+            console.log('Adding origin to datalist:', origin);
+            const option = document.createElement('option');
+            option.value = origin;
+            datalist.appendChild(option);
+          });
+          
+          // Create a select dropdown as a fallback
+          // This is needed because datalist doesn't work well in all browsers
+          const select = document.createElement('select');
+          select.id = 'origin-select';
+          select.style.width = '100%';
+          select.style.padding = '10px';
+          select.style.marginBottom = '15px';
+          select.style.border = '1px solid #ddd';
+          select.style.borderRadius = '4px';
+          select.style.boxSizing = 'border-box';
+          select.style.maxWidth = '100%';
+          select.style.fontSize = '1.035em';
+          
+          // Add a default blank option
+          const defaultOption = document.createElement('option');
+          defaultOption.value = '';
+          defaultOption.textContent = '-- Select an origin --';
+          select.appendChild(defaultOption);
+          
+          // Add all origins to the select dropdown
+          origins.forEach(origin => {
+            const option = document.createElement('option');
+            option.value = origin;
+            option.textContent = origin;
+            select.appendChild(option);
+          });
+          
+          // Replace the input with the select dropdown
+          const parentElement = originInput.parentElement;
+          originInput.style.display = 'none';
+          parentElement.appendChild(select);
+          
+          // Listen for changes on the select and update the input
+          select.addEventListener('change', function() {
+            originInput.value = this.value;
+          });
+        })
+        .catch(error => {
+          console.error('Error loading origins:', error);
+        });
+    }
+    
+    // Function to load and populate destinations from CSV
+    function loadDestinations() {
+      console.log('Loading destinations...');
+      fetch('/api/destinations')
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(destinations => {
+          console.log('Received destinations:', destinations);
+          const datalist = document.getElementById('destination-list');
+          const destinationInput = document.getElementById('csv-destination-search');
+          
+          if (!datalist) {
+            console.error('Destination datalist element not found!');
+            return;
+          }
+          
+          datalist.innerHTML = ''; // Clear existing options
+          
+          // Add each destination to the datalist
+          destinations.forEach(destination => {
+            console.log('Adding destination to datalist:', destination);
+            const option = document.createElement('option');
+            option.value = destination;
+            datalist.appendChild(option);
+          });
+          
+          // Create a select dropdown as a fallback
+          // This is needed because datalist doesn't work well in all browsers
+          const select = document.createElement('select');
+          select.id = 'destination-select';
+          select.style.width = '100%';
+          select.style.padding = '10px';
+          select.style.marginBottom = '15px';
+          select.style.border = '1px solid #ddd';
+          select.style.borderRadius = '4px';
+          select.style.boxSizing = 'border-box';
+          select.style.maxWidth = '100%';
+          select.style.fontSize = '1.035em';
+          
+          // Add a default blank option
+          const defaultOption = document.createElement('option');
+          defaultOption.value = '';
+          defaultOption.textContent = '-- Select a destination --';
+          select.appendChild(defaultOption);
+          
+          // Add all destinations to the select dropdown
+          destinations.forEach(destination => {
+            const option = document.createElement('option');
+            option.value = destination;
+            option.textContent = destination;
+            select.appendChild(option);
+          });
+          
+          // Replace the input with the select dropdown
+          const parentElement = destinationInput.parentElement;
+          destinationInput.style.display = 'none';
+          parentElement.appendChild(select);
+          
+          // Listen for changes on the select and update the input
+          select.addEventListener('change', function() {
+            destinationInput.value = this.value;
+          });
+        })
+        .catch(error => {
+          console.error('Error loading destinations:', error);
+        });
+    }
+    
+    // CSV-based Wholesale Search
+    document.getElementById('csv-search-button').addEventListener('click', searchWholesaleRates);
+    
+    // Enter key triggers search
+    document.getElementById('csv-origin-search').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        searchWholesaleRates();
+      }
+    });
+    
+    document.getElementById('csv-destination-search').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        searchWholesaleRates();
+      }
+    });
+    
+    function searchWholesaleRates() {
+      // Get values from both the inputs and select dropdowns (prefer select if they exist)
+      let origin = '';
+      let destination = '';
+      
+      // Get origin value (prefer select if it exists)
+      const originSelect = document.getElementById('origin-select');
+      const originInput = document.getElementById('csv-origin-search');
+      if (originSelect && originSelect.value) {
+        origin = originSelect.value.trim();
+        console.log('Using origin from select:', origin);
+      } else if (originInput) {
+        origin = originInput.value.trim();
+        console.log('Using origin from input:', origin);
+      }
+      
+      // Get destination value (prefer select if it exists)
+      const destinationSelect = document.getElementById('destination-select');
+      const destinationInput = document.getElementById('csv-destination-search');
+      if (destinationSelect && destinationSelect.value) {
+        destination = destinationSelect.value.trim();
+        console.log('Using destination from select:', destination);
+      } else if (destinationInput) {
+        destination = destinationInput.value.trim();
+        console.log('Using destination from input:', destination);
+      }
+      
+      // No upfront validation - we'll pass the exact values to the server
+      
+      // If both fields are empty, show a message that we'll show all available containers
+      if (!origin && !destination) {
+        showStatus('Showing first 100 available wholesale containers', 'info');
+      }
+      
+      // Show loading spinner
+      document.getElementById('csv-loading-spinner').style.display = 'flex';
+      document.getElementById('wholesale-rates-table').style.display = 'none';
+      document.getElementById('no-results-message').style.display = 'none';
+      
+      // Build the query parameters
+      const params = new URLSearchParams();
+      if (origin) {
+        params.append('origin', origin);
+      }
+      if (destination) {
+        params.append('destination', destination);
+      }
+      
+      // Make the AJAX request to the server
+      fetch(`/api/wholesale-rates?${params.toString()}`)
+        .then(response => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then(data => {
+          // Hide loading spinner
+          document.getElementById('csv-loading-spinner').style.display = 'none';
+          
+          // Process the results
+          if (data.length === 0) {
+            // No results found
+            document.getElementById('no-results-message').style.display = 'block';
+            document.getElementById('wholesale-rates-table').style.display = 'none';
+          } else {
+            // Populate the table with results
+            document.getElementById('wholesale-rates-table').style.display = 'table';
+            document.getElementById('no-results-message').style.display = 'none';
+            
+            const tableBody = document.getElementById('wholesale-rates-body');
+            tableBody.innerHTML = ''; // Clear existing results
+            
+            data.forEach(rate => {
+              const row = document.createElement('tr');
+              
+              // Get data from the row, accounting for different possible column names
+              // Helper function to get value regardless of case
+              function getValue(obj, key) {
+                // First check if the exact key exists
+                if (obj[key]) return obj[key];
+                
+                // Try various case variations
+                const caseVariations = [
+                  key.toUpperCase(),  // "ORIGIN"
+                  key.toLowerCase(),  // "origin"
+                  key.charAt(0).toUpperCase() + key.slice(1).toLowerCase(), // "Origin"
+                ];
+                
+                for (const variation of caseVariations) {
+                  if (obj[variation] !== undefined) {
+                    return obj[variation];
+                  }
+                }
+                
+                // Finally, try to find the key case-insensitively
+                const actualKey = Object.keys(obj).find(k => k.toLowerCase() === key.toLowerCase());
+                return actualKey ? obj[actualKey] : '';
+              }
+              
+              console.log('Processing row data:', rate);
+              
+              // For debugging, show all keys in this row
+              console.log('Row keys:', Object.keys(rate));
+              
+              // Get the values from our wholesale container data structure
+              // First check for standardized field names
+              let country = getValue(rate, 'Country') || '';
+              let city = getValue(rate, 'City') || '';
+              let containerType = getValue(rate, 'Container Type') || '';
+              let price = getValue(rate, 'Price') || '';
+              
+              // If the standard properties don't work, use positional properties
+              // For the Wholesale Containers.csv, we know the order is: COUNTRY, CITY, Size and Type, Price
+              const keys = Object.keys(rate);
+              if ((!country || !city) && keys.length >= 2) {
+                // Try positional access
+                country = country || rate[keys[0]] || '';
+                city = city || rate[keys[1]] || '';
+                containerType = containerType || (keys.length > 2 ? rate[keys[2]] || '' : '');
+                price = price || (keys.length > 3 ? rate[keys[3]] || '' : '');
+              }
+              
+              console.log(`Found row data - Country: ${country}, City: ${city}, Container Type: ${containerType}, Price: ${price}`);
+              
+              console.log('Final extracted values:', {
+                country, city, containerType, price
+              });
+              
+              // Get the appropriate thumbnail image based on container type
+              const thumbnailSrc = getContainerThumbnail(containerType);
+              
+              // Add cells for each column
+              row.innerHTML = `
+                <td>${country}</td>
+                <td>${city}</td>
+                <td>${containerType}</td>
+                <td style="text-align: center;"><img src="${thumbnailSrc}" alt="${containerType}" style="width: 80px; height: 60px; object-fit: contain;"></td>
+                <td>$${price}</td>
+                <td><button class="lease-button" onclick="initiateLeasing('${country}', '${city}', '${containerType}')">Purchase Now</button></td>
+              `;
+              
+              tableBody.appendChild(row);
+            });
+            
+            showStatus(`Found ${data.length} matching wholesale container rates`, 'success');
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching wholesale container rates:', error);
+          document.getElementById('csv-loading-spinner').style.display = 'none';
+          document.getElementById('no-results-message').style.display = 'block';
+          document.getElementById('wholesale-rates-table').style.display = 'none';
+          document.getElementById('no-results-message').textContent = 'An error occurred while fetching wholesale container rates. Please try again.';
+          
+          showStatus('Error fetching wholesale container rates. Please try again.', 'error');
+        });
+    }
+    
+    /**
+     * Get the appropriate container thumbnail image based on the container type
+     * @param {string} containerType - The type of container
+     * @returns {string} - URL to the appropriate container image
+     */
+    function getContainerThumbnail(containerType) {
+      // Create a default container SVG if no specific type is matched
+      let imageUrl = createContainerSVG(containerType.slice(0, 6), "#5D4037");
+      
+      // Convert to lowercase for easier matching
+      const type = containerType.toLowerCase();
+      
+      // Create SVG images for different container types
+      if (type.includes("20") && type.includes("gp")) {
+        // 20ft General Purpose container
+        imageUrl = createContainerSVG("20GP", "#3799d6");
+      } else if (type.includes("40") && type.includes("gp")) {
+        // 40ft General Purpose container
+        imageUrl = createContainerSVG("40GP", "#1f6692");
+      } else if (type.includes("20") && type.includes("sd")) {
+        // 20ft Standard container
+        imageUrl = createContainerSVG("20SD", "#3799d6");
+      } else if (type.includes("40") && type.includes("sd")) {
+        // 40ft Standard container
+        imageUrl = createContainerSVG("40SD", "#1f6692");
+      } else if (type.includes("40") && type.includes("hc")) {
+        // 40ft High Cube container
+        imageUrl = createContainerSVG("40HC", "#17517a");
+      } else if (type.includes("20") && type.includes("hc")) {
+        // 20ft High Cube container
+        imageUrl = createContainerSVG("20HC", "#17517a");
+      } else if (type.includes("45") && type.includes("hc")) {
+        // 45ft High Cube container
+        imageUrl = createContainerSVG("45HC", "#0e3d5f");
+      } else if (type.includes("20") && type.includes("ot")) {
+        // 20ft Open Top container
+        imageUrl = createContainerSVG("20OT", "#4CAF50", true);
+      } else if (type.includes("40") && type.includes("ot")) {
+        // 40ft Open Top container
+        imageUrl = createContainerSVG("40OT", "#388E3C", true);
+      } else if (type.includes("rf") || type.includes("refrig")) {
+        // Refrigerated container
+        imageUrl = createContainerSVG("RF", "#00ACC1");
+      } else if (type.includes("tank")) {
+        // Tank container
+        imageUrl = createContainerSVG("TANK", "#795548", false, true);
+      } else if (type.includes("flat") || type.includes("fr")) {
+        // Flat rack container
+        imageUrl = createContainerSVG("FR", "#9E9E9E", false, false, true);
+      } else if (type.includes("pw") || type.includes("platform")) {
+        // Platform container
+        imageUrl = createContainerSVG("PW", "#FF9800", false, false, true);
+      }
+      
+      return imageUrl;
+    }
+    
+    /**
+     * Create an SVG container image with the given parameters
+     * @param {string} text - The text to display on the container
+     * @param {string} color - The color of the container
+     * @param {boolean} openTop - Whether the container has an open top
+     * @param {boolean} isRound - Whether the container is round (tank)
+     * @param {boolean} isFlatRack - Whether the container is a flat rack
+     * @returns {string} - Data URL of the SVG image
+     */
+    function createContainerSVG(text, color, openTop = false, isRound = false, isFlatRack = false) {
+      // Create SVG for container image
+      let svg = '';
+      
+      if (isRound) {
+        // Tank container
+        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+          <rect x="30" y="90" width="140" height="10" fill="#555" />
+          <rect x="40" y="20" width="120" height="70" rx="35" ry="35" fill="${color}" />
+          <text x="100" y="55" font-family="Arial" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">${text}</text>
+          <rect x="50" y="40" width="100" height="2" fill="#fff" opacity="0.3" />
+          <rect x="50" y="60" width="100" height="2" fill="#fff" opacity="0.3" />
+        </svg>`;
+      } else if (isFlatRack) {
+        // Flat rack container
+        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+          <rect x="30" y="90" width="140" height="10" fill="#555" />
+          <rect x="30" y="20" width="140" height="10" fill="#555" />
+          <rect x="30" y="30" width="10" height="60" fill="${color}" />
+          <rect x="160" y="30" width="10" height="60" fill="${color}" />
+          <rect x="40" y="75" width="120" height="15" fill="${color}" />
+          <text x="100" y="85" font-family="Arial" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">${text}</text>
+        </svg>`;
+      } else if (openTop) {
+        // Open top container
+        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+          <rect x="40" y="30" width="120" height="60" fill="${color}" />
+          <rect x="40" y="90" width="120" height="5" fill="#555" />
+          <rect x="40" y="30" width="120" height="5" fill="#555" stroke="#888" stroke-width="1" stroke-dasharray="5,3" />
+          <text x="100" y="60" font-family="Arial" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">${text}</text>
+          <rect x="45" y="40" width="110" height="2" fill="#fff" opacity="0.3" />
+          <rect x="45" y="70" width="110" height="2" fill="#fff" opacity="0.3" />
+        </svg>`;
+      } else {
+        // Standard container
+        svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 120">
+          <rect x="40" y="30" width="120" height="60" fill="${color}" />
+          <rect x="40" y="90" width="120" height="5" fill="#555" />
+          <rect x="40" y="25" width="120" height="5" fill="#555" />
+          <text x="100" y="60" font-family="Arial" font-size="16" fill="white" text-anchor="middle" dominant-baseline="middle">${text}</text>
+          <rect x="45" y="40" width="110" height="2" fill="#fff" opacity="0.3" />
+          <rect x="45" y="70" width="110" height="2" fill="#fff" opacity="0.3" />
+        </svg>`;
+      }
+      
+      // Convert SVG to data URL
+      return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+    }
+
+    function initiateLeasing(country, city, containerType) {
+      alert(`Initiating purchase for ${containerType} container in ${city}, ${country}. This would open the purchase form.`);
+      // In a real application, this would redirect to a purchase form or open a modal
+    }
+    
+    // Tab navigation
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        const tabName = this.getAttribute('data-tab');
+        const tabContainer = this.parentElement;
+        
+        // Remove active class from all tabs in this container
+        tabContainer.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        // Hide all tab content
+        const tabContents = tabContainer.nextElementSibling;
+        const tabContentContainer = tabContents.parentElement;
+        tabContentContainer.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+        
+        // Show the relevant tab content
+        document.getElementById(`${tabName}-content`).classList.add('active');
+      });
+    });
+
+    // API interaction
+    document.getElementById('create-organization').addEventListener('click', function() {
+      const name = document.getElementById('organization-name').value;
+      const email = document.getElementById('organization-email').value;
+      const phone = document.getElementById('organization-phone').value;
+      
+      if (!name || !email) {
+        showStatus('Please enter organization name and email', 'error');
+        return;
+      }
+      
+      fetch('/api/organizations', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          phone
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showStatus('Organization created successfully!', 'success');
+        // Clear form
+        document.getElementById('organization-name').value = '';
+        document.getElementById('organization-email').value = '';
+        document.getElementById('organization-phone').value = '';
+      })
+      .catch(error => {
+        showStatus('Error creating organization: ' + error.message, 'error');
+      });
+    });
+
+    document.getElementById('create-user').addEventListener('click', function() {
+      const username = document.getElementById('user-username').value;
+      const email = document.getElementById('user-email').value;
+      const password = document.getElementById('user-password').value;
+      const firstName = document.getElementById('user-first-name').value;
+      const lastName = document.getElementById('user-last-name').value;
+      const role = document.getElementById('user-role').value;
+      
+      if (!username || !email || !password) {
+        showStatus('Please enter username, email, and password', 'error');
+        return;
+      }
+      
+      fetch('/api/users', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          username,
+          email,
+          passwordHash: password, // In a real app, hash the password on the server!
+          firstName,
+          lastName,
+          role
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showStatus('User created successfully!', 'success');
+        // Clear form
+        document.getElementById('user-username').value = '';
+        document.getElementById('user-email').value = '';
+        document.getElementById('user-password').value = '';
+        document.getElementById('user-first-name').value = '';
+        document.getElementById('user-last-name').value = '';
+      })
+      .catch(error => {
+        showStatus('Error creating user: ' + error.message, 'error');
+      });
+    });
+
+    document.getElementById('send-email').addEventListener('click', function() {
+      const recipient = document.getElementById('email-recipient').value;
+      const subject = document.getElementById('email-subject').value;
+      const content = document.getElementById('email-content').value;
+      
+      if (!recipient || !subject || !content) {
+        showStatus('Please fill in all email fields', 'error');
+        return;
+      }
+      
+      fetch('/api/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          userId: 1, // For demo purposes, assuming current user ID is 1
+          subject,
+          content,
+          sender: 'currentuser@example.com', // For demo purposes
+          recipient,
+          folder: 'sent'
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showStatus('Email sent successfully!', 'success');
+        // Clear form
+        document.getElementById('email-recipient').value = '';
+        document.getElementById('email-subject').value = '';
+        document.getElementById('email-content').value = '';
+      })
+      .catch(error => {
+        showStatus('Error sending email: ' + error.message, 'error');
+      });
+    });
+
+    document.getElementById('save-draft').addEventListener('click', function() {
+      const recipient = document.getElementById('email-recipient').value;
+      const subject = document.getElementById('email-subject').value;
+      const content = document.getElementById('email-content').value;
+      
+      fetch('/api/emails', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          userId: 1, // For demo purposes, assuming current user ID is 1
+          subject,
+          content,
+          sender: 'currentuser@example.com', // For demo purposes
+          recipient,
+          folder: 'drafts'
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showStatus('Draft saved successfully!', 'success');
+      })
+      .catch(error => {
+        showStatus('Error saving draft: ' + error.message, 'error');
+      });
+    });
+
+    document.getElementById('add-container').addEventListener('click', function() {
+      const name = document.getElementById('container-name').value;
+      const containerType = document.getElementById('container-type').value;
+      const containerSize = document.getElementById('container-size').value;
+      const origin = document.getElementById('container-origin').value;
+      const destination = document.getElementById('container-destination').value;
+      const price = document.getElementById('container-price').value;
+      const freeDays = document.getElementById('container-free-days').value;
+      const perDiemRate = document.getElementById('container-per-diem').value;
+      
+      if (!name || !price) {
+        showStatus('Please enter container name and price', 'error');
+        return;
+      }
+      
+      fetch('/api/containers', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          containerType,
+          containerSize,
+          containerStatus: 'available',
+          origin,
+          destination,
+          price,
+          freeDays,
+          perDiemRate,
+          ownerId: 1 // For demo purposes, assuming current user ID is 1
+        })
+      })
+      .then(response => response.json())
+      .then(data => {
+        showStatus('Container added successfully!', 'success');
+        // Clear form
+        document.getElementById('container-name').value = '';
+        document.getElementById('container-origin').value = '';
+        document.getElementById('container-destination').value = '';
+        document.getElementById('container-price').value = '';
+        document.getElementById('container-free-days').value = '';
+        document.getElementById('container-per-diem').value = '';
+      })
+      .catch(error => {
+        showStatus('Error adding container: ' + error.message, 'error');
+      });
+    });
+
+    // Helper function to show status messages
+    function showStatus(message, type) {
+      const status = document.getElementById('status');
+      status.textContent = message;
+      status.className = type;
+      status.style.display = 'block';
+      
+      setTimeout(() => {
+        status.style.display = 'none';
+      }, 5000);
+    }
+    
+    // AJAX Search functionality for containers by origin and destination
+    document.getElementById('search-button').addEventListener('click', function() {
+      searchContainers();
+    });
+    
+    // Also enable search when pressing Enter in the search fields
+    document.getElementById('origin-search').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        searchContainers();
+      }
+    });
+    
+    document.getElementById('destination-search').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') {
+        searchContainers();
+      }
+    });
+    
+    function searchContainers() {
+      const origin = document.getElementById('origin-search').value.trim();
+      const destination = document.getElementById('destination-search').value.trim();
+      
+      // If both fields are empty, don't perform search
+      if (!origin && !destination) {
+        showStatus('Please enter an origin or destination to search', 'error');
+        return;
+      }
+      
+      // Build search query
+      let searchParams = new URLSearchParams();
+      if (origin) {
+        searchParams.append('origin', origin);
+      }
+      if (destination) {
+        searchParams.append('destination', destination);
+      }
+      
+      // Show a searching message
+      showStatus('Searching for containers...', 'success');
+      
+      // Fetch containers matching the search criteria
+      fetch('/api/containers?' + searchParams.toString())
+        .then(response => response.json())
+        .then(containers => {
+          // Clear existing containers in all tabs
+          document.getElementById('available-containers').innerHTML = '';
+          document.getElementById('leased-containers').innerHTML = '';
+          document.getElementById('maintenance-containers').innerHTML = '';
+          
+          if (containers.length === 0) {
+            showStatus('No containers found matching your search criteria', 'error');
+            return;
+          }
+          
+          // Group containers by status
+          const availableContainers = containers.filter(c => c.containerStatus === 'available');
+          const leasedContainers = containers.filter(c => c.containerStatus === 'leased');
+          const maintenanceContainers = containers.filter(c => c.containerStatus === 'maintenance');
+          
+          // Add containers to their respective tabs
+          availableContainers.forEach(container => {
+            addContainerToList('available-containers', container);
+          });
+          
+          leasedContainers.forEach(container => {
+            addContainerToList('leased-containers', container);
+          });
+          
+          maintenanceContainers.forEach(container => {
+            addContainerToList('maintenance-containers', container);
+          });
+          
+          showStatus(`Found ${containers.length} containers matching your search criteria`, 'success');
+        })
+        .catch(error => {
+          console.error('Error searching containers:', error);
+          showStatus('Error searching for containers. Please try again.', 'error');
+        });
+    }
+    
+    // Helper function to add a container to the specified list
+    function addContainerToList(listId, container) {
+      const containerList = document.getElementById(listId);
+      
+      const containerItem = document.createElement('div');
+      containerItem.className = 'container-item';
+      
+      const containerTitle = document.createElement('h3');
+      containerTitle.textContent = container.name || `${container.containerSize} ${container.containerType} Container`;
+      
+      const containerMeta = document.createElement('div');
+      containerMeta.className = 'meta';
+      containerMeta.textContent = `ID: ${container.id} • `;
+      
+      if (container.origin) {
+        containerMeta.textContent += `Origin: ${container.origin} • `;
+      }
+      
+      if (container.destination) {
+        containerMeta.textContent += `Destination: ${container.destination}`;
+      }
+      
+      const containerDetails = document.createElement('div');
+      containerDetails.className = 'container-details';
+      
+      // Container details
+      containerDetails.innerHTML = `
+        <p><strong>Price:</strong> $${parseFloat(container.price).toFixed(2)}</p>
+        ${container.freeDays ? `<p><strong>Free Days:</strong> ${container.freeDays}</p>` : ''}
+        ${container.perDiemRate ? `<p><strong>Per Diem Rate:</strong> $${parseFloat(container.perDiemRate).toFixed(2)}/day</p>` : ''}
+      `;
+      
+      // Add lease button only for available containers
+      if (container.containerStatus === 'available') {
+        const leaseButton = document.createElement('button');
+        leaseButton.className = 'lease-container';
+        leaseButton.textContent = 'Lease Container';
+        leaseButton.onclick = function() {
+          // Add leasing functionality here
+          alert(`Leasing container ${container.id} would open the leasing form`);
+        };
+        containerDetails.appendChild(leaseButton);
+      }
+      
+      // Assemble the container item
+      containerItem.appendChild(containerTitle);
+      containerItem.appendChild(containerMeta);
+      containerItem.appendChild(containerDetails);
+      
+      // Add to the container list
+      containerList.appendChild(containerItem);
+    }
+    
+    // Add click events for the sidebar menu - but only for links that don't navigate to other pages
+    document.querySelectorAll('.sidebar-menu a[href="#"]').forEach(menuItem => {
+      menuItem.addEventListener('click', function(e) {
+        e.preventDefault();
+        
+        // Remove active class from all menu items
+        document.querySelectorAll('.sidebar-menu a').forEach(item => {
+          item.classList.remove('active');
+        });
+        
+        // Add active class to clicked menu item
+        this.classList.add('active');
+        
+        // You can add logic here to show different sections based on menu selection
+        // For now, just a placeholder
+        const menuText = this.textContent.trim();
+        showStatus(`You clicked on ${menuText}`, 'success');
+      });
+    });
+  </script>
+</body>
+</html>

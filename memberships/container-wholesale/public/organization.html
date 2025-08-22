@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Container Wholesale</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f7fa;
+      display: flex;
+    }
+    
+    .sidebar {
+      width: 250px;
+      background-color: #001937;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      overflow-y: auto;
+    }
+    
+    .logo-container {
+      padding: 10px 15px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      background-color: #001937;
+    }
+    
+    .logo-container img {
+      max-width: 85%;
+      height: auto;
+    }
+    
+    .platform-header {
+      color: white;
+      text-align: center;
+      font-size: 14px;
+      font-weight: normal;
+      margin-top: 10px;
+      padding-bottom: 8px;
+      white-space: nowrap;
+    }
+    
+    .sidebar-header {
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #34495e;
+      display: none; /* Hide the old header */
+    }
+    
+    .sidebar-menu {
+      padding: 0;
+      list-style: none;
+    }
+    
+    .sidebar-menu li {
+      padding: 0;
+    }
+    
+    .sidebar-menu a {
+      display: block;
+      padding: 15px 20px;
+      color: white;
+      text-decoration: none;
+      border-bottom: 1px solid #34495e;
+      transition: background-color 0.3s;
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .sidebar-menu a:hover, .sidebar-menu a.active {
+      background-color: #34495e;
+    }
+    
+    .sidebar-menu-icon {
+      margin-right: 8px; /* Reduced by 20% from 10px */
+      font-size: 12.8px; /* Reduced by 20% from standard 16px */
+    }
+    
+    .main-content {
+      margin-left: 250px;
+      padding: 20px;
+      width: calc(100% - 250px);
+    }
+    
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid #dee2e6;
+      margin-bottom: 15px;
+    }
+    
+    .tab {
+      padding: 10px 15px;
+      cursor: pointer;
+      border: 1px solid transparent;
+      border-radius: 5px 5px 0 0;
+      margin-right: 5px;
+    }
+    
+    .tab.active {
+      background-color: white;
+      border-color: #dee2e6;
+      border-bottom-color: white;
+      margin-bottom: -1px;
+    }
+    
+    .tab-content {
+      display: none;
+    }
+    
+    .tab-content.active {
+      display: block;
+    }
+    
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #e1e5ea;
+    }
+    
+    thead {
+      background-color: #f8f9fa;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    
+    input, select, textarea {
+      width: 100%;
+      padding: 8px 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    
+    .btn {
+      padding: 8px 15px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    
+    .btn-secondary {
+      background-color: #95a5a6;
+    }
+    
+    .action-buttons {
+      display: flex;
+      gap: 5px;
+    }
+    
+    .status-badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+    
+    .status-active {
+      background-color: #d4edda;
+      color: #155724;
+    }
+    
+    .status-inactive {
+      background-color: #f8d7da;
+      color: #721c24;
+    }
+    
+    .org-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .search-box {
+      display: flex;
+      margin-bottom: 20px;
+    }
+    
+    .search-box input {
+      width: 300px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo-container">
+      <img src="/images/logos/GCE-logo.png" alt="Global Container Exchange" />
+      <div class="platform-header">Container Wholesale Platform</div>
+    </div>
+    <div class="sidebar-header">
+      <h2>Container Wholesale</h2>
+    </div>
+    
+    <ul class="sidebar-menu">
+      <li><a href="index.html"><span class="sidebar-menu-icon">📊</span>Dashboard</a></li>
+      <li>
+        <a href="#" id="containers-link"><span class="sidebar-menu-icon">📦</span>Containers</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="view-containers.html" id="view-containers-link" style="font-size: 12px;"><span class="sidebar-menu-icon">📋</span>View Containers</a></li>
+          <li><a href="#" id="add-container-link" style="font-size: 12px;"><span class="sidebar-menu-icon">➕</span>Add Container</a></li>
+        </ul>
+      </li>
+      <li><a href="contracts.html"><span class="sidebar-menu-icon">📝</span>Contracts</a></li>
+      <li><a href="calendar.html"><span class="sidebar-menu-icon">📅</span>Calendar</a></li>
+      <li><a href="invoices.html"><span class="sidebar-menu-icon">💰</span>Invoices</a></li>
+      <li><a href="email.html"><span class="sidebar-menu-icon">✉️</span>Messages</a></li>
+      <li><a href="organization.html" class="active"><span class="sidebar-menu-icon">⚙️</span>Settings</a></li>
+      <li class="has-submenu">
+        <a href="#" id="platforms-link"><span class="sidebar-menu-icon">🔄</span>Platforms</a>
+        <ul class="submenu" style="list-style: none; padding-left: 20px; display: none;">
+          <li><a href="/container-wholesale/public/index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🏢</span>Wholesale Platform</a></li>
+          <li><a href="/container-leasing/public/index.html" style="font-size: 12px;"><span class="sidebar-menu-icon">🚢</span>Leasing Manager</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <img src="images/container-terminal-banner.jpg" alt="Container Wholesale Platform" style="width: 100%; max-width: 1200px; height: 180px; object-fit: cover; object-position: center 40%; margin: 15px 0 5px 0; box-shadow: 0 3px 15px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+      <h1 style="font-size: 21.25px; color: #001937; text-align: left; margin-top: 10px; margin-bottom: 10px;">Department Settings</h1>
+    </header>
+    <div class="org-header">
+      <h2>Department Management</h2>
+      <button class="btn" id="new-org-btn">Add New Department</button>
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="org-search" placeholder="Search departments...">
+      <button class="btn" id="search-btn">Search</button>
+    </div>
+
+    <div class="card">
+      <div class="tabs">
+        <div class="tab active" data-tab="departments">Departments</div>
+        <div class="tab" data-tab="roles">Roles & Permissions</div>
+        <div class="tab" data-tab="users">User Management</div>
+      </div>
+
+      <div class="tab-content active" id="departments-tab">
+        <table>
+          <thead>
+            <tr>
+              <th>Department Name</th>
+              <th>Parent Company</th>
+              <th>Department Head</th>
+              <th>Members</th>
+              <th>Description</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="org-table-body">
+            <tr>
+              <td>Operations</td>
+              <td>Global Container Exchange</td>
+              <td>John Smith</td>
+              <td>8</td>
+              <td>Handles daily container operations and logistics</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Finance</td>
+              <td>Global Container Exchange</td>
+              <td>Jane Doe</td>
+              <td>6</td>
+              <td>Manages budgeting, invoicing, and financial reporting</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Logistics</td>
+              <td>Global Shipping Solutions</td>
+              <td>Michael Johnson</td>
+              <td>10</td>
+              <td>Coordinates shipping routes and container movements</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Customer Service</td>
+              <td>Pacific Freight Management</td>
+              <td>Sarah Williams</td>
+              <td>9</td>
+              <td>Provides client support and handles inquiries</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-content" id="departments-tab">
+        <table>
+          <thead>
+            <tr>
+              <th>Department Name</th>
+              <th>Parent Company</th>
+              <th>Manager</th>
+              <th>Members</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Operations</td>
+              <td>Global Container Exchange</td>
+              <td>John Smith</td>
+              <td>8</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Customer Service</td>
+              <td>Global Container Exchange</td>
+              <td>Jane Doe</td>
+              <td>6</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Logistics</td>
+              <td>Global Shipping Solutions</td>
+              <td>Michael Johnson</td>
+              <td>10</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Manage Members</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab-content" id="roles-tab">
+        <table>
+          <thead>
+            <tr>
+              <th>Role Name</th>
+              <th>Department</th>
+              <th>Users</th>
+              <th>Permissions</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Administrator</td>
+              <td>All</td>
+              <td>5</td>
+              <td>Full access</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">View Users</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Manager</td>
+              <td>Global Container Exchange</td>
+              <td>8</td>
+              <td>Department management, contracts, invoices</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">View Users</button>
+              </td>
+            </tr>
+            <tr>
+              <td>Staff</td>
+              <td>Global Container Exchange</td>
+              <td>11</td>
+              <td>View contracts, containers</td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">View Users</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      
+      <div class="tab-content" id="users-tab">
+        <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+          <h3>User List</h3>
+          <button class="btn" id="add-new-user-btn">Add New User</button>
+        </div>
+        
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Full Name</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Department</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="user-table-body">
+            <tr>
+              <td>johnsmith</td>
+              <td>John Smith</td>
+              <td>john.smith@example.com</td>
+              <td>Admin</td>
+              <td>Operations</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Deactivate</button>
+              </td>
+            </tr>
+            <tr>
+              <td>janedoe</td>
+              <td>Jane Doe</td>
+              <td>jane.doe@example.com</td>
+              <td>Manager</td>
+              <td>Finance</td>
+              <td><span class="status-badge status-active">Active</span></td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn btn-secondary">Deactivate</button>
+              </td>
+            </tr>
+            <tr>
+              <td>bobmiller</td>
+              <td>Bob Miller</td>
+              <td>bob.miller@example.com</td>
+              <td>Staff</td>
+              <td>Logistics</td>
+              <td><span class="status-badge status-inactive">Inactive</span></td>
+              <td class="action-buttons">
+                <button class="btn">Edit</button>
+                <button class="btn">Activate</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        
+        <div id="user-form" style="margin-top: 30px; display: none;">
+          <h3>Add/Edit User</h3>
+          <div class="form-group">
+            <label for="user-username">Username</label>
+            <input type="text" id="user-username" placeholder="Enter username">
+          </div>
+          <div class="form-group">
+            <label for="user-email">Email</label>
+            <input type="email" id="user-email" placeholder="Enter email">
+          </div>
+          <div class="form-group">
+            <label for="user-password">Password</label>
+            <input type="password" id="user-password" placeholder="Enter password">
+          </div>
+          <div class="form-group">
+            <label for="user-first-name">First Name</label>
+            <input type="text" id="user-first-name" placeholder="Enter first name">
+          </div>
+          <div class="form-group">
+            <label for="user-last-name">Last Name</label>
+            <input type="text" id="user-last-name" placeholder="Enter last name">
+          </div>
+          <div class="form-group">
+            <label for="user-role">Role</label>
+            <select id="user-role">
+              <option value="admin">Admin</option>
+              <option value="manager">Manager</option>
+              <option value="staff">Staff</option>
+              <option value="customer" selected>Customer</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="user-organization">Department</label>
+            <select id="user-organization">
+              <option value="1">Operations</option>
+              <option value="2">Finance</option>
+              <option value="3">Logistics</option>
+              <option value="4">Customer Service</option>
+            </select>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <button class="btn" id="save-user-btn">Save User</button>
+            <button class="btn btn-secondary" id="cancel-user-btn">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Toggle platforms submenu when clicking on Platforms
+      const platformsLink = document.getElementById('platforms-link');
+      const platformsSubmenu = document.querySelector('#platforms-link + .submenu');
+      const containerSubmenu = document.querySelector('#containers-link + .submenu');
+      
+      if (platformsLink && platformsSubmenu) {
+        platformsLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isVisible = platformsSubmenu.style.display === 'block';
+          platformsSubmenu.style.display = isVisible ? 'none' : 'block';
+          
+          // Hide other submenus when opening this one
+          if (!isVisible && containerSubmenu) {
+            containerSubmenu.style.display = 'none';
+          }
+        });
+      }
+      
+      // Handle containers submenu toggle
+      const containersLink = document.getElementById('containers-link');
+      if (containersLink && containerSubmenu) {
+        containersLink.addEventListener('click', function(e) {
+          e.preventDefault();
+          const isVisible = containerSubmenu.style.display === 'block';
+          containerSubmenu.style.display = isVisible ? 'none' : 'block';
+          
+          // Hide other submenus when opening this one
+          if (!isVisible && platformsSubmenu) {
+            platformsSubmenu.style.display = 'none';
+          }
+        });
+      }
+    });
+    
+    // Tab switching functionality
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Remove active class from all tabs
+        document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        // Add active class to clicked tab
+        this.classList.add('active');
+        
+        // Hide all tab content
+        document.querySelectorAll('.tab-content').forEach(content => {
+          content.classList.remove('active');
+        });
+        
+        // Show the corresponding tab content
+        const tabName = this.getAttribute('data-tab');
+        document.getElementById(`${tabName}-tab`).classList.add('active');
+      });
+    });
+    
+    // Add New Department button click handler
+    document.getElementById('new-org-btn').addEventListener('click', openDepartmentForm); // Rename to new-dept-btn in the future
+    
+    // Search button click handler
+    document.getElementById('search-btn').addEventListener('click', function() {
+      const searchTerm = document.getElementById('org-search').value.toLowerCase();
+      
+      // Simple client-side search through table rows
+      const tableRows = document.querySelectorAll('#org-table-body tr'); // Rename to dept-table-body in the future
+      
+      tableRows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        if (text.includes(searchTerm)) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    });
+    
+    // User Management UI functionality
+    document.getElementById('add-new-user-btn')?.addEventListener('click', function() {
+      // Show the user form
+      document.getElementById('user-form').style.display = 'block';
+      // Clear form fields
+      document.getElementById('user-username').value = '';
+      document.getElementById('user-email').value = '';
+      document.getElementById('user-password').value = '';
+      document.getElementById('user-first-name').value = '';
+      document.getElementById('user-last-name').value = '';
+      document.getElementById('user-role').value = 'customer';
+    });
+    
+    document.getElementById('cancel-user-btn')?.addEventListener('click', function() {
+      // Hide the user form
+      document.getElementById('user-form').style.display = 'none';
+    });
+    
+    document.getElementById('save-user-btn')?.addEventListener('click', function() {
+      // Get form values
+      const username = document.getElementById('user-username').value;
+      const email = document.getElementById('user-email').value;
+      const firstName = document.getElementById('user-first-name').value;
+      const lastName = document.getElementById('user-last-name').value;
+      const role = document.getElementById('user-role').value;
+      const department = document.getElementById('user-organization').options[document.getElementById('user-organization').selectedIndex].text;
+      
+      // Basic validation
+      if (!username || !email || !firstName || !lastName) {
+        alert('Please fill in all required fields');
+        return;
+      }
+      
+      // In a real implementation, we would send this data to the server
+      // For demo purposes, just add a new row to the table
+      const userTable = document.getElementById('user-table-body');
+      const newRow = document.createElement('tr');
+      newRow.innerHTML = `
+        <td>${username}</td>
+        <td>${firstName} ${lastName}</td>
+        <td>${email}</td>
+        <td>${role.charAt(0).toUpperCase() + role.slice(1)}</td>
+        <td>${department}</td>
+        <td><span class="status-badge status-active">Active</span></td>
+        <td class="action-buttons">
+          <button class="btn">Edit</button>
+          <button class="btn btn-secondary">Deactivate</button>
+        </td>
+      `;
+      userTable.appendChild(newRow);
+      
+      // Hide the form
+      document.getElementById('user-form').style.display = 'none';
+    });
+    
+    // Containers dropdown functionality
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('containers-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        const submenu = this.nextElementSibling;
+        if (submenu.style.display === 'block') {
+          submenu.style.display = 'none';
+        } else {
+          submenu.style.display = 'block';
+        }
+      });
+      
+      // Add Container and View Container links functionality
+      document.getElementById('add-container-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        // In a real app, this would navigate to the Add Container page
+        alert('Add Container functionality will be implemented in the next phase');
+      });
+    });
+    
+    // Department form functionality
+    function closeDepartmentForm() {
+      document.getElementById('department-form').style.display = 'none';
+      document.getElementById('department-form-overlay').style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+    }
+    
+    function openDepartmentForm() {
+      document.getElementById('department-form').style.display = 'block';
+      document.getElementById('department-form-overlay').style.display = 'block';
+      document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+      
+      // Ensure close button event handlers are attached each time the form opens
+      document.getElementById('close-department-form').onclick = closeDepartmentForm;
+      document.getElementById('cancel-department-btn').onclick = closeDepartmentForm;
+      document.getElementById('department-form-overlay').onclick = closeDepartmentForm;
+    }
+    
+    // Add keyboard handler for the Escape key to close the department form
+    document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape' && document.getElementById('department-form').style.display === 'block') {
+        closeDepartmentForm();
+      }
+    });
+    
+    // Ensure event handlers are only attached when DOM is ready
+    document.addEventListener('DOMContentLoaded', function() {
+      if (document.getElementById('save-department-btn')) {
+        document.getElementById('save-department-btn').onclick = function() {
+          // Get form values
+          const name = document.getElementById('department-name').value;
+          const head = document.getElementById('department-head').options[document.getElementById('department-head').selectedIndex].text;
+          const description = document.getElementById('department-description').value;
+      
+      // Basic validation
+      if (!name) {
+        alert('Please enter a department name');
+        return;
+      }
+      
+      // In a real implementation, we would send this data to the server
+      // For demo purposes, just add a new row to the department table
+      const departmentTable = document.querySelector('#departments-tab tbody');
+      const newRow = document.createElement('tr');
+      newRow.innerHTML = `
+        <td>${name}</td>
+        <td>Global Container Exchange</td>
+        <td>${head}</td>
+        <td>${Math.floor(Math.random() * 10) + 1}</td>
+        <td>${description || 'New department'}</td>
+        <td class="action-buttons">
+          <button class="btn">Edit</button>
+          <button class="btn btn-secondary">Manage Members</button>
+        </td>
+      `;
+          departmentTable.appendChild(newRow);
+          
+          // Close the form and reset fields
+          closeDepartmentForm();
+          document.getElementById('department-name').value = '';
+          document.getElementById('department-description').value = '';
+        };
+      }
+    });
+  </script>
+  
+  <!-- Department Form Background Overlay -->
+  <div id="department-form-overlay" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.5); z-index: 999;"></div>
+  
+  <!-- Department Form -->
+  <div id="department-form" style="display: none; padding: 20px; background-color: white; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.2); position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 500px; max-width: 90%; z-index: 1000;">
+    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+      <h3 style="color: #001937; margin: 0;">Add New Department</h3>
+      <button id="close-department-form" style="background: none; border: none; font-size: 18px; cursor: pointer; color: #666;">&times;</button>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr; gap: 15px; margin-bottom: 20px;">
+      <div>
+        <label for="department-name" style="display: block; margin-bottom: 5px; font-weight: 700;">Department Name:</label>
+        <input type="text" id="department-name" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+      </div>
+
+      <div>
+        <label for="department-head" style="display: block; margin-bottom: 5px; font-weight: 700;">Department Head:</label>
+        <select id="department-head" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;">
+          <option value="1">John Smith</option>
+          <option value="2">Jane Doe</option>
+          <option value="3">Michael Johnson</option>
+        </select>
+      </div>
+      <div>
+        <label for="department-description" style="display: block; margin-bottom: 5px; font-weight: 700;">Description:</label>
+        <textarea id="department-description" style="width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px; height: 80px; resize: vertical; font-size: 16px;"></textarea>
+      </div>
+    </div>
+    <div style="display: flex; gap: 10px; justify-content: flex-end;">
+      <button class="btn btn-secondary" id="cancel-department-btn">Cancel</button>
+      <button class="btn" id="save-department-btn" style="background-color: #3799d6;">Save Department</button>
+    </div>
+  </div>
+</body>
+</html>

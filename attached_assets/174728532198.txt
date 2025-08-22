@@ -1,0 +1,90 @@
+Insights Page
+The Insights Page will provide a dashboard showing all locations where containers are being leased, including origin and destination data, and monthly averaged pickup charges. It will exclude company-specific information to maintain privacy.
+
+Implementation Steps:
+Plugin: Use WP Data Tables or Advanced Custom Fields Pro (ACF Pro) for data visualization.
+Features:
+Dynamic Location Map:
+Use Google Maps API (via plugins like WP Google Maps) to display container origin and destination points.
+Each point on the map will represent a leasing transaction.
+Monthly Averages:
+Use WooCommerce Analytics or a custom query to calculate the average pickup charges per month.
+Display this data in a table or chart using a plugin like Chart.js Integration.
+Filters:
+Allow users to filter by location, date range, or container type.
+Use FacetWP or Filter Everything to implement advanced filtering options.
+2. Dynamic Container Page
+The Dynamic Container Page will allow customers to add their own containers via a form and manage their inventory. The inventory will include location details and sync with their profile.
+
+Implementation Steps:
+Plugin: Use Gravity Forms or WPForms for the submission form, and ACF Pro for dynamic content display.
+Features:
+Container Submission Form:
+Fields for container details, including:
+Container type, size, and condition.
+Current location (origin and destination).
+Availability status.
+Automatically save submitted data to the user’s profile.
+Inventory Management:
+Use Custom Post Types (via ACF or CPT UI) to store container data.
+Display a dashboard where users can view, edit, or delete their containers.
+Sync with Profile:
+Link the submitted containers to the user’s account.
+Use User Meta or Profile Builder Pro to store and display inventory data in their profile.
+Dynamic Listings:
+Containers added by users can optionally be published as public listings (if enabled by the user).
+3. Invoice Page
+The Invoice Page will help customers keep their books up to date by automatically generating and managing invoices for their transactions.
+
+Implementation Steps:
+Plugin: Use WooCommerce PDF Invoices & Packing Slips or Sprout Invoices.
+Features:
+Automatic Invoice Generation:
+Generate invoices automatically for each transaction.
+Include details such as container type, pickup charges, per diem rates, and total cost.
+Invoice Management:
+Allow users to view, download, and print invoices from their profile.
+Create a dedicated invoice page that summarizes all transactions.
+Tax and Compliance:
+Add tax calculations and compliance features for different regions.
+Use plugins like TaxJar for automated tax calculations.
+Export Options:
+Allow users to export invoice data as CSV or Excel files for bookkeeping.
+4. Email Management System
+The Email Management System will allow customers to send and receive emails from their own customers. Emails will be redirected to specific tabs for easy management.
+
+Implementation Steps:
+Plugin: Use FluentCRM or WP Mail SMTP Pro for email management.
+Features:
+Customer Communication:
+Allow users to send and receive emails directly from the platform.
+Create a simple email interface for composing, replying, and forwarding emails.
+Redirect Emails to Tabs:
+Organize emails into tabs such as “Inbox,” “Sent,” “Drafts,” and “Archived.”
+Use Custom Post Types to store and display emails in these tabs.
+Email Templates:
+Provide pre-designed templates for common email types (e.g., transaction confirmations, inquiries).
+Email Notifications:
+Notify users when they receive a new email.
+Use Push Notifications (via OneSignal) for real-time updates.
+Email Attachments:
+Allow users to attach files (e.g., contracts, invoices) to their emails.
+Email Analytics:
+Track email open rates, click-through rates, and response times for better communication insights.
+Workflow Example
+For Insights Page:
+A customer logs in and navigates to the Insights Page.
+They see a map with all container leasing locations and charts showing monthly pickup charge averages.
+They filter the data by date range or container type.
+For Dynamic Container Page:
+A customer adds a new container via a submission form.
+The container is saved to their profile and displayed in their inventory dashboard.
+They update the container’s location when it moves to a new destination.
+For Invoice Page:
+A customer views the Invoice Page to see all their transactions.
+They download a PDF invoice for a specific transaction.
+They export all invoices for the month to a CSV file for bookkeeping.
+For Email Management:
+A customer sends an email to their client directly from the platform.
+The email appears in the “Sent” tab, while replies are redirected to the “Inbox” tab.
+They attach an invoice to the email and track when the recipient opens it.

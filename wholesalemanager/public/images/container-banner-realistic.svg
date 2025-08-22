@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <!-- Enhanced gradient definitions for photorealistic effects -->
+  <defs>
+    <!-- Sky gradient with multiple color stops for realism -->
+    <linearGradient id="sky-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#88c4f2"/>
+      <stop offset="40%" stop-color="#a9d4f7"/>
+      <stop offset="70%" stop-color="#c5e0fa"/>
+      <stop offset="100%" stop-color="#d8e9fc"/>
+    </linearGradient>
+    
+    <!-- Sea gradient with multiple stops for wave effect -->
+    <linearGradient id="sea-gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a75ba"/>
+      <stop offset="40%" stop-color="#2980b9"/>
+      <stop offset="70%" stop-color="#3498db"/>
+      <stop offset="100%" stop-color="#5dade2"/>
+    </linearGradient>
+    
+    <!-- Reflective metal for containers -->
+    <linearGradient id="container-red-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e74c3c"/>
+      <stop offset="30%" stop-color="#c0392b"/>
+      <stop offset="50%" stop-color="#a93226"/>
+      <stop offset="70%" stop-color="#c0392b"/>
+      <stop offset="100%" stop-color="#e74c3c"/>
+    </linearGradient>
+    
+    <linearGradient id="container-blue-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3498db"/>
+      <stop offset="30%" stop-color="#2980b9"/>
+      <stop offset="50%" stop-color="#216a9e"/>
+      <stop offset="70%" stop-color="#2980b9"/>
+      <stop offset="100%" stop-color="#3498db"/>
+    </linearGradient>
+    
+    <linearGradient id="container-green-metal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2ecc71"/>
+      <stop offset="30%" stop-color="#27ae60"/>
+      <stop offset="50%" stop-color="#229954"/>
+      <stop offset="70%" stop-color="#27ae60"/>
+      <stop offset="100%" stop-color="#2ecc71"/>
+    </linearGradient>
+    
+    <!-- Ship hull metal texture -->
+    <linearGradient id="ship-hull-metal" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#34495e"/>
+      <stop offset="25%" stop-color="#2c3e50"/>
+      <stop offset="50%" stop-color="#263445"/>
+      <stop offset="75%" stop-color="#2c3e50"/>
+      <stop offset="100%" stop-color="#34495e"/>
+    </linearGradient>
+    
+    <!-- Realistic cloud filter -->
+    <filter id="cloud-filter" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="1.5" intercept="-0.3"/>
+      </feComponentTransfer>
+    </filter>
+    
+    <!-- Realistic shadow filter -->
+    <filter id="shadow-filter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.5"/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Reflection filter -->
+    <filter id="reflection-filter">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.3"/>
+      </feComponentTransfer>
+    </filter>
+    
+    <!-- Sun glow -->
+    <radialGradient id="sun-glow" cx="90%" cy="20%" r="10%" fx="90%" fy="20%">
+      <stop offset="0%" stop-color="#f9d71c" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#f9d71c" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#f9d71c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Background & Environment -->
+  <rect width="1200" height="300" fill="url(#sky-gradient)" rx="0" ry="0"/>
+  
+  <!-- Sun glow effect -->
+  <circle cx="1000" cy="60" r="120" fill="url(#sun-glow)"/>
+  
+  <!-- Sun disk -->
+  <circle cx="1000" cy="60" r="40" fill="#f9d71c" filter="url(#shadow-filter)"/>
+  
+  <!-- Distant mountains on horizon (silhouette) -->
+  <path d="M0,180 Q150,130 250,160 T500,140 T750,170 T1000,150 T1200,180 V300 H0 Z" 
+        fill="#7f8c8d" opacity="0.15"/>
+  
+  <!-- Sea -->
+  <path d="M0,200 L1200,200 L1200,300 L0,300 Z" fill="url(#sea-gradient)"/>
+  
+  <!-- Wave effects for sea surface -->
+  <path d="M0,200 Q300,190 600,200 T1200,200 L1200,210 L0,210 Z" fill="#5dade2" opacity="0.6"/>
+  <path d="M0,205 Q300,215 600,205 T1200,205 L1200,215 L0,215 Z" fill="#3498db" opacity="0.4"/>
+  
+  <!-- Realistic clouds with soft edges -->
+  <ellipse cx="100" cy="70" rx="70" ry="25" fill="white" opacity="0.9" filter="url(#cloud-filter)"/>
+  <ellipse cx="150" cy="90" rx="60" ry="20" fill="white" opacity="0.8" filter="url(#cloud-filter)"/>
+  <ellipse cx="500" cy="60" rx="80" ry="30" fill="white" opacity="0.85" filter="url(#cloud-filter)"/>
+  <ellipse cx="570" cy="80" rx="70" ry="20" fill="white" opacity="0.9" filter="url(#cloud-filter)"/>
+  <ellipse cx="800" cy="90" rx="90" ry="25" fill="white" opacity="0.8" filter="url(#cloud-filter)"/>
+  <ellipse cx="850" cy="110" rx="60" ry="20" fill="white" opacity="0.85" filter="url(#cloud-filter)"/>
+  
+  <!-- Coastal port area (distant) -->
+  <rect x="750" y="200" width="450" height="10" fill="#95a5a6" opacity="0.8"/>
+  <rect x="750" y="210" width="450" height="90" fill="#7f8c8d" opacity="0.6"/>
+  
+  <!-- Port cranes (silhouette in distance) -->
+  <g transform="translate(800, 195) scale(0.8)" opacity="0.7">
+    <rect x="0" y="0" width="15" height="80" fill="#34495e"/>
+    <rect x="0" y="-20" width="60" height="20" fill="#34495e"/>
+    <rect x="50" y="-20" width="10" height="100" fill="#34495e"/>
+  </g>
+  <g transform="translate(900, 195) scale(0.9)" opacity="0.8">
+    <rect x="0" y="0" width="15" height="90" fill="#34495e"/>
+    <rect x="0" y="-20" width="70" height="20" fill="#34495e"/>
+    <rect x="60" y="-20" width="10" height="110" fill="#34495e"/>
+  </g>
+  <g transform="translate(1050, 195) scale(0.7)" opacity="0.6">
+    <rect x="0" y="0" width="15" height="70" fill="#34495e"/>
+    <rect x="0" y="-20" width="50" height="20" fill="#34495e"/>
+    <rect x="40" y="-20" width="10" height="90" fill="#34495e"/>
+  </g>
+  
+  <!-- Main cargo ship -->
+  <g transform="translate(300, 190) scale(1)" filter="url(#shadow-filter)">
+    <!-- Ship hull -->
+    <path d="M20,0 L480,0 L500,30 L0,30 Z" fill="url(#ship-hull-metal)"/>
+    <rect x="50" y="-40" width="400" height="40" fill="url(#ship-hull-metal)" rx="2" ry="2"/>
+    
+    <!-- Ship details -->
+    <rect x="430" y="-50" width="30" height="10" fill="#7f8c8d"/>
+    <rect x="70" y="-50" width="50" height="10" fill="#7f8c8d"/>
+    
+    <!-- Stacked containers with enhanced 3D effect using gradients -->
+    <!-- Row 1 (bottom) -->
+    <g transform="translate(80, -60)">
+      <rect x="0" y="0" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="42" y="0" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="84" y="0" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="126" y="0" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="168" y="0" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="210" y="0" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="252" y="0" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="294" y="0" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      
+      <!-- Row 2 -->
+      <rect x="0" y="-22" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="42" y="-22" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="84" y="-22" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="126" y="-22" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="210" y="-22" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="252" y="-22" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      
+      <!-- Row 3 -->
+      <rect x="0" y="-44" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="42" y="-44" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="84" y="-44" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="252" y="-44" width="40" height="20" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+      
+      <!-- Row 4 (top) -->
+      <rect x="0" y="-66" width="40" height="20" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+      <rect x="42" y="-66" width="40" height="20" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+    </g>
+    
+    <!-- Ship reflection in water (subtle) -->
+    <path d="M20,30 L480,30 L500,60 L0,60 Z" fill="url(#ship-hull-metal)" opacity="0.2" filter="url(#reflection-filter)"/>
+  </g>
+  
+  <!-- Second, smaller ship in distance -->
+  <g transform="translate(600, 195) scale(0.4)" opacity="0.8" filter="url(#shadow-filter)">
+    <!-- Ship hull -->
+    <path d="M20,0 L380,0 L400,20 L0,20 Z" fill="url(#ship-hull-metal)"/>
+    <rect x="40" y="-30" width="300" height="30" fill="url(#ship-hull-metal)" rx="2" ry="2"/>
+    
+    <!-- Simplified container stacks for distant ship -->
+    <g transform="translate(60, -40)">
+      <rect x="0" y="0" width="260" height="10" fill="#e74c3c"/>
+      <rect x="0" y="-12" width="180" height="10" fill="#3498db"/>
+      <rect x="0" y="-24" width="120" height="10" fill="#2ecc71"/>
+    </g>
+  </g>
+  
+  <!-- Foreground details - dock edge -->
+  <rect x="0" y="200" width="250" height="5" fill="#95a5a6"/>
+  
+  <!-- Foreground stack of containers -->
+  <g transform="translate(20, 200) scale(1.2)" filter="url(#shadow-filter)">
+    <!-- Bottom row -->
+    <rect x="0" y="-45" width="50" height="25" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+    <rect x="52" y="-45" width="50" height="25" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Second row -->
+    <rect x="0" y="-72" width="50" height="25" fill="url(#container-green-metal)" stroke="#333" stroke-width="0.5"/>
+    <rect x="52" y="-72" width="50" height="25" fill="url(#container-red-metal)" stroke="#333" stroke-width="0.5"/>
+    
+    <!-- Top container -->
+    <rect x="52" y="-99" width="50" height="25" fill="url(#container-blue-metal)" stroke="#333" stroke-width="0.5"/>
+  </g>
+  
+  <!-- Text overlay with semi-transparent background -->
+  <rect x="230" y="230" width="740" height="50" rx="5" ry="5" fill="#2c3e50" opacity="0.7"/>
+  <text x="600" y="265" font-family="Arial, sans-serif" font-size="24" fill="white" text-anchor="middle" font-weight="bold">
+    GLOBAL CONTAINER LEASING SOLUTIONS • WORLDWIDE SHIPPING LOGISTICS
+  </text>
+</svg>

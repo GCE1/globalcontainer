@@ -1,0 +1,5617 @@
+COUNTRY,CITY,Size and Type,Price
+Australia,Adelaide,40HC New,4345
+Australia,Brisbane,40HC New,3805
+Australia,Fremantle,40HC New,4075
+Australia,Melbourne,40HC New,3890
+Australia,Sydney,40HC New,3856.67
+Austria,Vienna,40HC New,2815
+Bangladesh,Chittagong,40HC New,3760
+Belarus,Minsk,40HC New,2010
+Belgium,Antwerp,40HC New,3250
+Brazil,Santos,40HC New,3050
+Brazil,Paranagua,40HC New,4045
+Cambodia,Phnom Penh,40HC New,3585
+Canada,"Calgary, AB",40HC New,3310
+Canada,"Edmonton, AB",40HC New,3550
+Canada,"Halifax, NS",40HC New,4350
+Canada,"Montreal, QC",40HC New,3265
+Canada,"Toronto, ON",40HC New,3085
+Canada,"Vancouver, BC",40HC New,3695
+Canada,"Winnipeg, MB",40HC New,3750
+Chile,Santiago,40HC New,3465
+Chile,Valparaiso,40HC New,2400
+China,Dalian,40HC New,3955
+China,Fuzhou,40HC New,4345
+China,Guangzhou,40HC New,3805
+China,Hong Kong,40HC New,4075
+China,Huangpu,40HC New,3890
+China,Lianyungang,40HC New,3856.67
+China,Nansha,40HC New,4345
+China,Qingdao,40HC New,3690
+China,Shanghai,40HC New,3745
+China,Shekou,40HC New,3535
+China,Shenzhen,40HC New,3855
+China,Tianjin,40HC New,3510
+China,Xiamen,40HC New,3755
+China,Ningbo,40HC New,3950
+China,Chengdu,40HC New,2890
+China,Hong Kong,40HC New,2565
+China,Huangpu,40HC New,2815
+China,Nanjing,40HC New,2910
+China,Yantian,40HC New,3965
+Costa Rica,Limon,40HC New,4075
+Denmark,Aarhus,40HC New,3600
+Denmark,Copenhagen,40HC New,2400
+England,Leeds,40HC New,3550
+England,London,40HC New,2970
+Estonia,Tallin,40HC New,4075
+Finland,Helsinki,40HC New,3135
+Finland,Kotka,40HC New,4075
+Finland,Rauma,40HC New,4355
+France,Dunkerque,40HC New,2565
+France,Fos Sur Mer,40HC New,3115
+France,Le Havre,40HC New,3580
+France,Lyon,40HC New,2425
+France,Marseille,40HC New,2890
+France,Rouen,40HC New,1530
+France,Bordeaux,Dunkerque,3905
+France,Marseille,40HC New,2400
+Georgia,Poti,40HC New,4075
+Germany,Bremen,40HC New,1690
+Germany,Duisburg,40HC New,2565
+Germany,Hamburg,40HC New,2815
+Germany,Mannheim,40HC New,2890
+Germany,Ludwigshafen,40HC New,4075
+Germany,Munich,40HC New,3350
+Greece,Piraeus,40HC New,2810
+Hungary,Budapest,40HC New,2865
+India,Delhi,40HC New,3745
+India,Kolkata(Calcutta),40HC New,4180
+India,Mundra,40HC New,3046
+India,Nhava Sheva,40HC New,3150
+India,Chennai,40HC New,3745
+India,Kolkata(Calcutta),40HC New,3535
+India,Mumbai,40HC New,3855
+India,Mundra,40HC New,3510
+India,New Delhi ,40HC New,3755
+India,Tuticorin,40HC New,3600
+Indonesia,Belawan,40HC New,4040
+Indonesia,Jakarta,40HC New,3965
+Indonesia,Semarang,40HC New,3920
+Indonesia,Surabaya,40HC New,4010
+Israel,Ashdod,40HC New,3400
+Italy,Genoa,40HC New,3470
+Italy,La Spezia,40HC New,1720
+Italy,Livorno,40HC New,3760
+Italy,Milan,40HC New,3920
+Italy,Modena,40HC New,4045
+Italy,Padova,40HC New,3465
+Italy,Trieste,40HC New,2400
+Italy,Venice,40HC New,4075
+Japan,Kobe,40HC New,4180
+Japan,Yokohama,40HC New,2350
+Japan,Hakata,40HC New,3550
+Japan,Kobe,40HC New,2970
+Japan,Nagoya,40HC New,3135
+Japan,Osaka,40HC New,2565
+Japan,Tokyo,40HC New,3115
+Kazakhstan,Almaty,40HC New,3550
+Kazakhstan,Tashkent,40HC New,4045
+Kenya,Mombasa,40HC New,3850
+Kenya,Nairobi,40HC New,4075
+Malaysia,Penang,40HC New,3585
+Malaysia,Port Kelang,40HC New,3945
+Malaysia,Johar,40HC New,3585
+Mexico,Altamira,40HC New,4355
+Mexico,Manzanillo,40HC New,3905
+Mexico,Mexico City,40HC New,3350
+Mexico,Veracruz,40HC New,3920
+Morocco,Casablanca,40HC New,4075
+Netherlands,Rotterdam,40HC New,4355
+New Zealand,Tauranga,40HC New,4045
+New Zealand,Auckland,40HC New,4345
+New Zealand,Tauranga,40HC New,3690
+Oman,Sohar,40HC New,3580
+Pakistan,Karachi,40HC New,2663.33
+Peru,Callao,40HC New,3700
+Philippines,Manila,40HC New,4270
+Poland,Gdansk,40HC New,2660
+Poland,Warsaw,40HC New,2350
+Poland,Gdynia,40HC New,3905
+Portugal,Leixoes,40HC New,4540
+Portugal,Lisboa,40HC New,4540
+Portugal,Leixoes,40HC New,3350
+Portugal,Setubal,40HC New,3920
+Republic of Ireland,Dublin,40HC New,3015
+Romania,Constanta,40HC New,4045
+Russia,Moscow,40HC New,1220
+Russia,St Petersburg,40HC New,2130
+Russia,Vladivostok,40HC New,2390
+Russia,"Yekaterinburg, Sve",40HC New,1990
+Saudi Arabia,Jeddah,40HC New,2420
+Singapore,Singapore,40HC New,4620
+South Africa,Durban,40HC New,4820
+South Africa,Johannesburg,40HC New,4825
+South Africa,Cape Town,40HC New,3350
+South Africa,Port Elizabeth,40HC New,3465
+South Korea,Busan,40HC New,2770
+South Korea,Gwangyang,40HC New,4010
+South Korea,Inchoen,40HC New,3400
+South Korea,Seoul,40HC New,3470
+Spain,Arquata Scrivia,40HC New,4150
+Spain,Barcelona,40HC New,4040
+Spain,Bilbao,40HC New,4300
+Spain,Madrid,40HC New,3910
+Spain,Valencia (Spain),40HC New,3600
+Spain,Algeciras,40HC New,3465
+Spain,Barcelona,40HC New,2400
+Spain,Bilbao,40HC New,4075
+Spain,Madrid,40HC New,4075
+Spain,Valencia ,40HC New,2010
+Sweden,Gothenburg,40HC New,2640
+Sweden,Norrkoping,40HC New,3250
+Switzerland,Basle,40HC New,3050
+Taiwan,Kaohsiung,40HC New,4045
+Taiwan,Keelung,40HC New,4180
+Taiwan,Taichung,40HC New,4210
+Tamil Nadu,Chennai,40HC New,2415
+Thailand,Bangkok,40HC New,4550
+Thailand,Laem Chabang,40HC New,4370
+Turkey,Istanbul,40HC New,4055
+Turkey,Mersin,40HC New,3210
+Turkey,Gebze,40HC New,3585
+Turkey,Mersin,40HC New,3310
+United Arab Emirates,Dubai,40HC New,4330
+United Arab Emirates,Jebel Ali,40HC New,3370
+United Kingdom,Southampton,40HC New,3655
+United Kingdom,Belfast,40HC New,3550
+United Kingdom,Birmingham ,40HC New,4350
+United Kingdom,Doncaster,40HC New,3265
+United Kingdom,Glasgow,40HC New,3085
+United Kingdom,Leeds,40HC New,3695
+United Kingdom,Liverpool,40HC New,3750
+United Kingdom,London,40HC New,3955
+United States,"Atlanta, GA",40HC New,3575
+United States,"Baltimore, MD",40HC New,3550
+United States,"Boston, MA",40HC New,4215
+United States,"Charleston, SC",40HC New,3345
+United States,"Charlotte, NC",40HC New,3810
+United States,"Chicago, IL",40HC New,3300
+United States,"Cincinnati, OH",40HC New,3540
+United States,"Cleveland, OH",40HC New,3580
+United States,"Columbus, OH",40HC New,3595
+United States,"Dallas, TX",40HC New,3745
+United States,"Denver, CO",40HC New,4025
+United States,"Detroit, MI",40HC New,3060
+United States,"El Paso, TX",40HC New,3790
+United States,Houston,40HC New,3525
+United States,"Jacksonville, FL",40HC New,3620
+United States,"Kansas City, KS",40HC New,3485
+United States,"Long Beach, CA",40HC New,3530
+United States,"Los Angeles, CA",40HC New,3585
+United States,"Memphis, TN",40HC New,3725
+United States,"Miami, FL",40HC New,3660
+United States,"Minneapolis, MN",40HC New,3660
+United States,"Mobile, AL",40HC New,3835
+United States,"Nashville, TN",40HC New,3995
+United States,"New Orleans, LA",40HC New,4840
+United States,"New York, NY",40HC New,3430
+United States,"Norfolk, VA",40HC New,3355
+United States,"Oakland, CA",40HC New,3660
+United States,"Omaha, NE",40HC New,3585
+United States,"Phoenix, AZ",40HC New,4355
+United States,"Salt Lake City, UT",40HC New,3905
+United States,"Savannah, GA",40HC New,3350
+United States,"Seattle, WA",40HC New,3920
+United States,"Tampa, FL",40HC New,4045
+United States,"Indianapolis, IN",40HC New,3465
+Vietnam,Haiphong,40HC New,2400
+Vietnam,Ho Chi Minh City,40HC New,4075
+Australia,Adelaide,40HC IICL,3995
+Australia,Brisbane,40HC IICL,3455
+Australia,Fremantle,40HC IICL,3725
+Australia,Melbourne,40HC IICL,3540
+Australia,Sydney,40HC IICL,3506.67
+Austria,Vienna,40HC IICL,2465
+Bangladesh,Chittagong,40HC IICL,3410
+Belarus,Minsk,40HC IICL,1660
+Belgium,Antwerp,40HC IICL,2900
+Brazil,Santos,40HC IICL,2700
+Brazil,Paranagua,40HC IICL,3695
+Cambodia,Phnom Penh,40HC IICL,3235
+Canada,"Calgary, AB",40HC IICL,2960
+Canada,"Edmonton, AB",40HC IICL,3200
+Canada,"Halifax, NS",40HC IICL,4000
+Canada,"Montreal, QC",40HC IICL,2915
+Canada,"Toronto, ON",40HC IICL,2735
+Canada,"Vancouver, BC",40HC IICL,3345
+Canada,"Winnipeg, MB",40HC IICL,3400
+Chile,Santiago,40HC IICL,3115
+Chile,Valparaiso,40HC IICL,2050
+China,Dalian,40HC IICL,3605
+China,Fuzhou,40HC IICL,3995
+China,Guangzhou,40HC IICL,3455
+China,Hong Kong,40HC IICL,3725
+China,Huangpu,40HC IICL,3540
+China,Lianyungang,40HC IICL,3506.67
+China,Nansha,40HC IICL,3995
+China,Qingdao,40HC IICL,3340
+China,Shanghai,40HC IICL,3395
+China,Shekou,40HC IICL,3185
+China,Shenzhen,40HC IICL,3505
+China,Tianjin,40HC IICL,3160
+China,Xiamen,40HC IICL,3405
+China,Ningbo,40HC IICL,3600
+China,Chengdu,40HC IICL,2540
+China,Hong Kong,40HC IICL,2215
+China,Huangpu,40HC IICL,2465
+China,Nanjing,40HC IICL,2560
+China,Yantian,40HC IICL,3615
+Costa Rica,Limon,40HC IICL,3725
+Denmark,Aarhus,40HC IICL,3250
+Denmark,Copenhagen,40HC IICL,2050
+England,Leeds,40HC IICL,3200
+England,London,40HC IICL,2620
+Estonia,Tallin,40HC IICL,3725
+Finland,Helsinki,40HC IICL,2785
+Finland,Kotka,40HC IICL,3725
+Finland,Rauma,40HC IICL,4005
+France,Dunkerque,40HC IICL,2215
+France,Fos Sur Mer,40HC IICL,2765
+France,Le Havre,40HC IICL,3230
+France,Lyon,40HC IICL,2075
+France,Marseille,40HC IICL,2540
+France,Rouen,40HC IICL,1180
+France,Bordeaux,40HC IICL,3555
+France,Marseille,40HC IICL,2050
+Georgia,Poti,40HC IICL,3725
+Germany,Bremen,40HC IICL,1340
+Germany,Duisburg,40HC IICL,2215
+Germany,Hamburg,40HC IICL,2465
+Germany,Mannheim,40HC IICL,2540
+Germany,Ludwigshafen,40HC IICL,3725
+Germany,Munich,40HC IICL,3000
+Greece,Piraeus,40HC IICL,2460
+Hungary,Budapest,40HC IICL,2515
+India,Delhi,40HC IICL,3395
+India,Kolkata(Calcutta),40HC IICL,3830
+India,Mundra,40HC IICL,2696
+India,Nhava Sheva,40HC IICL,2800
+India,Chennai,40HC IICL,3395
+India,Kolkata(Calcutta),40HC IICL,3185
+India,Mumbai,40HC IICL,3505
+India,Mundra,40HC IICL,3160
+India,New Delhi ,40HC IICL,3405
+India,Tuticorin,40HC IICL,3250
+Indonesia,Belawan,40HC IICL,3690
+Indonesia,Jakarta,40HC IICL,3615
+Indonesia,Semarang,40HC IICL,3570
+Indonesia,Surabaya,40HC IICL,3660
+Israel,Ashdod,40HC IICL,3050
+Italy,Genoa,40HC IICL,3120
+Italy,La Spezia,40HC IICL,1370
+Italy,Livorno,40HC IICL,3410
+Italy,Milan,40HC IICL,3570
+Italy,Modena,40HC IICL,3695
+Italy,Padova,40HC IICL,3115
+Italy,Trieste,40HC IICL,2050
+Italy,Venice,40HC IICL,3725
+Japan,Kobe,40HC IICL,3830
+Japan,Yokohama,40HC IICL,2000
+Japan,Hakata,40HC IICL,3200
+Japan,Kobe,40HC IICL,2620
+Japan,Nagoya,40HC IICL,2785
+Japan,Osaka,40HC IICL,2215
+Japan,Tokyo,40HC IICL,2765
+Kazakhstan,Almaty,40HC IICL,3200
+Kazakhstan,Tashkent,40HC IICL,3695
+Kenya,Mombasa,40HC IICL,3500
+Kenya,Nairobi,40HC IICL,3725
+Malaysia,Penang,40HC IICL,3235
+Malaysia,Port Kelang,40HC IICL,3595
+Malaysia,Johar,40HC IICL,3235
+Mexico,Altamira,40HC IICL,4005
+Mexico,Manzanillo,40HC IICL,3555
+Mexico,Mexico City,40HC IICL,3000
+Mexico,Veracruz,40HC IICL,3570
+Morocco,Casablanca,40HC IICL,3725
+Netherlands,Rotterdam,40HC IICL,4005
+New Zealand,Tauranga,40HC IICL,3695
+New Zealand,Auckland,40HC IICL,3995
+New Zealand,Tauranga,40HC IICL,3340
+Oman,Sohar,40HC IICL,3230
+Pakistan,Karachi,40HC IICL,2313.33
+Peru,Callao,40HC IICL,3350
+Philippines,Manila,40HC IICL,3920
+Poland,Gdansk,40HC IICL,2310
+Poland,Warsaw,40HC IICL,2000
+Poland,Gdynia,40HC IICL,3555
+Portugal,Leixoes,40HC IICL,4190
+Portugal,Lisboa,40HC IICL,4190
+Portugal,Leixoes,40HC IICL,3000
+Portugal,Setubal,40HC IICL,3570
+Republic of Ireland,Dublin,40HC IICL,2665
+Romania,Constanta,40HC IICL,3695
+Russia,Moscow,40HC IICL,870
+Russia,St Petersburg,40HC IICL,1780
+Russia,Vladivostok,40HC IICL,2040
+Russia,"Yekaterinburg, Sve",40HC IICL,1640
+Saudi Arabia,Jeddah,40HC IICL,2070
+Singapore,Singapore,40HC IICL,4270
+South Africa,Durban,40HC IICL,4470
+South Africa,Johannesburg,40HC IICL,4475
+South Africa,Cape Town,40HC IICL,3000
+South Africa,Port Elizabeth,40HC IICL,3115
+South Korea,Busan,40HC IICL,2420
+South Korea,Gwangyang,40HC IICL,3660
+South Korea,Inchoen,40HC IICL,3050
+South Korea,Seoul,40HC IICL,3120
+Spain,Arquata Scrivia,40HC IICL,3800
+Spain,Barcelona,40HC IICL,3690
+Spain,Bilbao,40HC IICL,3950
+Spain,Madrid,40HC IICL,3560
+Spain,Valencia (Spain),40HC IICL,3250
+Spain,Algeciras,40HC IICL,3115
+Spain,Barcelona,40HC IICL,2050
+Spain,Bilbao,40HC IICL,3725
+Spain,Madrid,40HC IICL,3725
+Spain,Valencia ,40HC IICL,1660
+Sweden,Gothenburg,40HC IICL,2290
+Sweden,Norrkoping,40HC IICL,2900
+Switzerland,Basle,40HC IICL,2700
+Taiwan,Kaohsiung,40HC IICL,3695
+Taiwan,Keelung,40HC IICL,3830
+Taiwan,Taichung,40HC IICL,3860
+Tamil Nadu,Chennai,40HC IICL,2065
+Thailand,Bangkok,40HC IICL,4200
+Thailand,Laem Chabang,40HC IICL,4020
+Turkey,Istanbul,40HC IICL,3705
+Turkey,Mersin,40HC IICL,2860
+Turkey,Gebze,40HC IICL,3235
+Turkey,Mersin,40HC IICL,2960
+United Arab Emirates,Dubai,40HC IICL,3980
+United Arab Emirates,Jebel Ali,40HC IICL,3020
+United Kingdom,Southampton,40HC IICL,3305
+United Kingdom,Belfast,40HC IICL,3200
+United Kingdom,Birmingham ,40HC IICL,4000
+United Kingdom,Doncaster,40HC IICL,2915
+United Kingdom,Glasgow,40HC IICL,2735
+United Kingdom,Leeds,40HC IICL,3345
+United Kingdom,Liverpool,40HC IICL,3400
+United Kingdom,London,40HC IICL,3605
+United States,"Atlanta, GA",40HC IICL,3225
+United States,"Baltimore, MD",40HC IICL,3200
+United States,"Boston, MA",40HC IICL,3865
+United States,"Charleston, SC",40HC IICL,2995
+United States,"Charlotte, NC",40HC IICL,3460
+United States,"Chicago, IL",40HC IICL,2950
+United States,"Cincinnati, OH",40HC IICL,3190
+United States,"Cleveland, OH",40HC IICL,3230
+United States,"Columbus, OH",40HC IICL,3245
+United States,"Dallas, TX",40HC IICL,3395
+United States,"Denver, CO",40HC IICL,3675
+United States,"Detroit, MI",40HC IICL,2710
+United States,"El Paso, TX",40HC IICL,3440
+United States,Houston,40HC IICL,3175
+United States,"Jacksonville, FL",40HC IICL,3270
+United States,"Kansas City, KS",40HC IICL,3135
+United States,"Long Beach, CA",40HC IICL,3180
+United States,"Los Angeles, CA",40HC IICL,3235
+United States,"Memphis, TN",40HC IICL,3375
+United States,"Miami, FL",40HC IICL,3310
+United States,"Minneapolis, MN",40HC IICL,3310
+United States,"Mobile, AL",40HC IICL,3485
+United States,"Nashville, TN",40HC IICL,3645
+United States,"New Orleans, LA",40HC IICL,4490
+United States,"New York, NY",40HC IICL,3080
+United States,"Norfolk, VA",40HC IICL,3005
+United States,"Oakland, CA",40HC IICL,3310
+United States,"Omaha, NE",40HC IICL,3235
+United States,"Phoenix, AZ",40HC IICL,4005
+United States,"Salt Lake City, UT",40HC IICL,3555
+United States,"Savannah, GA",40HC IICL,3000
+United States,"Seattle, WA",40HC IICL,3570
+United States,"Tampa, FL",40HC IICL,3695
+United States,"Indianapolis, IN",40HC IICL,3115
+Vietnam,Haiphong,40HC IICL,2050
+Vietnam,Ho Chi Minh City,40HC IICL,3725
+Australia,Adelaide,40HC Cw ,3240
+Australia,Brisbane,40HC Cw ,3280
+Australia,Fremantle,40HC Cw ,3490
+Australia,Melbourne,40HC Cw ,3415
+Australia,Sydney,40HC Cw ,3315
+Austria,Vienna,40HC Cw ,2440
+Bangladesh,Chittagong,40HC Cw ,2950
+Belarus,Minsk,40HC Cw ,1200
+Belgium,Antwerp,40HC Cw ,2250
+Brazil,Santos,40HC Cw ,1910
+Brazil,Paranagua,40HC Cw ,2470
+Cambodia,Phnom Penh,40HC Cw ,2710
+Canada,"Calgary, AB",40HC Cw ,2335
+Canada,"Edmonton, AB",40HC Cw ,2380
+Canada,"Halifax, NS",40HC Cw ,3350
+Canada,"Montreal, QC",40HC Cw ,2050
+Canada,"Toronto, ON",40HC Cw ,1885
+Canada,"Vancouver, BC",40HC Cw ,1935
+Canada,"Winnipeg, MB",40HC Cw ,2455
+Chile,Santiago,40HC Cw ,2100
+Chile,Valparaiso,40HC Cw ,2825
+China,Dalian,40HC Cw ,3465
+China,Fuzhou,40HC Cw ,3240
+China,Guangzhou,40HC Cw ,3280
+China,Hong Kong,40HC Cw ,3490
+China,Huangpu,40HC Cw ,3415
+China,Lianyungang,40HC Cw ,3315
+China,Nansha,40HC Cw ,3555
+China,Qingdao,40HC Cw ,3235
+China,Shanghai,40HC Cw ,1630
+China,Shekou,40HC Cw ,3480
+China,Shenzhen,40HC Cw ,3490
+China,Tianjin,40HC Cw ,3265
+China,Xiamen,40HC Cw ,3350
+China,Ningbo,40HC Cw ,3135
+China,Chengdu,40HC Cw ,1980
+China,Hong Kong,40HC Cw ,1895
+China,Huangpu,40HC Cw ,1810
+China,Nanjing,40HC Cw ,1825
+China,Yantian,40HC Cw ,2585
+Costa Rica,Limon,40HC Cw ,2660
+Denmark,Aarhus,40HC Cw ,2400
+Denmark,Copenhagen,40HC Cw ,2825
+England,Leeds,40HC Cw ,1660
+England,London,40HC Cw ,1930
+Estonia,Tallin,40HC Cw ,2660
+Finland,Helsinki,40HC Cw ,1870
+Finland,Kotka,40HC Cw ,2660
+Finland,Rauma,40HC Cw ,3385
+France,Dunkerque,40HC Cw ,1810
+France,Fos Sur Mer,40HC Cw ,2050
+France,Le Havre,40HC Cw ,1810
+France,Lyon,40HC Cw ,2225
+France,Marseille,40HC Cw ,1980
+France,Rouen,40HC Cw ,1850
+France,Bordeaux,40HC Cw ,2770
+France,Marseille,40HC Cw ,2825
+Georgia,Poti,40HC Cw ,2660
+Germany,Bremen,40HC Cw ,1925
+Germany,Duisburg,40HC Cw ,1895
+Germany,Hamburg,40HC Cw ,1810
+Germany,Mannheim,40HC Cw ,1980
+Germany,Ludwigshafen,40HC Cw ,2660
+Germany,Munich,40HC Cw ,1940
+Greece,Piraeus,40HC Cw ,1830
+Hungary,Budapest,40HC Cw ,1760
+India,Delhi,40HC Cw ,2325
+India,Kolkata(Calcutta),40HC Cw ,2210
+India,Mundra,40HC Cw ,2410
+India,Nhava Sheva,40HC Cw ,2375
+India,Chennai,40HC Cw ,1630
+India,Kolkata(Calcutta),40HC Cw ,3480
+India,Mumbai,40HC Cw ,3490
+India,Mundra,40HC Cw ,3265
+India,New Delhi ,40HC Cw ,3350
+India,Tuticorin,40HC Cw ,2400
+Indonesia,Belawan,40HC Cw ,2850
+Indonesia,Jakarta,40HC Cw ,2585
+Indonesia,Semarang,40HC Cw ,2645
+Indonesia,Surabaya,40HC Cw ,2690
+Israel,Ashdod,40HC Cw ,2750
+Italy,Genoa,40HC Cw ,1970
+Italy,La Spezia,40HC Cw ,2190
+Italy,Livorno,40HC Cw ,1535
+Italy,Milan,40HC Cw ,1940
+Italy,Modena,40HC Cw ,2470
+Italy,Padova,40HC Cw ,2100
+Italy,Trieste,40HC Cw ,2825
+Italy,Venice,40HC Cw ,2660
+Japan,Kobe,40HC Cw ,3860
+Japan,Yokohama,40HC Cw ,3660
+Japan,Hakata,40HC Cw ,1660
+Japan,Kobe,40HC Cw ,1930
+Japan,Nagoya,40HC Cw ,1870
+Japan,Osaka,40HC Cw ,1810
+Japan,Tokyo,40HC Cw ,2050
+Kazakhstan,Almaty,40HC Cw ,2250
+Kazakhstan,Tashkent,40HC Cw ,1180
+Kenya,Mombasa,40HC Cw ,2550
+Kenya,Nairobi,40HC Cw ,2660
+Malaysia,Penang,40HC Cw ,2455
+Malaysia,Port Kelang,40HC Cw ,2565
+Malaysia,Johar,40HC Cw ,2455
+Mexico,Altamira,40HC Cw ,3385
+Mexico,Manzanillo,40HC Cw ,2770
+Mexico,Mexico City,40HC Cw ,1940
+Mexico,Veracruz,40HC Cw ,1940
+Morocco,Casablanca,40HC Cw ,2660
+Netherlands,Rotterdam,40HC Cw ,3385
+New Zealand,Tauranga,40HC Cw ,2130
+New Zealand,Auckland,40HC Cw ,3555
+New Zealand,Tauranga,40HC Cw ,3235
+Oman,Sohar,40HC Cw ,1810
+Pakistan,Karachi,40HC Cw ,2190
+Peru,Callao,40HC Cw ,1770
+Philippines,Manila,40HC Cw ,2500
+Poland,Gdansk,40HC Cw ,1525
+Poland,Warsaw,40HC Cw ,1360
+Poland,Gdynia,40HC Cw ,2770
+Portugal,Leixoes,40HC Cw ,2185
+Portugal,Lisboa,40HC Cw ,2075
+Portugal,Leixoes,40HC Cw ,1940
+Portugal,Setubal,40HC Cw ,1940
+Republic of Ireland,Dublin,40HC Cw ,1815
+Romania,Constanta,40HC Cw ,2470
+Russia,Moscow,40HC Cw ,1145
+Russia,St Petersburg,40HC Cw ,1505
+Russia,Vladivostok,40HC Cw ,1932
+Russia,"Yekaterinburg, Sve",40HC Cw ,1440
+Saudi Arabia,Jeddah,40HC Cw ,2480
+Singapore,Singapore,40HC Cw ,2965
+South Africa,Durban,40HC Cw ,2030
+South Africa,Johannesburg,40HC Cw ,2540
+South Africa,Cape Town,40HC Cw ,1940
+South Africa,Port Elizabeth,40HC Cw ,2100
+South Korea,Busan,40HC Cw ,3460
+South Korea,Gwangyang,40HC Cw ,2690
+South Korea,Inchoen,40HC Cw ,2750
+South Korea,Seoul,40HC Cw ,1970
+Spain,Arquata Scrivia,40HC Cw ,2400
+Spain,Barcelona,40HC Cw ,1690
+Spain,Bilbao,40HC Cw ,2450
+Spain,Madrid,40HC Cw ,1935
+Spain,Valencia (Spain),40HC Cw ,1985
+Spain,Algeciras,40HC Cw ,2100
+Spain,Barcelona,40HC Cw ,2825
+Spain,Bilbao,40HC Cw ,2660
+Spain,Madrid,40HC Cw ,2660
+Spain,Valencia ,40HC Cw ,1200
+Sweden,Gothenburg,40HC Cw ,2265
+Sweden,Norrkoping,40HC Cw ,2250
+Switzerland,Basle,40HC Cw ,1910
+Taiwan,Kaohsiung,40HC Cw ,2825
+Taiwan,Keelung,40HC Cw ,3180
+Taiwan,Taichung,40HC Cw ,3275
+Tamil Nadu,Chennai,40HC Cw ,2836
+Thailand,Bangkok,40HC Cw ,3150
+Thailand,Laem Chabang,40HC Cw ,2900
+Turkey,Istanbul,40HC Cw ,1690
+Turkey,Mersin,40HC Cw ,1680
+Turkey,Gebze,40HC Cw ,2710
+Turkey,Mersin,40HC Cw ,2335
+United Arab Emirates,Dubai,40HC Cw ,2980
+United Arab Emirates,Jebel Ali,40HC Cw ,2255
+United Kingdom,Southampton,40HC Cw ,1585
+United Kingdom,Belfast,40HC Cw ,2380
+United Kingdom,Birmingham ,40HC Cw ,3350
+United Kingdom,Doncaster,40HC Cw ,2050
+United Kingdom,Glasgow,40HC Cw ,1885
+United Kingdom,Leeds,40HC Cw ,1935
+United Kingdom,Liverpool,40HC Cw ,2455
+United Kingdom,London,40HC Cw ,3465
+United States,"Atlanta, GA",40HC Cw ,2550
+United States,"Baltimore, MD",40HC Cw ,2350
+United States,"Boston, MA",40HC Cw ,2550
+United States,"Charleston, SC",40HC Cw ,2150
+United States,"Charlotte, NC",40HC Cw ,2570
+United States,"Chicago, IL",40HC Cw ,1890
+United States,"Cincinnati, OH",40HC Cw ,2005
+United States,"Cleveland, OH",40HC Cw ,2300
+United States,"Columbus, OH",40HC Cw ,2190
+United States,"Dallas, TX",40HC Cw ,2405
+United States,"Denver, CO",40HC Cw ,3390
+United States,"Detroit, MI",40HC Cw ,2375
+United States,"El Paso, TX",40HC Cw ,3145
+United States,Houston,40HC Cw ,2005
+United States,"Jacksonville, FL",40HC Cw ,2155
+United States,"Kansas City, KS",40HC Cw ,2765
+United States,"Long Beach, CA",40HC Cw ,2110
+United States,"Los Angeles, CA",40HC Cw ,2035
+United States,"Memphis, TN",40HC Cw ,2160
+United States,"Miami, FL",40HC Cw ,2320
+United States,"Minneapolis, MN",40HC Cw ,2705
+United States,"Mobile, AL",40HC Cw ,2575
+United States,"Nashville, TN",40HC Cw ,2515
+United States,"New Orleans, LA",40HC Cw ,2760
+United States,"New York, NY",40HC Cw ,1740
+United States,"Norfolk, VA",40HC Cw ,2080
+United States,"Oakland, CA",40HC Cw ,2250
+United States,"Omaha, NE",40HC Cw ,2640
+United States,"Phoenix, AZ",40HC Cw ,3385
+United States,"Salt Lake City, UT",40HC Cw ,2770
+United States,"Savannah, GA",40HC Cw ,1940
+United States,"Seattle, WA",40HC Cw ,1940
+United States,"Tampa, FL",40HC Cw ,2470
+United States,"Indianapolis, IN",40HC Cw ,2100
+Vietnam,Haiphong,40HC Cw ,2825
+Vietnam,Ho Chi Minh City,40HC Cw ,2660
+Australia,Adelaide,40HC WWT,3090
+Australia,Brisbane,40HC WWT,3130
+Australia,Fremantle,40HC WWT,3340
+Australia,Melbourne,40HC WWT,3265
+Australia,Sydney,40HC WWT,3165
+Austria,Vienna,40HC WWT,2290
+Bangladesh,Chittagong,40HC WWT,2800
+Belarus,Minsk,40HC WWT,1050
+Belgium,Antwerp,40HC WWT,2100
+Brazil,Santos,40HC WWT,1760
+Brazil,Paranagua,40HC WWT,2320
+Cambodia,Phnom Penh,40HC WWT,2560
+Canada,"Calgary, AB",40HC WWT,2185
+Canada,"Edmonton, AB",40HC WWT,2230
+Canada,"Halifax, NS",40HC WWT,3200
+Canada,"Montreal, QC",40HC WWT,1900
+Canada,"Toronto, ON",40HC WWT,1735
+Canada,"Vancouver, BC",40HC WWT,1785
+Canada,"Winnipeg, MB",40HC WWT,2305
+Chile,Santiago,40HC WWT,1950
+Chile,Valparaiso,40HC WWT,2675
+China,Dalian,40HC WWT,3315
+China,Fuzhou,40HC WWT,3090
+China,Guangzhou,40HC WWT,3130
+China,Hong Kong,40HC WWT,3340
+China,Huangpu,40HC WWT,3265
+China,Lianyungang,40HC WWT,3165
+China,Nansha,40HC WWT,3405
+China,Qingdao,40HC WWT,3085
+China,Shanghai,40HC WWT,1480
+China,Shekou,40HC WWT,3330
+China,Shenzhen,40HC WWT,3340
+China,Tianjin,40HC WWT,3115
+China,Xiamen,40HC WWT,3200
+China,Ningbo,40HC WWT,2985
+China,Chengdu,40HC WWT,1830
+China,Hong Kong,40HC WWT,1745
+China,Huangpu,40HC WWT,1660
+China,Nanjing,40HC WWT,1675
+China,Yantian,40HC WWT,2435
+Costa Rica,Limon,40HC WWT,2510
+Denmark,Aarhus,40HC WWT,2250
+Denmark,Copenhagen,40HC WWT,2675
+England,Leeds,40HC WWT,1510
+England,London,40HC WWT,1780
+Estonia,Tallin,40HC WWT,2510
+Finland,Helsinki,40HC WWT,1720
+Finland,Kotka,40HC WWT,2510
+Finland,Rauma,40HC WWT,3235
+France,Dunkerque,40HC WWT,1660
+France,Fos Sur Mer,40HC WWT,1900
+France,Le Havre,40HC WWT,1660
+France,Lyon,40HC WWT,2075
+France,Marseille,40HC WWT,1830
+France,Rouen,40HC WWT,1700
+France,Bordeaux,40HC WWT,2620
+France,Marseille,40HC WWT,2675
+Georgia,Poti,40HC WWT,2510
+Germany,Bremen,40HC WWT,1775
+Germany,Duisburg,40HC WWT,1745
+Germany,Hamburg,40HC WWT,1660
+Germany,Mannheim,40HC WWT,1830
+Germany,Ludwigshafen,40HC WWT,2510
+Germany,Munich,40HC WWT,1790
+Greece,Piraeus,40HC WWT,1680
+Hungary,Budapest,40HC WWT,1610
+India,Delhi,40HC WWT,2175
+India,Kolkata(Calcutta),40HC WWT,2060
+India,Mundra,40HC WWT,2260
+India,Nhava Sheva,40HC WWT,2225
+India,Chennai,40HC WWT,1480
+India,Kolkata(Calcutta),40HC WWT,3330
+India,Mumbai,40HC WWT,3340
+India,Mundra,40HC WWT,3115
+India,New Delhi ,40HC WWT,3200
+India,Tuticorin,40HC WWT,2250
+Indonesia,Belawan,40HC WWT,2700
+Indonesia,Jakarta,40HC WWT,2435
+Indonesia,Semarang,40HC WWT,2495
+Indonesia,Surabaya,40HC WWT,2540
+Israel,Ashdod,40HC WWT,2600
+Italy,Genoa,40HC WWT,1820
+Italy,La Spezia,40HC WWT,2040
+Italy,Livorno,40HC WWT,1385
+Italy,Milan,40HC WWT,1790
+Italy,Modena,40HC WWT,2320
+Italy,Padova,40HC WWT,1950
+Italy,Trieste,40HC WWT,2675
+Italy,Venice,40HC WWT,2510
+Japan,Kobe,40HC WWT,3710
+Japan,Yokohama,40HC WWT,3510
+Japan,Hakata,40HC WWT,1510
+Japan,Kobe,40HC WWT,1780
+Japan,Nagoya,40HC WWT,1720
+Japan,Osaka,40HC WWT,1660
+Japan,Tokyo,40HC WWT,1900
+Kazakhstan,Almaty,40HC WWT,2100
+Kazakhstan,Tashkent,40HC WWT,1030
+Kenya,Mombasa,40HC WWT,2400
+Kenya,Nairobi,40HC WWT,2510
+Malaysia,Penang,40HC WWT,2305
+Malaysia,Port Kelang,40HC WWT,2415
+Malaysia,Johar,40HC WWT,2305
+Mexico,Altamira,40HC WWT,3235
+Mexico,Manzanillo,40HC WWT,2620
+Mexico,Mexico City,40HC WWT,1790
+Mexico,Veracruz,40HC WWT,1790
+Morocco,Casablanca,40HC WWT,2510
+Netherlands,Rotterdam,40HC WWT,3235
+New Zealand,Tauranga,40HC WWT,1980
+New Zealand,Auckland,40HC WWT,3405
+New Zealand,Tauranga,40HC WWT,3085
+Oman,Sohar,40HC WWT,1660
+Pakistan,Karachi,40HC WWT,2040
+Peru,Callao,40HC WWT,1620
+Philippines,Manila,40HC WWT,2350
+Poland,Gdansk,40HC WWT,1375
+Poland,Warsaw,40HC WWT,1210
+Poland,Gdynia,40HC WWT,2620
+Portugal,Leixoes,40HC WWT,2035
+Portugal,Lisboa,40HC WWT,1925
+Portugal,Leixoes,40HC WWT,1790
+Portugal,Setubal,40HC WWT,1790
+Republic of Ireland,Dublin,40HC WWT,1665
+Romania,Constanta,40HC WWT,2320
+Russia,Moscow,40HC WWT,995
+Russia,St Petersburg,40HC WWT,1355
+Russia,Vladivostok,40HC WWT,1782
+Russia,"Yekaterinburg, Sve",40HC WWT,1290
+Saudi Arabia,Jeddah,40HC WWT,2330
+Singapore,Singapore,40HC WWT,2815
+South Africa,Durban,40HC WWT,1880
+South Africa,Johannesburg,40HC WWT,2390
+South Africa,Cape Town,40HC WWT,1790
+South Africa,Port Elizabeth,40HC WWT,1950
+South Korea,Busan,40HC WWT,3310
+South Korea,Gwangyang,40HC WWT,2540
+South Korea,Inchoen,40HC WWT,2600
+South Korea,Seoul,40HC WWT,1820
+Spain,Arquata Scrivia,40HC WWT,2250
+Spain,Barcelona,40HC WWT,1540
+Spain,Bilbao,40HC WWT,2300
+Spain,Madrid,40HC WWT,1785
+Spain,Valencia (Spain),40HC WWT,1835
+Spain,Algeciras,40HC WWT,1950
+Spain,Barcelona,40HC WWT,2675
+Spain,Bilbao,40HC WWT,2510
+Spain,Madrid,40HC WWT,2510
+Spain,Valencia ,40HC WWT,1050
+Sweden,Gothenburg,40HC WWT,2115
+Sweden,Norrkoping,40HC WWT,2100
+Switzerland,Basle,40HC WWT,1760
+Taiwan,Kaohsiung,40HC WWT,2675
+Taiwan,Keelung,40HC WWT,3030
+Taiwan,Taichung,40HC WWT,3125
+Tamil Nadu,Chennai,40HC WWT,2686
+Thailand,Bangkok,40HC WWT,3000
+Thailand,Laem Chabang,40HC WWT,2750
+Turkey,Istanbul,40HC WWT,1540
+Turkey,Mersin,40HC WWT,1530
+Turkey,Gebze,40HC WWT,2560
+Turkey,Mersin,40HC WWT,2185
+United Arab Emirates,Dubai,40HC WWT,2830
+United Arab Emirates,Jebel Ali,40HC WWT,2105
+United Kingdom,Southampton,40HC WWT,1435
+United Kingdom,Belfast,40HC WWT,2230
+United Kingdom,Birmingham ,40HC WWT,3200
+United Kingdom,Doncaster,40HC WWT,1900
+United Kingdom,Glasgow,40HC WWT,1735
+United Kingdom,Leeds,40HC WWT,1785
+United Kingdom,Liverpool,40HC WWT,2305
+United Kingdom,London,40HC WWT,3315
+United States,"Atlanta, GA",40HC WWT,2400
+United States,"Baltimore, MD",40HC WWT,2200
+United States,"Boston, MA",40HC WWT,2400
+United States,"Charleston, SC",40HC WWT,2000
+United States,"Charlotte, NC",40HC WWT,2420
+United States,"Chicago, IL",40HC WWT,1740
+United States,"Cincinnati, OH",40HC WWT,1855
+United States,"Cleveland, OH",40HC WWT,2150
+United States,"Columbus, OH",40HC WWT,2040
+United States,"Dallas, TX",40HC WWT,2255
+United States,"Denver, CO",40HC WWT,3240
+United States,"Detroit, MI",40HC WWT,2225
+United States,"El Paso, TX",40HC WWT,2995
+United States,Houston,40HC WWT,1855
+United States,"Jacksonville, FL",40HC WWT,2005
+United States,"Kansas City, KS",40HC WWT,2615
+United States,"Long Beach, CA",40HC WWT,1960
+United States,"Los Angeles, CA",40HC WWT,1885
+United States,"Memphis, TN",40HC WWT,2010
+United States,"Miami, FL",40HC WWT,2170
+United States,"Minneapolis, MN",40HC WWT,2555
+United States,"Mobile, AL",40HC WWT,2425
+United States,"Nashville, TN",40HC WWT,2365
+United States,"New Orleans, LA",40HC WWT,2610
+United States,"New York, NY",40HC WWT,1590
+United States,"Norfolk, VA",40HC WWT,1930
+United States,"Oakland, CA",40HC WWT,2100
+United States,"Omaha, NE",40HC WWT,2490
+United States,"Phoenix, AZ",40HC WWT,3235
+United States,"Salt Lake City, UT",40HC WWT,2620
+United States,"Savannah, GA",40HC WWT,1790
+United States,"Seattle, WA",40HC WWT,1790
+United States,"Tampa, FL",40HC WWT,2320
+United States,"Indianapolis, IN",40HC WWT,1950
+Vietnam,Haiphong,40HC WWT,2675
+Vietnam,Ho Chi Minh City,40HC WWT,2510
+Australia,Adelaide,20GP New,2680
+Australia,Brisbane,20GP New,2500
+Australia,Fremantle,20GP New,2525
+Australia,Melbourne,20GP New,1970
+Australia,Sydney,20GP New,2340
+Austria,Vienna,20GP New,2355
+Bangladesh,Chittagong,20GP New,2235
+Belarus,Minsk,20GP New,2255
+Belgium,Antwerp,20GP New,2600
+Brazil,Santos,20GP New,2265
+Brazil,Paranagua,20GP New,2305
+Cambodia,Phnom Penh,20GP New,2335
+Canada,"Calgary, AB",20GP New,2240
+Canada,"Edmonton, AB",20GP New,2260
+Canada,"Halifax, NS",20GP New,3250
+Canada,"Montreal, QC",20GP New,2490
+Canada,"Toronto, ON",20GP New,2330
+Canada,"Vancouver, BC",20GP New,2680
+Canada,"Winnipeg, MB",20GP New,2420
+Chile,Santiago,20GP New,3760
+Chile,Valparaiso,20GP New,2500
+China,Dalian,20GP New,2460
+China,Fuzhou,20GP New,2680
+China,Guangzhou,20GP New,2500
+China,Hong Kong,20GP New,2525
+China,Huangpu,20GP New,1970
+China,Lianyungang,20GP New,2340
+China,Nansha,20GP New,2595
+China,Qingdao,20GP New,3085
+China,Shanghai,20GP New,2745
+China,Shekou,20GP New,2560
+China,Shenzhen,20GP New,2315
+China,Tianjin,20GP New,2125
+China,Xiamen,20GP New,2420
+China,Ningbo,20GP New,2580
+China,Chengdu,20GP New,2500
+China,Hong Kong,20GP New,2410
+China,Huangpu,20GP New,3610
+China,Nanjing,20GP New,2275
+China,Yantian,20GP New,2505
+Costa Rica,Limon,20GP New,2525
+Denmark,Aarhus,20GP New,2900
+Denmark,Copenhagen,20GP New,2500
+England,Leeds,20GP New,2270
+England,London,20GP New,2325
+Estonia,Tallin,20GP New,2525
+Finland,Helsinki,20GP New,2310
+Finland,Kotka,20GP New,2525
+Finland,Rauma,20GP New,2270
+France,Dunkerque,20GP New,2410
+France,Fos Sur Mer,20GP New,2685
+France,Le Havre,20GP New,3175
+France,Lyon,20GP New,2070
+France,Marseille,20GP New,2500
+France,Rouen,20GP New,2005
+France,Bordeaux,20GP New,2670
+France,Marseille,20GP New,2500
+Georgia,Poti,20GP New,2525
+Germany,Bremen,20GP New,2800
+Germany,Duisburg,20GP New,2410
+Germany,Hamburg,20GP New,3610
+Germany,Mannheim,20GP New,2500
+Germany,Ludwigshafen,20GP New,2525
+Germany,Munich,20GP New,2435
+Greece,Piraeus,20GP New,1930
+Hungary,Budapest,20GP New,2580
+India,Delhi,20GP New,2270
+India,Kolkata(Calcutta),20GP New,2335
+India,Mundra,20GP New,2110
+India,Nhava Sheva,20GP New,2555
+India,Chennai,20GP New,2745
+India,Kolkata(Calcutta),20GP New,2560
+India,Mumbai,20GP New,2315
+India,Mundra,20GP New,2125
+India,New Delhi ,20GP New,2420
+India,Tuticorin,20GP New,2900
+Indonesia,Belawan,20GP New,2650
+Indonesia,Jakarta,20GP New,2505
+Indonesia,Semarang,20GP New,2405
+Indonesia,Surabaya,20GP New,2270
+Israel,Ashdod,20GP New,3050
+Italy,Genoa,20GP New,2525
+Italy,La Spezia,20GP New,2460
+Italy,Livorno,20GP New,2650
+Italy,Milan,20GP New,2405
+Italy,Modena,20GP New,2305
+Italy,Padova,20GP New,3760
+Italy,Trieste,20GP New,2500
+Italy,Venice,20GP New,2525
+Japan,Kobe,20GP New,2335
+Japan,Yokohama,20GP New,2420
+Japan,Hakata,20GP New,2270
+Japan,Kobe,20GP New,2325
+Japan,Nagoya,20GP New,2310
+Japan,Osaka,20GP New,2410
+Japan,Tokyo,20GP New,2685
+Kazakhstan,Almaty,20GP New,2150
+Kazakhstan,Tashkent,20GP New,2305
+Kenya,Mombasa,20GP New,1755
+Kenya,Nairobi,20GP New,2525
+Malaysia,Penang,20GP New,2335
+Malaysia,Port Kelang,20GP New,1660
+Malaysia,Johar,20GP New,2335
+Mexico,Altamira,20GP New,2270
+Mexico,Manzanillo,20GP New,2670
+Mexico,Mexico City,20GP New,2435
+Mexico,Veracruz,20GP New,2405
+Morocco,Casablanca,20GP New,2525
+Netherlands,Rotterdam,20GP New,2270
+New Zealand,Tauranga,20GP New,2305
+New Zealand,Auckland,20GP New,2595
+New Zealand,Tauranga,20GP New,3085
+Oman,Sohar,20GP New,3175
+Pakistan,Karachi,20GP New,2500
+Peru,Callao,20GP New,2650
+Philippines,Manila,20GP New,1980
+Poland,Gdansk,20GP New,2500
+Poland,Warsaw,20GP New,1950
+Poland,Gdynia,20GP New,2670
+Portugal,Leixoes,20GP New,2640
+Portugal,Lisboa,20GP New,2400
+Portugal,Leixoes,20GP New,2435
+Portugal,Setubal,20GP New,2405
+Republic of Ireland,Dublin,20GP New,2860
+Romania,Constanta,20GP New,2305
+Russia,Moscow,20GP New,2440
+Russia,St Petersburg,20GP New,2450
+Russia,Vladivostok,20GP New,2440
+Russia,"Yekaterinburg, Sve",20GP New,2420
+Saudi Arabia,Jeddah,20GP New,1955
+Singapore,Singapore,20GP New,2485
+South Africa,Durban,20GP New,3070
+South Africa,Johannesburg,20GP New,2155
+South Africa,Cape Town,20GP New,2435
+South Africa,Port Elizabeth,20GP New,3760
+South Korea,Busan,20GP New,2730
+South Korea,Gwangyang,20GP New,2270
+South Korea,Inchoen,20GP New,3050
+South Korea,Seoul,20GP New,2525
+Spain,Arquata Scrivia,20GP New,3550
+Spain,Barcelona,20GP New,2325
+Spain,Bilbao,20GP New,2270
+Spain,Madrid,20GP New,2560
+Spain,Valencia (Spain),20GP New,2035
+Spain,Algeciras,20GP New,3760
+Spain,Barcelona,20GP New,2500
+Spain,Bilbao,20GP New,2525
+Spain,Madrid,20GP New,2525
+Spain,Valencia ,20GP New,2255
+Sweden,Gothenburg,20GP New,2200
+Sweden,Norrkoping,20GP New,2600
+Switzerland,Basle,20GP New,2265
+Taiwan,Kaohsiung,20GP New,2580
+Taiwan,Keelung,20GP New,2335
+Taiwan,Taichung,20GP New,2005
+Tamil Nadu,Chennai,20GP New,2410
+Thailand,Bangkok,20GP New,2460
+Thailand,Laem Chabang,20GP New,2665
+Turkey,Istanbul,20GP New,1920
+Turkey,Mersin,20GP New,2255
+Turkey,Gebze,20GP New,2335
+Turkey,Mersin,20GP New,2240
+United Arab Emirates,Dubai,20GP New,2320
+United Arab Emirates,Jebel Ali,20GP New,2600
+United Kingdom,Southampton,20GP New,2580
+United Kingdom,Belfast,20GP New,2260
+United Kingdom,Birmingham ,20GP New,3250
+United Kingdom,Doncaster,20GP New,2490
+United Kingdom,Glasgow,20GP New,2330
+United Kingdom,Leeds,20GP New,2680
+United Kingdom,Liverpool,20GP New,2420
+United Kingdom,London,20GP New,2460
+United States,"Atlanta, GA",20GP New,2350
+United States,"Baltimore, MD",20GP New,2450
+United States,"Boston, MA",20GP New,3400
+United States,"Charleston, SC",20GP New,2125
+United States,"Charlotte, NC",20GP New,2115
+United States,"Chicago, IL",20GP New,1980
+United States,"Cincinnati, OH",20GP New,2205
+United States,"Cleveland, OH",20GP New,2185
+United States,"Columbus, OH",20GP New,2400
+United States,"Dallas, TX",20GP New,2270
+United States,"Denver, CO",20GP New,3110
+United States,"Detroit, MI",20GP New,2200
+United States,"El Paso, TX",20GP New,2090
+United States,Houston,20GP New,2445
+United States,"Jacksonville, FL",20GP New,1750
+United States,"Kansas City, KS",20GP New,2440
+United States,"Long Beach, CA",20GP New,2275
+United States,"Los Angeles, CA",20GP New,2755
+United States,"Memphis, TN",20GP New,1620
+United States,"Miami, FL",20GP New,2505
+United States,"Minneapolis, MN",20GP New,2310
+United States,"Mobile, AL",20GP New,2210
+United States,"Nashville, TN",20GP New,2120
+United States,"New Orleans, LA",20GP New,2390
+United States,"New York, NY",20GP New,2335
+United States,"Norfolk, VA",20GP New,2865
+United States,"Oakland, CA",20GP New,2040
+United States,"Omaha, NE",20GP New,2335
+United States,"Phoenix, AZ",20GP New,2270
+United States,"Salt Lake City, UT",20GP New,2670
+United States,"Savannah, GA",20GP New,2435
+United States,"Seattle, WA",20GP New,2405
+United States,"Tampa, FL",20GP New,2305
+United States,"Indianapolis, IN",20GP New,3760
+Vietnam,Haiphong,20GP New,2500
+Vietnam,Ho Chi Minh City,20GP New,2525
+Australia,Adelaide,20Gp IICL,2330
+Australia,Brisbane,20Gp IICL,2150
+Australia,Fremantle,20Gp IICL,2175
+Australia,Melbourne,20Gp IICL,1620
+Australia,Sydney,20Gp IICL,1990
+Austria,Vienna,20Gp IICL,2005
+Bangladesh,Chittagong,20Gp IICL,1885
+Belarus,Minsk,20Gp IICL,1905
+Belgium,Antwerp,20Gp IICL,2250
+Brazil,Santos,20Gp IICL,1915
+Brazil,Paranagua,20Gp IICL,1955
+Cambodia,Phnom Penh,20Gp IICL,1985
+Canada,"Calgary, AB",20Gp IICL,1890
+Canada,"Edmonton, AB",20Gp IICL,1910
+Canada,"Halifax, NS",20Gp IICL,2900
+Canada,"Montreal, QC",20Gp IICL,2140
+Canada,"Toronto, ON",20Gp IICL,1980
+Canada,"Vancouver, BC",20Gp IICL,2330
+Canada,"Winnipeg, MB",20Gp IICL,2070
+Chile,Santiago,20Gp IICL,3410
+Chile,Valparaiso,20Gp IICL,2150
+China,Dalian,20Gp IICL,2110
+China,Fuzhou,20Gp IICL,2330
+China,Guangzhou,20Gp IICL,2150
+China,Hong Kong,20Gp IICL,2175
+China,Huangpu,20Gp IICL,1620
+China,Lianyungang,20Gp IICL,1990
+China,Nansha,20Gp IICL,2245
+China,Qingdao,20Gp IICL,2735
+China,Shanghai,20Gp IICL,2395
+China,Shekou,20Gp IICL,2210
+China,Shenzhen,20Gp IICL,1965
+China,Tianjin,20Gp IICL,1775
+China,Xiamen,20Gp IICL,2070
+China,Ningbo,20Gp IICL,2230
+China,Chengdu,20Gp IICL,2150
+China,Hong Kong,20Gp IICL,2060
+China,Huangpu,20Gp IICL,3260
+China,Nanjing,20Gp IICL,1925
+China,Yantian,20Gp IICL,2155
+Costa Rica,Limon,20Gp IICL,2175
+Denmark,Aarhus,20Gp IICL,2550
+Denmark,Copenhagen,20Gp IICL,2150
+England,Leeds,20Gp IICL,1920
+England,London,20Gp IICL,1975
+Estonia,Tallin,20Gp IICL,2175
+Finland,Helsinki,20Gp IICL,1960
+Finland,Kotka,20Gp IICL,2175
+Finland,Rauma,20Gp IICL,1920
+France,Dunkerque,20Gp IICL,2060
+France,Fos Sur Mer,20Gp IICL,2335
+France,Le Havre,20Gp IICL,2825
+France,Lyon,20Gp IICL,1720
+France,Marseille,20Gp IICL,2150
+France,Rouen,20Gp IICL,1655
+France,Bordeaux,20Gp IICL,2320
+France,Marseille,20Gp IICL,2150
+Georgia,Poti,20Gp IICL,2175
+Germany,Bremen,20Gp IICL,2450
+Germany,Duisburg,20Gp IICL,2060
+Germany,Hamburg,20Gp IICL,3260
+Germany,Mannheim,20Gp IICL,2150
+Germany,Ludwigshafen,20Gp IICL,2175
+Germany,Munich,20Gp IICL,2085
+Greece,Piraeus,20Gp IICL,1580
+Hungary,Budapest,20Gp IICL,2230
+India,Delhi,20Gp IICL,1920
+India,Kolkata(Calcutta),20Gp IICL,1985
+India,Mundra,20Gp IICL,1760
+India,Nhava Sheva,20Gp IICL,2205
+India,Chennai,20Gp IICL,2395
+India,Kolkata(Calcutta),20Gp IICL,2210
+India,Mumbai,20Gp IICL,1965
+India,Mundra,20Gp IICL,1775
+India,New Delhi ,20Gp IICL,2070
+India,Tuticorin,20Gp IICL,2550
+Indonesia,Belawan,20Gp IICL,2300
+Indonesia,Jakarta,20Gp IICL,2155
+Indonesia,Semarang,20Gp IICL,2055
+Indonesia,Surabaya,20Gp IICL,1920
+Israel,Ashdod,20Gp IICL,2700
+Italy,Genoa,20Gp IICL,2175
+Italy,La Spezia,20Gp IICL,2110
+Italy,Livorno,20Gp IICL,2300
+Italy,Milan,20Gp IICL,2055
+Italy,Modena,20Gp IICL,1955
+Italy,Padova,20Gp IICL,3410
+Italy,Trieste,20Gp IICL,2150
+Italy,Venice,20Gp IICL,2175
+Japan,Kobe,20Gp IICL,1985
+Japan,Yokohama,20Gp IICL,2070
+Japan,Hakata,20Gp IICL,1920
+Japan,Kobe,20Gp IICL,1975
+Japan,Nagoya,20Gp IICL,1960
+Japan,Osaka,20Gp IICL,2060
+Japan,Tokyo,20Gp IICL,2335
+Kazakhstan,Almaty,20Gp IICL,1800
+Kazakhstan,Tashkent,20Gp IICL,1955
+Kenya,Mombasa,20Gp IICL,1405
+Kenya,Nairobi,20Gp IICL,2175
+Malaysia,Penang,20Gp IICL,1985
+Malaysia,Port Kelang,20Gp IICL,1310
+Malaysia,Johar,20Gp IICL,1985
+Mexico,Altamira,20Gp IICL,1920
+Mexico,Manzanillo,20Gp IICL,2320
+Mexico,Mexico City,20Gp IICL,2085
+Mexico,Veracruz,20Gp IICL,2055
+Morocco,Casablanca,20Gp IICL,2175
+Netherlands,Rotterdam,20Gp IICL,1920
+New Zealand,Tauranga,20Gp IICL,1955
+New Zealand,Auckland,20Gp IICL,2245
+New Zealand,Tauranga,20Gp IICL,2735
+Oman,Sohar,20Gp IICL,2825
+Pakistan,Karachi,20Gp IICL,2150
+Peru,Callao,20Gp IICL,2300
+Philippines,Manila,20Gp IICL,1630
+Poland,Gdansk,20Gp IICL,2150
+Poland,Warsaw,20Gp IICL,1600
+Poland,Gdynia,20Gp IICL,2320
+Portugal,Leixoes,20Gp IICL,2290
+Portugal,Lisboa,20Gp IICL,2050
+Portugal,Leixoes,20Gp IICL,2085
+Portugal,Setubal,20Gp IICL,2055
+Republic of Ireland,Dublin,20Gp IICL,2510
+Romania,Constanta,20Gp IICL,1955
+Russia,Moscow,20Gp IICL,2090
+Russia,St Petersburg,20Gp IICL,2100
+Russia,Vladivostok,20Gp IICL,2090
+Russia,"Yekaterinburg, Sve",20Gp IICL,2070
+Saudi Arabia,Jeddah,20Gp IICL,1605
+Singapore,Singapore,20Gp IICL,2135
+South Africa,Durban,20Gp IICL,2720
+South Africa,Johannesburg,20Gp IICL,1805
+South Africa,Cape Town,20Gp IICL,2085
+South Africa,Port Elizabeth,20Gp IICL,3410
+South Korea,Busan,20Gp IICL,2380
+South Korea,Gwangyang,20Gp IICL,1920
+South Korea,Inchoen,20Gp IICL,2700
+South Korea,Seoul,20Gp IICL,2175
+Spain,Arquata Scrivia,20Gp IICL,3200
+Spain,Barcelona,20Gp IICL,1975
+Spain,Bilbao,20Gp IICL,1920
+Spain,Madrid,20Gp IICL,2210
+Spain,Valencia (Spain),20Gp IICL,1685
+Spain,Algeciras,20Gp IICL,3410
+Spain,Barcelona,20Gp IICL,2150
+Spain,Bilbao,20Gp IICL,2175
+Spain,Madrid,20Gp IICL,2175
+Spain,Valencia ,20Gp IICL,1905
+Sweden,Gothenburg,20Gp IICL,1850
+Sweden,Norrkoping,20Gp IICL,2250
+Switzerland,Basle,20Gp IICL,1915
+Taiwan,Kaohsiung,20Gp IICL,2230
+Taiwan,Keelung,20Gp IICL,1985
+Taiwan,Taichung,20Gp IICL,1655
+Tamil Nadu,Chennai,20Gp IICL,2060
+Thailand,Bangkok,20Gp IICL,2110
+Thailand,Laem Chabang,20Gp IICL,2315
+Turkey,Istanbul,20Gp IICL,1570
+Turkey,Mersin,20Gp IICL,1905
+Turkey,Gebze,20Gp IICL,1985
+Turkey,Mersin,20Gp IICL,1890
+United Arab Emirates,Dubai,20Gp IICL,1970
+United Arab Emirates,Jebel Ali,20Gp IICL,2250
+United Kingdom,Southampton,20Gp IICL,2230
+United Kingdom,Belfast,20Gp IICL,1910
+United Kingdom,Birmingham ,20Gp IICL,2900
+United Kingdom,Doncaster,20Gp IICL,2140
+United Kingdom,Glasgow,20Gp IICL,1980
+United Kingdom,Leeds,20Gp IICL,2330
+United Kingdom,Liverpool,20Gp IICL,2070
+United Kingdom,London,20Gp IICL,2110
+United States,"Atlanta, GA",20Gp IICL,2000
+United States,"Baltimore, MD",20Gp IICL,2100
+United States,"Boston, MA",20Gp IICL,3050
+United States,"Charleston, SC",20Gp IICL,1775
+United States,"Charlotte, NC",20Gp IICL,1765
+United States,"Chicago, IL",20Gp IICL,1630
+United States,"Cincinnati, OH",20Gp IICL,1855
+United States,"Cleveland, OH",20Gp IICL,1835
+United States,"Columbus, OH",20Gp IICL,2050
+United States,"Dallas, TX",20Gp IICL,1920
+United States,"Denver, CO",20Gp IICL,2760
+United States,"Detroit, MI",20Gp IICL,1850
+United States,"El Paso, TX",20Gp IICL,1740
+United States,Houston,20Gp IICL,2095
+United States,"Jacksonville, FL",20Gp IICL,1400
+United States,"Kansas City, KS",20Gp IICL,2090
+United States,"Long Beach, CA",20Gp IICL,1925
+United States,"Los Angeles, CA",20Gp IICL,2405
+United States,"Memphis, TN",20Gp IICL,1270
+United States,"Miami, FL",20Gp IICL,2155
+United States,"Minneapolis, MN",20Gp IICL,1960
+United States,"Mobile, AL",20Gp IICL,1860
+United States,"Nashville, TN",20Gp IICL,1770
+United States,"New Orleans, LA",20Gp IICL,2040
+United States,"New York, NY",20Gp IICL,1985
+United States,"Norfolk, VA",20Gp IICL,2515
+United States,"Oakland, CA",20Gp IICL,1690
+United States,"Omaha, NE",20Gp IICL,1985
+United States,"Phoenix, AZ",20Gp IICL,1920
+United States,"Salt Lake City, UT",20Gp IICL,2320
+United States,"Savannah, GA",20Gp IICL,2085
+United States,"Seattle, WA",20Gp IICL,2055
+United States,"Tampa, FL",20Gp IICL,1955
+United States,"Indianapolis, IN",20Gp IICL,3410
+Vietnam,Haiphong,20Gp IICL,2150
+Vietnam,Ho Chi Minh City,20Gp IICL,2175
+Australia,Adelaide,20GP Cw ,1790
+Australia,Brisbane,20GP Cw ,1910
+Australia,Fremantle,20GP Cw ,1865
+Australia,Melbourne,20GP Cw ,1865
+Australia,Sydney,20GP Cw ,1875
+Austria,Vienna,20GP Cw ,1810
+Bangladesh,Chittagong,20GP Cw ,1480
+Belarus,Minsk,20GP Cw ,1100
+Belgium,Antwerp,20GP Cw ,1200
+Brazil,Santos,20GP Cw ,1405
+Brazil,Paranagua,20GP Cw ,1925
+Cambodia,Phnom Penh,20GP Cw ,1745
+Canada,"Calgary, AB",20GP Cw ,1675
+Canada,"Edmonton, AB",20GP Cw ,1685
+Canada,"Halifax, NS",20GP Cw ,2200
+Canada,"Montreal, QC",20GP Cw ,1730
+Canada,"Toronto, ON",20GP Cw ,1535
+Canada,"Vancouver, BC",20GP Cw ,1595
+Canada,"Winnipeg, MB",20GP Cw ,2020
+Chile,Santiago,20GP Cw ,1670
+Chile,Valparaiso,20GP Cw ,1780
+China,Dalian,20GP Cw ,1830
+China,Fuzhou,20GP Cw ,1790
+China,Guangzhou,20GP Cw ,1910
+China,Hong Kong,20GP Cw ,1865
+China,Huangpu,20GP Cw ,1865
+China,Lianyungang,20GP Cw ,1875
+China,Nansha,20GP Cw ,1915
+China,Qingdao,20GP Cw ,1940
+China,Shanghai,20GP Cw ,1890
+China,Shekou,20GP Cw ,1805
+China,Shenzhen,20GP Cw ,1995
+China,Tianjin,20GP Cw ,1935
+China,Xiamen,20GP Cw ,1905
+China,Ningbo,20GP Cw ,1890
+China,Chengdu,20GP Cw ,2140
+China,Hong Kong,20GP Cw ,1690
+China,Huangpu,20GP Cw ,1510
+China,Nanjing,20GP Cw ,1310
+China,Yantian,20GP Cw ,1615
+Costa Rica,Limon,20GP Cw ,1495
+Denmark,Aarhus,20GP Cw ,2050
+Denmark,Copenhagen,20GP Cw ,1780
+England,Leeds,20GP Cw ,1230
+England,London,20GP Cw ,1675
+Estonia,Tallin,20GP Cw ,1495
+Finland,Helsinki,20GP Cw ,1625
+Finland,Kotka,20GP Cw ,1495
+Finland,Rauma,20GP Cw ,2828
+France,Dunkerque,20GP Cw ,1910
+France,Fos Sur Mer,20GP Cw ,2250
+France,Le Havre,20GP Cw ,1710
+France,Lyon,20GP Cw ,2335
+France,Marseille,20GP Cw ,2140
+France,Rouen,20GP Cw ,2000
+France,Bordeaux,20GP Cw ,2305
+France,Marseille,20GP Cw ,1780
+Georgia,Poti,20GP Cw ,1495
+Germany,Bremen,20GP Cw ,1690
+Germany,Duisburg,20GP Cw ,1690
+Germany,Hamburg,20GP Cw ,1510
+Germany,Mannheim,20GP Cw ,1790
+Germany,Ludwigshafen,20GP Cw ,1495
+Germany,Munich,20GP Cw ,1300
+Greece,Piraeus,20GP Cw ,1765
+Hungary,Budapest,20GP Cw ,2045
+India,Delhi,20GP Cw ,1775
+India,Kolkata(Calcutta),20GP Cw ,1490
+India,Mundra,20GP Cw ,1615
+India,Nhava Sheva,20GP Cw ,1445
+India,Chennai,20GP Cw ,1890
+India,Kolkata(Calcutta),20GP Cw ,1805
+India,Mumbai,20GP Cw ,1995
+India,Mundra,20GP Cw ,1935
+India,New Delhi ,20GP Cw ,1905
+India,Tuticorin,20GP Cw ,2050
+Indonesia,Belawan,20GP Cw ,1850
+Indonesia,Jakarta,20GP Cw ,1615
+Indonesia,Semarang,20GP Cw ,1750
+Indonesia,Surabaya,20GP Cw ,1620
+Israel,Ashdod,20GP Cw ,2100
+Italy,Genoa,20GP Cw ,1570
+Italy,La Spezia,20GP Cw ,1470
+Italy,Livorno,20GP Cw ,1585
+Italy,Milan,20GP Cw ,2030
+Italy,Modena,20GP Cw ,1925
+Italy,Padova,20GP Cw ,1670
+Italy,Trieste,20GP Cw ,1780
+Italy,Venice,20GP Cw ,1495
+Japan,Kobe,20GP Cw ,1610
+Japan,Yokohama,20GP Cw ,1550
+Japan,Hakata,20GP Cw ,1230
+Japan,Kobe,20GP Cw ,1675
+Japan,Nagoya,20GP Cw ,1625
+Japan,Osaka,20GP Cw ,1910
+Japan,Tokyo,20GP Cw ,2250
+Kazakhstan,Almaty,20GP Cw ,1300
+Kazakhstan,Tashkent,20GP Cw ,1000
+Kenya,Mombasa,20GP Cw ,1510
+Kenya,Nairobi,20GP Cw ,1495
+Malaysia,Penang,20GP Cw ,1625
+Malaysia,Port Kelang,20GP Cw ,1715
+Malaysia,Johar,20GP Cw ,1625
+Mexico,Altamira,20GP Cw ,2828
+Mexico,Manzanillo,20GP Cw ,2305
+Mexico,Mexico City,20GP Cw ,1300
+Mexico,Veracruz,20GP Cw ,2030
+Morocco,Casablanca,20GP Cw ,1495
+Netherlands,Rotterdam,20GP Cw ,2828
+New Zealand,Tauranga,20GP Cw ,1795
+New Zealand,Auckland,20GP Cw ,1915
+New Zealand,Tauranga,20GP Cw ,1940
+Oman,Sohar,20GP Cw ,1710
+Pakistan,Karachi,20GP Cw ,2420
+Peru,Callao,20GP Cw ,1460
+Philippines,Manila,20GP Cw ,1760
+Poland,Gdansk,20GP Cw ,1625
+Poland,Warsaw,20GP Cw ,1735
+Poland,Gdynia,20GP Cw ,2305
+Portugal,Leixoes,20GP Cw ,1800
+Portugal,Lisboa,20GP Cw ,1765
+Portugal,Leixoes,20GP Cw ,1300
+Portugal,Setubal,20GP Cw ,2030
+Republic of Ireland,Dublin,20GP Cw ,1655
+Romania,Constanta,20GP Cw ,1925
+Russia,Moscow,20GP Cw ,1110
+Russia,St Petersburg,20GP Cw ,1340
+Russia,Vladivostok,20GP Cw ,1760
+Russia,"Yekaterinburg, Sve",20GP Cw ,1250
+Saudi Arabia,Jeddah,20GP Cw ,1540
+Singapore,Singapore,20GP Cw ,1850
+South Africa,Durban,20GP Cw ,1800
+South Africa,Johannesburg,20GP Cw ,1985
+South Africa,Cape Town,20GP Cw ,1300
+South Africa,Port Elizabeth,20GP Cw ,1670
+South Korea,Busan,20GP Cw ,2030
+South Korea,Gwangyang,20GP Cw ,1620
+South Korea,Inchoen,20GP Cw ,2100
+South Korea,Seoul,20GP Cw ,1570
+Spain,Arquata Scrivia,20GP Cw ,1950
+Spain,Barcelona,20GP Cw ,1920
+Spain,Bilbao,20GP Cw ,2200
+Spain,Madrid,20GP Cw ,1400
+Spain,Valencia (Spain),20GP Cw ,1795
+Spain,Algeciras,20GP Cw ,1670
+Spain,Barcelona,20GP Cw ,1780
+Spain,Bilbao,20GP Cw ,1495
+Spain,Madrid,20GP Cw ,1495
+Spain,Valencia ,20GP Cw ,1100
+Sweden,Gothenburg,20GP Cw ,1800
+Sweden,Norrkoping,20GP Cw ,1200
+Switzerland,Basle,20GP Cw ,1405
+Taiwan,Kaohsiung,20GP Cw ,1850
+Taiwan,Keelung,20GP Cw ,1945
+Taiwan,Taichung,20GP Cw ,1915
+Tamil Nadu,Chennai,20GP Cw ,1260
+Thailand,Bangkok,20GP Cw ,1950
+Thailand,Laem Chabang,20GP Cw ,1665
+Turkey,Istanbul,20GP Cw ,1660
+Turkey,Mersin,20GP Cw ,1946
+Turkey,Gebze,20GP Cw ,1745
+Turkey,Mersin,20GP Cw ,1675
+United Arab Emirates,Dubai,20GP Cw ,1510
+United Arab Emirates,Jebel Ali,20GP Cw ,1205
+United Kingdom,Southampton,20GP Cw ,1170
+United Kingdom,Belfast,20GP Cw ,1685
+United Kingdom,Birmingham ,20GP Cw ,2200
+United Kingdom,Doncaster,20GP Cw ,1730
+United Kingdom,Glasgow,20GP Cw ,1535
+United Kingdom,Leeds,20GP Cw ,1595
+United Kingdom,Liverpool,20GP Cw ,2020
+United Kingdom,London,20GP Cw ,1830
+United States,"Atlanta, GA",20GP Cw ,1900
+United States,"Baltimore, MD",20GP Cw ,2000
+United States,"Boston, MA",20GP Cw ,2300
+United States,"Charleston, SC",20GP Cw ,1440
+United States,"Charlotte, NC",20GP Cw ,2040
+United States,"Chicago, IL",20GP Cw ,1380
+United States,"Cincinnati, OH",20GP Cw ,1480
+United States,"Cleveland, OH",20GP Cw ,1590
+United States,"Columbus, OH",20GP Cw ,1810
+United States,"Dallas, TX",20GP Cw ,1885
+United States,"Denver, CO",20GP Cw ,2715
+United States,"Detroit, MI",20GP Cw ,1585
+United States,"El Paso, TX",20GP Cw ,2035
+United States,Houston,20GP Cw ,1525
+United States,"Jacksonville, FL",20GP Cw ,1980
+United States,"Kansas City, KS",20GP Cw ,1850
+United States,"Long Beach, CA",20GP Cw ,1765
+United States,"Los Angeles, CA",20GP Cw ,1675
+United States,"Memphis, TN",20GP Cw ,1720
+United States,"Miami, FL",20GP Cw ,1635
+United States,"Minneapolis, MN",20GP Cw ,2015
+United States,"Mobile, AL",20GP Cw ,1725
+United States,"Nashville, TN",20GP Cw ,1985
+United States,"New Orleans, LA",20GP Cw ,1625
+United States,"New York, NY",20GP Cw ,1655
+United States,"Norfolk, VA",20GP Cw ,1590
+United States,"Oakland, CA",20GP Cw ,1885
+United States,"Omaha, NE",20GP Cw ,2065
+United States,"Phoenix, AZ",20GP Cw ,2828
+United States,"Salt Lake City, UT",20GP Cw ,2305
+United States,"Savannah, GA",20GP Cw ,1300
+United States,"Seattle, WA",20GP Cw ,2030
+United States,"Tampa, FL",20GP Cw ,1925
+United States,"Indianapolis, IN",20GP Cw ,1670
+Vietnam,Haiphong,20GP Cw ,1780
+Vietnam,Ho Chi Minh City,20GP Cw ,1495
+Australia,Adelaide,20GP WWT,1590
+Australia,Brisbane,20GP WWT,1710
+Australia,Fremantle,20GP WWT,1665
+Australia,Melbourne,20GP WWT,1665
+Australia,Sydney,20GP WWT,1675
+Austria,Vienna,20GP WWT,1610
+Bangladesh,Chittagong,20GP WWT,1280
+Belarus,Minsk,20GP WWT,900
+Belgium,Antwerp,20GP WWT,1000
+Brazil,Santos,20GP WWT,1205
+Brazil,Paranagua,20GP WWT,1725
+Cambodia,Phnom Penh,20GP WWT,1545
+Canada,"Calgary, AB",20GP WWT,1475
+Canada,"Edmonton, AB",20GP WWT,1485
+Canada,"Halifax, NS",20GP WWT,2600
+Canada,"Montreal, QC",20GP WWT,1530
+Canada,"Toronto, ON",20GP WWT,1335
+Canada,"Vancouver, BC",20GP WWT,1395
+Canada,"Winnipeg, MB",20GP WWT,1820
+Chile,Santiago,20GP WWT,1470
+Chile,Valparaiso,20GP WWT,1580
+China,Dalian,20GP WWT,1630
+China,Fuzhou,20GP WWT,1590
+China,Guangzhou,20GP WWT,1710
+China,Hong Kong,20GP WWT,1665
+China,Huangpu,20GP WWT,1665
+China,Lianyungang,20GP WWT,1675
+China,Nansha,20GP WWT,1715
+China,Qingdao,20GP WWT,1740
+China,Shanghai,20GP WWT,1690
+China,Shekou,20GP WWT,1605
+China,Shenzhen,20GP WWT,1795
+China,Tianjin,20GP WWT,1735
+China,Xiamen,20GP WWT,1705
+China,Ningbo,20GP WWT,1690
+China,Chengdu,20GP WWT,1940
+China,Hong Kong,20GP WWT,1490
+China,Huangpu,20GP WWT,1310
+China,Nanjing,20GP WWT,1110
+China,Yantian,20GP WWT,1415
+Costa Rica,Limon,20GP WWT,1295
+Denmark,Aarhus,20GP WWT,1850
+Denmark,Copenhagen,20GP WWT,1580
+England,Leeds,20GP WWT,1030
+England,London,20GP WWT,1475
+Estonia,Tallin,20GP WWT,1295
+Finland,Helsinki,20GP WWT,1425
+Finland,Kotka,20GP WWT,1295
+Finland,Rauma,20GP WWT,2628
+France,Dunkerque,20GP WWT,1710
+France,Fos Sur Mer,20GP WWT,2050
+France,Le Havre,20GP WWT,1510
+France,Lyon,20GP WWT,2135
+France,Marseille,20GP WWT,1940
+France,Rouen,20GP WWT,1800
+France,Bordeaux,20GP WWT,2105
+France,Marseille,20GP WWT,1580
+Georgia,Poti,20GP WWT,1295
+Germany,Bremen,20GP WWT,1490
+Germany,Duisburg,20GP WWT,1490
+Germany,Hamburg,20GP WWT,1310
+Germany,Mannheim,20GP WWT,1590
+Germany,Ludwigshafen,20GP WWT,1295
+Germany,Munich,20GP WWT,1100
+Greece,Piraeus,20GP WWT,1565
+Hungary,Budapest,20GP WWT,1845
+India,Delhi,20GP WWT,1575
+India,Kolkata(Calcutta),20GP WWT,1290
+India,Mundra,20GP WWT,1415
+India,Nhava Sheva,20GP WWT,1245
+India,Chennai,20GP WWT,1690
+India,Kolkata(Calcutta),20GP WWT,1605
+India,Mumbai,20GP WWT,1795
+India,Mundra,20GP WWT,1735
+India,New Delhi ,20GP WWT,1705
+India,Tuticorin,20GP WWT,1850
+Indonesia,Belawan,20GP WWT,1650
+Indonesia,Jakarta,20GP WWT,1415
+Indonesia,Semarang,20GP WWT,1550
+Indonesia,Surabaya,20GP WWT,1420
+Israel,Ashdod,20GP WWT,1900
+Italy,Genoa,20GP WWT,1370
+Italy,La Spezia,20GP WWT,1270
+Italy,Livorno,20GP WWT,1385
+Italy,Milan,20GP WWT,1830
+Italy,Modena,20GP WWT,1725
+Italy,Padova,20GP WWT,1470
+Italy,Trieste,20GP WWT,1580
+Italy,Venice,20GP WWT,1295
+Japan,Kobe,20GP WWT,1410
+Japan,Yokohama,20GP WWT,1350
+Japan,Hakata,20GP WWT,1030
+Japan,Kobe,20GP WWT,1475
+Japan,Nagoya,20GP WWT,1425
+Japan,Osaka,20GP WWT,1710
+Japan,Tokyo,20GP WWT,2050
+Kazakhstan,Almaty,20GP WWT,1100
+Kazakhstan,Tashkent,20GP WWT,800
+Kenya,Mombasa,20GP WWT,1310
+Kenya,Nairobi,20GP WWT,1295
+Malaysia,Penang,20GP WWT,1425
+Malaysia,Port Kelang,20GP WWT,1515
+Malaysia,Johar,20GP WWT,1425
+Mexico,Altamira,20GP WWT,2628
+Mexico,Manzanillo,20GP WWT,2105
+Mexico,Mexico City,20GP WWT,1100
+Mexico,Veracruz,20GP WWT,1830
+Morocco,Casablanca,20GP WWT,1295
+Netherlands,Rotterdam,20GP WWT,2628
+New Zealand,Tauranga,20GP WWT,1595
+New Zealand,Auckland,20GP WWT,1715
+New Zealand,Tauranga,20GP WWT,1740
+Oman,Sohar,20GP WWT,1510
+Pakistan,Karachi,20GP WWT,2220
+Peru,Callao,20GP WWT,1260
+Philippines,Manila,20GP WWT,1560
+Poland,Gdansk,20GP WWT,1425
+Poland,Warsaw,20GP WWT,1535
+Poland,Gdynia,20GP WWT,2105
+Portugal,Leixoes,20GP WWT,1600
+Portugal,Lisboa,20GP WWT,1565
+Portugal,Leixoes,20GP WWT,1100
+Portugal,Setubal,20GP WWT,1830
+Republic of Ireland,Dublin,20GP WWT,1455
+Romania,Constanta,20GP WWT,1725
+Russia,Moscow,20GP WWT,910
+Russia,St Petersburg,20GP WWT,1140
+Russia,Vladivostok,20GP WWT,1560
+Russia,"Yekaterinburg, Sve",20GP WWT,1050
+Saudi Arabia,Jeddah,20GP WWT,1340
+Singapore,Singapore,20GP WWT,1650
+South Africa,Durban,20GP WWT,1600
+South Africa,Johannesburg,20GP WWT,1785
+South Africa,Cape Town,20GP WWT,1100
+South Africa,Port Elizabeth,20GP WWT,1470
+South Korea,Busan,20GP WWT,1830
+South Korea,Gwangyang,20GP WWT,1420
+South Korea,Inchoen,20GP WWT,1900
+South Korea,Seoul,20GP WWT,1370
+Spain,Arquata Scrivia,20GP WWT,1750
+Spain,Barcelona,20GP WWT,1720
+Spain,Bilbao,20GP WWT,2000
+Spain,Madrid,20GP WWT,1200
+Spain,Valencia (Spain),20GP WWT,1595
+Spain,Algeciras,20GP WWT,1470
+Spain,Barcelona,20GP WWT,1580
+Spain,Bilbao,20GP WWT,1295
+Spain,Madrid,20GP WWT,1295
+Spain,Valencia ,20GP WWT,900
+Sweden,Gothenburg,20GP WWT,1600
+Sweden,Norrkoping,20GP WWT,1000
+Switzerland,Basle,20GP WWT,1205
+Taiwan,Kaohsiung,20GP WWT,1650
+Taiwan,Keelung,20GP WWT,1745
+Taiwan,Taichung,20GP WWT,1715
+Tamil Nadu,Chennai,20GP WWT,1060
+Thailand,Bangkok,20GP WWT,1750
+Thailand,Laem Chabang,20GP WWT,1465
+Turkey,Istanbul,20GP WWT,1460
+Turkey,Mersin,20GP WWT,1746
+Turkey,Gebze,20GP WWT,1545
+Turkey,Mersin,20GP WWT,1475
+United Arab Emirates,Dubai,20GP WWT,1310
+United Arab Emirates,Jebel Ali,20GP WWT,1005
+United Kingdom,Southampton,20GP WWT,970
+United Kingdom,Belfast,20GP WWT,1485
+United Kingdom,Birmingham ,20GP WWT,2600
+United Kingdom,Doncaster,20GP WWT,1530
+United Kingdom,Glasgow,20GP WWT,1335
+United Kingdom,Leeds,20GP WWT,1395
+United Kingdom,Liverpool,20GP WWT,1820
+United Kingdom,London,20GP WWT,1630
+United States,"Atlanta, GA",20GP WWT,1800
+United States,"Baltimore, MD",20GP WWT,1800
+United States,"Boston, MA",20GP WWT,2100
+United States,"Charleston, SC",20GP WWT,1240
+United States,"Charlotte, NC",20GP WWT,1840
+United States,"Chicago, IL",20GP WWT,1180
+United States,"Cincinnati, OH",20GP WWT,1280
+United States,"Cleveland, OH",20GP WWT,1390
+United States,"Columbus, OH",20GP WWT,1610
+United States,"Dallas, TX",20GP WWT,1685
+United States,"Denver, CO",20GP WWT,2515
+United States,"Detroit, MI",20GP WWT,1385
+United States,"El Paso, TX",20GP WWT,1835
+United States,Houston,20GP WWT,1325
+United States,"Jacksonville, FL",20GP WWT,1780
+United States,"Kansas City, KS",20GP WWT,1650
+United States,"Long Beach, CA",20GP WWT,1565
+United States,"Los Angeles, CA",20GP WWT,1475
+United States,"Memphis, TN",20GP WWT,1520
+United States,"Miami, FL",20GP WWT,1435
+United States,"Minneapolis, MN",20GP WWT,1815
+United States,"Mobile, AL",20GP WWT,1525
+United States,"Nashville, TN",20GP WWT,1785
+United States,"New Orleans, LA",20GP WWT,1425
+United States,"New York, NY",20GP WWT,1455
+United States,"Norfolk, VA",20GP WWT,1390
+United States,"Oakland, CA",20GP WWT,1685
+United States,"Omaha, NE",20GP WWT,1865
+United States,"Phoenix, AZ",20GP WWT,2628
+United States,"Salt Lake City, UT",20GP WWT,2105
+United States,"Savannah, GA",20GP WWT,1100
+United States,"Seattle, WA",20GP WWT,1830
+United States,"Tampa, FL",20GP WWT,1725
+United States,"Indianapolis, IN",20GP WWT,1470
+Vietnam,Haiphong,20GP WWT,1580
+Vietnam,Ho Chi Minh City,20GP WWT,1295
+Australia,Adelaide,40GP New,3740
+Australia,Brisbane,40GP New,3320
+Australia,Fremantle,40GP New,3330
+Australia,Melbourne,40GP New,4030
+Australia,Sydney,40GP New,3665
+Austria,Vienna,40GP New,3620
+Bangladesh,Chittagong,40GP New,3765
+Belarus,Minsk,40GP New,3765
+Belgium,Antwerp,40GP New,3050
+Brazil,Santos,40GP New,3865
+Brazil,Paranagua,40GP New,3950
+Cambodia,Phnom Penh,40GP New,4540
+Canada,"Calgary, AB",40GP New,3810
+Canada,"Edmonton, AB",40GP New,3255
+Canada,"Halifax, NS",40GP New,4150
+Canada,"Montreal, QC",40GP New,3900
+Canada,"Toronto, ON",40GP New,2905
+Canada,"Vancouver, BC",40GP New,3620
+Canada,"Winnipeg, MB",40GP New,3900
+Chile,Santiago,40GP New,4030
+Chile,Valparaiso,40GP New,3320
+China,Dalian,40GP New,2530
+China,Fuzhou,40GP New,3740
+China,Guangzhou,40GP New,3320
+China,Hong Kong,40GP New,3330
+China,Huangpu,40GP New,4030
+China,Lianyungang,40GP New,3665
+China,Nansha,40GP New,1965
+China,Qingdao,40GP New,3950
+China,Shanghai,40GP New,3850
+China,Shekou,40GP New,3850
+China,Shenzhen,40GP New,3900
+China,Tianjin,40GP New,3720
+China,Xiamen,40GP New,3975
+China,Ningbo,40GP New,3770
+China,Chengdu,40GP New,3750
+China,Hong Kong,40GP New,3950
+China,Huangpu,40GP New,3810
+China,Nanjing,40GP New,3340
+China,Yantian,40GP New,3130
+Costa Rica,Limon,40GP New,3330
+Denmark,Aarhus,40GP New,3700
+Denmark,Copenhagen,40GP New,3320
+England,Leeds,40GP New,3810
+England,London,40GP New,3430
+Estonia,Tallin,40GP New,3330
+Finland,Helsinki,40GP New,3330
+Finland,Kotka,40GP New,3330
+Finland,Rauma,40GP New,4850
+France,Dunkerque,40GP New,3950
+France,Fos Sur Mer,40GP New,3740
+France,Le Havre,40GP New,3840
+France,Lyon,40GP New,3200
+France,Marseille,40GP New,3750
+France,Rouen,40GP New,3340
+France,Bordeaux,40GP New,3865
+France,Marseille,40GP New,3320
+Georgia,Poti,40GP New,3330
+Germany,Bremen,40GP New,3810
+Germany,Duisburg,40GP New,3950
+Germany,Hamburg,40GP New,3810
+Germany,Mannheim,40GP New,3200
+Germany,Ludwigshafen,40GP New,3330
+Germany,Munich,40GP New,3695
+Greece,Piraeus,40GP New,4850
+Hungary,Budapest,40GP New,3810
+India,Delhi,40GP New,4720
+India,Kolkata(Calcutta),40GP New,4350
+India,Mundra,40GP New,1965
+India,Nhava Sheva,40GP New,3745
+India,Chennai,40GP New,3850
+India,Kolkata(Calcutta),40GP New,3850
+India,Mumbai,40GP New,3900
+India,Mundra,40GP New,3720
+India,New Delhi ,40GP New,3975
+India,Tuticorin,40GP New,3700
+Indonesia,Belawan,40GP New,3750
+Indonesia,Jakarta,40GP New,3130
+Indonesia,Semarang,40GP New,4320
+Indonesia,Surabaya,40GP New,3600
+Israel,Ashdod,40GP New,3150
+Italy,Genoa,40GP New,3320
+Italy,La Spezia,40GP New,4350
+Italy,Livorno,40GP New,3600
+Italy,Milan,40GP New,4320
+Italy,Modena,40GP New,3950
+Italy,Padova,40GP New,4030
+Italy,Trieste,40GP New,3320
+Italy,Venice,40GP New,3330
+Japan,Kobe,40GP New,4350
+Japan,Yokohama,40GP New,3975
+Japan,Hakata,40GP New,3810
+Japan,Kobe,40GP New,3430
+Japan,Nagoya,40GP New,3330
+Japan,Osaka,40GP New,3950
+Japan,Tokyo,40GP New,3740
+Kazakhstan,Almaty,40GP New,3450
+Kazakhstan,Tashkent,40GP New,3950
+Kenya,Mombasa,40GP New,3900
+Kenya,Nairobi,40GP New,3330
+Malaysia,Penang,40GP New,4540
+Malaysia,Port Kelang,40GP New,4850
+Malaysia,Johar,40GP New,4540
+Mexico,Altamira,40GP New,4850
+Mexico,Manzanillo,40GP New,3865
+Mexico,Mexico City,40GP New,3695
+Mexico,Veracruz,40GP New,4320
+Morocco,Casablanca,40GP New,3330
+Netherlands,Rotterdam,40GP New,4850
+New Zealand,Tauranga,40GP New,3950
+New Zealand,Auckland,40GP New,1965
+New Zealand,Tauranga,40GP New,3950
+Oman,Sohar,40GP New,3840
+Pakistan,Karachi,40GP New,4350
+Peru,Callao,40GP New,3810
+Philippines,Manila,40GP New,3200
+Poland,Gdansk,40GP New,3740
+Poland,Warsaw,40GP New,3620
+Poland,Gdynia,40GP New,3865
+Portugal,Leixoes,40GP New,3665
+Portugal,Lisboa,40GP New,3665
+Portugal,Leixoes,40GP New,3695
+Portugal,Setubal,40GP New,4320
+Republic of Ireland,Dublin,40GP New,3950
+Romania,Constanta,40GP New,3950
+Russia,Moscow,40GP New,1965
+Russia,St Petersburg,40GP New,3600
+Russia,Vladivostok,40GP New,3620
+Russia,"Yekaterinburg, Sve",40GP New,3975
+Saudi Arabia,Jeddah,40GP New,3700
+Singapore,Singapore,40GP New,3900
+South Africa,Durban,40GP New,3950
+South Africa,Johannesburg,40GP New,3700
+South Africa,Cape Town,40GP New,3695
+South Africa,Port Elizabeth,40GP New,4030
+South Korea,Busan,40GP New,3810
+South Korea,Gwangyang,40GP New,3600
+South Korea,Inchoen,40GP New,3150
+South Korea,Seoul,40GP New,3320
+Spain,Arquata Scrivia,40GP New,3700
+Spain,Barcelona,40GP New,3750
+Spain,Bilbao,40GP New,3750
+Spain,Madrid,40GP New,3200
+Spain,Valencia (Spain),40GP New,2905
+Spain,Algeciras,40GP New,4030
+Spain,Barcelona,40GP New,3320
+Spain,Bilbao,40GP New,3330
+Spain,Madrid,40GP New,3330
+Spain,Valencia ,40GP New,3765
+Sweden,Gothenburg,40GP New,3320
+Sweden,Norrkoping,40GP New,3050
+Switzerland,Basle,40GP New,3865
+Taiwan,Kaohsiung,40GP New,3620
+Taiwan,Keelung,40GP New,4350
+Taiwan,Taichung,40GP New,3600
+Tamil Nadu,Chennai,40GP New,3650
+Thailand,Bangkok,40GP New,3950
+Thailand,Laem Chabang,40GP New,3840
+Turkey,Istanbul,40GP New,3800
+Turkey,Mersin,40GP New,3790
+Turkey,Gebze,40GP New,4540
+Turkey,Mersin,40GP New,3810
+United Arab Emirates,Dubai,40GP New,3650
+United Arab Emirates,Jebel Ali,40GP New,3590
+United Kingdom,Southampton,40GP New,3600
+United Kingdom,Belfast,40GP New,3255
+United Kingdom,Birmingham ,40GP New,4150
+United Kingdom,Doncaster,40GP New,3900
+United Kingdom,Glasgow,40GP New,2905
+United Kingdom,Leeds,40GP New,3620
+United Kingdom,Liverpool,40GP New,3900
+United Kingdom,London,40GP New,2530
+United States,"Atlanta, GA",40GP New,3750
+United States,"Baltimore, MD",40GP New,3950
+United States,"Boston, MA",40GP New,3660
+United States,"Charleston, SC",40GP New,3650
+United States,"Charlotte, NC",40GP New,3650
+United States,"Chicago, IL",40GP New,3650
+United States,"Cincinnati, OH",40GP New,3600
+United States,"Cleveland, OH",40GP New,3790
+United States,"Columbus, OH",40GP New,3845
+United States,"Dallas, TX",40GP New,4720
+United States,"Denver, CO",40GP New,4230
+United States,"Detroit, MI",40GP New,3650
+United States,"El Paso, TX",40GP New,3740
+United States,Houston,40GP New,3465
+United States,"Jacksonville, FL",40GP New,3130
+United States,"Kansas City, KS",40GP New,3620
+United States,"Long Beach, CA",40GP New,3800
+United States,"Los Angeles, CA",40GP New,3200
+United States,"Memphis, TN",40GP New,3790
+United States,"Miami, FL",40GP New,3530
+United States,"Minneapolis, MN",40GP New,3765
+United States,"Mobile, AL",40GP New,3900
+United States,"Nashville, TN",40GP New,4520
+United States,"New Orleans, LA",40GP New,5100
+United States,"New York, NY",40GP New,3745
+United States,"Norfolk, VA",40GP New,3745
+United States,"Oakland, CA",40GP New,3685
+United States,"Omaha, NE",40GP New,4540
+United States,"Phoenix, AZ",40GP New,4850
+United States,"Salt Lake City, UT",40GP New,3865
+United States,"Savannah, GA",40GP New,3695
+United States,"Seattle, WA",40GP New,4320
+United States,"Tampa, FL",40GP New,3950
+United States,"Indianapolis, IN",40GP New,4030
+Vietnam,Haiphong,40GP New,3320
+Vietnam,Ho Chi Minh City,40GP New,3330
+Australia,Adelaide,40GP IICL,3390
+Australia,Brisbane,40GP IICL,2970
+Australia,Fremantle,40GP IICL,2980
+Australia,Melbourne,40GP IICL,3680
+Australia,Sydney,40GP IICL,3315
+Austria,Vienna,40GP IICL,3270
+Bangladesh,Chittagong,40GP IICL,3415
+Belarus,Minsk,40GP IICL,3415
+Belgium,Antwerp,40GP IICL,2700
+Brazil,Santos,40GP IICL,3515
+Brazil,Paranagua,40GP IICL,3600
+Cambodia,Phnom Penh,40GP IICL,4190
+Canada,"Calgary, AB",40GP IICL,3460
+Canada,"Edmonton, AB",40GP IICL,2905
+Canada,"Halifax, NS",40GP IICL,3800
+Canada,"Montreal, QC",40GP IICL,3550
+Canada,"Toronto, ON",40GP IICL,2555
+Canada,"Vancouver, BC",40GP IICL,3270
+Canada,"Winnipeg, MB",40GP IICL,3550
+Chile,Santiago,40GP IICL,3680
+Chile,Valparaiso,40GP IICL,2970
+China,Dalian,40GP IICL,2180
+China,Fuzhou,40GP IICL,3390
+China,Guangzhou,40GP IICL,2970
+China,Hong Kong,40GP IICL,2980
+China,Huangpu,40GP IICL,3680
+China,Lianyungang,40GP IICL,3315
+China,Nansha,40GP IICL,1615
+China,Qingdao,40GP IICL,3600
+China,Shanghai,40GP IICL,3500
+China,Shekou,40GP IICL,3500
+China,Shenzhen,40GP IICL,3550
+China,Tianjin,40GP IICL,3370
+China,Xiamen,40GP IICL,3625
+China,Ningbo,40GP IICL,3420
+China,Chengdu,40GP IICL,3400
+China,Hong Kong,40GP IICL,3600
+China,Huangpu,40GP IICL,3460
+China,Nanjing,40GP IICL,2990
+China,Yantian,40GP IICL,2780
+Costa Rica,Limon,40GP IICL,2980
+Denmark,Aarhus,40GP IICL,3350
+Denmark,Copenhagen,40GP IICL,2970
+England,Leeds,40GP IICL,3460
+England,London,40GP IICL,3080
+Estonia,Tallin,40GP IICL,2980
+Finland,Helsinki,40GP IICL,2980
+Finland,Kotka,40GP IICL,2980
+Finland,Rauma,40GP IICL,4500
+France,Dunkerque,40GP IICL,3600
+France,Fos Sur Mer,40GP IICL,3390
+France,Le Havre,40GP IICL,3490
+France,Lyon,40GP IICL,2850
+France,Marseille,40GP IICL,3400
+France,Rouen,40GP IICL,2990
+France,Bordeaux,40GP IICL,3515
+France,Marseille,40GP IICL,2970
+Georgia,Poti,40GP IICL,2980
+Germany,Bremen,40GP IICL,3460
+Germany,Duisburg,40GP IICL,3600
+Germany,Hamburg,40GP IICL,3460
+Germany,Mannheim,40GP IICL,2850
+Germany,Ludwigshafen,40GP IICL,2980
+Germany,Munich,40GP IICL,3345
+Greece,Piraeus,40GP IICL,4500
+Hungary,Budapest,40GP IICL,3460
+India,Delhi,40GP IICL,4370
+India,Kolkata(Calcutta),40GP IICL,4000
+India,Mundra,40GP IICL,1615
+India,Nhava Sheva,40GP IICL,3395
+India,Chennai,40GP IICL,3500
+India,Kolkata(Calcutta),40GP IICL,3500
+India,Mumbai,40GP IICL,3550
+India,Mundra,40GP IICL,3370
+India,New Delhi ,40GP IICL,3625
+India,Tuticorin,40GP IICL,3350
+Indonesia,Belawan,40GP IICL,3400
+Indonesia,Jakarta,40GP IICL,2780
+Indonesia,Semarang,40GP IICL,3970
+Indonesia,Surabaya,40GP IICL,3250
+Israel,Ashdod,40GP IICL,2800
+Italy,Genoa,40GP IICL,2970
+Italy,La Spezia,40GP IICL,4000
+Italy,Livorno,40GP IICL,3250
+Italy,Milan,40GP IICL,3970
+Italy,Modena,40GP IICL,3600
+Italy,Padova,40GP IICL,3680
+Italy,Trieste,40GP IICL,2970
+Italy,Venice,40GP IICL,2980
+Japan,Kobe,40GP IICL,4000
+Japan,Yokohama,40GP IICL,3625
+Japan,Hakata,40GP IICL,3460
+Japan,Kobe,40GP IICL,3080
+Japan,Nagoya,40GP IICL,2980
+Japan,Osaka,40GP IICL,3600
+Japan,Tokyo,40GP IICL,3390
+Kazakhstan,Almaty,40GP IICL,3100
+Kazakhstan,Tashkent,40GP IICL,3600
+Kenya,Mombasa,40GP IICL,3550
+Kenya,Nairobi,40GP IICL,2980
+Malaysia,Penang,40GP IICL,4190
+Malaysia,Port Kelang,40GP IICL,4500
+Malaysia,Johar,40GP IICL,4190
+Mexico,Altamira,40GP IICL,4500
+Mexico,Manzanillo,40GP IICL,3515
+Mexico,Mexico City,40GP IICL,3345
+Mexico,Veracruz,40GP IICL,3970
+Morocco,Casablanca,40GP IICL,2980
+Netherlands,Rotterdam,40GP IICL,4500
+New Zealand,Tauranga,40GP IICL,3600
+New Zealand,Auckland,40GP IICL,1615
+New Zealand,Tauranga,40GP IICL,3600
+Oman,Sohar,40GP IICL,3490
+Pakistan,Karachi,40GP IICL,4000
+Peru,Callao,40GP IICL,3460
+Philippines,Manila,40GP IICL,2850
+Poland,Gdansk,40GP IICL,3390
+Poland,Warsaw,40GP IICL,3270
+Poland,Gdynia,40GP IICL,3515
+Portugal,Leixoes,40GP IICL,3315
+Portugal,Lisboa,40GP IICL,3315
+Portugal,Leixoes,40GP IICL,3345
+Portugal,Setubal,40GP IICL,3970
+Republic of Ireland,Dublin,40GP IICL,3600
+Romania,Constanta,40GP IICL,3600
+Russia,Moscow,40GP IICL,1615
+Russia,St Petersburg,40GP IICL,3250
+Russia,Vladivostok,40GP IICL,3270
+Russia,"Yekaterinburg, Sve",40GP IICL,3625
+Saudi Arabia,Jeddah,40GP IICL,3350
+Singapore,Singapore,40GP IICL,3550
+South Africa,Durban,40GP IICL,3600
+South Africa,Johannesburg,40GP IICL,3350
+South Africa,Cape Town,40GP IICL,3345
+South Africa,Port Elizabeth,40GP IICL,3680
+South Korea,Busan,40GP IICL,3460
+South Korea,Gwangyang,40GP IICL,3250
+South Korea,Inchoen,40GP IICL,2800
+South Korea,Seoul,40GP IICL,2970
+Spain,Arquata Scrivia,40GP IICL,3350
+Spain,Barcelona,40GP IICL,3400
+Spain,Bilbao,40GP IICL,3400
+Spain,Madrid,40GP IICL,2850
+Spain,Valencia (Spain),40GP IICL,2555
+Spain,Algeciras,40GP IICL,3680
+Spain,Barcelona,40GP IICL,2970
+Spain,Bilbao,40GP IICL,2980
+Spain,Madrid,40GP IICL,2980
+Spain,Valencia ,40GP IICL,3415
+Sweden,Gothenburg,40GP IICL,2970
+Sweden,Norrkoping,40GP IICL,2700
+Switzerland,Basle,40GP IICL,3515
+Taiwan,Kaohsiung,40GP IICL,3270
+Taiwan,Keelung,40GP IICL,4000
+Taiwan,Taichung,40GP IICL,3250
+Tamil Nadu,Chennai,40GP IICL,3300
+Thailand,Bangkok,40GP IICL,3600
+Thailand,Laem Chabang,40GP IICL,3490
+Turkey,Istanbul,40GP IICL,3450
+Turkey,Mersin,40GP IICL,3440
+Turkey,Gebze,40GP IICL,4190
+Turkey,Mersin,40GP IICL,3460
+United Arab Emirates,Dubai,40GP IICL,3300
+United Arab Emirates,Jebel Ali,40GP IICL,3240
+United Kingdom,Southampton,40GP IICL,3250
+United Kingdom,Belfast,40GP IICL,2905
+United Kingdom,Birmingham ,40GP IICL,3800
+United Kingdom,Doncaster,40GP IICL,3550
+United Kingdom,Glasgow,40GP IICL,2555
+United Kingdom,Leeds,40GP IICL,3270
+United Kingdom,Liverpool,40GP IICL,3550
+United Kingdom,London,40GP IICL,2180
+United States,"Atlanta, GA",40GP IICL,3400
+United States,"Baltimore, MD",40GP IICL,3600
+United States,"Boston, MA",40GP IICL,3310
+United States,"Charleston, SC",40GP IICL,3300
+United States,"Charlotte, NC",40GP IICL,3300
+United States,"Chicago, IL",40GP IICL,3300
+United States,"Cincinnati, OH",40GP IICL,3250
+United States,"Cleveland, OH",40GP IICL,3440
+United States,"Columbus, OH",40GP IICL,3495
+United States,"Dallas, TX",40GP IICL,4370
+United States,"Denver, CO",40GP IICL,3880
+United States,"Detroit, MI",40GP IICL,3300
+United States,"El Paso, TX",40GP IICL,3390
+United States,Houston,40GP IICL,3115
+United States,"Jacksonville, FL",40GP IICL,2780
+United States,"Kansas City, KS",40GP IICL,3270
+United States,"Long Beach, CA",40GP IICL,3450
+United States,"Los Angeles, CA",40GP IICL,2850
+United States,"Memphis, TN",40GP IICL,3440
+United States,"Miami, FL",40GP IICL,3180
+United States,"Minneapolis, MN",40GP IICL,3415
+United States,"Mobile, AL",40GP IICL,3550
+United States,"Nashville, TN",40GP IICL,4170
+United States,"New Orleans, LA",40GP IICL,4750
+United States,"New York, NY",40GP IICL,3395
+United States,"Norfolk, VA",40GP IICL,3395
+United States,"Oakland, CA",40GP IICL,3335
+United States,"Omaha, NE",40GP IICL,4190
+United States,"Phoenix, AZ",40GP IICL,4500
+United States,"Salt Lake City, UT",40GP IICL,3515
+United States,"Savannah, GA",40GP IICL,3345
+United States,"Seattle, WA",40GP IICL,3970
+United States,"Tampa, FL",40GP IICL,3600
+United States,"Indianapolis, IN",40GP IICL,3680
+Vietnam,Haiphong,40GP IICL,2970
+Vietnam,Ho Chi Minh City,40GP IICL,2980
+Australia,Adelaide,40GP Cw ,3090
+Australia,Brisbane,40GP Cw ,3130
+Australia,Fremantle,40GP Cw ,3340
+Australia,Melbourne,40GP Cw ,3265
+Australia,Sydney,40GP Cw ,3165
+Austria,Vienna,40GP Cw ,2290
+Bangladesh,Chittagong,40GP Cw ,2800
+Belarus,Minsk,40GP Cw ,1050
+Belgium,Antwerp,40GP Cw ,2100
+Brazil,Santos,40GP Cw ,1760
+Brazil,Paranagua,40GP Cw ,2320
+Cambodia,Phnom Penh,40GP Cw ,2560
+Canada,"Calgary, AB",40GP Cw ,2185
+Canada,"Edmonton, AB",40GP Cw ,2230
+Canada,"Halifax, NS",40GP Cw ,3200
+Canada,"Montreal, QC",40GP Cw ,1900
+Canada,"Toronto, ON",40GP Cw ,1735
+Canada,"Vancouver, BC",40GP Cw ,1785
+Canada,"Winnipeg, MB",40GP Cw ,2305
+Chile,Santiago,40GP Cw ,1950
+Chile,Valparaiso,40GP Cw ,2675
+China,Dalian,40GP Cw ,3315
+China,Fuzhou,40GP Cw ,3090
+China,Guangzhou,40GP Cw ,3130
+China,Hong Kong,40GP Cw ,3340
+China,Huangpu,40GP Cw ,3265
+China,Lianyungang,40GP Cw ,3165
+China,Nansha,40GP Cw ,3405
+China,Qingdao,40GP Cw ,3085
+China,Shanghai,40GP Cw ,1480
+China,Shekou,40GP Cw ,3330
+China,Shenzhen,40GP Cw ,3340
+China,Tianjin,40GP Cw ,3115
+China,Xiamen,40GP Cw ,3200
+China,Ningbo,40GP Cw ,2985
+China,Chengdu,40GP Cw ,1830
+China,Hong Kong,40GP Cw ,1745
+China,Huangpu,40GP Cw ,1660
+China,Nanjing,40GP Cw ,1675
+China,Yantian,40GP Cw ,2435
+Costa Rica,Limon,40GP Cw ,2510
+Denmark,Aarhus,40GP Cw ,2250
+Denmark,Copenhagen,40GP Cw ,2675
+England,Leeds,40GP Cw ,1510
+England,London,40GP Cw ,1780
+Estonia,Tallin,40GP Cw ,2510
+Finland,Helsinki,40GP Cw ,1720
+Finland,Kotka,40GP Cw ,2510
+Finland,Rauma,40GP Cw ,3235
+France,Dunkerque,40GP Cw ,1660
+France,Fos Sur Mer,40GP Cw ,1900
+France,Le Havre,40GP Cw ,1660
+France,Lyon,40GP Cw ,2075
+France,Marseille,40GP Cw ,1830
+France,Rouen,40GP Cw ,1700
+France,Bordeaux,40GP Cw ,2620
+France,Marseille,40GP Cw ,2675
+Georgia,Poti,40GP Cw ,2510
+Germany,Bremen,40GP Cw ,1775
+Germany,Duisburg,40GP Cw ,1745
+Germany,Hamburg,40GP Cw ,1660
+Germany,Mannheim,40GP Cw ,1830
+Germany,Ludwigshafen,40GP Cw ,2510
+Germany,Munich,40GP Cw ,1790
+Greece,Piraeus,40GP Cw ,1680
+Hungary,Budapest,40GP Cw ,1610
+India,Delhi,40GP Cw ,2175
+India,Kolkata(Calcutta),40GP Cw ,2060
+India,Mundra,40GP Cw ,2260
+India,Nhava Sheva,40GP Cw ,2225
+India,Chennai,40GP Cw ,1480
+India,Kolkata(Calcutta),40GP Cw ,3330
+India,Mumbai,40GP Cw ,3340
+India,Mundra,40GP Cw ,3115
+India,New Delhi ,40GP Cw ,3200
+India,Tuticorin,40GP Cw ,2250
+Indonesia,Belawan,40GP Cw ,2700
+Indonesia,Jakarta,40GP Cw ,2435
+Indonesia,Semarang,40GP Cw ,2495
+Indonesia,Surabaya,40GP Cw ,2540
+Israel,Ashdod,40GP Cw ,2600
+Italy,Genoa,40GP Cw ,1820
+Italy,La Spezia,40GP Cw ,2040
+Italy,Livorno,40GP Cw ,1385
+Italy,Milan,40GP Cw ,1790
+Italy,Modena,40GP Cw ,2320
+Italy,Padova,40GP Cw ,1950
+Italy,Trieste,40GP Cw ,2675
+Italy,Venice,40GP Cw ,2510
+Japan,Kobe,40GP Cw ,3710
+Japan,Yokohama,40GP Cw ,3510
+Japan,Hakata,40GP Cw ,1510
+Japan,Kobe,40GP Cw ,1780
+Japan,Nagoya,40GP Cw ,1720
+Japan,Osaka,40GP Cw ,1660
+Japan,Tokyo,40GP Cw ,1900
+Kazakhstan,Almaty,40GP Cw ,2100
+Kazakhstan,Tashkent,40GP Cw ,1030
+Kenya,Mombasa,40GP Cw ,2400
+Kenya,Nairobi,40GP Cw ,2510
+Malaysia,Penang,40GP Cw ,2305
+Malaysia,Port Kelang,40GP Cw ,2415
+Malaysia,Johar,40GP Cw ,2305
+Mexico,Altamira,40GP Cw ,3235
+Mexico,Manzanillo,40GP Cw ,2620
+Mexico,Mexico City,40GP Cw ,1790
+Mexico,Veracruz,40GP Cw ,1790
+Morocco,Casablanca,40GP Cw ,2510
+Netherlands,Rotterdam,40GP Cw ,3235
+New Zealand,Tauranga,40GP Cw ,1980
+New Zealand,Auckland,40GP Cw ,3405
+New Zealand,Tauranga,40GP Cw ,3085
+Oman,Sohar,40GP Cw ,1660
+Pakistan,Karachi,40GP Cw ,2040
+Peru,Callao,40GP Cw ,1620
+Philippines,Manila,40GP Cw ,2350
+Poland,Gdansk,40GP Cw ,1375
+Poland,Warsaw,40GP Cw ,1210
+Poland,Gdynia,40GP Cw ,2620
+Portugal,Leixoes,40GP Cw ,2035
+Portugal,Lisboa,40GP Cw ,1925
+Portugal,Leixoes,40GP Cw ,1790
+Portugal,Setubal,40GP Cw ,1790
+Republic of Ireland,Dublin,40GP Cw ,1665
+Romania,Constanta,40GP Cw ,2320
+Russia,Moscow,40GP Cw ,995
+Russia,St Petersburg,40GP Cw ,1355
+Russia,Vladivostok,40GP Cw ,1782
+Russia,"Yekaterinburg, Sve",40GP Cw ,1290
+Saudi Arabia,Jeddah,40GP Cw ,2330
+Singapore,Singapore,40GP Cw ,2815
+South Africa,Durban,40GP Cw ,1880
+South Africa,Johannesburg,40GP Cw ,2390
+South Africa,Cape Town,40GP Cw ,1790
+South Africa,Port Elizabeth,40GP Cw ,1950
+South Korea,Busan,40GP Cw ,3310
+South Korea,Gwangyang,40GP Cw ,2540
+South Korea,Inchoen,40GP Cw ,2600
+South Korea,Seoul,40GP Cw ,1820
+Spain,Arquata Scrivia,40GP Cw ,2250
+Spain,Barcelona,40GP Cw ,1540
+Spain,Bilbao,40GP Cw ,2300
+Spain,Madrid,40GP Cw ,1785
+Spain,Valencia (Spain),40GP Cw ,1835
+Spain,Algeciras,40GP Cw ,1950
+Spain,Barcelona,40GP Cw ,2675
+Spain,Bilbao,40GP Cw ,2510
+Spain,Madrid,40GP Cw ,2510
+Spain,Valencia ,40GP Cw ,1050
+Sweden,Gothenburg,40GP Cw ,2115
+Sweden,Norrkoping,40GP Cw ,2100
+Switzerland,Basle,40GP Cw ,1760
+Taiwan,Kaohsiung,40GP Cw ,2675
+Taiwan,Keelung,40GP Cw ,3030
+Taiwan,Taichung,40GP Cw ,3125
+Tamil Nadu,Chennai,40GP Cw ,2686
+Thailand,Bangkok,40GP Cw ,3000
+Thailand,Laem Chabang,40GP Cw ,2750
+Turkey,Istanbul,40GP Cw ,1540
+Turkey,Mersin,40GP Cw ,1530
+Turkey,Gebze,40GP Cw ,2560
+Turkey,Mersin,40GP Cw ,2185
+United Arab Emirates,Dubai,40GP Cw ,2830
+United Arab Emirates,Jebel Ali,40GP Cw ,2105
+United Kingdom,Southampton,40GP Cw ,1435
+United Kingdom,Belfast,40GP Cw ,2230
+United Kingdom,Birmingham ,40GP Cw ,3200
+United Kingdom,Doncaster,40GP Cw ,1900
+United Kingdom,Glasgow,40GP Cw ,1735
+United Kingdom,Leeds,40GP Cw ,1785
+United Kingdom,Liverpool,40GP Cw ,2305
+United Kingdom,London,40GP Cw ,3315
+United States,"Atlanta, GA",40GP Cw ,2400
+United States,"Baltimore, MD",40GP Cw ,2200
+United States,"Boston, MA",40GP Cw ,2400
+United States,"Charleston, SC",40GP Cw ,2000
+United States,"Charlotte, NC",40GP Cw ,2420
+United States,"Chicago, IL",40GP Cw ,1740
+United States,"Cincinnati, OH",40GP Cw ,1855
+United States,"Cleveland, OH",40GP Cw ,2150
+United States,"Columbus, OH",40GP Cw ,2040
+United States,"Dallas, TX",40GP Cw ,2255
+United States,"Denver, CO",40GP Cw ,3240
+United States,"Detroit, MI",40GP Cw ,2225
+United States,"El Paso, TX",40GP Cw ,2995
+United States,Houston,40GP Cw ,1855
+United States,"Jacksonville, FL",40GP Cw ,2005
+United States,"Kansas City, KS",40GP Cw ,2615
+United States,"Long Beach, CA",40GP Cw ,1960
+United States,"Los Angeles, CA",40GP Cw ,1885
+United States,"Memphis, TN",40GP Cw ,2010
+United States,"Miami, FL",40GP Cw ,2170
+United States,"Minneapolis, MN",40GP Cw ,2555
+United States,"Mobile, AL",40GP Cw ,2425
+United States,"Nashville, TN",40GP Cw ,2365
+United States,"New Orleans, LA",40GP Cw ,2610
+United States,"New York, NY",40GP Cw ,1590
+United States,"Norfolk, VA",40GP Cw ,1930
+United States,"Oakland, CA",40GP Cw ,2100
+United States,"Omaha, NE",40GP Cw ,2490
+United States,"Phoenix, AZ",40GP Cw ,3235
+United States,"Salt Lake City, UT",40GP Cw ,2620
+United States,"Savannah, GA",40GP Cw ,1790
+United States,"Seattle, WA",40GP Cw ,1790
+United States,"Tampa, FL",40GP Cw ,2320
+United States,"Indianapolis, IN",40GP Cw ,1950
+Vietnam,Haiphong,40GP Cw ,2675
+Vietnam,Ho Chi Minh City,40GP Cw ,2510
+Australia,Adelaide,40GP WWT,2940
+Australia,Brisbane,40GP WWT,2980
+Australia,Fremantle,40GP WWT,3190
+Australia,Melbourne,40GP WWT,3115
+Australia,Sydney,40GP WWT,3015
+Austria,Vienna,40GP WWT,2140
+Bangladesh,Chittagong,40GP WWT,2650
+Belarus,Minsk,40GP WWT,900
+Belgium,Antwerp,40GP WWT,1950
+Brazil,Santos,40GP WWT,1610
+Brazil,Paranagua,40GP WWT,2170
+Cambodia,Phnom Penh,40GP WWT,2410
+Canada,"Calgary, AB",40GP WWT,2035
+Canada,"Edmonton, AB",40GP WWT,2080
+Canada,"Halifax, NS",40GP WWT,3050
+Canada,"Montreal, QC",40GP WWT,1750
+Canada,"Toronto, ON",40GP WWT,1585
+Canada,"Vancouver, BC",40GP WWT,1635
+Canada,"Winnipeg, MB",40GP WWT,2155
+Chile,Santiago,40GP WWT,1800
+Chile,Valparaiso,40GP WWT,2525
+China,Dalian,40GP WWT,3165
+China,Fuzhou,40GP WWT,2940
+China,Guangzhou,40GP WWT,2980
+China,Hong Kong,40GP WWT,3190
+China,Huangpu,40GP WWT,3115
+China,Lianyungang,40GP WWT,3015
+China,Nansha,40GP WWT,3255
+China,Qingdao,40GP WWT,2935
+China,Shanghai,40GP WWT,1330
+China,Shekou,40GP WWT,3180
+China,Shenzhen,40GP WWT,3190
+China,Tianjin,40GP WWT,2965
+China,Xiamen,40GP WWT,3050
+China,Ningbo,40GP WWT,2835
+China,Chengdu,40GP WWT,1680
+China,Hong Kong,40GP WWT,1595
+China,Huangpu,40GP WWT,1510
+China,Nanjing,40GP WWT,1525
+China,Yantian,40GP WWT,2285
+Costa Rica,Limon,40GP WWT,2360
+Denmark,Aarhus,40GP WWT,2100
+Denmark,Copenhagen,40GP WWT,2525
+England,Leeds,40GP WWT,1360
+England,London,40GP WWT,1630
+Estonia,Tallin,40GP WWT,2360
+Finland,Helsinki,40GP WWT,1570
+Finland,Kotka,40GP WWT,2360
+Finland,Rauma,40GP WWT,3085
+France,Dunkerque,40GP WWT,1510
+France,Fos Sur Mer,40GP WWT,1750
+France,Le Havre,40GP WWT,1510
+France,Lyon,40GP WWT,1925
+France,Marseille,40GP WWT,1680
+France,Rouen,40GP WWT,1550
+France,Bordeaux,40GP WWT,2470
+France,Marseille,40GP WWT,2525
+Georgia,Poti,40GP WWT,2360
+Germany,Bremen,40GP WWT,1625
+Germany,Duisburg,40GP WWT,1595
+Germany,Hamburg,40GP WWT,1510
+Germany,Mannheim,40GP WWT,1680
+Germany,Ludwigshafen,40GP WWT,2360
+Germany,Munich,40GP WWT,1640
+Greece,Piraeus,40GP WWT,1530
+Hungary,Budapest,40GP WWT,1460
+India,Delhi,40GP WWT,2025
+India,Kolkata(Calcutta),40GP WWT,1910
+India,Mundra,40GP WWT,2110
+India,Nhava Sheva,40GP WWT,2075
+India,Chennai,40GP WWT,1330
+India,Kolkata(Calcutta),40GP WWT,3180
+India,Mumbai,40GP WWT,3190
+India,Mundra,40GP WWT,2965
+India,New Delhi ,40GP WWT,3050
+India,Tuticorin,40GP WWT,2100
+Indonesia,Belawan,40GP WWT,2550
+Indonesia,Jakarta,40GP WWT,2285
+Indonesia,Semarang,40GP WWT,2345
+Indonesia,Surabaya,40GP WWT,2390
+Israel,Ashdod,40GP WWT,2450
+Italy,Genoa,40GP WWT,1670
+Italy,La Spezia,40GP WWT,1890
+Italy,Livorno,40GP WWT,1235
+Italy,Milan,40GP WWT,1640
+Italy,Modena,40GP WWT,2170
+Italy,Padova,40GP WWT,1800
+Italy,Trieste,40GP WWT,2525
+Italy,Venice,40GP WWT,2360
+Japan,Kobe,40GP WWT,3560
+Japan,Yokohama,40GP WWT,3360
+Japan,Hakata,40GP WWT,1360
+Japan,Kobe,40GP WWT,1630
+Japan,Nagoya,40GP WWT,1570
+Japan,Osaka,40GP WWT,1510
+Japan,Tokyo,40GP WWT,1750
+Kazakhstan,Almaty,40GP WWT,1950
+Kazakhstan,Tashkent,40GP WWT,880
+Kenya,Mombasa,40GP WWT,2250
+Kenya,Nairobi,40GP WWT,2360
+Malaysia,Penang,40GP WWT,2155
+Malaysia,Port Kelang,40GP WWT,2265
+Malaysia,Johar,40GP WWT,2155
+Mexico,Altamira,40GP WWT,3085
+Mexico,Manzanillo,40GP WWT,2470
+Mexico,Mexico City,40GP WWT,1640
+Mexico,Veracruz,40GP WWT,1640
+Morocco,Casablanca,40GP WWT,2360
+Netherlands,Rotterdam,40GP WWT,3085
+New Zealand,Tauranga,40GP WWT,1830
+New Zealand,Auckland,40GP WWT,3255
+New Zealand,Tauranga,40GP WWT,2935
+Oman,Sohar,40GP WWT,1510
+Pakistan,Karachi,40GP WWT,1890
+Peru,Callao,40GP WWT,1470
+Philippines,Manila,40GP WWT,2200
+Poland,Gdansk,40GP WWT,1225
+Poland,Warsaw,40GP WWT,1060
+Poland,Gdynia,40GP WWT,2470
+Portugal,Leixoes,40GP WWT,1885
+Portugal,Lisboa,40GP WWT,1775
+Portugal,Leixoes,40GP WWT,1640
+Portugal,Setubal,40GP WWT,1640
+Republic of Ireland,Dublin,40GP WWT,1515
+Romania,Constanta,40GP WWT,2170
+Russia,Moscow,40GP WWT,845
+Russia,St Petersburg,40GP WWT,1205
+Russia,Vladivostok,40GP WWT,1632
+Russia,"Yekaterinburg, Sve",40GP WWT,1140
+Saudi Arabia,Jeddah,40GP WWT,2180
+Singapore,Singapore,40GP WWT,2665
+South Africa,Durban,40GP WWT,1730
+South Africa,Johannesburg,40GP WWT,2240
+South Africa,Cape Town,40GP WWT,1640
+South Africa,Port Elizabeth,40GP WWT,1800
+South Korea,Busan,40GP WWT,3160
+South Korea,Gwangyang,40GP WWT,2390
+South Korea,Inchoen,40GP WWT,2450
+South Korea,Seoul,40GP WWT,1670
+Spain,Arquata Scrivia,40GP WWT,2100
+Spain,Barcelona,40GP WWT,1390
+Spain,Bilbao,40GP WWT,2150
+Spain,Madrid,40GP WWT,1635
+Spain,Valencia (Spain),40GP WWT,1685
+Spain,Algeciras,40GP WWT,1800
+Spain,Barcelona,40GP WWT,2525
+Spain,Bilbao,40GP WWT,2360
+Spain,Madrid,40GP WWT,2360
+Spain,Valencia ,40GP WWT,900
+Sweden,Gothenburg,40GP WWT,1965
+Sweden,Norrkoping,40GP WWT,1950
+Switzerland,Basle,40GP WWT,1610
+Taiwan,Kaohsiung,40GP WWT,2525
+Taiwan,Keelung,40GP WWT,2880
+Taiwan,Taichung,40GP WWT,2975
+Tamil Nadu,Chennai,40GP WWT,2536
+Thailand,Bangkok,40GP WWT,2850
+Thailand,Laem Chabang,40GP WWT,2600
+Turkey,Istanbul,40GP WWT,1390
+Turkey,Mersin,40GP WWT,1380
+Turkey,Gebze,40GP WWT,2410
+Turkey,Mersin,40GP WWT,2035
+United Arab Emirates,Dubai,40GP WWT,2680
+United Arab Emirates,Jebel Ali,40GP WWT,1955
+United Kingdom,Southampton,40GP WWT,1285
+United Kingdom,Belfast,40GP WWT,2080
+United Kingdom,Birmingham ,40GP WWT,3050
+United Kingdom,Doncaster,40GP WWT,1750
+United Kingdom,Glasgow,40GP WWT,1585
+United Kingdom,Leeds,40GP WWT,1635
+United Kingdom,Liverpool,40GP WWT,2155
+United Kingdom,London,40GP WWT,3165
+United States,"Atlanta, GA",40GP WWT,2250
+United States,"Baltimore, MD",40GP WWT,2050
+United States,"Boston, MA",40GP WWT,2250
+United States,"Charleston, SC",40GP WWT,1850
+United States,"Charlotte, NC",40GP WWT,2270
+United States,"Chicago, IL",40GP WWT,1590
+United States,"Cincinnati, OH",40GP WWT,1705
+United States,"Cleveland, OH",40GP WWT,2000
+United States,"Columbus, OH",40GP WWT,1890
+United States,"Dallas, TX",40GP WWT,2105
+United States,"Denver, CO",40GP WWT,3090
+United States,"Detroit, MI",40GP WWT,2075
+United States,"El Paso, TX",40GP WWT,2845
+United States,Houston,40GP WWT,1705
+United States,"Jacksonville, FL",40GP WWT,1855
+United States,"Kansas City, KS",40GP WWT,2465
+United States,"Long Beach, CA",40GP WWT,1810
+United States,"Los Angeles, CA",40GP WWT,1735
+United States,"Memphis, TN",40GP WWT,1860
+United States,"Miami, FL",40GP WWT,2020
+United States,"Minneapolis, MN",40GP WWT,2405
+United States,"Mobile, AL",40GP WWT,2275
+United States,"Nashville, TN",40GP WWT,2215
+United States,"New Orleans, LA",40GP WWT,2460
+United States,"New York, NY",40GP WWT,1440
+United States,"Norfolk, VA",40GP WWT,1780
+United States,"Oakland, CA",40GP WWT,1950
+United States,"Omaha, NE",40GP WWT,2340
+United States,"Phoenix, AZ",40GP WWT,3085
+United States,"Salt Lake City, UT",40GP WWT,2470
+United States,"Savannah, GA",40GP WWT,1640
+United States,"Seattle, WA",40GP WWT,1640
+United States,"Tampa, FL",40GP WWT,2170
+United States,"Indianapolis, IN",40GP WWT,1800
+Vietnam,Haiphong,40GP WWT,2525
+Vietnam,Ho Chi Minh City,40GP WWT,2360
+Australia,Adelaide,20DD New,2900
+Australia,Brisbane,20DD New,2900
+Australia,Fremantle,20DD New,2900
+Australia,Melbourne,20DD New,2900
+Australia,Sydney,20DD New,2900
+Austria,Vienna,20DD New,2900
+Bangladesh,Chittagong,20DD New,2900
+Belarus,Minsk,20DD New,2900
+Belgium,Antwerp,20DD New,2900
+Brazil,Santos,20DD New,2900
+Brazil,Paranagua,20DD New,2900
+Cambodia,Phnom Penh,20DD New,2900
+Canada,"Calgary, AB",20DD New,2900
+Canada,"Edmonton, AB",20DD New,2900
+Canada,"Halifax, NS",20DD New,2900
+Canada,"Montreal, QC",20DD New,2900
+Canada,"Toronto, ON",20DD New,2900
+Canada,"Vancouver, BC",20DD New,2900
+Canada,"Winnipeg, MB",20DD New,2900
+Chile,Santiago,20DD New,2900
+Chile,Valparaiso,20DD New,2900
+China,Dalian,20DD New,2900
+China,Fuzhou,20DD New,2900
+China,Guangzhou,20DD New,2900
+China,Hong Kong,20DD New,2900
+China,Huangpu,20DD New,2900
+China,Lianyungang,20DD New,2900
+China,Nansha,20DD New,2900
+China,Qingdao,20DD New,2900
+China,Shanghai,20DD New,2900
+China,Shekou,20DD New,2900
+China,Shenzhen,20DD New,2900
+China,Tianjin,20DD New,2900
+China,Xiamen,20DD New,2900
+China,Ningbo,20DD New,2900
+China,Chengdu,20DD New,2900
+China,Hong Kong,20DD New,2900
+China,Huangpu,20DD New,2900
+China,Nanjing,20DD New,2900
+China,Yantian,20DD New,2900
+Costa Rica,Limon,20DD New,2900
+Denmark,Aarhus,20DD New,2900
+Denmark,Copenhagen,20DD New,2900
+England,Leeds,20DD New,2900
+England,London,20DD New,2900
+Estonia,Tallin,20DD New,2900
+Finland,Helsinki,20DD New,2900
+Finland,Kotka,20DD New,2900
+Finland,Rauma,20DD New,2900
+France,Dunkerque,20DD New,2900
+France,Fos Sur Mer,20DD New,2900
+France,Le Havre,20DD New,2900
+France,Lyon,20DD New,2900
+France,Marseille,20DD New,2900
+France,Rouen,20DD New,2900
+France,Bordeaux,20DD New,2900
+France,Marseille,20DD New,2900
+Georgia,Poti,20DD New,2900
+Germany,Bremen,20DD New,2900
+Germany,Duisburg,20DD New,2900
+Germany,Hamburg,20DD New,2900
+Germany,Mannheim,20DD New,2900
+Germany,Ludwigshafen,20DD New,2900
+Germany,Munich,20DD New,2900
+Greece,Piraeus,20DD New,2900
+Hungary,Budapest,20DD New,2900
+India,Delhi,20DD New,2900
+India,Kolkata(Calcutta),20DD New,2900
+India,Mundra,20DD New,2900
+India,Nhava Sheva,20DD New,2900
+India,Chennai,20DD New,2900
+India,Kolkata(Calcutta),20DD New,2900
+India,Mumbai,20DD New,2900
+India,Mundra,20DD New,2900
+India,New Delhi ,20DD New,2900
+India,Tuticorin,20DD New,2900
+Indonesia,Belawan,20DD New,2900
+Indonesia,Jakarta,20DD New,2900
+Indonesia,Semarang,20DD New,2900
+Indonesia,Surabaya,20DD New,2900
+Israel,Ashdod,20DD New,2900
+Italy,Genoa,20DD New,2900
+Italy,La Spezia,20DD New,2900
+Italy,Livorno,20DD New,2900
+Italy,Milan,20DD New,2900
+Italy,Modena,20DD New,2900
+Italy,Padova,20DD New,2900
+Italy,Trieste,20DD New,2900
+Italy,Venice,20DD New,2900
+Japan,Kobe,20DD New,2900
+Japan,Yokohama,20DD New,2900
+Japan,Hakata,20DD New,2900
+Japan,Kobe,20DD New,2900
+Japan,Nagoya,20DD New,2900
+Japan,Osaka,20DD New,2900
+Japan,Tokyo,20DD New,2900
+Kazakhstan,Almaty,20DD New,2900
+Kazakhstan,Tashkent,20DD New,2900
+Kenya,Mombasa,20DD New,2900
+Kenya,Nairobi,20DD New,2900
+Malaysia,Penang,20DD New,2900
+Malaysia,Port Kelang,20DD New,2900
+Malaysia,Johar,20DD New,2900
+Mexico,Altamira,20DD New,2900
+Mexico,Manzanillo,20DD New,2900
+Mexico,Mexico City,20DD New,2900
+Mexico,Veracruz,20DD New,2900
+Morocco,Casablanca,20DD New,2900
+Netherlands,Rotterdam,20DD New,2900
+New Zealand,Tauranga,20DD New,2900
+New Zealand,Auckland,20DD New,2900
+New Zealand,Tauranga,20DD New,2900
+Oman,Sohar,20DD New,2900
+Pakistan,Karachi,20DD New,2900
+Peru,Callao,20DD New,2900
+Philippines,Manila,20DD New,2900
+Poland,Gdansk,20DD New,2900
+Poland,Warsaw,20DD New,2900
+Poland,Gdynia,20DD New,2900
+Portugal,Leixoes,20DD New,2900
+Portugal,Lisboa,20DD New,2900
+Portugal,Leixoes,20DD New,2900
+Portugal,Setubal,20DD New,2900
+Republic of Ireland,Dublin,20DD New,2900
+Romania,Constanta,20DD New,2900
+Russia,Moscow,20DD New,2900
+Russia,St Petersburg,20DD New,2900
+Russia,Vladivostok,20DD New,2900
+Russia,"Yekaterinburg, Sve",20DD New,2900
+Saudi Arabia,Jeddah,20DD New,2900
+Singapore,Singapore,20DD New,2900
+South Africa,Durban,20DD New,2900
+South Africa,Johannesburg,20DD New,2900
+South Africa,Cape Town,20DD New,2900
+South Africa,Port Elizabeth,20DD New,2900
+South Korea,Busan,20DD New,2900
+South Korea,Gwangyang,20DD New,2900
+South Korea,Inchoen,20DD New,2900
+South Korea,Seoul,20DD New,2900
+Spain,Arquata Scrivia,20DD New,2900
+Spain,Barcelona,20DD New,2900
+Spain,Bilbao,20DD New,2900
+Spain,Madrid,20DD New,2900
+Spain,Valencia (Spain),20DD New,2900
+Spain,Algeciras,20DD New,2900
+Spain,Barcelona,20DD New,2900
+Spain,Bilbao,20DD New,2900
+Spain,Madrid,20DD New,2900
+Spain,Valencia ,20DD New,2900
+Sweden,Gothenburg,20DD New,2900
+Sweden,Norrkoping,20DD New,2900
+Switzerland,Basle,20DD New,2900
+Taiwan,Kaohsiung,20DD New,2900
+Taiwan,Keelung,20DD New,2900
+Taiwan,Taichung,20DD New,2900
+Tamil Nadu,Chennai,20DD New,2900
+Thailand,Bangkok,20DD New,2900
+Thailand,Laem Chabang,20DD New,2900
+Turkey,Istanbul,20DD New,2900
+Turkey,Mersin,20DD New,2900
+Turkey,Gebze,20DD New,2900
+Turkey,Mersin,20DD New,2900
+United Arab Emirates,Dubai,20DD New,2900
+United Arab Emirates,Jebel Ali,20DD New,2900
+United Kingdom,Southampton,20DD New,2900
+United Kingdom,Belfast,20DD New,2900
+United Kingdom,Birmingham ,20DD New,2900
+United Kingdom,Doncaster,20DD New,2900
+United Kingdom,Glasgow,20DD New,2900
+United Kingdom,Leeds,20DD New,2900
+United Kingdom,Liverpool,20DD New,2900
+United Kingdom,London,20DD New,2900
+United States,"Atlanta, GA",20DD New,2900
+United States,"Baltimore, MD",20DD New,2900
+United States,"Boston, MA",20DD New,2900
+United States,"Charleston, SC",20DD New,2900
+United States,"Charlotte, NC",20DD New,2900
+United States,"Chicago, IL",20DD New,2900
+United States,"Cincinnati, OH",20DD New,2900
+United States,"Cleveland, OH",20DD New,2900
+United States,"Columbus, OH",20DD New,2900
+United States,"Dallas, TX",20DD New,2900
+United States,"Denver, CO",20DD New,2900
+United States,"Detroit, MI",20DD New,2900
+United States,"El Paso, TX",20DD New,2900
+United States,Houston,20DD New,2900
+United States,"Jacksonville, FL",20DD New,2900
+United States,"Kansas City, KS",20DD New,2900
+United States,"Long Beach, CA",20DD New,2900
+United States,"Los Angeles, CA",20DD New,2900
+United States,"Memphis, TN",20DD New,2900
+United States,"Miami, FL",20DD New,2900
+United States,"Minneapolis, MN",20DD New,2900
+United States,"Mobile, AL",20DD New,2900
+United States,"Nashville, TN",20DD New,2900
+United States,"New Orleans, LA",20DD New,2900
+United States,"New York, NY",20DD New,2900
+United States,"Norfolk, VA",20DD New,2900
+United States,"Oakland, CA",20DD New,2900
+United States,"Omaha, NE",20DD New,2900
+United States,"Phoenix, AZ",20DD New,2900
+United States,"Salt Lake City, UT",20DD New,2900
+United States,"Savannah, GA",20DD New,2900
+United States,"Seattle, WA",20DD New,2900
+United States,"Tampa, FL",20DD New,2900
+United States,"Indianapolis, IN",20DD New,2900
+Vietnam,Haiphong,20DD New,2900
+Vietnam,Ho Chi Minh City,20DD New,2900
+Australia,Adelaide,40HC DD New,4400
+Australia,Brisbane,40HC DD New,4400
+Australia,Fremantle,40HC DD New,4400
+Australia,Melbourne,40HC DD New,4400
+Australia,Sydney,40HC DD New,4400
+Austria,Vienna,40HC DD New,4400
+Bangladesh,Chittagong,40HC DD New,4400
+Belarus,Minsk,40HC DD New,4400
+Belgium,Antwerp,40HC DD New,4400
+Brazil,Santos,40HC DD New,4400
+Brazil,Paranagua,40HC DD New,4400
+Cambodia,Phnom Penh,40HC DD New,4400
+Canada,"Calgary, AB",40HC DD New,4400
+Canada,"Edmonton, AB",40HC DD New,4400
+Canada,"Halifax, NS",40HC DD New,4400
+Canada,"Montreal, QC",40HC DD New,4400
+Canada,"Toronto, ON",40HC DD New,4400
+Canada,"Vancouver, BC",40HC DD New,4400
+Canada,"Winnipeg, MB",40HC DD New,4400
+Chile,Santiago,40HC DD New,4400
+Chile,Valparaiso,40HC DD New,4400
+China,Dalian,40HC DD New,4400
+China,Fuzhou,40HC DD New,4400
+China,Guangzhou,40HC DD New,4400
+China,Hong Kong,40HC DD New,4400
+China,Huangpu,40HC DD New,4400
+China,Lianyungang,40HC DD New,4400
+China,Nansha,40HC DD New,4400
+China,Qingdao,40HC DD New,4400
+China,Shanghai,40HC DD New,4400
+China,Shekou,40HC DD New,4400
+China,Shenzhen,40HC DD New,4400
+China,Tianjin,40HC DD New,4400
+China,Xiamen,40HC DD New,4400
+China,Ningbo,40HC DD New,4400
+China,Chengdu,40HC DD New,4400
+China,Hong Kong,40HC DD New,4400
+China,Huangpu,40HC DD New,4400
+China,Nanjing,40HC DD New,4400
+China,Yantian,40HC DD New,4400
+Costa Rica,Limon,40HC DD New,4400
+Denmark,Aarhus,40HC DD New,4400
+Denmark,Copenhagen,40HC DD New,4400
+England,Leeds,40HC DD New,4400
+England,London,40HC DD New,4400
+Estonia,Tallin,40HC DD New,4400
+Finland,Helsinki,40HC DD New,4400
+Finland,Kotka,40HC DD New,4400
+Finland,Rauma,40HC DD New,4400
+France,Dunkerque,40HC DD New,4400
+France,Fos Sur Mer,40HC DD New,4400
+France,Le Havre,40HC DD New,4400
+France,Lyon,40HC DD New,4400
+France,Marseille,40HC DD New,4400
+France,Rouen,40HC DD New,4400
+France,Bordeaux,40HC DD New,4400
+France,Marseille,40HC DD New,4400
+Georgia,Poti,40HC DD New,4400
+Germany,Bremen,40HC DD New,4400
+Germany,Duisburg,40HC DD New,4400
+Germany,Hamburg,40HC DD New,4400
+Germany,Mannheim,40HC DD New,4400
+Germany,Ludwigshafen,40HC DD New,4400
+Germany,Munich,40HC DD New,4400
+Greece,Piraeus,40HC DD New,4400
+Hungary,Budapest,40HC DD New,4400
+India,Delhi,40HC DD New,4400
+India,Kolkata(Calcutta),40HC DD New,4400
+India,Mundra,40HC DD New,4400
+India,Nhava Sheva,40HC DD New,4400
+India,Chennai,40HC DD New,4400
+India,Kolkata(Calcutta),40HC DD New,4400
+India,Mumbai,40HC DD New,4400
+India,Mundra,40HC DD New,4400
+India,New Delhi ,40HC DD New,4400
+India,Tuticorin,40HC DD New,4400
+Indonesia,Belawan,40HC DD New,4400
+Indonesia,Jakarta,40HC DD New,4400
+Indonesia,Semarang,40HC DD New,4400
+Indonesia,Surabaya,40HC DD New,4400
+Israel,Ashdod,40HC DD New,4400
+Italy,Genoa,40HC DD New,4400
+Italy,La Spezia,40HC DD New,4400
+Italy,Livorno,40HC DD New,4400
+Italy,Milan,40HC DD New,4400
+Italy,Modena,40HC DD New,4400
+Italy,Padova,40HC DD New,4400
+Italy,Trieste,40HC DD New,4400
+Italy,Venice,40HC DD New,4400
+Japan,Kobe,40HC DD New,4400
+Japan,Yokohama,40HC DD New,4400
+Japan,Hakata,40HC DD New,4400
+Japan,Kobe,40HC DD New,4400
+Japan,Nagoya,40HC DD New,4400
+Japan,Osaka,40HC DD New,4400
+Japan,Tokyo,40HC DD New,4400
+Kazakhstan,Almaty,40HC DD New,4400
+Kazakhstan,Tashkent,40HC DD New,4400
+Kenya,Mombasa,40HC DD New,4400
+Kenya,Nairobi,40HC DD New,4400
+Malaysia,Penang,40HC DD New,4400
+Malaysia,Port Kelang,40HC DD New,4400
+Malaysia,Johar,40HC DD New,4400
+Mexico,Altamira,40HC DD New,4400
+Mexico,Manzanillo,40HC DD New,4400
+Mexico,Mexico City,40HC DD New,4400
+Mexico,Veracruz,40HC DD New,4400
+Morocco,Casablanca,40HC DD New,4400
+Netherlands,Rotterdam,40HC DD New,4400
+New Zealand,Tauranga,40HC DD New,4400
+New Zealand,Auckland,40HC DD New,4400
+New Zealand,Tauranga,40HC DD New,4400
+Oman,Sohar,40HC DD New,4400
+Pakistan,Karachi,40HC DD New,4400
+Peru,Callao,40HC DD New,4400
+Philippines,Manila,40HC DD New,4400
+Poland,Gdansk,40HC DD New,4400
+Poland,Warsaw,40HC DD New,4400
+Poland,Gdynia,40HC DD New,4400
+Portugal,Leixoes,40HC DD New,4400
+Portugal,Lisboa,40HC DD New,4400
+Portugal,Leixoes,40HC DD New,4400
+Portugal,Setubal,40HC DD New,4400
+Republic of Ireland,Dublin,40HC DD New,4400
+Romania,Constanta,40HC DD New,4400
+Russia,Moscow,40HC DD New,4400
+Russia,St Petersburg,40HC DD New,4400
+Russia,Vladivostok,40HC DD New,4400
+Russia,"Yekaterinburg, Sve",40HC DD New,4400
+Saudi Arabia,Jeddah,40HC DD New,4400
+Singapore,Singapore,40HC DD New,4400
+South Africa,Durban,40HC DD New,4400
+South Africa,Johannesburg,40HC DD New,4400
+South Africa,Cape Town,40HC DD New,4400
+South Africa,Port Elizabeth,40HC DD New,4400
+South Korea,Busan,40HC DD New,4400
+South Korea,Gwangyang,40HC DD New,4400
+South Korea,Inchoen,40HC DD New,4400
+South Korea,Seoul,40HC DD New,4400
+Spain,Arquata Scrivia,40HC DD New,4400
+Spain,Barcelona,40HC DD New,4400
+Spain,Bilbao,40HC DD New,4400
+Spain,Madrid,40HC DD New,4400
+Spain,Valencia (Spain),40HC DD New,4400
+Spain,Algeciras,40HC DD New,4400
+Spain,Barcelona,40HC DD New,4400
+Spain,Bilbao,40HC DD New,4400
+Spain,Madrid,40HC DD New,4400
+Spain,Valencia ,40HC DD New,4400
+Sweden,Gothenburg,40HC DD New,4400
+Sweden,Norrkoping,40HC DD New,4400
+Switzerland,Basle,40HC DD New,4400
+Taiwan,Kaohsiung,40HC DD New,4400
+Taiwan,Keelung,40HC DD New,4400
+Taiwan,Taichung,40HC DD New,4400
+Tamil Nadu,Chennai,40HC DD New,4400
+Thailand,Bangkok,40HC DD New,4400
+Thailand,Laem Chabang,40HC DD New,4400
+Turkey,Istanbul,40HC DD New,4400
+Turkey,Mersin,40HC DD New,4400
+Turkey,Gebze,40HC DD New,4400
+Turkey,Mersin,40HC DD New,4400
+United Arab Emirates,Dubai,40HC DD New,4400
+United Arab Emirates,Jebel Ali,40HC DD New,4400
+United Kingdom,Southampton,40HC DD New,4400
+United Kingdom,Belfast,40HC DD New,4400
+United Kingdom,Birmingham ,40HC DD New,4400
+United Kingdom,Doncaster,40HC DD New,4400
+United Kingdom,Glasgow,40HC DD New,4400
+United Kingdom,Leeds,40HC DD New,4400
+United Kingdom,Liverpool,40HC DD New,4400
+United Kingdom,London,40HC DD New,4400
+United States,"Atlanta, GA",40HC DD New,4400
+United States,"Baltimore, MD",40HC DD New,4400
+United States,"Boston, MA",40HC DD New,4400
+United States,"Charleston, SC",40HC DD New,4400
+United States,"Charlotte, NC",40HC DD New,4400
+United States,"Chicago, IL",40HC DD New,4400
+United States,"Cincinnati, OH",40HC DD New,4400
+United States,"Cleveland, OH",40HC DD New,4400
+United States,"Columbus, OH",40HC DD New,4400
+United States,"Dallas, TX",40HC DD New,4400
+United States,"Denver, CO",40HC DD New,4400
+United States,"Detroit, MI",40HC DD New,4400
+United States,"El Paso, TX",40HC DD New,4400
+United States,Houston,40HC DD New,4400
+United States,"Jacksonville, FL",40HC DD New,4400
+United States,"Kansas City, KS",40HC DD New,4400
+United States,"Long Beach, CA",40HC DD New,4400
+United States,"Los Angeles, CA",40HC DD New,4400
+United States,"Memphis, TN",40HC DD New,4400
+United States,"Miami, FL",40HC DD New,4400
+United States,"Minneapolis, MN",40HC DD New,4400
+United States,"Mobile, AL",40HC DD New,4400
+United States,"Nashville, TN",40HC DD New,4400
+United States,"New Orleans, LA",40HC DD New,4400
+United States,"New York, NY",40HC DD New,4400
+United States,"Norfolk, VA",40HC DD New,4400
+United States,"Oakland, CA",40HC DD New,4400
+United States,"Omaha, NE",40HC DD New,4400
+United States,"Phoenix, AZ",40HC DD New,4400
+United States,"Salt Lake City, UT",40HC DD New,4400
+United States,"Savannah, GA",40HC DD New,4400
+United States,"Seattle, WA",40HC DD New,4400
+United States,"Tampa, FL",40HC DD New,4400
+United States,"Indianapolis, IN",40HC DD New,4400
+Vietnam,Haiphong,40HC DD New,4400
+Vietnam,Ho Chi Minh City,40HC DD New,4400
+Australia,Adelaide,20GP RF New,16000
+Australia,Brisbane,20GP RF New,16000
+Australia,Fremantle,20GP RF New,16000
+Australia,Melbourne,20GP RF New,16000
+Australia,Sydney,20GP RF New,16000
+Austria,Vienna,20GP RF New,16000
+Bangladesh,Chittagong,20GP RF New,16000
+Belarus,Minsk,20GP RF New,16000
+Belgium,Antwerp,20GP RF New,16000
+Brazil,Santos,20GP RF New,16000
+Brazil,Paranagua,20GP RF New,16000
+Cambodia,Phnom Penh,20GP RF New,16000
+Canada,"Calgary, AB",20GP RF New,16000
+Canada,"Edmonton, AB",20GP RF New,16000
+Canada,"Halifax, NS",20GP RF New,16000
+Canada,"Montreal, QC",20GP RF New,16000
+Canada,"Toronto, ON",20GP RF New,16000
+Canada,"Vancouver, BC",20GP RF New,16000
+Canada,"Winnipeg, MB",20GP RF New,16000
+Chile,Santiago,20GP RF New,16000
+Chile,Valparaiso,20GP RF New,16000
+China,Dalian,20GP RF New,16000
+China,Fuzhou,20GP RF New,16000
+China,Guangzhou,20GP RF New,16000
+China,Hong Kong,20GP RF New,16000
+China,Huangpu,20GP RF New,16000
+China,Lianyungang,20GP RF New,16000
+China,Nansha,20GP RF New,16000
+China,Qingdao,20GP RF New,16000
+China,Shanghai,20GP RF New,16000
+China,Shekou,20GP RF New,16000
+China,Shenzhen,20GP RF New,16000
+China,Tianjin,20GP RF New,16000
+China,Xiamen,20GP RF New,16000
+China,Ningbo,20GP RF New,16000
+China,Chengdu,20GP RF New,16000
+China,Hong Kong,20GP RF New,16000
+China,Huangpu,20GP RF New,16000
+China,Nanjing,20GP RF New,16000
+China,Yantian,20GP RF New,16000
+Costa Rica,Limon,20GP RF New,16000
+Denmark,Aarhus,20GP RF New,16000
+Denmark,Copenhagen,20GP RF New,16000
+England,Leeds,20GP RF New,16000
+England,London,20GP RF New,16000
+Estonia,Tallin,20GP RF New,16000
+Finland,Helsinki,20GP RF New,16000
+Finland,Kotka,20GP RF New,16000
+Finland,Rauma,20GP RF New,16000
+France,Dunkerque,20GP RF New,16000
+France,Fos Sur Mer,20GP RF New,16000
+France,Le Havre,20GP RF New,16000
+France,Lyon,20GP RF New,16000
+France,Marseille,20GP RF New,16000
+France,Rouen,20GP RF New,16000
+France,Bordeaux,20GP RF New,16000
+France,Marseille,20GP RF New,16000
+Georgia,Poti,20GP RF New,16000
+Germany,Bremen,20GP RF New,16000
+Germany,Duisburg,20GP RF New,16000
+Germany,Hamburg,20GP RF New,16000
+Germany,Mannheim,20GP RF New,16000
+Germany,Ludwigshafen,20GP RF New,16000
+Germany,Munich,20GP RF New,16000
+Greece,Piraeus,20GP RF New,16000
+Hungary,Budapest,20GP RF New,16000
+India,Delhi,20GP RF New,16000
+India,Kolkata(Calcutta),20GP RF New,16000
+India,Mundra,20GP RF New,16000
+India,Nhava Sheva,20GP RF New,16000
+India,Chennai,20GP RF New,16000
+India,Kolkata(Calcutta),20GP RF New,16000
+India,Mumbai,20GP RF New,16000
+India,Mundra,20GP RF New,16000
+India,New Delhi ,20GP RF New,16000
+India,Tuticorin,20GP RF New,16000
+Indonesia,Belawan,20GP RF New,16000
+Indonesia,Jakarta,20GP RF New,16000
+Indonesia,Semarang,20GP RF New,16000
+Indonesia,Surabaya,20GP RF New,16000
+Israel,Ashdod,20GP RF New,16000
+Italy,Genoa,20GP RF New,16000
+Italy,La Spezia,20GP RF New,16000
+Italy,Livorno,20GP RF New,16000
+Italy,Milan,20GP RF New,16000
+Italy,Modena,20GP RF New,16000
+Italy,Padova,20GP RF New,16000
+Italy,Trieste,20GP RF New,16000
+Italy,Venice,20GP RF New,16000
+Japan,Kobe,20GP RF New,16000
+Japan,Yokohama,20GP RF New,16000
+Japan,Hakata,20GP RF New,16000
+Japan,Kobe,20GP RF New,16000
+Japan,Nagoya,20GP RF New,16000
+Japan,Osaka,20GP RF New,16000
+Japan,Tokyo,20GP RF New,16000
+Kazakhstan,Almaty,20GP RF New,16000
+Kazakhstan,Tashkent,20GP RF New,16000
+Kenya,Mombasa,20GP RF New,16000
+Kenya,Nairobi,20GP RF New,16000
+Malaysia,Penang,20GP RF New,16000
+Malaysia,Port Kelang,20GP RF New,16000
+Malaysia,Johar,20GP RF New,16000
+Mexico,Altamira,20GP RF New,16000
+Mexico,Manzanillo,20GP RF New,16000
+Mexico,Mexico City,20GP RF New,16000
+Mexico,Veracruz,20GP RF New,16000
+Morocco,Casablanca,20GP RF New,16000
+Netherlands,Rotterdam,20GP RF New,16000
+New Zealand,Tauranga,20GP RF New,16000
+New Zealand,Auckland,20GP RF New,16000
+New Zealand,Tauranga,20GP RF New,16000
+Oman,Sohar,20GP RF New,16000
+Pakistan,Karachi,20GP RF New,16000
+Peru,Callao,20GP RF New,16000
+Philippines,Manila,20GP RF New,16000
+Poland,Gdansk,20GP RF New,16000
+Poland,Warsaw,20GP RF New,16000
+Poland,Gdynia,20GP RF New,16000
+Portugal,Leixoes,20GP RF New,16000
+Portugal,Lisboa,20GP RF New,16000
+Portugal,Leixoes,20GP RF New,16000
+Portugal,Setubal,20GP RF New,16000
+Republic of Ireland,Dublin,20GP RF New,16000
+Romania,Constanta,20GP RF New,16000
+Russia,Moscow,20GP RF New,16000
+Russia,St Petersburg,20GP RF New,16000
+Russia,Vladivostok,20GP RF New,16000
+Russia,"Yekaterinburg, Sve",20GP RF New,16000
+Saudi Arabia,Jeddah,20GP RF New,16000
+Singapore,Singapore,20GP RF New,16000
+South Africa,Durban,20GP RF New,16000
+South Africa,Johannesburg,20GP RF New,16000
+South Africa,Cape Town,20GP RF New,16000
+South Africa,Port Elizabeth,20GP RF New,16000
+South Korea,Busan,20GP RF New,16000
+South Korea,Gwangyang,20GP RF New,16000
+South Korea,Inchoen,20GP RF New,16000
+South Korea,Seoul,20GP RF New,16000
+Spain,Arquata Scrivia,20GP RF New,16000
+Spain,Barcelona,20GP RF New,16000
+Spain,Bilbao,20GP RF New,16000
+Spain,Madrid,20GP RF New,16000
+Spain,Valencia (Spain),20GP RF New,16000
+Spain,Algeciras,20GP RF New,16000
+Spain,Barcelona,20GP RF New,16000
+Spain,Bilbao,20GP RF New,16000
+Spain,Madrid,20GP RF New,16000
+Spain,Valencia ,20GP RF New,16000
+Sweden,Gothenburg,20GP RF New,16000
+Sweden,Norrkoping,20GP RF New,16000
+Switzerland,Basle,20GP RF New,16000
+Taiwan,Kaohsiung,20GP RF New,16000
+Taiwan,Keelung,20GP RF New,16000
+Taiwan,Taichung,20GP RF New,16000
+Tamil Nadu,Chennai,20GP RF New,16000
+Thailand,Bangkok,20GP RF New,16000
+Thailand,Laem Chabang,20GP RF New,16000
+Turkey,Istanbul,20GP RF New,16000
+Turkey,Mersin,20GP RF New,16000
+Turkey,Gebze,20GP RF New,16000
+Turkey,Mersin,20GP RF New,16000
+United Arab Emirates,Dubai,20GP RF New,16000
+United Arab Emirates,Jebel Ali,20GP RF New,16000
+United Kingdom,Southampton,20GP RF New,16000
+United Kingdom,Belfast,20GP RF New,16000
+United Kingdom,Birmingham ,20GP RF New,16000
+United Kingdom,Doncaster,20GP RF New,16000
+United Kingdom,Glasgow,20GP RF New,16000
+United Kingdom,Leeds,20GP RF New,16000
+United Kingdom,Liverpool,20GP RF New,16000
+United Kingdom,London,20GP RF New,16000
+United States,"Atlanta, GA",20GP RF New,16000
+United States,"Baltimore, MD",20GP RF New,16000
+United States,"Boston, MA",20GP RF New,16000
+United States,"Charleston, SC",20GP RF New,16000
+United States,"Charlotte, NC",20GP RF New,16000
+United States,"Chicago, IL",20GP RF New,16000
+United States,"Cincinnati, OH",20GP RF New,16000
+United States,"Cleveland, OH",20GP RF New,16000
+United States,"Columbus, OH",20GP RF New,16000
+United States,"Dallas, TX",20GP RF New,16000
+United States,"Denver, CO",20GP RF New,16000
+United States,"Detroit, MI",20GP RF New,16000
+United States,"El Paso, TX",20GP RF New,16000
+United States,Houston,20GP RF New,16000
+United States,"Jacksonville, FL",20GP RF New,16000
+United States,"Kansas City, KS",20GP RF New,16000
+United States,"Long Beach, CA",20GP RF New,16000
+United States,"Los Angeles, CA",20GP RF New,16000
+United States,"Memphis, TN",20GP RF New,16000
+United States,"Miami, FL",20GP RF New,16000
+United States,"Minneapolis, MN",20GP RF New,16000
+United States,"Mobile, AL",20GP RF New,16000
+United States,"Nashville, TN",20GP RF New,16000
+United States,"New Orleans, LA",20GP RF New,16000
+United States,"New York, NY",20GP RF New,16000
+United States,"Norfolk, VA",20GP RF New,16000
+United States,"Oakland, CA",20GP RF New,16000
+United States,"Omaha, NE",20GP RF New,16000
+United States,"Phoenix, AZ",20GP RF New,16000
+United States,"Salt Lake City, UT",20GP RF New,16000
+United States,"Savannah, GA",20GP RF New,16000
+United States,"Seattle, WA",20GP RF New,16000
+United States,"Tampa, FL",20GP RF New,16000
+United States,"Indianapolis, IN",20GP RF New,16000
+Vietnam,Haiphong,20GP RF New,16000
+Vietnam,Ho Chi Minh City,20GP RF New,16000
+Australia,Adelaide,40HC RF New,22000
+Australia,Brisbane,40HC RF New,22000
+Australia,Fremantle,40HC RF New,22000
+Australia,Melbourne,40HC RF New,22000
+Australia,Sydney,40HC RF New,22000
+Austria,Vienna,40HC RF New,22000
+Bangladesh,Chittagong,40HC RF New,22000
+Belarus,Minsk,40HC RF New,22000
+Belgium,Antwerp,40HC RF New,22000
+Brazil,Santos,40HC RF New,22000
+Brazil,Paranagua,40HC RF New,22000
+Cambodia,Phnom Penh,40HC RF New,22000
+Canada,"Calgary, AB",40HC RF New,22000
+Canada,"Edmonton, AB",40HC RF New,22000
+Canada,"Halifax, NS",40HC RF New,22000
+Canada,"Montreal, QC",40HC RF New,22000
+Canada,"Toronto, ON",40HC RF New,22000
+Canada,"Vancouver, BC",40HC RF New,22000
+Canada,"Winnipeg, MB",40HC RF New,22000
+Chile,Santiago,40HC RF New,22000
+Chile,Valparaiso,40HC RF New,22000
+China,Dalian,40HC RF New,22000
+China,Fuzhou,40HC RF New,22000
+China,Guangzhou,40HC RF New,22000
+China,Hong Kong,40HC RF New,22000
+China,Huangpu,40HC RF New,22000
+China,Lianyungang,40HC RF New,22000
+China,Nansha,40HC RF New,22000
+China,Qingdao,40HC RF New,22000
+China,Shanghai,40HC RF New,22000
+China,Shekou,40HC RF New,22000
+China,Shenzhen,40HC RF New,22000
+China,Tianjin,40HC RF New,22000
+China,Xiamen,40HC RF New,22000
+China,Ningbo,40HC RF New,22000
+China,Chengdu,40HC RF New,22000
+China,Hong Kong,40HC RF New,22000
+China,Huangpu,40HC RF New,22000
+China,Nanjing,40HC RF New,22000
+China,Yantian,40HC RF New,22000
+Costa Rica,Limon,40HC RF New,22000
+Denmark,Aarhus,40HC RF New,22000
+Denmark,Copenhagen,40HC RF New,22000
+England,Leeds,40HC RF New,22000
+England,London,40HC RF New,22000
+Estonia,Tallin,40HC RF New,22000
+Finland,Helsinki,40HC RF New,22000
+Finland,Kotka,40HC RF New,22000
+Finland,Rauma,40HC RF New,22000
+France,Dunkerque,40HC RF New,22000
+France,Fos Sur Mer,40HC RF New,22000
+France,Le Havre,40HC RF New,22000
+France,Lyon,40HC RF New,22000
+France,Marseille,40HC RF New,22000
+France,Rouen,40HC RF New,22000
+France,Bordeaux,40HC RF New,22000
+France,Marseille,40HC RF New,22000
+Georgia,Poti,40HC RF New,22000
+Germany,Bremen,40HC RF New,22000
+Germany,Duisburg,40HC RF New,22000
+Germany,Hamburg,40HC RF New,22000
+Germany,Mannheim,40HC RF New,22000
+Germany,Ludwigshafen,40HC RF New,22000
+Germany,Munich,40HC RF New,22000
+Greece,Piraeus,40HC RF New,22000
+Hungary,Budapest,40HC RF New,22000
+India,Delhi,40HC RF New,22000
+India,Kolkata(Calcutta),40HC RF New,22000
+India,Mundra,40HC RF New,22000
+India,Nhava Sheva,40HC RF New,22000
+India,Chennai,40HC RF New,22000
+India,Kolkata(Calcutta),40HC RF New,22000
+India,Mumbai,40HC RF New,22000
+India,Mundra,40HC RF New,22000
+India,New Delhi ,40HC RF New,22000
+India,Tuticorin,40HC RF New,22000
+Indonesia,Belawan,40HC RF New,22000
+Indonesia,Jakarta,40HC RF New,22000
+Indonesia,Semarang,40HC RF New,22000
+Indonesia,Surabaya,40HC RF New,22000
+Israel,Ashdod,40HC RF New,22000
+Italy,Genoa,40HC RF New,22000
+Italy,La Spezia,40HC RF New,22000
+Italy,Livorno,40HC RF New,22000
+Italy,Milan,40HC RF New,22000
+Italy,Modena,40HC RF New,22000
+Italy,Padova,40HC RF New,22000
+Italy,Trieste,40HC RF New,22000
+Italy,Venice,40HC RF New,22000
+Japan,Kobe,40HC RF New,22000
+Japan,Yokohama,40HC RF New,22000
+Japan,Hakata,40HC RF New,22000
+Japan,Kobe,40HC RF New,22000
+Japan,Nagoya,40HC RF New,22000
+Japan,Osaka,40HC RF New,22000
+Japan,Tokyo,40HC RF New,22000
+Kazakhstan,Almaty,40HC RF New,22000
+Kazakhstan,Tashkent,40HC RF New,22000
+Kenya,Mombasa,40HC RF New,22000
+Kenya,Nairobi,40HC RF New,22000
+Malaysia,Penang,40HC RF New,22000
+Malaysia,Port Kelang,40HC RF New,22000
+Malaysia,Johar,40HC RF New,22000
+Mexico,Altamira,40HC RF New,22000
+Mexico,Manzanillo,40HC RF New,22000
+Mexico,Mexico City,40HC RF New,22000
+Mexico,Veracruz,40HC RF New,22000
+Morocco,Casablanca,40HC RF New,22000
+Netherlands,Rotterdam,40HC RF New,22000
+New Zealand,Tauranga,40HC RF New,22000
+New Zealand,Auckland,40HC RF New,22000
+New Zealand,Tauranga,40HC RF New,22000
+Oman,Sohar,40HC RF New,22000
+Pakistan,Karachi,40HC RF New,22000
+Peru,Callao,40HC RF New,22000
+Philippines,Manila,40HC RF New,22000
+Poland,Gdansk,40HC RF New,22000
+Poland,Warsaw,40HC RF New,22000
+Poland,Gdynia,40HC RF New,22000
+Portugal,Leixoes,40HC RF New,22000
+Portugal,Lisboa,40HC RF New,22000
+Portugal,Leixoes,40HC RF New,22000
+Portugal,Setubal,40HC RF New,22000
+Republic of Ireland,Dublin,40HC RF New,22000
+Romania,Constanta,40HC RF New,22000
+Russia,Moscow,40HC RF New,22000
+Russia,St Petersburg,40HC RF New,22000
+Russia,Vladivostok,40HC RF New,22000
+Russia,"Yekaterinburg, Sve",40HC RF New,22000
+Saudi Arabia,Jeddah,40HC RF New,22000
+Singapore,Singapore,40HC RF New,22000
+South Africa,Durban,40HC RF New,22000
+South Africa,Johannesburg,40HC RF New,22000
+South Africa,Cape Town,40HC RF New,22000
+South Africa,Port Elizabeth,40HC RF New,22000
+South Korea,Busan,40HC RF New,22000
+South Korea,Gwangyang,40HC RF New,22000
+South Korea,Inchoen,40HC RF New,22000
+South Korea,Seoul,40HC RF New,22000
+Spain,Arquata Scrivia,40HC RF New,22000
+Spain,Barcelona,40HC RF New,22000
+Spain,Bilbao,40HC RF New,22000
+Spain,Madrid,40HC RF New,22000
+Spain,Valencia (Spain),40HC RF New,22000
+Spain,Algeciras,40HC RF New,22000
+Spain,Barcelona,40HC RF New,22000
+Spain,Bilbao,40HC RF New,22000
+Spain,Madrid,40HC RF New,22000
+Spain,Valencia ,40HC RF New,22000
+Sweden,Gothenburg,40HC RF New,22000
+Sweden,Norrkoping,40HC RF New,22000
+Switzerland,Basle,40HC RF New,22000
+Taiwan,Kaohsiung,40HC RF New,22000
+Taiwan,Keelung,40HC RF New,22000
+Taiwan,Taichung,40HC RF New,22000
+Tamil Nadu,Chennai,40HC RF New,22000
+Thailand,Bangkok,40HC RF New,22000
+Thailand,Laem Chabang,40HC RF New,22000
+Turkey,Istanbul,40HC RF New,22000
+Turkey,Mersin,40HC RF New,22000
+Turkey,Gebze,40HC RF New,22000
+Turkey,Mersin,40HC RF New,22000
+United Arab Emirates,Dubai,40HC RF New,22000
+United Arab Emirates,Jebel Ali,40HC RF New,22000
+United Kingdom,Southampton,40HC RF New,22000
+United Kingdom,Belfast,40HC RF New,22000
+United Kingdom,Birmingham ,40HC RF New,22000
+United Kingdom,Doncaster,40HC RF New,22000
+United Kingdom,Glasgow,40HC RF New,22000
+United Kingdom,Leeds,40HC RF New,22000
+United Kingdom,Liverpool,40HC RF New,22000
+United Kingdom,London,40HC RF New,22000
+United States,"Atlanta, GA",40HC RF New,22000
+United States,"Baltimore, MD",40HC RF New,22000
+United States,"Boston, MA",40HC RF New,22000
+United States,"Charleston, SC",40HC RF New,22000
+United States,"Charlotte, NC",40HC RF New,22000
+United States,"Chicago, IL",40HC RF New,22000
+United States,"Cincinnati, OH",40HC RF New,22000
+United States,"Cleveland, OH",40HC RF New,22000
+United States,"Columbus, OH",40HC RF New,22000
+United States,"Dallas, TX",40HC RF New,22000
+United States,"Denver, CO",40HC RF New,22000
+United States,"Detroit, MI",40HC RF New,22000
+United States,"El Paso, TX",40HC RF New,22000
+United States,Houston,40HC RF New,22000
+United States,"Jacksonville, FL",40HC RF New,22000
+United States,"Kansas City, KS",40HC RF New,22000
+United States,"Long Beach, CA",40HC RF New,22000
+United States,"Los Angeles, CA",40HC RF New,22000
+United States,"Memphis, TN",40HC RF New,22000
+United States,"Miami, FL",40HC RF New,22000
+United States,"Minneapolis, MN",40HC RF New,22000
+United States,"Mobile, AL",40HC RF New,22000
+United States,"Nashville, TN",40HC RF New,22000
+United States,"New Orleans, LA",40HC RF New,22000
+United States,"New York, NY",40HC RF New,22000
+United States,"Norfolk, VA",40HC RF New,22000
+United States,"Oakland, CA",40HC RF New,22000
+United States,"Omaha, NE",40HC RF New,22000
+United States,"Phoenix, AZ",40HC RF New,22000
+United States,"Salt Lake City, UT",40HC RF New,22000
+United States,"Savannah, GA",40HC RF New,22000
+United States,"Seattle, WA",40HC RF New,22000
+United States,"Tampa, FL",40HC RF New,22000
+United States,"Indianapolis, IN",40HC RF New,22000
+Vietnam,Haiphong,40HC RF New,22000
+Vietnam,Ho Chi Minh City,40HC RF New,22000
+Australia,Adelaide,20GP RF Cw ,6500
+Australia,Brisbane,20GP RF Cw ,6500
+Australia,Fremantle,20GP RF Cw ,6500
+Australia,Melbourne,20GP RF Cw ,6500
+Australia,Sydney,20GP RF Cw ,6500
+Austria,Vienna,20GP RF Cw ,6500
+Bangladesh,Chittagong,20GP RF Cw ,6500
+Belarus,Minsk,20GP RF Cw ,6500
+Belgium,Antwerp,20GP RF Cw ,6500
+Brazil,Santos,20GP RF Cw ,6500
+Brazil,Paranagua,20GP RF Cw ,6500
+Cambodia,Phnom Penh,20GP RF Cw ,6500
+Canada,"Calgary, AB",20GP RF Cw ,6500
+Canada,"Edmonton, AB",20GP RF Cw ,6500
+Canada,"Halifax, NS",20GP RF Cw ,6500
+Canada,"Montreal, QC",20GP RF Cw ,6500
+Canada,"Toronto, ON",20GP RF Cw ,6500
+Canada,"Vancouver, BC",20GP RF Cw ,6500
+Canada,"Winnipeg, MB",20GP RF Cw ,6500
+Chile,Santiago,20GP RF Cw ,6500
+Chile,Valparaiso,20GP RF Cw ,6500
+China,Dalian,20GP RF Cw ,6500
+China,Fuzhou,20GP RF Cw ,6500
+China,Guangzhou,20GP RF Cw ,6500
+China,Hong Kong,20GP RF Cw ,6500
+China,Huangpu,20GP RF Cw ,6500
+China,Lianyungang,20GP RF Cw ,6500
+China,Nansha,20GP RF Cw ,6500
+China,Qingdao,20GP RF Cw ,6500
+China,Shanghai,20GP RF Cw ,6500
+China,Shekou,20GP RF Cw ,6500
+China,Shenzhen,20GP RF Cw ,6500
+China,Tianjin,20GP RF Cw ,6500
+China,Xiamen,20GP RF Cw ,6500
+China,Ningbo,20GP RF Cw ,6500
+China,Chengdu,20GP RF Cw ,6500
+China,Hong Kong,20GP RF Cw ,6500
+China,Huangpu,20GP RF Cw ,6500
+China,Nanjing,20GP RF Cw ,6500
+China,Yantian,20GP RF Cw ,6500
+Costa Rica,Limon,20GP RF Cw ,6500
+Denmark,Aarhus,20GP RF Cw ,6500
+Denmark,Copenhagen,20GP RF Cw ,6500
+England,Leeds,20GP RF Cw ,6500
+England,London,20GP RF Cw ,6500
+Estonia,Tallin,20GP RF Cw ,6500
+Finland,Helsinki,20GP RF Cw ,6500
+Finland,Kotka,20GP RF Cw ,6500
+Finland,Rauma,20GP RF Cw ,6500
+France,Dunkerque,20GP RF Cw ,6500
+France,Fos Sur Mer,20GP RF Cw ,6500
+France,Le Havre,20GP RF Cw ,6500
+France,Lyon,20GP RF Cw ,6500
+France,Marseille,20GP RF Cw ,6500
+France,Rouen,20GP RF Cw ,6500
+France,Bordeaux,20GP RF Cw ,6500
+France,Marseille,20GP RF Cw ,6500
+Georgia,Poti,20GP RF Cw ,6500
+Germany,Bremen,20GP RF Cw ,6500
+Germany,Duisburg,20GP RF Cw ,6500
+Germany,Hamburg,20GP RF Cw ,6500
+Germany,Mannheim,20GP RF Cw ,6500
+Germany,Ludwigshafen,20GP RF Cw ,6500
+Germany,Munich,20GP RF Cw ,6500
+Greece,Piraeus,20GP RF Cw ,6500
+Hungary,Budapest,20GP RF Cw ,6500
+India,Delhi,20GP RF Cw ,6500
+India,Kolkata(Calcutta),20GP RF Cw ,6500
+India,Mundra,20GP RF Cw ,6500
+India,Nhava Sheva,20GP RF Cw ,6500
+India,Chennai,20GP RF Cw ,6500
+India,Kolkata(Calcutta),20GP RF Cw ,6500
+India,Mumbai,20GP RF Cw ,6500
+India,Mundra,20GP RF Cw ,6500
+India,New Delhi ,20GP RF Cw ,6500
+India,Tuticorin,20GP RF Cw ,6500
+Indonesia,Belawan,20GP RF Cw ,6500
+Indonesia,Jakarta,20GP RF Cw ,6500
+Indonesia,Semarang,20GP RF Cw ,6500
+Indonesia,Surabaya,20GP RF Cw ,6500
+Israel,Ashdod,20GP RF Cw ,6500
+Italy,Genoa,20GP RF Cw ,6500
+Italy,La Spezia,20GP RF Cw ,6500
+Italy,Livorno,20GP RF Cw ,6500
+Italy,Milan,20GP RF Cw ,6500
+Italy,Modena,20GP RF Cw ,6500
+Italy,Padova,20GP RF Cw ,6500
+Italy,Trieste,20GP RF Cw ,6500
+Italy,Venice,20GP RF Cw ,6500
+Japan,Kobe,20GP RF Cw ,6500
+Japan,Yokohama,20GP RF Cw ,6500
+Japan,Hakata,20GP RF Cw ,6500
+Japan,Kobe,20GP RF Cw ,6500
+Japan,Nagoya,20GP RF Cw ,6500
+Japan,Osaka,20GP RF Cw ,6500
+Japan,Tokyo,20GP RF Cw ,6500
+Kazakhstan,Almaty,20GP RF Cw ,6500
+Kazakhstan,Tashkent,20GP RF Cw ,6500
+Kenya,Mombasa,20GP RF Cw ,6500
+Kenya,Nairobi,20GP RF Cw ,6500
+Malaysia,Penang,20GP RF Cw ,6500
+Malaysia,Port Kelang,20GP RF Cw ,6500
+Malaysia,Johar,20GP RF Cw ,6500
+Mexico,Altamira,20GP RF Cw ,6500
+Mexico,Manzanillo,20GP RF Cw ,6500
+Mexico,Mexico City,20GP RF Cw ,6500
+Mexico,Veracruz,20GP RF Cw ,6500
+Morocco,Casablanca,20GP RF Cw ,6500
+Netherlands,Rotterdam,20GP RF Cw ,6500
+New Zealand,Tauranga,20GP RF Cw ,6500
+New Zealand,Auckland,20GP RF Cw ,6500
+New Zealand,Tauranga,20GP RF Cw ,6500
+Oman,Sohar,20GP RF Cw ,6500
+Pakistan,Karachi,20GP RF Cw ,6500
+Peru,Callao,20GP RF Cw ,6500
+Philippines,Manila,20GP RF Cw ,6500
+Poland,Gdansk,20GP RF Cw ,6500
+Poland,Warsaw,20GP RF Cw ,6500
+Poland,Gdynia,20GP RF Cw ,6500
+Portugal,Leixoes,20GP RF Cw ,6500
+Portugal,Lisboa,20GP RF Cw ,6500
+Portugal,Leixoes,20GP RF Cw ,6500
+Portugal,Setubal,20GP RF Cw ,6500
+Republic of Ireland,Dublin,20GP RF Cw ,6500
+Romania,Constanta,20GP RF Cw ,6500
+Russia,Moscow,20GP RF Cw ,6500
+Russia,St Petersburg,20GP RF Cw ,6500
+Russia,Vladivostok,20GP RF Cw ,6500
+Russia,"Yekaterinburg, Sve",20GP RF Cw ,6500
+Saudi Arabia,Jeddah,20GP RF Cw ,6500
+Singapore,Singapore,20GP RF Cw ,6500
+South Africa,Durban,20GP RF Cw ,6500
+South Africa,Johannesburg,20GP RF Cw ,6500
+South Africa,Cape Town,20GP RF Cw ,6500
+South Africa,Port Elizabeth,20GP RF Cw ,6500
+South Korea,Busan,20GP RF Cw ,6500
+South Korea,Gwangyang,20GP RF Cw ,6500
+South Korea,Inchoen,20GP RF Cw ,6500
+South Korea,Seoul,20GP RF Cw ,6500
+Spain,Arquata Scrivia,20GP RF Cw ,6500
+Spain,Barcelona,20GP RF Cw ,6500
+Spain,Bilbao,20GP RF Cw ,6500
+Spain,Madrid,20GP RF Cw ,6500
+Spain,Valencia (Spain),20GP RF Cw ,6500
+Spain,Algeciras,20GP RF Cw ,6500
+Spain,Barcelona,20GP RF Cw ,6500
+Spain,Bilbao,20GP RF Cw ,6500
+Spain,Madrid,20GP RF Cw ,6500
+Spain,Valencia ,20GP RF Cw ,6500
+Sweden,Gothenburg,20GP RF Cw ,6500
+Sweden,Norrkoping,20GP RF Cw ,6500
+Switzerland,Basle,20GP RF Cw ,6500
+Taiwan,Kaohsiung,20GP RF Cw ,6500
+Taiwan,Keelung,20GP RF Cw ,6500
+Taiwan,Taichung,20GP RF Cw ,6500
+Tamil Nadu,Chennai,20GP RF Cw ,6500
+Thailand,Bangkok,20GP RF Cw ,6500
+Thailand,Laem Chabang,20GP RF Cw ,6500
+Turkey,Istanbul,20GP RF Cw ,6500
+Turkey,Mersin,20GP RF Cw ,6500
+Turkey,Gebze,20GP RF Cw ,6500
+Turkey,Mersin,20GP RF Cw ,6500
+United Arab Emirates,Dubai,20GP RF Cw ,6500
+United Arab Emirates,Jebel Ali,20GP RF Cw ,6500
+United Kingdom,Southampton,20GP RF Cw ,6500
+United Kingdom,Belfast,20GP RF Cw ,6500
+United Kingdom,Birmingham ,20GP RF Cw ,6500
+United Kingdom,Doncaster,20GP RF Cw ,6500
+United Kingdom,Glasgow,20GP RF Cw ,6500
+United Kingdom,Leeds,20GP RF Cw ,6500
+United Kingdom,Liverpool,20GP RF Cw ,6500
+United Kingdom,London,20GP RF Cw ,6500
+United States,"Atlanta, GA",20GP RF Cw ,6500
+United States,"Baltimore, MD",20GP RF Cw ,6500
+United States,"Boston, MA",20GP RF Cw ,6500
+United States,"Charleston, SC",20GP RF Cw ,6500
+United States,"Charlotte, NC",20GP RF Cw ,6500
+United States,"Chicago, IL",20GP RF Cw ,6500
+United States,"Cincinnati, OH",20GP RF Cw ,6500
+United States,"Cleveland, OH",20GP RF Cw ,6500
+United States,"Columbus, OH",20GP RF Cw ,6500
+United States,"Dallas, TX",20GP RF Cw ,6500
+United States,"Denver, CO",20GP RF Cw ,6500
+United States,"Detroit, MI",20GP RF Cw ,6500
+United States,"El Paso, TX",20GP RF Cw ,6500
+United States,Houston,20GP RF Cw ,6500
+United States,"Jacksonville, FL",20GP RF Cw ,6500
+United States,"Kansas City, KS",20GP RF Cw ,6500
+United States,"Long Beach, CA",20GP RF Cw ,6500
+United States,"Los Angeles, CA",20GP RF Cw ,6500
+United States,"Memphis, TN",20GP RF Cw ,6500
+United States,"Miami, FL",20GP RF Cw ,6500
+United States,"Minneapolis, MN",20GP RF Cw ,6500
+United States,"Mobile, AL",20GP RF Cw ,6500
+United States,"Nashville, TN",20GP RF Cw ,6500
+United States,"New Orleans, LA",20GP RF Cw ,6500
+United States,"New York, NY",20GP RF Cw ,6500
+United States,"Norfolk, VA",20GP RF Cw ,6500
+United States,"Oakland, CA",20GP RF Cw ,6500
+United States,"Omaha, NE",20GP RF Cw ,6500
+United States,"Phoenix, AZ",20GP RF Cw ,6500
+United States,"Salt Lake City, UT",20GP RF Cw ,6500
+United States,"Savannah, GA",20GP RF Cw ,6500
+United States,"Seattle, WA",20GP RF Cw ,6500
+United States,"Tampa, FL",20GP RF Cw ,6500
+United States,"Indianapolis, IN",20GP RF Cw ,6500
+Vietnam,Haiphong,20GP RF Cw ,6500
+Vietnam,Ho Chi Minh City,20GP RF Cw ,6500
+Australia,Adelaide,40HC RF Cw ,7000
+Australia,Brisbane,40HC RF Cw ,7000
+Australia,Fremantle,40HC RF Cw ,7000
+Australia,Melbourne,40HC RF Cw ,7000
+Australia,Sydney,40HC RF Cw ,7000
+Austria,Vienna,40HC RF Cw ,7000
+Bangladesh,Chittagong,40HC RF Cw ,7000
+Belarus,Minsk,40HC RF Cw ,7000
+Belgium,Antwerp,40HC RF Cw ,7000
+Brazil,Santos,40HC RF Cw ,7000
+Brazil,Paranagua,40HC RF Cw ,7000
+Cambodia,Phnom Penh,40HC RF Cw ,7000
+Canada,"Calgary, AB",40HC RF Cw ,7000
+Canada,"Edmonton, AB",40HC RF Cw ,7000
+Canada,"Halifax, NS",40HC RF Cw ,7000
+Canada,"Montreal, QC",40HC RF Cw ,7000
+Canada,"Toronto, ON",40HC RF Cw ,7000
+Canada,"Vancouver, BC",40HC RF Cw ,7000
+Canada,"Winnipeg, MB",40HC RF Cw ,7000
+Chile,Santiago,40HC RF Cw ,7000
+Chile,Valparaiso,40HC RF Cw ,7000
+China,Dalian,40HC RF Cw ,7000
+China,Fuzhou,40HC RF Cw ,7000
+China,Guangzhou,40HC RF Cw ,7000
+China,Hong Kong,40HC RF Cw ,7000
+China,Huangpu,40HC RF Cw ,7000
+China,Lianyungang,40HC RF Cw ,7000
+China,Nansha,40HC RF Cw ,7000
+China,Qingdao,40HC RF Cw ,7000
+China,Shanghai,40HC RF Cw ,7000
+China,Shekou,40HC RF Cw ,7000
+China,Shenzhen,40HC RF Cw ,7000
+China,Tianjin,40HC RF Cw ,7000
+China,Xiamen,40HC RF Cw ,7000
+China,Ningbo,40HC RF Cw ,7000
+China,Chengdu,40HC RF Cw ,7000
+China,Hong Kong,40HC RF Cw ,7000
+China,Huangpu,40HC RF Cw ,7000
+China,Nanjing,40HC RF Cw ,7000
+China,Yantian,40HC RF Cw ,7000
+Costa Rica,Limon,40HC RF Cw ,7000
+Denmark,Aarhus,40HC RF Cw ,7000
+Denmark,Copenhagen,40HC RF Cw ,7000
+England,Leeds,40HC RF Cw ,7000
+England,London,40HC RF Cw ,7000
+Estonia,Tallin,40HC RF Cw ,7000
+Finland,Helsinki,40HC RF Cw ,7000
+Finland,Kotka,40HC RF Cw ,7000
+Finland,Rauma,40HC RF Cw ,7000
+France,Dunkerque,40HC RF Cw ,7000
+France,Fos Sur Mer,40HC RF Cw ,7000
+France,Le Havre,40HC RF Cw ,7000
+France,Lyon,40HC RF Cw ,7000
+France,Marseille,40HC RF Cw ,7000
+France,Rouen,40HC RF Cw ,7000
+France,Bordeaux,40HC RF Cw ,7000
+France,Marseille,40HC RF Cw ,7000
+Georgia,Poti,40HC RF Cw ,7000
+Germany,Bremen,40HC RF Cw ,7000
+Germany,Duisburg,40HC RF Cw ,7000
+Germany,Hamburg,40HC RF Cw ,7000
+Germany,Mannheim,40HC RF Cw ,7000
+Germany,Ludwigshafen,40HC RF Cw ,7000
+Germany,Munich,40HC RF Cw ,7000
+Greece,Piraeus,40HC RF Cw ,7000
+Hungary,Budapest,40HC RF Cw ,7000
+India,Delhi,40HC RF Cw ,7000
+India,Kolkata(Calcutta),40HC RF Cw ,7000
+India,Mundra,40HC RF Cw ,7000
+India,Nhava Sheva,40HC RF Cw ,7000
+India,Chennai,40HC RF Cw ,7000
+India,Kolkata(Calcutta),40HC RF Cw ,7000
+India,Mumbai,40HC RF Cw ,7000
+India,Mundra,40HC RF Cw ,7000
+India,New Delhi ,40HC RF Cw ,7000
+India,Tuticorin,40HC RF Cw ,7000
+Indonesia,Belawan,40HC RF Cw ,7000
+Indonesia,Jakarta,40HC RF Cw ,7000
+Indonesia,Semarang,40HC RF Cw ,7000
+Indonesia,Surabaya,40HC RF Cw ,7000
+Israel,Ashdod,40HC RF Cw ,7000
+Italy,Genoa,40HC RF Cw ,7000
+Italy,La Spezia,40HC RF Cw ,7000
+Italy,Livorno,40HC RF Cw ,7000
+Italy,Milan,40HC RF Cw ,7000
+Italy,Modena,40HC RF Cw ,7000
+Italy,Padova,40HC RF Cw ,7000
+Italy,Trieste,40HC RF Cw ,7000
+Italy,Venice,40HC RF Cw ,7000
+Japan,Kobe,40HC RF Cw ,7000
+Japan,Yokohama,40HC RF Cw ,7000
+Japan,Hakata,40HC RF Cw ,7000
+Japan,Kobe,40HC RF Cw ,7000
+Japan,Nagoya,40HC RF Cw ,7000
+Japan,Osaka,40HC RF Cw ,7000
+Japan,Tokyo,40HC RF Cw ,7000
+Kazakhstan,Almaty,40HC RF Cw ,7000
+Kazakhstan,Tashkent,40HC RF Cw ,7000
+Kenya,Mombasa,40HC RF Cw ,7000
+Kenya,Nairobi,40HC RF Cw ,7000
+Malaysia,Penang,40HC RF Cw ,7000
+Malaysia,Port Kelang,40HC RF Cw ,7000
+Malaysia,Johar,40HC RF Cw ,7000
+Mexico,Altamira,40HC RF Cw ,7000
+Mexico,Manzanillo,40HC RF Cw ,7000
+Mexico,Mexico City,40HC RF Cw ,7000
+Mexico,Veracruz,40HC RF Cw ,7000
+Morocco,Casablanca,40HC RF Cw ,7000
+Netherlands,Rotterdam,40HC RF Cw ,7000
+New Zealand,Tauranga,40HC RF Cw ,7000
+New Zealand,Auckland,40HC RF Cw ,7000
+New Zealand,Tauranga,40HC RF Cw ,7000
+Oman,Sohar,40HC RF Cw ,7000
+Pakistan,Karachi,40HC RF Cw ,7000
+Peru,Callao,40HC RF Cw ,7000
+Philippines,Manila,40HC RF Cw ,7000
+Poland,Gdansk,40HC RF Cw ,7000
+Poland,Warsaw,40HC RF Cw ,7000
+Poland,Gdynia,40HC RF Cw ,7000
+Portugal,Leixoes,40HC RF Cw ,7000
+Portugal,Lisboa,40HC RF Cw ,7000
+Portugal,Leixoes,40HC RF Cw ,7000
+Portugal,Setubal,40HC RF Cw ,7000
+Republic of Ireland,Dublin,40HC RF Cw ,7000
+Romania,Constanta,40HC RF Cw ,7000
+Russia,Moscow,40HC RF Cw ,7000
+Russia,St Petersburg,40HC RF Cw ,7000
+Russia,Vladivostok,40HC RF Cw ,7000
+Russia,"Yekaterinburg, Sve",40HC RF Cw ,7000
+Saudi Arabia,Jeddah,40HC RF Cw ,7000
+Singapore,Singapore,40HC RF Cw ,7000
+South Africa,Durban,40HC RF Cw ,7000
+South Africa,Johannesburg,40HC RF Cw ,7000
+South Africa,Cape Town,40HC RF Cw ,7000
+South Africa,Port Elizabeth,40HC RF Cw ,7000
+South Korea,Busan,40HC RF Cw ,7000
+South Korea,Gwangyang,40HC RF Cw ,7000
+South Korea,Inchoen,40HC RF Cw ,7000
+South Korea,Seoul,40HC RF Cw ,7000
+Spain,Arquata Scrivia,40HC RF Cw ,7000
+Spain,Barcelona,40HC RF Cw ,7000
+Spain,Bilbao,40HC RF Cw ,7000
+Spain,Madrid,40HC RF Cw ,7000
+Spain,Valencia (Spain),40HC RF Cw ,7000
+Spain,Algeciras,40HC RF Cw ,7000
+Spain,Barcelona,40HC RF Cw ,7000
+Spain,Bilbao,40HC RF Cw ,7000
+Spain,Madrid,40HC RF Cw ,7000
+Spain,Valencia ,40HC RF Cw ,7000
+Sweden,Gothenburg,40HC RF Cw ,7000
+Sweden,Norrkoping,40HC RF Cw ,7000
+Switzerland,Basle,40HC RF Cw ,7000
+Taiwan,Kaohsiung,40HC RF Cw ,7000
+Taiwan,Keelung,40HC RF Cw ,7000
+Taiwan,Taichung,40HC RF Cw ,7000
+Tamil Nadu,Chennai,40HC RF Cw ,7000
+Thailand,Bangkok,40HC RF Cw ,7000
+Thailand,Laem Chabang,40HC RF Cw ,7000
+Turkey,Istanbul,40HC RF Cw ,7000
+Turkey,Mersin,40HC RF Cw ,7000
+Turkey,Gebze,40HC RF Cw ,7000
+Turkey,Mersin,40HC RF Cw ,7000
+United Arab Emirates,Dubai,40HC RF Cw ,7000
+United Arab Emirates,Jebel Ali,40HC RF Cw ,7000
+United Kingdom,Southampton,40HC RF Cw ,7000
+United Kingdom,Belfast,40HC RF Cw ,7000
+United Kingdom,Birmingham ,40HC RF Cw ,7000
+United Kingdom,Doncaster,40HC RF Cw ,7000
+United Kingdom,Glasgow,40HC RF Cw ,7000
+United Kingdom,Leeds,40HC RF Cw ,7000
+United Kingdom,Liverpool,40HC RF Cw ,7000
+United Kingdom,London,40HC RF Cw ,7000
+United States,"Atlanta, GA",40HC RF Cw ,7000
+United States,"Baltimore, MD",40HC RF Cw ,7000
+United States,"Boston, MA",40HC RF Cw ,7000
+United States,"Charleston, SC",40HC RF Cw ,7000
+United States,"Charlotte, NC",40HC RF Cw ,7000
+United States,"Chicago, IL",40HC RF Cw ,7000
+United States,"Cincinnati, OH",40HC RF Cw ,7000
+United States,"Cleveland, OH",40HC RF Cw ,7000
+United States,"Columbus, OH",40HC RF Cw ,7000
+United States,"Dallas, TX",40HC RF Cw ,7000
+United States,"Denver, CO",40HC RF Cw ,7000
+United States,"Detroit, MI",40HC RF Cw ,7000
+United States,"El Paso, TX",40HC RF Cw ,7000
+United States,Houston,40HC RF Cw ,7000
+United States,"Jacksonville, FL",40HC RF Cw ,7000
+United States,"Kansas City, KS",40HC RF Cw ,7000
+United States,"Long Beach, CA",40HC RF Cw ,7000
+United States,"Los Angeles, CA",40HC RF Cw ,7000
+United States,"Memphis, TN",40HC RF Cw ,7000
+United States,"Miami, FL",40HC RF Cw ,7000
+United States,"Minneapolis, MN",40HC RF Cw ,7000
+United States,"Mobile, AL",40HC RF Cw ,7000
+United States,"Nashville, TN",40HC RF Cw ,7000
+United States,"New Orleans, LA",40HC RF Cw ,7000
+United States,"New York, NY",40HC RF Cw ,7000
+United States,"Norfolk, VA",40HC RF Cw ,7000
+United States,"Oakland, CA",40HC RF Cw ,7000
+United States,"Omaha, NE",40HC RF Cw ,7000
+United States,"Phoenix, AZ",40HC RF Cw ,7000
+United States,"Salt Lake City, UT",40HC RF Cw ,7000
+United States,"Savannah, GA",40HC RF Cw ,7000
+United States,"Seattle, WA",40HC RF Cw ,7000
+United States,"Tampa, FL",40HC RF Cw ,7000
+United States,"Indianapolis, IN",40HC RF Cw ,7000
+Vietnam,Haiphong,40HC RF Cw ,7000
+Vietnam,Ho Chi Minh City,40HC RF Cw ,7000
+Australia,Adelaide,20GP SD New,5500
+Australia,Brisbane,20GP SD New,5500
+Australia,Fremantle,20GP SD New,5500
+Australia,Melbourne,20GP SD New,5500
+Australia,Sydney,20GP SD New,5500
+Austria,Vienna,20GP SD New,5500
+Bangladesh,Chittagong,20GP SD New,5500
+Belarus,Minsk,20GP SD New,5500
+Belgium,Antwerp,20GP SD New,5500
+Brazil,Santos,20GP SD New,5500
+Brazil,Paranagua,20GP SD New,5500
+Cambodia,Phnom Penh,20GP SD New,5500
+Canada,"Calgary, AB",20GP SD New,5500
+Canada,"Edmonton, AB",20GP SD New,5500
+Canada,"Halifax, NS",20GP SD New,5500
+Canada,"Montreal, QC",20GP SD New,5500
+Canada,"Toronto, ON",20GP SD New,5500
+Canada,"Vancouver, BC",20GP SD New,5500
+Canada,"Winnipeg, MB",20GP SD New,5500
+Chile,Santiago,20GP SD New,5500
+Chile,Valparaiso,20GP SD New,5500
+China,Dalian,20GP SD New,5500
+China,Fuzhou,20GP SD New,5500
+China,Guangzhou,20GP SD New,5500
+China,Hong Kong,20GP SD New,5500
+China,Huangpu,20GP SD New,5500
+China,Lianyungang,20GP SD New,5500
+China,Nansha,20GP SD New,5500
+China,Qingdao,20GP SD New,5500
+China,Shanghai,20GP SD New,5500
+China,Shekou,20GP SD New,5500
+China,Shenzhen,20GP SD New,5500
+China,Tianjin,20GP SD New,5500
+China,Xiamen,20GP SD New,5500
+China,Ningbo,20GP SD New,5500
+China,Chengdu,20GP SD New,5500
+China,Hong Kong,20GP SD New,5500
+China,Huangpu,20GP SD New,5500
+China,Nanjing,20GP SD New,5500
+China,Yantian,20GP SD New,5500
+Costa Rica,Limon,20GP SD New,5500
+Denmark,Aarhus,20GP SD New,5500
+Denmark,Copenhagen,20GP SD New,5500
+England,Leeds,20GP SD New,5500
+England,London,20GP SD New,5500
+Estonia,Tallin,20GP SD New,5500
+Finland,Helsinki,20GP SD New,5500
+Finland,Kotka,20GP SD New,5500
+Finland,Rauma,20GP SD New,5500
+France,Dunkerque,20GP SD New,5500
+France,Fos Sur Mer,20GP SD New,5500
+France,Le Havre,20GP SD New,5500
+France,Lyon,20GP SD New,5500
+France,Marseille,20GP SD New,5500
+France,Rouen,20GP SD New,5500
+France,Bordeaux,20GP SD New,5500
+France,Marseille,20GP SD New,5500
+Georgia,Poti,20GP SD New,5500
+Germany,Bremen,20GP SD New,5500
+Germany,Duisburg,20GP SD New,5500
+Germany,Hamburg,20GP SD New,5500
+Germany,Mannheim,20GP SD New,5500
+Germany,Ludwigshafen,20GP SD New,5500
+Germany,Munich,20GP SD New,5500
+Greece,Piraeus,20GP SD New,5500
+Hungary,Budapest,20GP SD New,5500
+India,Delhi,20GP SD New,5500
+India,Kolkata(Calcutta),20GP SD New,5500
+India,Mundra,20GP SD New,5500
+India,Nhava Sheva,20GP SD New,5500
+India,Chennai,20GP SD New,5500
+India,Kolkata(Calcutta),20GP SD New,5500
+India,Mumbai,20GP SD New,5500
+India,Mundra,20GP SD New,5500
+India,New Delhi ,20GP SD New,5500
+India,Tuticorin,20GP SD New,5500
+Indonesia,Belawan,20GP SD New,5500
+Indonesia,Jakarta,20GP SD New,5500
+Indonesia,Semarang,20GP SD New,5500
+Indonesia,Surabaya,20GP SD New,5500
+Israel,Ashdod,20GP SD New,5500
+Italy,Genoa,20GP SD New,5500
+Italy,La Spezia,20GP SD New,5500
+Italy,Livorno,20GP SD New,5500
+Italy,Milan,20GP SD New,5500
+Italy,Modena,20GP SD New,5500
+Italy,Padova,20GP SD New,5500
+Italy,Trieste,20GP SD New,5500
+Italy,Venice,20GP SD New,5500
+Japan,Kobe,20GP SD New,5500
+Japan,Yokohama,20GP SD New,5500
+Japan,Hakata,20GP SD New,5500
+Japan,Kobe,20GP SD New,5500
+Japan,Nagoya,20GP SD New,5500
+Japan,Osaka,20GP SD New,5500
+Japan,Tokyo,20GP SD New,5500
+Kazakhstan,Almaty,20GP SD New,5500
+Kazakhstan,Tashkent,20GP SD New,5500
+Kenya,Mombasa,20GP SD New,5500
+Kenya,Nairobi,20GP SD New,5500
+Malaysia,Penang,20GP SD New,5500
+Malaysia,Port Kelang,20GP SD New,5500
+Malaysia,Johar,20GP SD New,5500
+Mexico,Altamira,20GP SD New,5500
+Mexico,Manzanillo,20GP SD New,5500
+Mexico,Mexico City,20GP SD New,5500
+Mexico,Veracruz,20GP SD New,5500
+Morocco,Casablanca,20GP SD New,5500
+Netherlands,Rotterdam,20GP SD New,5500
+New Zealand,Tauranga,20GP SD New,5500
+New Zealand,Auckland,20GP SD New,5500
+New Zealand,Tauranga,20GP SD New,5500
+Oman,Sohar,20GP SD New,5500
+Pakistan,Karachi,20GP SD New,5500
+Peru,Callao,20GP SD New,5500
+Philippines,Manila,20GP SD New,5500
+Poland,Gdansk,20GP SD New,5500
+Poland,Warsaw,20GP SD New,5500
+Poland,Gdynia,20GP SD New,5500
+Portugal,Leixoes,20GP SD New,5500
+Portugal,Lisboa,20GP SD New,5500
+Portugal,Leixoes,20GP SD New,5500
+Portugal,Setubal,20GP SD New,5500
+Republic of Ireland,Dublin,20GP SD New,5500
+Romania,Constanta,20GP SD New,5500
+Russia,Moscow,20GP SD New,5500
+Russia,St Petersburg,20GP SD New,5500
+Russia,Vladivostok,20GP SD New,5500
+Russia,"Yekaterinburg, Sve",20GP SD New,5500
+Saudi Arabia,Jeddah,20GP SD New,5500
+Singapore,Singapore,20GP SD New,5500
+South Africa,Durban,20GP SD New,5500
+South Africa,Johannesburg,20GP SD New,5500
+South Africa,Cape Town,20GP SD New,5500
+South Africa,Port Elizabeth,20GP SD New,5500
+South Korea,Busan,20GP SD New,5500
+South Korea,Gwangyang,20GP SD New,5500
+South Korea,Inchoen,20GP SD New,5500
+South Korea,Seoul,20GP SD New,5500
+Spain,Arquata Scrivia,20GP SD New,5500
+Spain,Barcelona,20GP SD New,5500
+Spain,Bilbao,20GP SD New,5500
+Spain,Madrid,20GP SD New,5500
+Spain,Valencia (Spain),20GP SD New,5500
+Spain,Algeciras,20GP SD New,5500
+Spain,Barcelona,20GP SD New,5500
+Spain,Bilbao,20GP SD New,5500
+Spain,Madrid,20GP SD New,5500
+Spain,Valencia ,20GP SD New,5500
+Sweden,Gothenburg,20GP SD New,5500
+Sweden,Norrkoping,20GP SD New,5500
+Switzerland,Basle,20GP SD New,5500
+Taiwan,Kaohsiung,20GP SD New,5500
+Taiwan,Keelung,20GP SD New,5500
+Taiwan,Taichung,20GP SD New,5500
+Tamil Nadu,Chennai,20GP SD New,5500
+Thailand,Bangkok,20GP SD New,5500
+Thailand,Laem Chabang,20GP SD New,5500
+Turkey,Istanbul,20GP SD New,5500
+Turkey,Mersin,20GP SD New,5500
+Turkey,Gebze,20GP SD New,5500
+Turkey,Mersin,20GP SD New,5500
+United Arab Emirates,Dubai,20GP SD New,5500
+United Arab Emirates,Jebel Ali,20GP SD New,5500
+United Kingdom,Southampton,20GP SD New,5500
+United Kingdom,Belfast,20GP SD New,5500
+United Kingdom,Birmingham ,20GP SD New,5500
+United Kingdom,Doncaster,20GP SD New,5500
+United Kingdom,Glasgow,20GP SD New,5500
+United Kingdom,Leeds,20GP SD New,5500
+United Kingdom,Liverpool,20GP SD New,5500
+United Kingdom,London,20GP SD New,5500
+United States,"Atlanta, GA",20GP SD New,5500
+United States,"Baltimore, MD",20GP SD New,5500
+United States,"Boston, MA",20GP SD New,5500
+United States,"Charleston, SC",20GP SD New,5500
+United States,"Charlotte, NC",20GP SD New,5500
+United States,"Chicago, IL",20GP SD New,5500
+United States,"Cincinnati, OH",20GP SD New,5500
+United States,"Cleveland, OH",20GP SD New,5500
+United States,"Columbus, OH",20GP SD New,5500
+United States,"Dallas, TX",20GP SD New,5500
+United States,"Denver, CO",20GP SD New,5500
+United States,"Detroit, MI",20GP SD New,5500
+United States,"El Paso, TX",20GP SD New,5500
+United States,Houston,20GP SD New,5500
+United States,"Jacksonville, FL",20GP SD New,5500
+United States,"Kansas City, KS",20GP SD New,5500
+United States,"Long Beach, CA",20GP SD New,5500
+United States,"Los Angeles, CA",20GP SD New,5500
+United States,"Memphis, TN",20GP SD New,5500
+United States,"Miami, FL",20GP SD New,5500
+United States,"Minneapolis, MN",20GP SD New,5500
+United States,"Mobile, AL",20GP SD New,5500
+United States,"Nashville, TN",20GP SD New,5500
+United States,"New Orleans, LA",20GP SD New,5500
+United States,"New York, NY",20GP SD New,5500
+United States,"Norfolk, VA",20GP SD New,5500
+United States,"Oakland, CA",20GP SD New,5500
+United States,"Omaha, NE",20GP SD New,5500
+United States,"Phoenix, AZ",20GP SD New,5500
+United States,"Salt Lake City, UT",20GP SD New,5500
+United States,"Savannah, GA",20GP SD New,5500
+United States,"Seattle, WA",20GP SD New,5500
+United States,"Tampa, FL",20GP SD New,5500
+United States,"Indianapolis, IN",20GP SD New,5500
+Vietnam,Haiphong,20GP SD New,5500
+Vietnam,Ho Chi Minh City,20GP SD New,5500
+Australia,Adelaide,40HC SD New ,6500
+Australia,Brisbane,40HC SD New ,6500
+Australia,Fremantle,40HC SD New ,6500
+Australia,Melbourne,40HC SD New ,6500
+Australia,Sydney,40HC SD New ,6500
+Austria,Vienna,40HC SD New ,6500
+Bangladesh,Chittagong,40HC SD New ,6500
+Belarus,Minsk,40HC SD New ,6500
+Belgium,Antwerp,40HC SD New ,6500
+Brazil,Santos,40HC SD New ,6500
+Brazil,Paranagua,40HC SD New ,6500
+Cambodia,Phnom Penh,40HC SD New ,6500
+Canada,"Calgary, AB",40HC SD New ,6500
+Canada,"Edmonton, AB",40HC SD New ,6500
+Canada,"Halifax, NS",40HC SD New ,6500
+Canada,"Montreal, QC",40HC SD New ,6500
+Canada,"Toronto, ON",40HC SD New ,6500
+Canada,"Vancouver, BC",40HC SD New ,6500
+Canada,"Winnipeg, MB",40HC SD New ,6500
+Chile,Santiago,40HC SD New ,6500
+Chile,Valparaiso,40HC SD New ,6500
+China,Dalian,40HC SD New ,6500
+China,Fuzhou,40HC SD New ,6500
+China,Guangzhou,40HC SD New ,6500
+China,Hong Kong,40HC SD New ,6500
+China,Huangpu,40HC SD New ,6500
+China,Lianyungang,40HC SD New ,6500
+China,Nansha,40HC SD New ,6500
+China,Qingdao,40HC SD New ,6500
+China,Shanghai,40HC SD New ,6500
+China,Shekou,40HC SD New ,6500
+China,Shenzhen,40HC SD New ,6500
+China,Tianjin,40HC SD New ,6500
+China,Xiamen,40HC SD New ,6500
+China,Ningbo,40HC SD New ,6500
+China,Chengdu,40HC SD New ,6500
+China,Hong Kong,40HC SD New ,6500
+China,Huangpu,40HC SD New ,6500
+China,Nanjing,40HC SD New ,6500
+China,Yantian,40HC SD New ,6500
+Costa Rica,Limon,40HC SD New ,6500
+Denmark,Aarhus,40HC SD New ,6500
+Denmark,Copenhagen,40HC SD New ,6500
+England,Leeds,40HC SD New ,6500
+England,London,40HC SD New ,6500
+Estonia,Tallin,40HC SD New ,6500
+Finland,Helsinki,40HC SD New ,6500
+Finland,Kotka,40HC SD New ,6500
+Finland,Rauma,40HC SD New ,6500
+France,Dunkerque,40HC SD New ,6500
+France,Fos Sur Mer,40HC SD New ,6500
+France,Le Havre,40HC SD New ,6500
+France,Lyon,40HC SD New ,6500
+France,Marseille,40HC SD New ,6500
+France,Rouen,40HC SD New ,6500
+France,Bordeaux,40HC SD New ,6500
+France,Marseille,40HC SD New ,6500
+Georgia,Poti,40HC SD New ,6500
+Germany,Bremen,40HC SD New ,6500
+Germany,Duisburg,40HC SD New ,6500
+Germany,Hamburg,40HC SD New ,6500
+Germany,Mannheim,40HC SD New ,6500
+Germany,Ludwigshafen,40HC SD New ,6500
+Germany,Munich,40HC SD New ,6500
+Greece,Piraeus,40HC SD New ,6500
+Hungary,Budapest,40HC SD New ,6500
+India,Delhi,40HC SD New ,6500
+India,Kolkata(Calcutta),40HC SD New ,6500
+India,Mundra,40HC SD New ,6500
+India,Nhava Sheva,40HC SD New ,6500
+India,Chennai,40HC SD New ,6500
+India,Kolkata(Calcutta),40HC SD New ,6500
+India,Mumbai,40HC SD New ,6500
+India,Mundra,40HC SD New ,6500
+India,New Delhi ,40HC SD New ,6500
+India,Tuticorin,40HC SD New ,6500
+Indonesia,Belawan,40HC SD New ,6500
+Indonesia,Jakarta,40HC SD New ,6500
+Indonesia,Semarang,40HC SD New ,6500
+Indonesia,Surabaya,40HC SD New ,6500
+Israel,Ashdod,40HC SD New ,6500
+Italy,Genoa,40HC SD New ,6500
+Italy,La Spezia,40HC SD New ,6500
+Italy,Livorno,40HC SD New ,6500
+Italy,Milan,40HC SD New ,6500
+Italy,Modena,40HC SD New ,6500
+Italy,Padova,40HC SD New ,6500
+Italy,Trieste,40HC SD New ,6500
+Italy,Venice,40HC SD New ,6500
+Japan,Kobe,40HC SD New ,6500
+Japan,Yokohama,40HC SD New ,6500
+Japan,Hakata,40HC SD New ,6500
+Japan,Kobe,40HC SD New ,6500
+Japan,Nagoya,40HC SD New ,6500
+Japan,Osaka,40HC SD New ,6500
+Japan,Tokyo,40HC SD New ,6500
+Kazakhstan,Almaty,40HC SD New ,6500
+Kazakhstan,Tashkent,40HC SD New ,6500
+Kenya,Mombasa,40HC SD New ,6500
+Kenya,Nairobi,40HC SD New ,6500
+Malaysia,Penang,40HC SD New ,6500
+Malaysia,Port Kelang,40HC SD New ,6500
+Malaysia,Johar,40HC SD New ,6500
+Mexico,Altamira,40HC SD New ,6500
+Mexico,Manzanillo,40HC SD New ,6500
+Mexico,Mexico City,40HC SD New ,6500
+Mexico,Veracruz,40HC SD New ,6500
+Morocco,Casablanca,40HC SD New ,6500
+Netherlands,Rotterdam,40HC SD New ,6500
+New Zealand,Tauranga,40HC SD New ,6500
+New Zealand,Auckland,40HC SD New ,6500
+New Zealand,Tauranga,40HC SD New ,6500
+Oman,Sohar,40HC SD New ,6500
+Pakistan,Karachi,40HC SD New ,6500
+Peru,Callao,40HC SD New ,6500
+Philippines,Manila,40HC SD New ,6500
+Poland,Gdansk,40HC SD New ,6500
+Poland,Warsaw,40HC SD New ,6500
+Poland,Gdynia,40HC SD New ,6500
+Portugal,Leixoes,40HC SD New ,6500
+Portugal,Lisboa,40HC SD New ,6500
+Portugal,Leixoes,40HC SD New ,6500
+Portugal,Setubal,40HC SD New ,6500
+Republic of Ireland,Dublin,40HC SD New ,6500
+Romania,Constanta,40HC SD New ,6500
+Russia,Moscow,40HC SD New ,6500
+Russia,St Petersburg,40HC SD New ,6500
+Russia,Vladivostok,40HC SD New ,6500
+Russia,"Yekaterinburg, Sve",40HC SD New ,6500
+Saudi Arabia,Jeddah,40HC SD New ,6500
+Singapore,Singapore,40HC SD New ,6500
+South Africa,Durban,40HC SD New ,6500
+South Africa,Johannesburg,40HC SD New ,6500
+South Africa,Cape Town,40HC SD New ,6500
+South Africa,Port Elizabeth,40HC SD New ,6500
+South Korea,Busan,40HC SD New ,6500
+South Korea,Gwangyang,40HC SD New ,6500
+South Korea,Inchoen,40HC SD New ,6500
+South Korea,Seoul,40HC SD New ,6500
+Spain,Arquata Scrivia,40HC SD New ,6500
+Spain,Barcelona,40HC SD New ,6500
+Spain,Bilbao,40HC SD New ,6500
+Spain,Madrid,40HC SD New ,6500
+Spain,Valencia (Spain),40HC SD New ,6500
+Spain,Algeciras,40HC SD New ,6500
+Spain,Barcelona,40HC SD New ,6500
+Spain,Bilbao,40HC SD New ,6500
+Spain,Madrid,40HC SD New ,6500
+Spain,Valencia ,40HC SD New ,6500
+Sweden,Gothenburg,40HC SD New ,6500
+Sweden,Norrkoping,40HC SD New ,6500
+Switzerland,Basle,40HC SD New ,6500
+Taiwan,Kaohsiung,40HC SD New ,6500
+Taiwan,Keelung,40HC SD New ,6500
+Taiwan,Taichung,40HC SD New ,6500
+Tamil Nadu,Chennai,40HC SD New ,6500
+Thailand,Bangkok,40HC SD New ,6500
+Thailand,Laem Chabang,40HC SD New ,6500
+Turkey,Istanbul,40HC SD New ,6500
+Turkey,Mersin,40HC SD New ,6500
+Turkey,Gebze,40HC SD New ,6500
+Turkey,Mersin,40HC SD New ,6500
+United Arab Emirates,Dubai,40HC SD New ,6500
+United Arab Emirates,Jebel Ali,40HC SD New ,6500
+United Kingdom,Southampton,40HC SD New ,6500
+United Kingdom,Belfast,40HC SD New ,6500
+United Kingdom,Birmingham ,40HC SD New ,6500
+United Kingdom,Doncaster,40HC SD New ,6500
+United Kingdom,Glasgow,40HC SD New ,6500
+United Kingdom,Leeds,40HC SD New ,6500
+United Kingdom,Liverpool,40HC SD New ,6500
+United Kingdom,London,40HC SD New ,6500
+United States,"Atlanta, GA",40HC SD New ,6500
+United States,"Baltimore, MD",40HC SD New ,6500
+United States,"Boston, MA",40HC SD New ,6500
+United States,"Charleston, SC",40HC SD New ,6500
+United States,"Charlotte, NC",40HC SD New ,6500
+United States,"Chicago, IL",40HC SD New ,6500
+United States,"Cincinnati, OH",40HC SD New ,6500
+United States,"Cleveland, OH",40HC SD New ,6500
+United States,"Columbus, OH",40HC SD New ,6500
+United States,"Dallas, TX",40HC SD New ,6500
+United States,"Denver, CO",40HC SD New ,6500
+United States,"Detroit, MI",40HC SD New ,6500
+United States,"El Paso, TX",40HC SD New ,6500
+United States,Houston,40HC SD New ,6500
+United States,"Jacksonville, FL",40HC SD New ,6500
+United States,"Kansas City, KS",40HC SD New ,6500
+United States,"Long Beach, CA",40HC SD New ,6500
+United States,"Los Angeles, CA",40HC SD New ,6500
+United States,"Memphis, TN",40HC SD New ,6500
+United States,"Miami, FL",40HC SD New ,6500
+United States,"Minneapolis, MN",40HC SD New ,6500
+United States,"Mobile, AL",40HC SD New ,6500
+United States,"Nashville, TN",40HC SD New ,6500
+United States,"New Orleans, LA",40HC SD New ,6500
+United States,"New York, NY",40HC SD New ,6500
+United States,"Norfolk, VA",40HC SD New ,6500
+United States,"Oakland, CA",40HC SD New ,6500
+United States,"Omaha, NE",40HC SD New ,6500
+United States,"Phoenix, AZ",40HC SD New ,6500
+United States,"Salt Lake City, UT",40HC SD New ,6500
+United States,"Savannah, GA",40HC SD New ,6500
+United States,"Seattle, WA",40HC SD New ,6500
+United States,"Tampa, FL",40HC SD New ,6500
+United States,"Indianapolis, IN",40HC SD New ,6500
+Vietnam,Haiphong,40HC SD New ,6500
+Vietnam,Ho Chi Minh City,40HC SD New ,6500
+Australia,Adelaide,20OT New,6500
+Australia,Brisbane,20OT New,6500
+Australia,Fremantle,20OT New,6500
+Australia,Melbourne,20OT New,6500
+Australia,Sydney,20OT New,6500
+Austria,Vienna,20OT New,6500
+Bangladesh,Chittagong,20OT New,6500
+Belarus,Minsk,20OT New,6500
+Belgium,Antwerp,20OT New,6500
+Brazil,Santos,20OT New,6500
+Brazil,Paranagua,20OT New,6500
+Cambodia,Phnom Penh,20OT New,6500
+Canada,"Calgary, AB",20OT New,6500
+Canada,"Edmonton, AB",20OT New,6500
+Canada,"Halifax, NS",20OT New,6500
+Canada,"Montreal, QC",20OT New,6500
+Canada,"Toronto, ON",20OT New,6500
+Canada,"Vancouver, BC",20OT New,6500
+Canada,"Winnipeg, MB",20OT New,6500
+Chile,Santiago,20OT New,6500
+Chile,Valparaiso,20OT New,6500
+China,Dalian,20OT New,6500
+China,Fuzhou,20OT New,6500
+China,Guangzhou,20OT New,6500
+China,Hong Kong,20OT New,6500
+China,Huangpu,20OT New,6500
+China,Lianyungang,20OT New,6500
+China,Nansha,20OT New,6500
+China,Qingdao,20OT New,6500
+China,Shanghai,20OT New,6500
+China,Shekou,20OT New,6500
+China,Shenzhen,20OT New,6500
+China,Tianjin,20OT New,6500
+China,Xiamen,20OT New,6500
+China,Ningbo,20OT New,6500
+China,Chengdu,20OT New,6500
+China,Hong Kong,20OT New,6500
+China,Huangpu,20OT New,6500
+China,Nanjing,20OT New,6500
+China,Yantian,20OT New,6500
+Costa Rica,Limon,20OT New,6500
+Denmark,Aarhus,20OT New,6500
+Denmark,Copenhagen,20OT New,6500
+England,Leeds,20OT New,6500
+England,London,20OT New,6500
+Estonia,Tallin,20OT New,6500
+Finland,Helsinki,20OT New,6500
+Finland,Kotka,20OT New,6500
+Finland,Rauma,20OT New,6500
+France,Dunkerque,20OT New,6500
+France,Fos Sur Mer,20OT New,6500
+France,Le Havre,20OT New,6500
+France,Lyon,20OT New,6500
+France,Marseille,20OT New,6500
+France,Rouen,20OT New,6500
+France,Bordeaux,20OT New,6500
+France,Marseille,20OT New,6500
+Georgia,Poti,20OT New,6500
+Germany,Bremen,20OT New,6500
+Germany,Duisburg,20OT New,6500
+Germany,Hamburg,20OT New,6500
+Germany,Mannheim,20OT New,6500
+Germany,Ludwigshafen,20OT New,6500
+Germany,Munich,20OT New,6500
+Greece,Piraeus,20OT New,6500
+Hungary,Budapest,20OT New,6500
+India,Delhi,20OT New,6500
+India,Kolkata(Calcutta),20OT New,6500
+India,Mundra,20OT New,6500
+India,Nhava Sheva,20OT New,6500
+India,Chennai,20OT New,6500
+India,Kolkata(Calcutta),20OT New,6500
+India,Mumbai,20OT New,6500
+India,Mundra,20OT New,6500
+India,New Delhi ,20OT New,6500
+India,Tuticorin,20OT New,6500
+Indonesia,Belawan,20OT New,6500
+Indonesia,Jakarta,20OT New,6500
+Indonesia,Semarang,20OT New,6500
+Indonesia,Surabaya,20OT New,6500
+Israel,Ashdod,20OT New,6500
+Italy,Genoa,20OT New,6500
+Italy,La Spezia,20OT New,6500
+Italy,Livorno,20OT New,6500
+Italy,Milan,20OT New,6500
+Italy,Modena,20OT New,6500
+Italy,Padova,20OT New,6500
+Italy,Trieste,20OT New,6500
+Italy,Venice,20OT New,6500
+Japan,Kobe,20OT New,6500
+Japan,Yokohama,20OT New,6500
+Japan,Hakata,20OT New,6500
+Japan,Kobe,20OT New,6500
+Japan,Nagoya,20OT New,6500
+Japan,Osaka,20OT New,6500
+Japan,Tokyo,20OT New,6500
+Kazakhstan,Almaty,20OT New,6500
+Kazakhstan,Tashkent,20OT New,6500
+Kenya,Mombasa,20OT New,6500
+Kenya,Nairobi,20OT New,6500
+Malaysia,Penang,20OT New,6500
+Malaysia,Port Kelang,20OT New,6500
+Malaysia,Johar,20OT New,6500
+Mexico,Altamira,20OT New,6500
+Mexico,Manzanillo,20OT New,6500
+Mexico,Mexico City,20OT New,6500
+Mexico,Veracruz,20OT New,6500
+Morocco,Casablanca,20OT New,6500
+Netherlands,Rotterdam,20OT New,6500
+New Zealand,Tauranga,20OT New,6500
+New Zealand,Auckland,20OT New,6500
+New Zealand,Tauranga,20OT New,6500
+Oman,Sohar,20OT New,6500
+Pakistan,Karachi,20OT New,6500
+Peru,Callao,20OT New,6500
+Philippines,Manila,20OT New,6500
+Poland,Gdansk,20OT New,6500
+Poland,Warsaw,20OT New,6500
+Poland,Gdynia,20OT New,6500
+Portugal,Leixoes,20OT New,6500
+Portugal,Lisboa,20OT New,6500
+Portugal,Leixoes,20OT New,6500
+Portugal,Setubal,20OT New,6500
+Republic of Ireland,Dublin,20OT New,6500
+Romania,Constanta,20OT New,6500
+Russia,Moscow,20OT New,6500
+Russia,St Petersburg,20OT New,6500
+Russia,Vladivostok,20OT New,6500
+Russia,"Yekaterinburg, Sve",20OT New,6500
+Saudi Arabia,Jeddah,20OT New,6500
+Singapore,Singapore,20OT New,6500
+South Africa,Durban,20OT New,6500
+South Africa,Johannesburg,20OT New,6500
+South Africa,Cape Town,20OT New,6500
+South Africa,Port Elizabeth,20OT New,6500
+South Korea,Busan,20OT New,6500
+South Korea,Gwangyang,20OT New,6500
+South Korea,Inchoen,20OT New,6500
+South Korea,Seoul,20OT New,6500
+Spain,Arquata Scrivia,20OT New,6500
+Spain,Barcelona,20OT New,6500
+Spain,Bilbao,20OT New,6500
+Spain,Madrid,20OT New,6500
+Spain,Valencia (Spain),20OT New,6500
+Spain,Algeciras,20OT New,6500
+Spain,Barcelona,20OT New,6500
+Spain,Bilbao,20OT New,6500
+Spain,Madrid,20OT New,6500
+Spain,Valencia ,20OT New,6500
+Sweden,Gothenburg,20OT New,6500
+Sweden,Norrkoping,20OT New,6500
+Switzerland,Basle,20OT New,6500
+Taiwan,Kaohsiung,20OT New,6500
+Taiwan,Keelung,20OT New,6500
+Taiwan,Taichung,20OT New,6500
+Tamil Nadu,Chennai,20OT New,6500
+Thailand,Bangkok,20OT New,6500
+Thailand,Laem Chabang,20OT New,6500
+Turkey,Istanbul,20OT New,6500
+Turkey,Mersin,20OT New,6500
+Turkey,Gebze,20OT New,6500
+Turkey,Mersin,20OT New,6500
+United Arab Emirates,Dubai,20OT New,6500
+United Arab Emirates,Jebel Ali,20OT New,6500
+United Kingdom,Southampton,20OT New,6500
+United Kingdom,Belfast,20OT New,6500
+United Kingdom,Birmingham ,20OT New,6500
+United Kingdom,Doncaster,20OT New,6500
+United Kingdom,Glasgow,20OT New,6500
+United Kingdom,Leeds,20OT New,6500
+United Kingdom,Liverpool,20OT New,6500
+United Kingdom,London,20OT New,6500
+United States,"Atlanta, GA",20OT New,6500
+United States,"Baltimore, MD",20OT New,6500
+United States,"Boston, MA",20OT New,6500
+United States,"Charleston, SC",20OT New,6500
+United States,"Charlotte, NC",20OT New,6500
+United States,"Chicago, IL",20OT New,6500
+United States,"Cincinnati, OH",20OT New,6500
+United States,"Cleveland, OH",20OT New,6500
+United States,"Columbus, OH",20OT New,6500
+United States,"Dallas, TX",20OT New,6500
+United States,"Denver, CO",20OT New,6500
+United States,"Detroit, MI",20OT New,6500
+United States,"El Paso, TX",20OT New,6500
+United States,Houston,20OT New,6500
+United States,"Jacksonville, FL",20OT New,6500
+United States,"Kansas City, KS",20OT New,6500
+United States,"Long Beach, CA",20OT New,6500
+United States,"Los Angeles, CA",20OT New,6500
+United States,"Memphis, TN",20OT New,6500
+United States,"Miami, FL",20OT New,6500
+United States,"Minneapolis, MN",20OT New,6500
+United States,"Mobile, AL",20OT New,6500
+United States,"Nashville, TN",20OT New,6500
+United States,"New Orleans, LA",20OT New,6500
+United States,"New York, NY",20OT New,6500
+United States,"Norfolk, VA",20OT New,6500
+United States,"Oakland, CA",20OT New,6500
+United States,"Omaha, NE",20OT New,6500
+United States,"Phoenix, AZ",20OT New,6500
+United States,"Salt Lake City, UT",20OT New,6500
+United States,"Savannah, GA",20OT New,6500
+United States,"Seattle, WA",20OT New,6500
+United States,"Tampa, FL",20OT New,6500
+United States,"Indianapolis, IN",20OT New,6500
+Vietnam,Haiphong,20OT New,6500
+Vietnam,Ho Chi Minh City,20OT New,6500
+Australia,Adelaide,40HC OT New ,7500
+Australia,Brisbane,40HC OT New ,7500
+Australia,Fremantle,40HC OT New ,7500
+Australia,Melbourne,40HC OT New ,7500
+Australia,Sydney,40HC OT New ,7500
+Austria,Vienna,40HC OT New ,7500
+Bangladesh,Chittagong,40HC OT New ,7500
+Belarus,Minsk,40HC OT New ,7500
+Belgium,Antwerp,40HC OT New ,7500
+Brazil,Santos,40HC OT New ,7500
+Brazil,Paranagua,40HC OT New ,7500
+Cambodia,Phnom Penh,40HC OT New ,7500
+Canada,"Calgary, AB",40HC OT New ,7500
+Canada,"Edmonton, AB",40HC OT New ,7500
+Canada,"Halifax, NS",40HC OT New ,7500
+Canada,"Montreal, QC",40HC OT New ,7500
+Canada,"Toronto, ON",40HC OT New ,7500
+Canada,"Vancouver, BC",40HC OT New ,7500
+Canada,"Winnipeg, MB",40HC OT New ,7500
+Chile,Santiago,40HC OT New ,7500
+Chile,Valparaiso,40HC OT New ,7500
+China,Dalian,40HC OT New ,7500
+China,Fuzhou,40HC OT New ,7500
+China,Guangzhou,40HC OT New ,7500
+China,Hong Kong,40HC OT New ,7500
+China,Huangpu,40HC OT New ,7500
+China,Lianyungang,40HC OT New ,7500
+China,Nansha,40HC OT New ,7500
+China,Qingdao,40HC OT New ,7500
+China,Shanghai,40HC OT New ,7500
+China,Shekou,40HC OT New ,7500
+China,Shenzhen,40HC OT New ,7500
+China,Tianjin,40HC OT New ,7500
+China,Xiamen,40HC OT New ,7500
+China,Ningbo,40HC OT New ,7500
+China,Chengdu,40HC OT New ,7500
+China,Hong Kong,40HC OT New ,7500
+China,Huangpu,40HC OT New ,7500
+China,Nanjing,40HC OT New ,7500
+China,Yantian,40HC OT New ,7500
+Costa Rica,Limon,40HC OT New ,7500
+Denmark,Aarhus,40HC OT New ,7500
+Denmark,Copenhagen,40HC OT New ,7500
+England,Leeds,40HC OT New ,7500
+England,London,40HC OT New ,7500
+Estonia,Tallin,40HC OT New ,7500
+Finland,Helsinki,40HC OT New ,7500
+Finland,Kotka,40HC OT New ,7500
+Finland,Rauma,40HC OT New ,7500
+France,Dunkerque,40HC OT New ,7500
+France,Fos Sur Mer,40HC OT New ,7500
+France,Le Havre,40HC OT New ,7500
+France,Lyon,40HC OT New ,7500
+France,Marseille,40HC OT New ,7500
+France,Rouen,40HC OT New ,7500
+France,Bordeaux,40HC OT New ,7500
+France,Marseille,40HC OT New ,7500
+Georgia,Poti,40HC OT New ,7500
+Germany,Bremen,40HC OT New ,7500
+Germany,Duisburg,40HC OT New ,7500
+Germany,Hamburg,40HC OT New ,7500
+Germany,Mannheim,40HC OT New ,7500
+Germany,Ludwigshafen,40HC OT New ,7500
+Germany,Munich,40HC OT New ,7500
+Greece,Piraeus,40HC OT New ,7500
+Hungary,Budapest,40HC OT New ,7500
+India,Delhi,40HC OT New ,7500
+India,Kolkata(Calcutta),40HC OT New ,7500
+India,Mundra,40HC OT New ,7500
+India,Nhava Sheva,40HC OT New ,7500
+India,Chennai,40HC OT New ,7500
+India,Kolkata(Calcutta),40HC OT New ,7500
+India,Mumbai,40HC OT New ,7500
+India,Mundra,40HC OT New ,7500
+India,New Delhi ,40HC OT New ,7500
+India,Tuticorin,40HC OT New ,7500
+Indonesia,Belawan,40HC OT New ,7500
+Indonesia,Jakarta,40HC OT New ,7500
+Indonesia,Semarang,40HC OT New ,7500
+Indonesia,Surabaya,40HC OT New ,7500
+Israel,Ashdod,40HC OT New ,7500
+Italy,Genoa,40HC OT New ,7500
+Italy,La Spezia,40HC OT New ,7500
+Italy,Livorno,40HC OT New ,7500
+Italy,Milan,40HC OT New ,7500
+Italy,Modena,40HC OT New ,7500
+Italy,Padova,40HC OT New ,7500
+Italy,Trieste,40HC OT New ,7500
+Italy,Venice,40HC OT New ,7500
+Japan,Kobe,40HC OT New ,7500
+Japan,Yokohama,40HC OT New ,7500
+Japan,Hakata,40HC OT New ,7500
+Japan,Kobe,40HC OT New ,7500
+Japan,Nagoya,40HC OT New ,7500
+Japan,Osaka,40HC OT New ,7500
+Japan,Tokyo,40HC OT New ,7500
+Kazakhstan,Almaty,40HC OT New ,7500
+Kazakhstan,Tashkent,40HC OT New ,7500
+Kenya,Mombasa,40HC OT New ,7500
+Kenya,Nairobi,40HC OT New ,7500
+Malaysia,Penang,40HC OT New ,7500
+Malaysia,Port Kelang,40HC OT New ,7500
+Malaysia,Johar,40HC OT New ,7500
+Mexico,Altamira,40HC OT New ,7500
+Mexico,Manzanillo,40HC OT New ,7500
+Mexico,Mexico City,40HC OT New ,7500
+Mexico,Veracruz,40HC OT New ,7500
+Morocco,Casablanca,40HC OT New ,7500
+Netherlands,Rotterdam,40HC OT New ,7500
+New Zealand,Tauranga,40HC OT New ,7500
+New Zealand,Auckland,40HC OT New ,7500
+New Zealand,Tauranga,40HC OT New ,7500
+Oman,Sohar,40HC OT New ,7500
+Pakistan,Karachi,40HC OT New ,7500
+Peru,Callao,40HC OT New ,7500
+Philippines,Manila,40HC OT New ,7500
+Poland,Gdansk,40HC OT New ,7500
+Poland,Warsaw,40HC OT New ,7500
+Poland,Gdynia,40HC OT New ,7500
+Portugal,Leixoes,40HC OT New ,7500
+Portugal,Lisboa,40HC OT New ,7500
+Portugal,Leixoes,40HC OT New ,7500
+Portugal,Setubal,40HC OT New ,7500
+Republic of Ireland,Dublin,40HC OT New ,7500
+Romania,Constanta,40HC OT New ,7500
+Russia,Moscow,40HC OT New ,7500
+Russia,St Petersburg,40HC OT New ,7500
+Russia,Vladivostok,40HC OT New ,7500
+Russia,"Yekaterinburg, Sve",40HC OT New ,7500
+Saudi Arabia,Jeddah,40HC OT New ,7500
+Singapore,Singapore,40HC OT New ,7500
+South Africa,Durban,40HC OT New ,7500
+South Africa,Johannesburg,40HC OT New ,7500
+South Africa,Cape Town,40HC OT New ,7500
+South Africa,Port Elizabeth,40HC OT New ,7500
+South Korea,Busan,40HC OT New ,7500
+South Korea,Gwangyang,40HC OT New ,7500
+South Korea,Inchoen,40HC OT New ,7500
+South Korea,Seoul,40HC OT New ,7500
+Spain,Arquata Scrivia,40HC OT New ,7500
+Spain,Barcelona,40HC OT New ,7500
+Spain,Bilbao,40HC OT New ,7500
+Spain,Madrid,40HC OT New ,7500
+Spain,Valencia (Spain),40HC OT New ,7500
+Spain,Algeciras,40HC OT New ,7500
+Spain,Barcelona,40HC OT New ,7500
+Spain,Bilbao,40HC OT New ,7500
+Spain,Madrid,40HC OT New ,7500
+Spain,Valencia ,40HC OT New ,7500
+Sweden,Gothenburg,40HC OT New ,7500
+Sweden,Norrkoping,40HC OT New ,7500
+Switzerland,Basle,40HC OT New ,7500
+Taiwan,Kaohsiung,40HC OT New ,7500
+Taiwan,Keelung,40HC OT New ,7500
+Taiwan,Taichung,40HC OT New ,7500
+Tamil Nadu,Chennai,40HC OT New ,7500
+Thailand,Bangkok,40HC OT New ,7500
+Thailand,Laem Chabang,40HC OT New ,7500
+Turkey,Istanbul,40HC OT New ,7500
+Turkey,Mersin,40HC OT New ,7500
+Turkey,Gebze,40HC OT New ,7500
+Turkey,Mersin,40HC OT New ,7500
+United Arab Emirates,Dubai,40HC OT New ,7500
+United Arab Emirates,Jebel Ali,40HC OT New ,7500
+United Kingdom,Southampton,40HC OT New ,7500
+United Kingdom,Belfast,40HC OT New ,7500
+United Kingdom,Birmingham ,40HC OT New ,7500
+United Kingdom,Doncaster,40HC OT New ,7500
+United Kingdom,Glasgow,40HC OT New ,7500
+United Kingdom,Leeds,40HC OT New ,7500
+United Kingdom,Liverpool,40HC OT New ,7500
+United Kingdom,London,40HC OT New ,7500
+United States,"Atlanta, GA",40HC OT New ,7500
+United States,"Baltimore, MD",40HC OT New ,7500
+United States,"Boston, MA",40HC OT New ,7500
+United States,"Charleston, SC",40HC OT New ,7500
+United States,"Charlotte, NC",40HC OT New ,7500
+United States,"Chicago, IL",40HC OT New ,7500
+United States,"Cincinnati, OH",40HC OT New ,7500
+United States,"Cleveland, OH",40HC OT New ,7500
+United States,"Columbus, OH",40HC OT New ,7500
+United States,"Dallas, TX",40HC OT New ,7500
+United States,"Denver, CO",40HC OT New ,7500
+United States,"Detroit, MI",40HC OT New ,7500
+United States,"El Paso, TX",40HC OT New ,7500
+United States,Houston,40HC OT New ,7500
+United States,"Jacksonville, FL",40HC OT New ,7500
+United States,"Kansas City, KS",40HC OT New ,7500
+United States,"Long Beach, CA",40HC OT New ,7500
+United States,"Los Angeles, CA",40HC OT New ,7500
+United States,"Memphis, TN",40HC OT New ,7500
+United States,"Miami, FL",40HC OT New ,7500
+United States,"Minneapolis, MN",40HC OT New ,7500
+United States,"Mobile, AL",40HC OT New ,7500
+United States,"Nashville, TN",40HC OT New ,7500
+United States,"New Orleans, LA",40HC OT New ,7500
+United States,"New York, NY",40HC OT New ,7500
+United States,"Norfolk, VA",40HC OT New ,7500
+United States,"Oakland, CA",40HC OT New ,7500
+United States,"Omaha, NE",40HC OT New ,7500
+United States,"Phoenix, AZ",40HC OT New ,7500
+United States,"Salt Lake City, UT",40HC OT New ,7500
+United States,"Savannah, GA",40HC OT New ,7500
+United States,"Seattle, WA",40HC OT New ,7500
+United States,"Tampa, FL",40HC OT New ,7500
+United States,"Indianapolis, IN",40HC OT New ,7500
+Vietnam,Haiphong,40HC OT New ,7500
+Vietnam,Ho Chi Minh City,40HC OT New ,7500
+Australia,Adelaide,20OT Cw ,3250
+Australia,Brisbane,20OT Cw ,3250
+Australia,Fremantle,20OT Cw ,3250
+Australia,Melbourne,20OT Cw ,3250
+Australia,Sydney,20OT Cw ,3250
+Austria,Vienna,20OT Cw ,3250
+Bangladesh,Chittagong,20OT Cw ,3250
+Belarus,Minsk,20OT Cw ,3250
+Belgium,Antwerp,20OT Cw ,3250
+Brazil,Santos,20OT Cw ,3250
+Brazil,Paranagua,20OT Cw ,3250
+Cambodia,Phnom Penh,20OT Cw ,3250
+Canada,"Calgary, AB",20OT Cw ,3250
+Canada,"Edmonton, AB",20OT Cw ,3250
+Canada,"Halifax, NS",20OT Cw ,3250
+Canada,"Montreal, QC",20OT Cw ,3250
+Canada,"Toronto, ON",20OT Cw ,3250
+Canada,"Vancouver, BC",20OT Cw ,3250
+Canada,"Winnipeg, MB",20OT Cw ,3250
+Chile,Santiago,20OT Cw ,3250
+Chile,Valparaiso,20OT Cw ,3250
+China,Dalian,20OT Cw ,3250
+China,Fuzhou,20OT Cw ,3250
+China,Guangzhou,20OT Cw ,3250
+China,Hong Kong,20OT Cw ,3250
+China,Huangpu,20OT Cw ,3250
+China,Lianyungang,20OT Cw ,3250
+China,Nansha,20OT Cw ,3250
+China,Qingdao,20OT Cw ,3250
+China,Shanghai,20OT Cw ,3250
+China,Shekou,20OT Cw ,3250
+China,Shenzhen,20OT Cw ,3250
+China,Tianjin,20OT Cw ,3250
+China,Xiamen,20OT Cw ,3250
+China,Ningbo,20OT Cw ,3250
+China,Chengdu,20OT Cw ,3250
+China,Hong Kong,20OT Cw ,3250
+China,Huangpu,20OT Cw ,3250
+China,Nanjing,20OT Cw ,3250
+China,Yantian,20OT Cw ,3250
+Costa Rica,Limon,20OT Cw ,3250
+Denmark,Aarhus,20OT Cw ,3250
+Denmark,Copenhagen,20OT Cw ,3250
+England,Leeds,20OT Cw ,3250
+England,London,20OT Cw ,3250
+Estonia,Tallin,20OT Cw ,3250
+Finland,Helsinki,20OT Cw ,3250
+Finland,Kotka,20OT Cw ,3250
+Finland,Rauma,20OT Cw ,3250
+France,Dunkerque,20OT Cw ,3250
+France,Fos Sur Mer,20OT Cw ,3250
+France,Le Havre,20OT Cw ,3250
+France,Lyon,20OT Cw ,3250
+France,Marseille,20OT Cw ,3250
+France,Rouen,20OT Cw ,3250
+France,Bordeaux,20OT Cw ,3250
+France,Marseille,20OT Cw ,3250
+Georgia,Poti,20OT Cw ,3250
+Germany,Bremen,20OT Cw ,3250
+Germany,Duisburg,20OT Cw ,3250
+Germany,Hamburg,20OT Cw ,3250
+Germany,Mannheim,20OT Cw ,3250
+Germany,Ludwigshafen,20OT Cw ,3250
+Germany,Munich,20OT Cw ,3250
+Greece,Piraeus,20OT Cw ,3250
+Hungary,Budapest,20OT Cw ,3250
+India,Delhi,20OT Cw ,3250
+India,Kolkata(Calcutta),20OT Cw ,3250
+India,Mundra,20OT Cw ,3250
+India,Nhava Sheva,20OT Cw ,3250
+India,Chennai,20OT Cw ,3250
+India,Kolkata(Calcutta),20OT Cw ,3250
+India,Mumbai,20OT Cw ,3250
+India,Mundra,20OT Cw ,3250
+India,New Delhi ,20OT Cw ,3250
+India,Tuticorin,20OT Cw ,3250
+Indonesia,Belawan,20OT Cw ,3250
+Indonesia,Jakarta,20OT Cw ,3250
+Indonesia,Semarang,20OT Cw ,3250
+Indonesia,Surabaya,20OT Cw ,3250
+Israel,Ashdod,20OT Cw ,3250
+Italy,Genoa,20OT Cw ,3250
+Italy,La Spezia,20OT Cw ,3250
+Italy,Livorno,20OT Cw ,3250
+Italy,Milan,20OT Cw ,3250
+Italy,Modena,20OT Cw ,3250
+Italy,Padova,20OT Cw ,3250
+Italy,Trieste,20OT Cw ,3250
+Italy,Venice,20OT Cw ,3250
+Japan,Kobe,20OT Cw ,3250
+Japan,Yokohama,20OT Cw ,3250
+Japan,Hakata,20OT Cw ,3250
+Japan,Kobe,20OT Cw ,3250
+Japan,Nagoya,20OT Cw ,3250
+Japan,Osaka,20OT Cw ,3250
+Japan,Tokyo,20OT Cw ,3250
+Kazakhstan,Almaty,20OT Cw ,3250
+Kazakhstan,Tashkent,20OT Cw ,3250
+Kenya,Mombasa,20OT Cw ,3250
+Kenya,Nairobi,20OT Cw ,3250
+Malaysia,Penang,20OT Cw ,3250
+Malaysia,Port Kelang,20OT Cw ,3250
+Malaysia,Johar,20OT Cw ,3250
+Mexico,Altamira,20OT Cw ,3250
+Mexico,Manzanillo,20OT Cw ,3250
+Mexico,Mexico City,20OT Cw ,3250
+Mexico,Veracruz,20OT Cw ,3250
+Morocco,Casablanca,20OT Cw ,3250
+Netherlands,Rotterdam,20OT Cw ,3250
+New Zealand,Tauranga,20OT Cw ,3250
+New Zealand,Auckland,20OT Cw ,3250
+New Zealand,Tauranga,20OT Cw ,3250
+Oman,Sohar,20OT Cw ,3250
+Pakistan,Karachi,20OT Cw ,3250
+Peru,Callao,20OT Cw ,3250
+Philippines,Manila,20OT Cw ,3250
+Poland,Gdansk,20OT Cw ,3250
+Poland,Warsaw,20OT Cw ,3250
+Poland,Gdynia,20OT Cw ,3250
+Portugal,Leixoes,20OT Cw ,3250
+Portugal,Lisboa,20OT Cw ,3250
+Portugal,Leixoes,20OT Cw ,3250
+Portugal,Setubal,20OT Cw ,3250
+Republic of Ireland,Dublin,20OT Cw ,3250
+Romania,Constanta,20OT Cw ,3250
+Russia,Moscow,20OT Cw ,3250
+Russia,St Petersburg,20OT Cw ,3250
+Russia,Vladivostok,20OT Cw ,3250
+Russia,"Yekaterinburg, Sve",20OT Cw ,3250
+Saudi Arabia,Jeddah,20OT Cw ,3250
+Singapore,Singapore,20OT Cw ,3250
+South Africa,Durban,20OT Cw ,3250
+South Africa,Johannesburg,20OT Cw ,3250
+South Africa,Cape Town,20OT Cw ,3250
+South Africa,Port Elizabeth,20OT Cw ,3250
+South Korea,Busan,20OT Cw ,3250
+South Korea,Gwangyang,20OT Cw ,3250
+South Korea,Inchoen,20OT Cw ,3250
+South Korea,Seoul,20OT Cw ,3250
+Spain,Arquata Scrivia,20OT Cw ,3250
+Spain,Barcelona,20OT Cw ,3250
+Spain,Bilbao,20OT Cw ,3250
+Spain,Madrid,20OT Cw ,3250
+Spain,Valencia (Spain),20OT Cw ,3250
+Spain,Algeciras,20OT Cw ,3250
+Spain,Barcelona,20OT Cw ,3250
+Spain,Bilbao,20OT Cw ,3250
+Spain,Madrid,20OT Cw ,3250
+Spain,Valencia ,20OT Cw ,3250
+Sweden,Gothenburg,20OT Cw ,3250
+Sweden,Norrkoping,20OT Cw ,3250
+Switzerland,Basle,20OT Cw ,3250
+Taiwan,Kaohsiung,20OT Cw ,3250
+Taiwan,Keelung,20OT Cw ,3250
+Taiwan,Taichung,20OT Cw ,3250
+Tamil Nadu,Chennai,20OT Cw ,3250
+Thailand,Bangkok,20OT Cw ,3250
+Thailand,Laem Chabang,20OT Cw ,3250
+Turkey,Istanbul,20OT Cw ,3250
+Turkey,Mersin,20OT Cw ,3250
+Turkey,Gebze,20OT Cw ,3250
+Turkey,Mersin,20OT Cw ,3250
+United Arab Emirates,Dubai,20OT Cw ,3250
+United Arab Emirates,Jebel Ali,20OT Cw ,3250
+United Kingdom,Southampton,20OT Cw ,3250
+United Kingdom,Belfast,20OT Cw ,3250
+United Kingdom,Birmingham ,20OT Cw ,3250
+United Kingdom,Doncaster,20OT Cw ,3250
+United Kingdom,Glasgow,20OT Cw ,3250
+United Kingdom,Leeds,20OT Cw ,3250
+United Kingdom,Liverpool,20OT Cw ,3250
+United Kingdom,London,20OT Cw ,3250
+United States,"Atlanta, GA",20OT Cw ,3250
+United States,"Baltimore, MD",20OT Cw ,3250
+United States,"Boston, MA",20OT Cw ,3250
+United States,"Charleston, SC",20OT Cw ,3250
+United States,"Charlotte, NC",20OT Cw ,3250
+United States,"Chicago, IL",20OT Cw ,3250
+United States,"Cincinnati, OH",20OT Cw ,3250
+United States,"Cleveland, OH",20OT Cw ,3250
+United States,"Columbus, OH",20OT Cw ,3250
+United States,"Dallas, TX",20OT Cw ,3250
+United States,"Denver, CO",20OT Cw ,3250
+United States,"Detroit, MI",20OT Cw ,3250
+United States,"El Paso, TX",20OT Cw ,3250
+United States,Houston,20OT Cw ,3250
+United States,"Jacksonville, FL",20OT Cw ,3250
+United States,"Kansas City, KS",20OT Cw ,3250
+United States,"Long Beach, CA",20OT Cw ,3250
+United States,"Los Angeles, CA",20OT Cw ,3250
+United States,"Memphis, TN",20OT Cw ,3250
+United States,"Miami, FL",20OT Cw ,3250
+United States,"Minneapolis, MN",20OT Cw ,3250
+United States,"Mobile, AL",20OT Cw ,3250
+United States,"Nashville, TN",20OT Cw ,3250
+United States,"New Orleans, LA",20OT Cw ,3250
+United States,"New York, NY",20OT Cw ,3250
+United States,"Norfolk, VA",20OT Cw ,3250
+United States,"Oakland, CA",20OT Cw ,3250
+United States,"Omaha, NE",20OT Cw ,3250
+United States,"Phoenix, AZ",20OT Cw ,3250
+United States,"Salt Lake City, UT",20OT Cw ,3250
+United States,"Savannah, GA",20OT Cw ,3250
+United States,"Seattle, WA",20OT Cw ,3250
+United States,"Tampa, FL",20OT Cw ,3250
+United States,"Indianapolis, IN",20OT Cw ,3250
+Vietnam,Haiphong,20OT Cw ,3250
+Vietnam,Ho Chi Minh City,20OT Cw ,3250
+Australia,Adelaide,40HC OT Cw,5000
+Australia,Brisbane,40HC OT Cw,5000
+Australia,Fremantle,40HC OT Cw,5000
+Australia,Melbourne,40HC OT Cw,5000
+Australia,Sydney,40HC OT Cw,5000
+Austria,Vienna,40HC OT Cw,5000
+Bangladesh,Chittagong,40HC OT Cw,5000
+Belarus,Minsk,40HC OT Cw,5000
+Belgium,Antwerp,40HC OT Cw,5000
+Brazil,Santos,40HC OT Cw,5000
+Brazil,Paranagua,40HC OT Cw,5000
+Cambodia,Phnom Penh,40HC OT Cw,5000
+Canada,"Calgary, AB",40HC OT Cw,5000
+Canada,"Edmonton, AB",40HC OT Cw,5000
+Canada,"Halifax, NS",40HC OT Cw,5000
+Canada,"Montreal, QC",40HC OT Cw,5000
+Canada,"Toronto, ON",40HC OT Cw,5000
+Canada,"Vancouver, BC",40HC OT Cw,5000
+Canada,"Winnipeg, MB",40HC OT Cw,5000
+Chile,Santiago,40HC OT Cw,5000
+Chile,Valparaiso,40HC OT Cw,5000
+China,Dalian,40HC OT Cw,5000
+China,Fuzhou,40HC OT Cw,5000
+China,Guangzhou,40HC OT Cw,5000
+China,Hong Kong,40HC OT Cw,5000
+China,Huangpu,40HC OT Cw,5000
+China,Lianyungang,40HC OT Cw,5000
+China,Nansha,40HC OT Cw,5000
+China,Qingdao,40HC OT Cw,5000
+China,Shanghai,40HC OT Cw,5000
+China,Shekou,40HC OT Cw,5000
+China,Shenzhen,40HC OT Cw,5000
+China,Tianjin,40HC OT Cw,5000
+China,Xiamen,40HC OT Cw,5000
+China,Ningbo,40HC OT Cw,5000
+China,Chengdu,40HC OT Cw,5000
+China,Hong Kong,40HC OT Cw,5000
+China,Huangpu,40HC OT Cw,5000
+China,Nanjing,40HC OT Cw,5000
+China,Yantian,40HC OT Cw,5000
+Costa Rica,Limon,40HC OT Cw,5000
+Denmark,Aarhus,40HC OT Cw,5000
+Denmark,Copenhagen,40HC OT Cw,5000
+England,Leeds,40HC OT Cw,5000
+England,London,40HC OT Cw,5000
+Estonia,Tallin,40HC OT Cw,5000
+Finland,Helsinki,40HC OT Cw,5000
+Finland,Kotka,40HC OT Cw,5000
+Finland,Rauma,40HC OT Cw,5000
+France,Dunkerque,40HC OT Cw,5000
+France,Fos Sur Mer,40HC OT Cw,5000
+France,Le Havre,40HC OT Cw,5000
+France,Lyon,40HC OT Cw,5000
+France,Marseille,40HC OT Cw,5000
+France,Rouen,40HC OT Cw,5000
+France,Bordeaux,40HC OT Cw,5000
+France,Marseille,40HC OT Cw,5000
+Georgia,Poti,40HC OT Cw,5000
+Germany,Bremen,40HC OT Cw,5000
+Germany,Duisburg,40HC OT Cw,5000
+Germany,Hamburg,40HC OT Cw,5000
+Germany,Mannheim,40HC OT Cw,5000
+Germany,Ludwigshafen,40HC OT Cw,5000
+Germany,Munich,40HC OT Cw,5000
+Greece,Piraeus,40HC OT Cw,5000
+Hungary,Budapest,40HC OT Cw,5000
+India,Delhi,40HC OT Cw,5000
+India,Kolkata(Calcutta),40HC OT Cw,5000
+India,Mundra,40HC OT Cw,5000
+India,Nhava Sheva,40HC OT Cw,5000
+India,Chennai,40HC OT Cw,5000
+India,Kolkata(Calcutta),40HC OT Cw,5000
+India,Mumbai,40HC OT Cw,5000
+India,Mundra,40HC OT Cw,5000
+India,New Delhi ,40HC OT Cw,5000
+India,Tuticorin,40HC OT Cw,5000
+Indonesia,Belawan,40HC OT Cw,5000
+Indonesia,Jakarta,40HC OT Cw,5000
+Indonesia,Semarang,40HC OT Cw,5000
+Indonesia,Surabaya,40HC OT Cw,5000
+Israel,Ashdod,40HC OT Cw,5000
+Italy,Genoa,40HC OT Cw,5000
+Italy,La Spezia,40HC OT Cw,5000
+Italy,Livorno,40HC OT Cw,5000
+Italy,Milan,40HC OT Cw,5000
+Italy,Modena,40HC OT Cw,5000
+Italy,Padova,40HC OT Cw,5000
+Italy,Trieste,40HC OT Cw,5000
+Italy,Venice,40HC OT Cw,5000
+Japan,Kobe,40HC OT Cw,5000
+Japan,Yokohama,40HC OT Cw,5000
+Japan,Hakata,40HC OT Cw,5000
+Japan,Kobe,40HC OT Cw,5000
+Japan,Nagoya,40HC OT Cw,5000
+Japan,Osaka,40HC OT Cw,5000
+Japan,Tokyo,40HC OT Cw,5000
+Kazakhstan,Almaty,40HC OT Cw,5000
+Kazakhstan,Tashkent,40HC OT Cw,5000
+Kenya,Mombasa,40HC OT Cw,5000
+Kenya,Nairobi,40HC OT Cw,5000
+Malaysia,Penang,40HC OT Cw,5000
+Malaysia,Port Kelang,40HC OT Cw,5000
+Malaysia,Johar,40HC OT Cw,5000
+Mexico,Altamira,40HC OT Cw,5000
+Mexico,Manzanillo,40HC OT Cw,5000
+Mexico,Mexico City,40HC OT Cw,5000
+Mexico,Veracruz,40HC OT Cw,5000
+Morocco,Casablanca,40HC OT Cw,5000
+Netherlands,Rotterdam,40HC OT Cw,5000
+New Zealand,Tauranga,40HC OT Cw,5000
+New Zealand,Auckland,40HC OT Cw,5000
+New Zealand,Tauranga,40HC OT Cw,5000
+Oman,Sohar,40HC OT Cw,5000
+Pakistan,Karachi,40HC OT Cw,5000
+Peru,Callao,40HC OT Cw,5000
+Philippines,Manila,40HC OT Cw,5000
+Poland,Gdansk,40HC OT Cw,5000
+Poland,Warsaw,40HC OT Cw,5000
+Poland,Gdynia,40HC OT Cw,5000
+Portugal,Leixoes,40HC OT Cw,5000
+Portugal,Lisboa,40HC OT Cw,5000
+Portugal,Leixoes,40HC OT Cw,5000
+Portugal,Setubal,40HC OT Cw,5000
+Republic of Ireland,Dublin,40HC OT Cw,5000
+Romania,Constanta,40HC OT Cw,5000
+Russia,Moscow,40HC OT Cw,5000
+Russia,St Petersburg,40HC OT Cw,5000
+Russia,Vladivostok,40HC OT Cw,5000
+Russia,"Yekaterinburg, Sve",40HC OT Cw,5000
+Saudi Arabia,Jeddah,40HC OT Cw,5000
+Singapore,Singapore,40HC OT Cw,5000
+South Africa,Durban,40HC OT Cw,5000
+South Africa,Johannesburg,40HC OT Cw,5000
+South Africa,Cape Town,40HC OT Cw,5000
+South Africa,Port Elizabeth,40HC OT Cw,5000
+South Korea,Busan,40HC OT Cw,5000
+South Korea,Gwangyang,40HC OT Cw,5000
+South Korea,Inchoen,40HC OT Cw,5000
+South Korea,Seoul,40HC OT Cw,5000
+Spain,Arquata Scrivia,40HC OT Cw,5000
+Spain,Barcelona,40HC OT Cw,5000
+Spain,Bilbao,40HC OT Cw,5000
+Spain,Madrid,40HC OT Cw,5000
+Spain,Valencia (Spain),40HC OT Cw,5000
+Spain,Algeciras,40HC OT Cw,5000
+Spain,Barcelona,40HC OT Cw,5000
+Spain,Bilbao,40HC OT Cw,5000
+Spain,Madrid,40HC OT Cw,5000
+Spain,Valencia ,40HC OT Cw,5000
+Sweden,Gothenburg,40HC OT Cw,5000
+Sweden,Norrkoping,40HC OT Cw,5000
+Switzerland,Basle,40HC OT Cw,5000
+Taiwan,Kaohsiung,40HC OT Cw,5000
+Taiwan,Keelung,40HC OT Cw,5000
+Taiwan,Taichung,40HC OT Cw,5000
+Tamil Nadu,Chennai,40HC OT Cw,5000
+Thailand,Bangkok,40HC OT Cw,5000
+Thailand,Laem Chabang,40HC OT Cw,5000
+Turkey,Istanbul,40HC OT Cw,5000
+Turkey,Mersin,40HC OT Cw,5000
+Turkey,Gebze,40HC OT Cw,5000
+Turkey,Mersin,40HC OT Cw,5000
+United Arab Emirates,Dubai,40HC OT Cw,5000
+United Arab Emirates,Jebel Ali,40HC OT Cw,5000
+United Kingdom,Southampton,40HC OT Cw,5000
+United Kingdom,Belfast,40HC OT Cw,5000
+United Kingdom,Birmingham ,40HC OT Cw,5000
+United Kingdom,Doncaster,40HC OT Cw,5000
+United Kingdom,Glasgow,40HC OT Cw,5000
+United Kingdom,Leeds,40HC OT Cw,5000
+United Kingdom,Liverpool,40HC OT Cw,5000
+United Kingdom,London,40HC OT Cw,5000
+United States,"Atlanta, GA",40HC OT Cw,5000
+United States,"Baltimore, MD",40HC OT Cw,5000
+United States,"Boston, MA",40HC OT Cw,5000
+United States,"Charleston, SC",40HC OT Cw,5000
+United States,"Charlotte, NC",40HC OT Cw,5000
+United States,"Chicago, IL",40HC OT Cw,5000
+United States,"Cincinnati, OH",40HC OT Cw,5000
+United States,"Cleveland, OH",40HC OT Cw,5000
+United States,"Columbus, OH",40HC OT Cw,5000
+United States,"Dallas, TX",40HC OT Cw,5000
+United States,"Denver, CO",40HC OT Cw,5000
+United States,"Detroit, MI",40HC OT Cw,5000
+United States,"El Paso, TX",40HC OT Cw,5000
+United States,Houston,40HC OT Cw,5000
+United States,"Jacksonville, FL",40HC OT Cw,5000
+United States,"Kansas City, KS",40HC OT Cw,5000
+United States,"Long Beach, CA",40HC OT Cw,5000
+United States,"Los Angeles, CA",40HC OT Cw,5000
+United States,"Memphis, TN",40HC OT Cw,5000
+United States,"Miami, FL",40HC OT Cw,5000
+United States,"Minneapolis, MN",40HC OT Cw,5000
+United States,"Mobile, AL",40HC OT Cw,5000
+United States,"Nashville, TN",40HC OT Cw,5000
+United States,"New Orleans, LA",40HC OT Cw,5000
+United States,"New York, NY",40HC OT Cw,5000
+United States,"Norfolk, VA",40HC OT Cw,5000
+United States,"Oakland, CA",40HC OT Cw,5000
+United States,"Omaha, NE",40HC OT Cw,5000
+United States,"Phoenix, AZ",40HC OT Cw,5000
+United States,"Salt Lake City, UT",40HC OT Cw,5000
+United States,"Savannah, GA",40HC OT Cw,5000
+United States,"Seattle, WA",40HC OT Cw,5000
+United States,"Tampa, FL",40HC OT Cw,5000
+United States,"Indianapolis, IN",40HC OT Cw,5000
+Vietnam,Haiphong,40HC OT Cw,5000
+Vietnam,Ho Chi Minh City,40HC OT Cw,5000
+Australia,Adelaide,40HC PW New,9000
+Australia,Brisbane,40HC PW New,9000
+Australia,Fremantle,40HC PW New,9000
+Australia,Melbourne,40HC PW New,9000
+Australia,Sydney,40HC PW New,9000
+Austria,Vienna,40HC PW New,9000
+Bangladesh,Chittagong,40HC PW New,9000
+Belarus,Minsk,40HC PW New,9000
+Belgium,Antwerp,40HC PW New,9000
+Brazil,Santos,40HC PW New,9000
+Brazil,Paranagua,40HC PW New,9000
+Cambodia,Phnom Penh,40HC PW New,9000
+Canada,"Calgary, AB",40HC PW New,9000
+Canada,"Edmonton, AB",40HC PW New,9000
+Canada,"Halifax, NS",40HC PW New,9000
+Canada,"Montreal, QC",40HC PW New,9000
+Canada,"Toronto, ON",40HC PW New,9000
+Canada,"Vancouver, BC",40HC PW New,9000
+Canada,"Winnipeg, MB",40HC PW New,9000
+Chile,Santiago,40HC PW New,9000
+Chile,Valparaiso,40HC PW New,9000
+China,Dalian,40HC PW New,9000
+China,Fuzhou,40HC PW New,9000
+China,Guangzhou,40HC PW New,9000
+China,Hong Kong,40HC PW New,9000
+China,Huangpu,40HC PW New,9000
+China,Lianyungang,40HC PW New,9000
+China,Nansha,40HC PW New,9000
+China,Qingdao,40HC PW New,9000
+China,Shanghai,40HC PW New,9000
+China,Shekou,40HC PW New,9000
+China,Shenzhen,40HC PW New,9000
+China,Tianjin,40HC PW New,9000
+China,Xiamen,40HC PW New,9000
+China,Ningbo,40HC PW New,9000
+China,Chengdu,40HC PW New,9000
+China,Hong Kong,40HC PW New,9000
+China,Huangpu,40HC PW New,9000
+China,Nanjing,40HC PW New,9000
+China,Yantian,40HC PW New,9000
+Costa Rica,Limon,40HC PW New,9000
+Denmark,Aarhus,40HC PW New,9000
+Denmark,Copenhagen,40HC PW New,9000
+England,Leeds,40HC PW New,9000
+England,London,40HC PW New,9000
+Estonia,Tallin,40HC PW New,9000
+Finland,Helsinki,40HC PW New,9000
+Finland,Kotka,40HC PW New,9000
+Finland,Rauma,40HC PW New,9000
+France,Dunkerque,40HC PW New,9000
+France,Fos Sur Mer,40HC PW New,9000
+France,Le Havre,40HC PW New,9000
+France,Lyon,40HC PW New,9000
+France,Marseille,40HC PW New,9000
+France,Rouen,40HC PW New,9000
+France,Bordeaux,40HC PW New,9000
+France,Marseille,40HC PW New,9000
+Georgia,Poti,40HC PW New,9000
+Germany,Bremen,40HC PW New,9000
+Germany,Duisburg,40HC PW New,9000
+Germany,Hamburg,40HC PW New,9000
+Germany,Mannheim,40HC PW New,9000
+Germany,Ludwigshafen,40HC PW New,9000
+Germany,Munich,40HC PW New,9000
+Greece,Piraeus,40HC PW New,9000
+Hungary,Budapest,40HC PW New,9000
+India,Delhi,40HC PW New,9000
+India,Kolkata(Calcutta),40HC PW New,9000
+India,Mundra,40HC PW New,9000
+India,Nhava Sheva,40HC PW New,9000
+India,Chennai,40HC PW New,9000
+India,Kolkata(Calcutta),40HC PW New,9000
+India,Mumbai,40HC PW New,9000
+India,Mundra,40HC PW New,9000
+India,New Delhi ,40HC PW New,9000
+India,Tuticorin,40HC PW New,9000
+Indonesia,Belawan,40HC PW New,9000
+Indonesia,Jakarta,40HC PW New,9000
+Indonesia,Semarang,40HC PW New,9000
+Indonesia,Surabaya,40HC PW New,9000
+Israel,Ashdod,40HC PW New,9000
+Italy,Genoa,40HC PW New,9000
+Italy,La Spezia,40HC PW New,9000
+Italy,Livorno,40HC PW New,9000
+Italy,Milan,40HC PW New,9000
+Italy,Modena,40HC PW New,9000
+Italy,Padova,40HC PW New,9000
+Italy,Trieste,40HC PW New,9000
+Italy,Venice,40HC PW New,9000
+Japan,Kobe,40HC PW New,9000
+Japan,Yokohama,40HC PW New,9000
+Japan,Hakata,40HC PW New,9000
+Japan,Kobe,40HC PW New,9000
+Japan,Nagoya,40HC PW New,9000
+Japan,Osaka,40HC PW New,9000
+Japan,Tokyo,40HC PW New,9000
+Kazakhstan,Almaty,40HC PW New,9000
+Kazakhstan,Tashkent,40HC PW New,9000
+Kenya,Mombasa,40HC PW New,9000
+Kenya,Nairobi,40HC PW New,9000
+Malaysia,Penang,40HC PW New,9000
+Malaysia,Port Kelang,40HC PW New,9000
+Malaysia,Johar,40HC PW New,9000
+Mexico,Altamira,40HC PW New,9000
+Mexico,Manzanillo,40HC PW New,9000
+Mexico,Mexico City,40HC PW New,9000
+Mexico,Veracruz,40HC PW New,9000
+Morocco,Casablanca,40HC PW New,9000
+Netherlands,Rotterdam,40HC PW New,9000
+New Zealand,Tauranga,40HC PW New,9000
+New Zealand,Auckland,40HC PW New,9000
+New Zealand,Tauranga,40HC PW New,9000
+Oman,Sohar,40HC PW New,9000
+Pakistan,Karachi,40HC PW New,9000
+Peru,Callao,40HC PW New,9000
+Philippines,Manila,40HC PW New,9000
+Poland,Gdansk,40HC PW New,9000
+Poland,Warsaw,40HC PW New,9000
+Poland,Gdynia,40HC PW New,9000
+Portugal,Leixoes,40HC PW New,9000
+Portugal,Lisboa,40HC PW New,9000
+Portugal,Leixoes,40HC PW New,9000
+Portugal,Setubal,40HC PW New,9000
+Republic of Ireland,Dublin,40HC PW New,9000
+Romania,Constanta,40HC PW New,9000
+Russia,Moscow,40HC PW New,9000
+Russia,St Petersburg,40HC PW New,9000
+Russia,Vladivostok,40HC PW New,9000
+Russia,"Yekaterinburg, Sve",40HC PW New,9000
+Saudi Arabia,Jeddah,40HC PW New,9000
+Singapore,Singapore,40HC PW New,9000
+South Africa,Durban,40HC PW New,9000
+South Africa,Johannesburg,40HC PW New,9000
+South Africa,Cape Town,40HC PW New,9000
+South Africa,Port Elizabeth,40HC PW New,9000
+South Korea,Busan,40HC PW New,9000
+South Korea,Gwangyang,40HC PW New,9000
+South Korea,Inchoen,40HC PW New,9000
+South Korea,Seoul,40HC PW New,9000
+Spain,Arquata Scrivia,40HC PW New,9000
+Spain,Barcelona,40HC PW New,9000
+Spain,Bilbao,40HC PW New,9000
+Spain,Madrid,40HC PW New,9000
+Spain,Valencia (Spain),40HC PW New,9000
+Spain,Algeciras,40HC PW New,9000
+Spain,Barcelona,40HC PW New,9000
+Spain,Bilbao,40HC PW New,9000
+Spain,Madrid,40HC PW New,9000
+Spain,Valencia ,40HC PW New,9000
+Sweden,Gothenburg,40HC PW New,9000
+Sweden,Norrkoping,40HC PW New,9000
+Switzerland,Basle,40HC PW New,9000
+Taiwan,Kaohsiung,40HC PW New,9000
+Taiwan,Keelung,40HC PW New,9000
+Taiwan,Taichung,40HC PW New,9000
+Tamil Nadu,Chennai,40HC PW New,9000
+Thailand,Bangkok,40HC PW New,9000
+Thailand,Laem Chabang,40HC PW New,9000
+Turkey,Istanbul,40HC PW New,9000
+Turkey,Mersin,40HC PW New,9000
+Turkey,Gebze,40HC PW New,9000
+Turkey,Mersin,40HC PW New,9000
+United Arab Emirates,Dubai,40HC PW New,9000
+United Arab Emirates,Jebel Ali,40HC PW New,9000
+United Kingdom,Southampton,40HC PW New,9000
+United Kingdom,Belfast,40HC PW New,9000
+United Kingdom,Birmingham ,40HC PW New,9000
+United Kingdom,Doncaster,40HC PW New,9000
+United Kingdom,Glasgow,40HC PW New,9000
+United Kingdom,Leeds,40HC PW New,9000
+United Kingdom,Liverpool,40HC PW New,9000
+United Kingdom,London,40HC PW New,9000
+United States,"Atlanta, GA",40HC PW New,9000
+United States,"Baltimore, MD",40HC PW New,9000
+United States,"Boston, MA",40HC PW New,9000
+United States,"Charleston, SC",40HC PW New,9000
+United States,"Charlotte, NC",40HC PW New,9000
+United States,"Chicago, IL",40HC PW New,9000
+United States,"Cincinnati, OH",40HC PW New,9000
+United States,"Cleveland, OH",40HC PW New,9000
+United States,"Columbus, OH",40HC PW New,9000
+United States,"Dallas, TX",40HC PW New,9000
+United States,"Denver, CO",40HC PW New,9000
+United States,"Detroit, MI",40HC PW New,9000
+United States,"El Paso, TX",40HC PW New,9000
+United States,Houston,40HC PW New,9000
+United States,"Jacksonville, FL",40HC PW New,9000
+United States,"Kansas City, KS",40HC PW New,9000
+United States,"Long Beach, CA",40HC PW New,9000
+United States,"Los Angeles, CA",40HC PW New,9000
+United States,"Memphis, TN",40HC PW New,9000
+United States,"Miami, FL",40HC PW New,9000
+United States,"Minneapolis, MN",40HC PW New,9000
+United States,"Mobile, AL",40HC PW New,9000
+United States,"Nashville, TN",40HC PW New,9000
+United States,"New Orleans, LA",40HC PW New,9000
+United States,"New York, NY",40HC PW New,9000
+United States,"Norfolk, VA",40HC PW New,9000
+United States,"Oakland, CA",40HC PW New,9000
+United States,"Omaha, NE",40HC PW New,9000
+United States,"Phoenix, AZ",40HC PW New,9000
+United States,"Salt Lake City, UT",40HC PW New,9000
+United States,"Savannah, GA",40HC PW New,9000
+United States,"Seattle, WA",40HC PW New,9000
+United States,"Tampa, FL",40HC PW New,9000
+United States,"Indianapolis, IN",40HC PW New,9000
+Vietnam,Haiphong,40HC PW New,9000
+Vietnam,Ho Chi Minh City,40HC PW New,9000
+Australia,Adelaide,40HC PW Cw,2500
+Australia,Brisbane,40HC PW Cw,2500
+Australia,Fremantle,40HC PW Cw,2500
+Australia,Melbourne,40HC PW Cw,2500
+Australia,Sydney,40HC PW Cw,2500
+Austria,Vienna,40HC PW Cw,2500
+Bangladesh,Chittagong,40HC PW Cw,2500
+Belarus,Minsk,40HC PW Cw,2500
+Belgium,Antwerp,40HC PW Cw,2500
+Brazil,Santos,40HC PW Cw,2500
+Brazil,Paranagua,40HC PW Cw,2500
+Cambodia,Phnom Penh,40HC PW Cw,2500
+Canada,"Calgary, AB",40HC PW Cw,2500
+Canada,"Edmonton, AB",40HC PW Cw,2500
+Canada,"Halifax, NS",40HC PW Cw,2500
+Canada,"Montreal, QC",40HC PW Cw,2500
+Canada,"Toronto, ON",40HC PW Cw,2500
+Canada,"Vancouver, BC",40HC PW Cw,2500
+Canada,"Winnipeg, MB",40HC PW Cw,2500
+Chile,Santiago,40HC PW Cw,2500
+Chile,Valparaiso,40HC PW Cw,2500
+China,Dalian,40HC PW Cw,2500
+China,Fuzhou,40HC PW Cw,2500
+China,Guangzhou,40HC PW Cw,2500
+China,Hong Kong,40HC PW Cw,2500
+China,Huangpu,40HC PW Cw,2500
+China,Lianyungang,40HC PW Cw,2500
+China,Nansha,40HC PW Cw,2500
+China,Qingdao,40HC PW Cw,2500
+China,Shanghai,40HC PW Cw,2500
+China,Shekou,40HC PW Cw,2500
+China,Shenzhen,40HC PW Cw,2500
+China,Tianjin,40HC PW Cw,2500
+China,Xiamen,40HC PW Cw,2500
+China,Ningbo,40HC PW Cw,2500
+China,Chengdu,40HC PW Cw,2500
+China,Hong Kong,40HC PW Cw,2500
+China,Huangpu,40HC PW Cw,2500
+China,Nanjing,40HC PW Cw,2500
+China,Yantian,40HC PW Cw,2500
+Costa Rica,Limon,40HC PW Cw,2500
+Denmark,Aarhus,40HC PW Cw,2500
+Denmark,Copenhagen,40HC PW Cw,2500
+England,Leeds,40HC PW Cw,2500
+England,London,40HC PW Cw,2500
+Estonia,Tallin,40HC PW Cw,2500
+Finland,Helsinki,40HC PW Cw,2500
+Finland,Kotka,40HC PW Cw,2500
+Finland,Rauma,40HC PW Cw,2500
+France,Dunkerque,40HC PW Cw,2500
+France,Fos Sur Mer,40HC PW Cw,2500
+France,Le Havre,40HC PW Cw,2500
+France,Lyon,40HC PW Cw,2500
+France,Marseille,40HC PW Cw,2500
+France,Rouen,40HC PW Cw,2500
+France,Bordeaux,40HC PW Cw,2500
+France,Marseille,40HC PW Cw,2500
+Georgia,Poti,40HC PW Cw,2500
+Germany,Bremen,40HC PW Cw,2500
+Germany,Duisburg,40HC PW Cw,2500
+Germany,Hamburg,40HC PW Cw,2500
+Germany,Mannheim,40HC PW Cw,2500
+Germany,Ludwigshafen,40HC PW Cw,2500
+Germany,Munich,40HC PW Cw,2500
+Greece,Piraeus,40HC PW Cw,2500
+Hungary,Budapest,40HC PW Cw,2500
+India,Delhi,40HC PW Cw,2500
+India,Kolkata(Calcutta),40HC PW Cw,2500
+India,Mundra,40HC PW Cw,2500
+India,Nhava Sheva,40HC PW Cw,2500
+India,Chennai,40HC PW Cw,2500
+India,Kolkata(Calcutta),40HC PW Cw,2500
+India,Mumbai,40HC PW Cw,2500
+India,Mundra,40HC PW Cw,2500
+India,New Delhi ,40HC PW Cw,2500
+India,Tuticorin,40HC PW Cw,2500
+Indonesia,Belawan,40HC PW Cw,2500
+Indonesia,Jakarta,40HC PW Cw,2500
+Indonesia,Semarang,40HC PW Cw,2500
+Indonesia,Surabaya,40HC PW Cw,2500
+Israel,Ashdod,40HC PW Cw,2500
+Italy,Genoa,40HC PW Cw,2500
+Italy,La Spezia,40HC PW Cw,2500
+Italy,Livorno,40HC PW Cw,2500
+Italy,Milan,40HC PW Cw,2500
+Italy,Modena,40HC PW Cw,2500
+Italy,Padova,40HC PW Cw,2500
+Italy,Trieste,40HC PW Cw,2500
+Italy,Venice,40HC PW Cw,2500
+Japan,Kobe,40HC PW Cw,2500
+Japan,Yokohama,40HC PW Cw,2500
+Japan,Hakata,40HC PW Cw,2500
+Japan,Kobe,40HC PW Cw,2500
+Japan,Nagoya,40HC PW Cw,2500
+Japan,Osaka,40HC PW Cw,2500
+Japan,Tokyo,40HC PW Cw,2500
+Kazakhstan,Almaty,40HC PW Cw,2500
+Kazakhstan,Tashkent,40HC PW Cw,2500
+Kenya,Mombasa,40HC PW Cw,2500
+Kenya,Nairobi,40HC PW Cw,2500
+Malaysia,Penang,40HC PW Cw,2500
+Malaysia,Port Kelang,40HC PW Cw,2500
+Malaysia,Johar,40HC PW Cw,2500
+Mexico,Altamira,40HC PW Cw,2500
+Mexico,Manzanillo,40HC PW Cw,2500
+Mexico,Mexico City,40HC PW Cw,2500
+Mexico,Veracruz,40HC PW Cw,2500
+Morocco,Casablanca,40HC PW Cw,2500
+Netherlands,Rotterdam,40HC PW Cw,2500
+New Zealand,Tauranga,40HC PW Cw,2500
+New Zealand,Auckland,40HC PW Cw,2500
+New Zealand,Tauranga,40HC PW Cw,2500
+Oman,Sohar,40HC PW Cw,2500
+Pakistan,Karachi,40HC PW Cw,2500
+Peru,Callao,40HC PW Cw,2500
+Philippines,Manila,40HC PW Cw,2500
+Poland,Gdansk,40HC PW Cw,2500
+Poland,Warsaw,40HC PW Cw,2500
+Poland,Gdynia,40HC PW Cw,2500
+Portugal,Leixoes,40HC PW Cw,2500
+Portugal,Lisboa,40HC PW Cw,2500
+Portugal,Leixoes,40HC PW Cw,2500
+Portugal,Setubal,40HC PW Cw,2500
+Republic of Ireland,Dublin,40HC PW Cw,2500
+Romania,Constanta,40HC PW Cw,2500
+Russia,Moscow,40HC PW Cw,2500
+Russia,St Petersburg,40HC PW Cw,2500
+Russia,Vladivostok,40HC PW Cw,2500
+Russia,"Yekaterinburg, Sve",40HC PW Cw,2500
+Saudi Arabia,Jeddah,40HC PW Cw,2500
+Singapore,Singapore,40HC PW Cw,2500
+South Africa,Durban,40HC PW Cw,2500
+South Africa,Johannesburg,40HC PW Cw,2500
+South Africa,Cape Town,40HC PW Cw,2500
+South Africa,Port Elizabeth,40HC PW Cw,2500
+South Korea,Busan,40HC PW Cw,2500
+South Korea,Gwangyang,40HC PW Cw,2500
+South Korea,Inchoen,40HC PW Cw,2500
+South Korea,Seoul,40HC PW Cw,2500
+Spain,Arquata Scrivia,40HC PW Cw,2500
+Spain,Barcelona,40HC PW Cw,2500
+Spain,Bilbao,40HC PW Cw,2500
+Spain,Madrid,40HC PW Cw,2500
+Spain,Valencia (Spain),40HC PW Cw,2500
+Spain,Algeciras,40HC PW Cw,2500
+Spain,Barcelona,40HC PW Cw,2500
+Spain,Bilbao,40HC PW Cw,2500
+Spain,Madrid,40HC PW Cw,2500
+Spain,Valencia ,40HC PW Cw,2500
+Sweden,Gothenburg,40HC PW Cw,2500
+Sweden,Norrkoping,40HC PW Cw,2500
+Switzerland,Basle,40HC PW Cw,2500
+Taiwan,Kaohsiung,40HC PW Cw,2500
+Taiwan,Keelung,40HC PW Cw,2500
+Taiwan,Taichung,40HC PW Cw,2500
+Tamil Nadu,Chennai,40HC PW Cw,2500
+Thailand,Bangkok,40HC PW Cw,2500
+Thailand,Laem Chabang,40HC PW Cw,2500
+Turkey,Istanbul,40HC PW Cw,2500
+Turkey,Mersin,40HC PW Cw,2500
+Turkey,Gebze,40HC PW Cw,2500
+Turkey,Mersin,40HC PW Cw,2500
+United Arab Emirates,Dubai,40HC PW Cw,2500
+United Arab Emirates,Jebel Ali,40HC PW Cw,2500
+United Kingdom,Southampton,40HC PW Cw,2500
+United Kingdom,Belfast,40HC PW Cw,2500
+United Kingdom,Birmingham ,40HC PW Cw,2500
+United Kingdom,Doncaster,40HC PW Cw,2500
+United Kingdom,Glasgow,40HC PW Cw,2500
+United Kingdom,Leeds,40HC PW Cw,2500
+United Kingdom,Liverpool,40HC PW Cw,2500
+United Kingdom,London,40HC PW Cw,2500
+United States,"Atlanta, GA",40HC PW Cw,2500
+United States,"Baltimore, MD",40HC PW Cw,2500
+United States,"Boston, MA",40HC PW Cw,2500
+United States,"Charleston, SC",40HC PW Cw,2500
+United States,"Charlotte, NC",40HC PW Cw,2500
+United States,"Chicago, IL",40HC PW Cw,2500
+United States,"Cincinnati, OH",40HC PW Cw,2500
+United States,"Cleveland, OH",40HC PW Cw,2500
+United States,"Columbus, OH",40HC PW Cw,2500
+United States,"Dallas, TX",40HC PW Cw,2500
+United States,"Denver, CO",40HC PW Cw,2500
+United States,"Detroit, MI",40HC PW Cw,2500
+United States,"El Paso, TX",40HC PW Cw,2500
+United States,Houston,40HC PW Cw,2500
+United States,"Jacksonville, FL",40HC PW Cw,2500
+United States,"Kansas City, KS",40HC PW Cw,2500
+United States,"Long Beach, CA",40HC PW Cw,2500
+United States,"Los Angeles, CA",40HC PW Cw,2500
+United States,"Memphis, TN",40HC PW Cw,2500
+United States,"Miami, FL",40HC PW Cw,2500
+United States,"Minneapolis, MN",40HC PW Cw,2500
+United States,"Mobile, AL",40HC PW Cw,2500
+United States,"Nashville, TN",40HC PW Cw,2500
+United States,"New Orleans, LA",40HC PW Cw,2500
+United States,"New York, NY",40HC PW Cw,2500
+United States,"Norfolk, VA",40HC PW Cw,2500
+United States,"Oakland, CA",40HC PW Cw,2500
+United States,"Omaha, NE",40HC PW Cw,2500
+United States,"Phoenix, AZ",40HC PW Cw,2500
+United States,"Salt Lake City, UT",40HC PW Cw,2500
+United States,"Savannah, GA",40HC PW Cw,2500
+United States,"Seattle, WA",40HC PW Cw,2500
+United States,"Tampa, FL",40HC PW Cw,2500
+United States,"Indianapolis, IN",40HC PW Cw,2500
+Vietnam,Haiphong,40HC PW Cw,2500
+Vietnam,Ho Chi Minh City,40HC PW Cw,2500
+Australia,Adelaide,20HC New,2650
+Australia,Brisbane,20HC New,2650
+Australia,Fremantle,20HC New,2650
+Australia,Melbourne,20HC New,2650
+Australia,Sydney,20HC New,2650
+Austria,Vienna,20HC New,2650
+Bangladesh,Chittagong,20HC New,2650
+Belarus,Minsk,20HC New,2650
+Belgium,Antwerp,20HC New,2650
+Brazil,Santos,20HC New,2650
+Brazil,Paranagua,20HC New,2650
+Cambodia,Phnom Penh,20HC New,2650
+Canada,"Calgary, AB",20HC New,2650
+Canada,"Edmonton, AB",20HC New,2650
+Canada,"Halifax, NS",20HC New,2650
+Canada,"Montreal, QC",20HC New,2650
+Canada,"Toronto, ON",20HC New,2650
+Canada,"Vancouver, BC",20HC New,2650
+Canada,"Winnipeg, MB",20HC New,2650
+Chile,Santiago,20HC New,2650
+Chile,Valparaiso,20HC New,2650
+China,Dalian,20HC New,2650
+China,Fuzhou,20HC New,2650
+China,Guangzhou,20HC New,2650
+China,Hong Kong,20HC New,2650
+China,Huangpu,20HC New,2650
+China,Lianyungang,20HC New,2650
+China,Nansha,20HC New,2650
+China,Qingdao,20HC New,2650
+China,Shanghai,20HC New,2650
+China,Shekou,20HC New,2650
+China,Shenzhen,20HC New,2650
+China,Tianjin,20HC New,2650
+China,Xiamen,20HC New,2650
+China,Ningbo,20HC New,2650
+China,Chengdu,20HC New,2650
+China,Hong Kong,20HC New,2650
+China,Huangpu,20HC New,2650
+China,Nanjing,20HC New,2650
+China,Yantian,20HC New,2650
+Costa Rica,Limon,20HC New,2650
+Denmark,Aarhus,20HC New,2650
+Denmark,Copenhagen,20HC New,2650
+England,Leeds,20HC New,2650
+England,London,20HC New,2650
+Estonia,Tallin,20HC New,2650
+Finland,Helsinki,20HC New,2650
+Finland,Kotka,20HC New,2650
+Finland,Rauma,20HC New,2650
+France,Dunkerque,20HC New,2650
+France,Fos Sur Mer,20HC New,2650
+France,Le Havre,20HC New,2650
+France,Lyon,20HC New,2650
+France,Marseille,20HC New,2650
+France,Rouen,20HC New,2650
+France,Bordeaux,20HC New,2650
+France,Marseille,20HC New,2650
+Georgia,Poti,20HC New,2650
+Germany,Bremen,20HC New,2650
+Germany,Duisburg,20HC New,2650
+Germany,Hamburg,20HC New,2650
+Germany,Mannheim,20HC New,2650
+Germany,Ludwigshafen,20HC New,2650
+Germany,Munich,20HC New,2650
+Greece,Piraeus,20HC New,2650
+Hungary,Budapest,20HC New,2650
+India,Delhi,20HC New,2650
+India,Kolkata(Calcutta),20HC New,2650
+India,Mundra,20HC New,2650
+India,Nhava Sheva,20HC New,2650
+India,Chennai,20HC New,2650
+India,Kolkata(Calcutta),20HC New,2650
+India,Mumbai,20HC New,2650
+India,Mundra,20HC New,2650
+India,New Delhi ,20HC New,2650
+India,Tuticorin,20HC New,2650
+Indonesia,Belawan,20HC New,2650
+Indonesia,Jakarta,20HC New,2650
+Indonesia,Semarang,20HC New,2650
+Indonesia,Surabaya,20HC New,2650
+Israel,Ashdod,20HC New,2650
+Italy,Genoa,20HC New,2650
+Italy,La Spezia,20HC New,2650
+Italy,Livorno,20HC New,2650
+Italy,Milan,20HC New,2650
+Italy,Modena,20HC New,2650
+Italy,Padova,20HC New,2650
+Italy,Trieste,20HC New,2650
+Italy,Venice,20HC New,2650
+Japan,Kobe,20HC New,2650
+Japan,Yokohama,20HC New,2650
+Japan,Hakata,20HC New,2650
+Japan,Kobe,20HC New,2650
+Japan,Nagoya,20HC New,2650
+Japan,Osaka,20HC New,2650
+Japan,Tokyo,20HC New,2650
+Kazakhstan,Almaty,20HC New,2650
+Kazakhstan,Tashkent,20HC New,2650
+Kenya,Mombasa,20HC New,2650
+Kenya,Nairobi,20HC New,2650
+Malaysia,Penang,20HC New,2650
+Malaysia,Port Kelang,20HC New,2650
+Malaysia,Johar,20HC New,2650
+Mexico,Altamira,20HC New,2650
+Mexico,Manzanillo,20HC New,2650
+Mexico,Mexico City,20HC New,2650
+Mexico,Veracruz,20HC New,2650
+Morocco,Casablanca,20HC New,2650
+Netherlands,Rotterdam,20HC New,2650
+New Zealand,Tauranga,20HC New,2650
+New Zealand,Auckland,20HC New,2650
+New Zealand,Tauranga,20HC New,2650
+Oman,Sohar,20HC New,2650
+Pakistan,Karachi,20HC New,2650
+Peru,Callao,20HC New,2650
+Philippines,Manila,20HC New,2650
+Poland,Gdansk,20HC New,2650
+Poland,Warsaw,20HC New,2650
+Poland,Gdynia,20HC New,2650
+Portugal,Leixoes,20HC New,2650
+Portugal,Lisboa,20HC New,2650
+Portugal,Leixoes,20HC New,2650
+Portugal,Setubal,20HC New,2650
+Republic of Ireland,Dublin,20HC New,2650
+Romania,Constanta,20HC New,2650
+Russia,Moscow,20HC New,2650
+Russia,St Petersburg,20HC New,2650
+Russia,Vladivostok,20HC New,2650
+Russia,"Yekaterinburg, Sve",20HC New,2650
+Saudi Arabia,Jeddah,20HC New,2650
+Singapore,Singapore,20HC New,2650
+South Africa,Durban,20HC New,2650
+South Africa,Johannesburg,20HC New,2650
+South Africa,Cape Town,20HC New,2650
+South Africa,Port Elizabeth,20HC New,2650
+South Korea,Busan,20HC New,2650
+South Korea,Gwangyang,20HC New,2650
+South Korea,Inchoen,20HC New,2650
+South Korea,Seoul,20HC New,2650
+Spain,Arquata Scrivia,20HC New,2650
+Spain,Barcelona,20HC New,2650
+Spain,Bilbao,20HC New,2650
+Spain,Madrid,20HC New,2650
+Spain,Valencia (Spain),20HC New,2650
+Spain,Algeciras,20HC New,2650
+Spain,Barcelona,20HC New,2650
+Spain,Bilbao,20HC New,2650
+Spain,Madrid,20HC New,2650
+Spain,Valencia ,20HC New,2650
+Sweden,Gothenburg,20HC New,2650
+Sweden,Norrkoping,20HC New,2650
+Switzerland,Basle,20HC New,2650
+Taiwan,Kaohsiung,20HC New,2650
+Taiwan,Keelung,20HC New,2650
+Taiwan,Taichung,20HC New,2650
+Tamil Nadu,Chennai,20HC New,2650
+Thailand,Bangkok,20HC New,2650
+Thailand,Laem Chabang,20HC New,2650
+Turkey,Istanbul,20HC New,2650
+Turkey,Mersin,20HC New,2650
+Turkey,Gebze,20HC New,2650
+Turkey,Mersin,20HC New,2650
+United Arab Emirates,Dubai,20HC New,2650
+United Arab Emirates,Jebel Ali,20HC New,2650
+United Kingdom,Southampton,20HC New,2650
+United Kingdom,Belfast,20HC New,2650
+United Kingdom,Birmingham ,20HC New,2650
+United Kingdom,Doncaster,20HC New,2650
+United Kingdom,Glasgow,20HC New,2650
+United Kingdom,Leeds,20HC New,2650
+United Kingdom,Liverpool,20HC New,2650
+United Kingdom,London,20HC New,2650
+United States,"Atlanta, GA",20HC New,2650
+United States,"Baltimore, MD",20HC New,2650
+United States,"Boston, MA",20HC New,2650
+United States,"Charleston, SC",20HC New,2650
+United States,"Charlotte, NC",20HC New,2650
+United States,"Chicago, IL",20HC New,2650
+United States,"Cincinnati, OH",20HC New,2650
+United States,"Cleveland, OH",20HC New,2650
+United States,"Columbus, OH",20HC New,2650
+United States,"Dallas, TX",20HC New,2650
+United States,"Denver, CO",20HC New,2650
+United States,"Detroit, MI",20HC New,2650
+United States,"El Paso, TX",20HC New,2650
+United States,Houston,20HC New,2650
+United States,"Jacksonville, FL",20HC New,2650
+United States,"Kansas City, KS",20HC New,2650
+United States,"Long Beach, CA",20HC New,2650
+United States,"Los Angeles, CA",20HC New,2650
+United States,"Memphis, TN",20HC New,2650
+United States,"Miami, FL",20HC New,2650
+United States,"Minneapolis, MN",20HC New,2650
+United States,"Mobile, AL",20HC New,2650
+United States,"Nashville, TN",20HC New,2650
+United States,"New Orleans, LA",20HC New,2650
+United States,"New York, NY",20HC New,2650
+United States,"Norfolk, VA",20HC New,2650
+United States,"Oakland, CA",20HC New,2650
+United States,"Omaha, NE",20HC New,2650
+United States,"Phoenix, AZ",20HC New,2650
+United States,"Salt Lake City, UT",20HC New,2650
+United States,"Savannah, GA",20HC New,2650
+United States,"Seattle, WA",20HC New,2650
+United States,"Tampa, FL",20HC New,2650
+United States,"Indianapolis, IN",20HC New,2650
+Vietnam,Haiphong,20HC New,2650
+Vietnam,Ho Chi Minh City,20HC New,2650
